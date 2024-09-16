@@ -1,0 +1,31 @@
+{
+  "filters": [
+    {
+      "category": "emi:anvil_repairing"
+    },
+    {
+      "category": "emi:grinding"
+    },
+    {
+      "category": "emi:world_interaction"
+    },
+    {
+      "category": "emi:tag"
+    },
+    {
+      "category": "create:spout_filling"
+    },
+    {
+      "category": "create:mystery_conversion"
+    },
+    {
+      "category": "create:draining"
+    },
+    {
+      "category": "emi:composting"
+    },
+    {
+      "category": "emi:fuel"
+    }
+  ]
+}

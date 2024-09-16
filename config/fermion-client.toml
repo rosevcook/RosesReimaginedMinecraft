@@ -1,0 +1,26 @@
+
+#Extra tooltips for items that displays helpful information
+[tooltips]
+	#Items that are dyeable with have a tooltip displaying this
+	"Dyeable Tooltip" = true
+	#All Horse Armour items will display their armor stat
+	"Horse Armour Tooltip" = true
+	#Food Item Tooltips display which effects they provide
+	"Food Effect Tooltip" = true
+	#Blacklist of items to display food effects tooltips
+	"Food Effect Tooltip BlackList" = ["farmersdelight:apple_cider", "farmersdelight:cooked_rice", "farmersdelight:bone_broth", "farmersdelight:beef_stew", "farmersdelight:chicken_soup", "farmersdelight:vegetable_soup", "farmersdelight:fish_stew", "farmersdelight:fried_rice", "farmersdelight:pumpkin_soup", "farmersdelight:baked_cod_stew", "farmersdelight:noodle_soup", "farmersdelight:bacon_and_eggs", "farmersdelight:pasta_with_meatballs", "farmersdelight:pasta_with_mutton_chop", "farmersdelight:mushroom_rice", "farmersdelight:roasted_mutton_chops", "farmersdelight:vegetable_noodles", "farmersdelight:steak_and_potatoes", "farmersdelight:ratatouille", "farmersdelight:squid_ink_pasta", "farmersdelight:grilled_salmon", "farmersdelight:roast_chicken", "farmersdelight:stuffed_pumpkin", "farmersdelight:honey_glazed_ham", "farmersdelight:shepherds_pie", "farmersdelight:fruit_salad", "farmersdelight:mixed_salad", "abnormals_delight:slabdish"]
+	#Items In this list will have a custom tooltip you will have to add a translation for
+	"Custom Tooltip List" = ["create:powdered_obsidian=brewing_ingredient", "minecraft:amethyst_shard=brewing_ingredient", "atmospheric:yucca_branch=brewing_ingredient", "kubejs:silver_feather=brewing_ingredient"]
+	#Items that can be brewed into a potion will have a tooltip saying "Brewing Ingredient"; default: false
+	"Brewing Ingredient Tooltip" = true
+	#Blacklist of items to display brewing ingredient tooltip
+	"Brewing Ingredient Tooltip BlackList" = ["caverns_and_chasms:bejeweled_pearl"]
+	#Appends the Tooltip of a Music Disc to also display the Length of the Song
+	"Music Disc Tooltip" = true
+	#Displays the Mining Level of the Pickaxe as a Percentage
+	"Pickaxe Mining Power" = true
+	#Displays the Mining Speed of the Tool
+	"Tool Mining Speed" = true
+	#If Items hidden with fermion should contain a tooltip displaying that the item is hidden.
+	"Hidden Item Tooltip" = true
+

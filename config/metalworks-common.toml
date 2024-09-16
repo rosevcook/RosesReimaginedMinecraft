@@ -1,0 +1,6 @@
+
+#Vanilla Gameplay Tweaks
+[tweaks]
+	#If zombies should spawn with copper tools and armour
+	"Zombie Copper" = true
+

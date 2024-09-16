@@ -1,0 +1,13 @@
+[[curiosSettings]]
+identifier = "head"
+  visible = false
+  locked = true
+[[curiosSettings]]
+identifier = "back"
+  visible = false
+  locked = true
+[[curiosSettings]]
+identifier = "charm"
+  visible = false
+  locked = true
+

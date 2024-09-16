@@ -1,0 +1,66 @@
+MoreJSEvents.registerPotionBrewing(event => {
+  function replacePotion(input, effect) {
+    event.removeByPotion(null, null, effect)
+    event.addPotionBrewing(input, effect)
+  }
+
+  function longPotion(effect, long) {
+    event.removeByPotion(null, null, long)
+    event.addPotionBrewing('create:powdered_obsidian', effect, long)
+  }
+
+  // remove potions
+  event.removeByPotion(null, null, 'minecraft:awkward')
+  event.removeByPotion(null, null, 'minecraft:mundane')
+  event.removeByPotion(null, null, 'upgrade_aquatic:restfulness')
+  event.removeByPotion(null, null, 'upgrade_aquatic:restfulness_strong')
+  event.removeByPotion(null, null, 'upgrade_aquatic:insomnia')
+  event.removeByPotion(null, null, 'upgrade_aquatic:insomnia_strong')
+
+  // add potions
+  replacePotion('kubejs:silver_feather', 'minecraft:slow_falling')
+  replacePotion('minecraft:rabbit_foot', 'minecraft:leaping')
+  replacePotion('minecraft:sugar', 'minecraft:swiftness')
+  replacePotion('minecraft:turtle_helmet', 'minecraft:turtle_master')
+  replacePotion('minecraft:pufferfish', 'minecraft:water_breathing')
+  replacePotion('minecraft:glistering_melon_slice', 'minecraft:healing')
+  replacePotion('minecraft:spider_eye', 'minecraft:poison')
+  replacePotion('minecraft:golden_carrot', 'minecraft:night_vision')
+  replacePotion('minecraft:blaze_powder', 'minecraft:strength')
+  replacePotion('minecraft:magma_cream', 'minecraft:fire_resistance')
+  replacePotion('heart_crystals:heart_crystal_shard', 'minecraft:regeneration')
+  replacePotion('windswept:holly_berries', 'windswept:thorns')
+  replacePotion('windswept:frozen_branch', 'windswept:frost_resistance')
+  replacePotion('minecraft:amethyst_shard', 'caverns_and_chasms:rewind')
+  replacePotion('buzzier_bees:four_leaf_clover', 'minecraft:luck')
+  replacePotion('upgrade_aquatic:lionfish', 'upgrade_aquatic:repellence')
+  replacePotion('atmospheric:aloe_leaves', 'atmospheric:relief')
+  replacePotion('autumnity:snail_goo', 'autumnity:extension')
+  event.addPotionBrewing('windswept:nightshade', 'minecraft:night_vision')
+  event.addPotionBrewing('atmospheric:yucca_branch', 'windswept:thorns')
+
+  // long potions
+  longPotion('minecraft:invisibility', 'minecraft:long_invisibility')
+  longPotion('minecraft:leaping', 'minecraft:long_leaping')
+  longPotion('minecraft:fire_resistance', 'minecraft:long_fire_resistance')
+  longPotion('minecraft:swiftness', 'minecraft:long_swiftness')
+  longPotion('minecraft:slowness', 'minecraft:long_slowness')
+  longPotion('minecraft:turtle_master', 'minecraft:long_turtle_master')
+  longPotion('minecraft:water_breathing', 'minecraft:long_water_breathing')
+  longPotion('minecraft:poison', 'minecraft:long_poison')
+  longPotion('minecraft:regeneration', 'minecraft:long_regeneration')
+  longPotion('minecraft:strength', 'minecraft:long_strength')
+  longPotion('minecraft:weakness', 'minecraft:long_weakness')
+  longPotion('minecraft:luck', 'buzzier_bees:long_luck')
+  longPotion('minecraft:slow_falling', 'minecraft:long_slow_falling')
+  longPotion('minecraft:night_vision', 'minecraft:long_night_vision')
+  longPotion('windswept:thorns', 'windswept:long_thorns')
+  longPotion('windswept:frost_resistance', 'windswept:long_frost_resistance')
+  //longPotion('quark:resilience', 'quark:long_resilience')
+  longPotion('caverns_and_chasms:rewind', 'caverns_and_chasms:long_rewind')
+  longPotion('buzzier_bees:unluck', 'buzzier_bees:long_unluck')
+  longPotion('upgrade_aquatic:repellence', 'upgrade_aquatic:repellence_long')
+  longPotion('upgrade_aquatic:vibing', 'upgrade_aquatic:vibing_long')
+  longPotion('atmospheric:relief', 'atmospheric:relief_long')
+  longPotion('atmospheric:worsening', 'atmospheric:worsening_long')
+})

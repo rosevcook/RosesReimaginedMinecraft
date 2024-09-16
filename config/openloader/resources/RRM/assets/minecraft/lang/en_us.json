@@ -1,0 +1,17 @@
+{
+  "block.minecraft.bed.occupied": "",
+  "block.minecraft.bed.obstructed": "",
+  "block.minecraft.bed.no_sleep": "",
+  "block.minecraft.bed.too_far_away": "",
+  "block.minecraft.bed.not_safe": "",
+
+  "block.minecraft.nether_quartz_ore": "Nether Charcoal Ore",
+  "block.minecraft.nether_wart_block": "Crimson Wart Block",
+  "block.minecraft.redstone_lamp": "Powered Lamp",
+
+  "item.minecraft.wooden_sword": "Flint Sword",
+  "item.minecraft.wooden_pickaxe": "Flint Pickaxe",
+  "item.minecraft.wooden_axe": "Flint Hatchet",
+  "item.minecraft.wooden_shovel": "Flint Shovel",
+  "item.minecraft.wooden_hoe": "Flint Hoe"
+}

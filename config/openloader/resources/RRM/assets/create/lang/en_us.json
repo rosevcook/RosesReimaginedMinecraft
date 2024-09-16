@@ -1,0 +1,10 @@
+{
+  "block.create.andesite_casing": "Zinc Casing",
+  "block.create.andesite_funnel": "Zinc Funnel",
+  "block.create.andesite_tunnel": "Zinc Tunnel",
+  "block.create.andesite_bars": "Zinc Bars",
+  "block.create.shaft": "Zinc Shaft",
+  "block.create.mechanical_piston": "Piston",
+  "block.create.sticky_mechanical_piston": "Sticky Piston",
+  "block.create.redstone_contact": "Power Contact"
+}

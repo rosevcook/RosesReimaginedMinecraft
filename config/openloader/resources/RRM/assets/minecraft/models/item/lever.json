@@ -1,0 +1,6 @@
+{
+    "parent": "create:block/analog_lever/item",
+    "textures": {
+        "4": "create:block/andesite_block"
+    }
+}

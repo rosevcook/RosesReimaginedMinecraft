@@ -1,0 +1,23 @@
+{
+	"generate_all_known_states": false,
+	"retro_gen": false,
+	"state_swapper": [],
+	"swapper": {
+		"minecraft:end_portal_frame": "minecraft:air",
+		"minecraft:end_portal": "minecraft:air",
+		"minecraft:end_rod": "minecraft:air",
+		"minecraft:redstone_ore": "minecraft:stone",
+		"minecraft:emerald_ore": "minecraft:stone",
+		"minecraft:deepslate_redstone_ore": "minecraft:deepslate",
+		"minecraft:deepslate_emerald_ore": "minecraft:deepslate",
+		"minecraft:andesite": "minecraft:stone",
+		"minecraft:diorite": "minecraft:stone",
+		"minecraft:granite": "minecraft:stone",
+		"minecraft:redstone_torch": "caverns_and_chasms:cupric_torch",
+		"minecraft:redstone_wall_torch": "caverns_and_chasms:cupric_wall_torch",
+		"minecraft:cauldron": "create:basin",
+		"minecraft:nether_wart": "minecraft:air",
+		"minecraft:torch": "realistictorches:torch",
+		"minecraft:wall_torch": "realistictorches:torch_wall"
+	}
+}

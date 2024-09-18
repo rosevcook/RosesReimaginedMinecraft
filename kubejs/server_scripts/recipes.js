@@ -138,6 +138,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:sea_lantern' }, 'minecraft:prismarine_shard', 'upgrade_aquatic:prismarine_rod')
   event.replaceInput({ output: 'windswept:frost_arrow' }, 'minecraft:stick', 'kubejs:ice_rod')
   event.replaceInput({ output: 'windswept:frost_arrow' }, 'windswept:icicles', 'minecraft:feather')
+  event.replaceInput({ output: 'heart_crystals:heart_lantern' }, 'minecraft:iron_nugget', 'caverns_and_chasms:silver_nugget')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -166,11 +167,11 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:wooden_axe', ['FS', ' T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
   event.shaped('minecraft:wooden_shovel', ['F', 'S', 'T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
   event.shaped('minecraft:wooden_hoe', ['FF', ' S', ' T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
-  event.shaped(Item.of('minecraft:flint', 2), ['GG'], { G: 'minecraft:gravel' })
+  event.shapeless('minecraft:flint', ['minecraft:gravel'])
   event.shapeless(Item.of('farmersdelight:raw_pasta', 2), ['#forge:eggs', 'create:wheat_flour', 'create:wheat_flour'])
   event.shapeless('minecraft:pumpkin_pie', ['farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'create:wheat_flour', 'minecraft:sugar', '#forge:eggs'])
   event.shaped('minecraft:pumpkin', ['SSS', 'SSS', 'SSS'], { S: 'farmersdelight:pumpkin_slice' })
-  event.shaped('otherworldly_accessories:totem_of_regeneration', [' P ', 'PHP', ' P '], { P: 'windswept:pinecone', H: 'heart_crystals:heart_crystal' })
+  event.shaped('otherworldly_accessories:totem_of_regeneration', ['PPP', 'PHP', ' P '], { P: 'windswept:pinecone', H: 'heart_crystals:heart_crystal' })
   event.shapeless('upgrade_aquatic:pink_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:pink_dye'])
   event.shapeless('upgrade_aquatic:purple_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:purple_dye'])
   event.shapeless('upgrade_aquatic:blue_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:light_blue_dye'])

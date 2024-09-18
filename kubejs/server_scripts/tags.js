@@ -5,6 +5,9 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:charm')
   event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying')
 
+  event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
+  event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
+
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')
 })

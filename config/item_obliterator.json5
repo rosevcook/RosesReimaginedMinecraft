@@ -1,5 +1,8 @@
 {
   "blacklisted_items": [
+    "!.*jungle.*",
+    "!.*mangrove.*",
+    "!.*acacia.*",
     "!minecraft:end_stone.*",
     "minecraft:end_crystal",
     "minecraft:end_rod",
@@ -30,6 +33,7 @@
     "minecraft:redstone",
     "minecraft:torch",
     "minecraft:cookie",
+    "farmersdelight:sandy_shrub",
     "minecraft:redstone_block",
     "!minecraft:.*smooth_quartz.*",
     "!minecraft:.*redstone_ore.*",
@@ -59,6 +63,11 @@
     "!upgrade_aquatic:.*ochre.*",
     "!upgrade_aquatic:.*polar.*",
     "!upgrade_aquatic:.*tongue.*",
+    "!upgrade_aquatic:.*elder_prismarine.*",
+    "!upgrade_aquatic:.*pillow_coral.*",
+    "!upgrade_aquatic:.*branch_coral.*",
+    "!upgrade_aquatic:.*chrome_coral.*",
+    "!upgrade_aquatic:.*rock_coral.*",
     "!minecraft:.*emerald.*",
     "!minecraft:.*piston.*",
     "!create:.*veridium.*",

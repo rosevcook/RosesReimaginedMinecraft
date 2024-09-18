@@ -9,9 +9,5 @@
   "block.minecraft.nether_wart_block": "Crimson Wart Block",
   "block.minecraft.redstone_lamp": "Powered Lamp",
 
-  "item.minecraft.wooden_sword": "Flint Sword",
-  "item.minecraft.wooden_pickaxe": "Flint Pickaxe",
-  "item.minecraft.wooden_axe": "Flint Hatchet",
-  "item.minecraft.wooden_shovel": "Flint Shovel",
-  "item.minecraft.wooden_hoe": "Flint Hoe"
+  "item.minecraft.ender_eye": "Ancient Eye"
 }

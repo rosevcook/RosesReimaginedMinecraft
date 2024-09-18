@@ -74,6 +74,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:pumpkin_seeds' })
   event.remove({ output: 'clash:spear' })
   event.remove({ output: 'clash:rod_of_gales' })
+  event.remove({ output: 'farmersdelight:organic_compost' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -135,6 +136,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:rope_pulley' }, '#minecraft:wool', 'farmersdelight:rope')
   event.replaceInput({ output: 'minecraft:stonecutter' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'minecraft:sea_lantern' }, 'minecraft:prismarine_shard', 'upgrade_aquatic:prismarine_rod')
+  event.replaceInput({ output: 'windswept:frost_arrow' }, 'minecraft:stick', 'kubejs:ice_rod')
+  event.replaceInput({ output: 'windswept:frost_arrow' }, 'windswept:icicles', 'minecraft:feather')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -163,11 +166,21 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:wooden_axe', ['FS', ' T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
   event.shaped('minecraft:wooden_shovel', ['F', 'S', 'T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
   event.shaped('minecraft:wooden_hoe', ['FF', ' S', ' T'], { F: 'minecraft:flint', S: 'farmersdelight:straw', T: 'minecraft:stick' })
-  event.shaped(Item.of('minecraft:flint', 2), ['GGG'], { G: 'minecraft:gravel' })
+  event.shaped(Item.of('minecraft:flint', 2), ['GG'], { G: 'minecraft:gravel' })
   event.shapeless(Item.of('farmersdelight:raw_pasta', 2), ['#forge:eggs', 'create:wheat_flour', 'create:wheat_flour'])
   event.shapeless('minecraft:pumpkin_pie', ['farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'create:wheat_flour', 'minecraft:sugar', '#forge:eggs'])
   event.shaped('minecraft:pumpkin', ['SSS', 'SSS', 'SSS'], { S: 'farmersdelight:pumpkin_slice' })
   event.shaped('otherworldly_accessories:totem_of_regeneration', [' P ', 'PHP', ' P '], { P: 'windswept:pinecone', H: 'heart_crystals:heart_crystal' })
+  event.shapeless('upgrade_aquatic:pink_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:pink_dye'])
+  event.shapeless('upgrade_aquatic:purple_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:purple_dye'])
+  event.shapeless('upgrade_aquatic:blue_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:light_blue_dye'])
+  event.shapeless('upgrade_aquatic:green_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:lime_dye'])
+  event.shapeless('upgrade_aquatic:yellow_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:yellow_dye'])
+  event.shapeless('upgrade_aquatic:orange_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:orange_dye'])
+  event.shapeless('upgrade_aquatic:red_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:red_dye'])
+  event.shapeless('upgrade_aquatic:white_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:white_dye'])
+  event.shaped(Item.of('endermanoverhaul:icy_pearl', 2), [' I ', 'IPI', ' I '], { P: 'minecraft:ender_pearl', I: 'windswept:icicles' })
+  event.shaped('kubejs:ice_rod', [' I', 'I '], { I: 'windswept:icicles' })
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')

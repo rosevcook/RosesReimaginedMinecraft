@@ -1,0 +1,16 @@
+{
+  "item.endermanoverhaul.dark_oak_enderman_spawn_egg": "Wooded Wanderer Spawn Egg",
+  "entity.endermanoverhaul.dark_oak_enderman": "Wooded Wanderer",
+  "item.endermanoverhaul.desert_enderman_spawn_egg": "Dunes Wanderer Spawn Egg",
+  "entity.endermanoverhaul.desert_enderman": "Dunes Wanderer",
+  "item.endermanoverhaul.swamp_enderman_spawn_egg": "Dredged Wanderer Spawn Egg",
+  "entity.endermanoverhaul.swamp_enderman": "Dredged Wanderer",
+  "item.endermanoverhaul.warped_forest_enderman_spawn_egg": "Warped Wanderer Spawn Egg",
+  "entity.endermanoverhaul.warped_forest_enderman": "Warped Wanderer",
+  "item.endermanoverhaul.windswept_hills_enderman_spawn_egg": "Alpine Wanderer Spawn Egg",
+  "entity.endermanoverhaul.windswept_hills_enderman": "Alpine Wanderer",
+  "item.endermanoverhaul.ice_spikes_enderman_spawn_egg": "Arctic Wanderer Spawn Egg",
+  "entity.endermanoverhaul.ice_spikes_enderman": "Arctic Wanderer",
+  "item.endermanoverhaul.soulsand_valley_enderman_spawn_egg": "Soul Wanderer Spawn Egg",
+  "entity.endermanoverhaul.soulsand_valley_enderman": "Soul Wanderer"
+}

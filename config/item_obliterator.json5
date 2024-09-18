@@ -3,6 +3,7 @@
     "!.*jungle.*",
     "!.*mangrove.*",
     "!.*acacia.*",
+    "!environmental:.*pine.*",
     "!minecraft:end_stone.*",
     "minecraft:end_crystal",
     "minecraft:end_rod",

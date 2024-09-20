@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:dirt",
+  "replaces_with": "atmospheric:grimwood_boards",
+  "selector": "minecraft:ancient_city"
+}

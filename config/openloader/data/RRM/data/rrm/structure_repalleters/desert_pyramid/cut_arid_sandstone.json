@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cut_sandstone",
+  "replaces_with": "atmospheric:cut_arid_sandstone",
+  "selector": "minecraft:desert_pyramid"
+}

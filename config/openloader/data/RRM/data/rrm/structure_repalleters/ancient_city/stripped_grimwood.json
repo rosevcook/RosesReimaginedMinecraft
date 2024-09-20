@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smooth_basalt",
+  "replaces_with": "atmospheric:stripped_grimwood",
+  "selector": "minecraft:ancient_city"
+}

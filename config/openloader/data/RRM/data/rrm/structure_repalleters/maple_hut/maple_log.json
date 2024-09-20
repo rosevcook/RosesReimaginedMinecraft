@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:oak_log",
+  "replaces_with": "autumnity:maple_log",
+  "selector": "autumnity:maple_hut"
+}

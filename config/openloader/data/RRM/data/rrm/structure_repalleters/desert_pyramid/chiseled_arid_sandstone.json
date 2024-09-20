@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chiseled_sandstone",
+  "replaces_with": "atmospheric:chiseled_arid_sandstone",
+  "selector": "minecraft:desert_pyramid"
+}

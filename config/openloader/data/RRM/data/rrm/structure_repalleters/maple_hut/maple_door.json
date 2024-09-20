@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:spruce_door",
+  "replaces_with": "autumnity:maple_door",
+  "selector": "autumnity:maple_hut"
+}

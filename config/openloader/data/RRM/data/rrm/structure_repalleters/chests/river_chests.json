@@ -1,0 +1,13 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "upgrade_aquatic:river_chest",
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:shipwreck",
+      "minecraft:shipwreck_beached"
+    ]
+  }
+}

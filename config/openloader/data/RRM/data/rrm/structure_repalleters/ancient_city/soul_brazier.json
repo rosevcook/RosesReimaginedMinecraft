@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:torch",
+  "replaces_with": "caverns_and_chasms:soul_brazier",
+  "selector": "minecraft:ancient_city"
+}

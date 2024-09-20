@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:oak_slab",
+  "replaces_with": "autumnity:maple_slab",
+  "selector": "autumnity:maple_hut"
+}

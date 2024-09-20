@@ -1,0 +1,18 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "upgrade_aquatic:driftwood_chest",
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:buried_treasure",
+      "minecraft:ocean_ruin_cold",
+      "minecraft:ocean_ruin_warm",
+      "hopo:underwater_ruins",
+      "hopo:underwater_small_ruins",
+      "hopo:underwater_warm_small_ruins",
+      "betteroceanmonuments:ocean_monument"
+    ]
+  }
+}

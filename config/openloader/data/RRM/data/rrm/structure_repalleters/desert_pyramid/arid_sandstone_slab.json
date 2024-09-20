@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:sandstone_slab",
+  "replaces_with": "atmospheric:arid_sandstone_slab",
+  "selector": "minecraft:desert_pyramid"
+}

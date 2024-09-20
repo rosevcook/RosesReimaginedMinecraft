@@ -1,0 +1,13 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:oak_door",
+  "replaces_with": "upgrade_aquatic:driftwood_door",
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:shipwreck",
+      "minecraft:shipwreck_beached"
+    ]
+  }
+}

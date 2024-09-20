@@ -1,0 +1,13 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "woodworks:crimson_chest",
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:bastion_remnant",
+      "betterfortresses:fortress"
+    ]
+  }
+}

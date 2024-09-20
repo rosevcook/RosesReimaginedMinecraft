@@ -1,0 +1,13 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:spruce_trapdoor",
+  "replaces_with": "upgrade_aquatic:river_trapdoor",
+  "selector": {
+    "type": "names",
+    "config": [
+      "minecraft:shipwreck",
+      "minecraft:shipwreck_beached"
+    ]
+  }
+}

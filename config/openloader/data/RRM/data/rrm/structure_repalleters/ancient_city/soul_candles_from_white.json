@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:white_candle",
+  "replaces_with": "buzzier_bees:soul_candle",
+  "selector": "minecraft:ancient_city"
+}

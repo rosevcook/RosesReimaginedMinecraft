@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:sandstone_stairs",
+  "replaces_with": "atmospheric:arid_sandstone_stairs",
+  "selector": "minecraft:desert_pyramid"
+}

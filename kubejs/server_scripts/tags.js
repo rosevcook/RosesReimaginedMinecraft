@@ -12,6 +12,42 @@ ServerEvents.tags('item', event => {
   event.remove('forge:milk', 'farmersdelight:milk_bottle')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
+
+  //event.remove('forge:stripped_logs', 'stripped_jungle_log', 'stripped_acacia_log', 'stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
+  //event.remove('forge:stripped_wood', 'stripped_jungle_wood', 'stripped_acacia_wood', 'stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')
+  event.add('forge:stripped_logs', 'windswept:stripped_pine_log', 'windswept:stripped_holly_log', 'windswept:stripped_chestnut_log', 'caverns_and_chasms:stripped_azalea_log', 'upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:stripped_river_log', 'autumnity:stripped_maple_log', 'atmospheric:stripped_laurel_log')
+  event.add('forge:stripped_wood', 'windswept:stripped_pine_wood', 'windswept:stripped_holly_wood', 'windswept:stripped_chestnut_wood', 'caverns_and_chasms:stripped_azalea_wood', 'upgrade_aquatic:stripped_driftwood', 'upgrade_aquatic:stripped_river_wood', 'autumnity:stripped_maple_wood', 'atmospheric:stripped_laurel_wood')
+})
+
+ServerEvents.tags('block', event => {
+  // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver
+  event.get('minecraft:needs_stone_tool').getObjectIds().forEach(block => {
+    if (Ingredient.of(/.*copper.*/).test(block)) 
+      event.remove('minecraft:needs_stone_tool', block)
+    else if (Ingredient.of(/.*iron.*/).test(block)) {
+      event.remove('minecraft:needs_stone_tool', block)
+      event.add('minecraft:needs_wooden_tool', block)
+    }
+  })
+  event.get('minecraft:needs_iron_tool').getObjectIds().forEach(block => {
+    if (Ingredient.of(/.*zinc.*/).test(block)) {
+      event.remove('minecraft:needs_iron_tool', block)
+      event.add('minecraft:needs_wooden_tool', block)
+    } else if (Ingredient.of(/.*gold.*/).test(block)) {
+      event.remove('minecraft:needs_iron_tool', block)
+      event.add('minecraft:needs_stone_tool', block)
+    } else if (Ingredient.of(/.*silver.*/).test(block)) {
+      event.remove('minecraft:needs_iron_tool', block)
+      event.add('minecraft:needs_stone_tool', block)
+    }
+  })
+  event.get('minecraft:mineable/pickaxe').getObjectIds().forEach(block => {
+    if (Ingredient.of(/.*deepslate.*/).test(block)) {
+      if (!event.get('minecraft:needs_iron_tool').getObjectIds().contains(block) && !event.get('minecraft:needs_diamond_tool').getObjectIds().contains(block)) event.add('minecraft:needs_stone_tool', block)
+      if (event.get('minecraft:needs_wooden_tool').getObjectIds().contains(block)) event.remove('minecraft:needs_wooden_tool', block)
+      if (event.get('minecraft:needs_wooden_tool').getObjectIds().contains(block)) event.remove('minecraft:needs_wooden_tool', block)
+    }
+  })
 })
 
 ServerEvents.tags('worldgen/biome', event => {

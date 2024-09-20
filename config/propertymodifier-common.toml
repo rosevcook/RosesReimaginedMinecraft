@@ -1,0 +1,390 @@
+
+[logging]
+	#Whether to log successful operations or not.
+	log_successful = false
+	#Whether to log failed operations or not.
+	log_errors = true
+
+#Generates a config with all non-default values in propertymodifier-generated.toml.
+[generating]
+	#Generates item group-related entries.
+	item_groups = false
+	#Generates block state-related entries.
+	block_states = false
+	#Generates block-related entries.
+	blocks = false
+	#Generates item-related entries.
+	items = true
+	#Generates armor-related entries.
+	armor = true
+	#Generates tool-related entries.
+	tools = true
+	#Generates enchantment-related entries.
+	enchantments = false
+	#Generates composting-related entries.
+	composting = false
+	#The default enchantment value used. 0 in vanilla, but mods such as Apotheosis may change this.
+	#Range: 0 ~ 1000000
+	default_enchantment_value = 0
+
+#The test values are needed because the library Forge uses for configs has a bug that doesn't allow empty default config values. If you add a value to a category, you can safely remove the test value.
+#
+#Set the respective values here by adding lines in the respective groups. If you want to create entirely new item groups, set an icon for a group name that doesn't exist yet. The tab "missingno" is provided by this mod, any items in it are removed after running everything else.
+[item_groups]
+	#Whether to remove empty item groups or not.
+	remove_empty = true
+	#Whether to sort all item groups or not.
+	sort = false
+	#A list of groups that should be removed under all circumstances. Cannot remove "hotbar", "search" and "inventory".
+	force_remove = []
+
+	#Set an icon for a creative tab. Must be a valid item id. Example (without the leading #):
+	#test = "minecraft:nether_star"
+	[item_groups.icon]
+		test = "minecraft:missingno"
+
+	#Set whether item groups should have a search bar or not. Must be true or false. Only works for tabs created by this mod. Example (without the leading #):
+	#test = true
+	[item_groups.search]
+		test = false
+
+	#Set an alternative background for an item group. Must be a valid resource location. Example (without the leading #):
+	#minecraft:textures/gui/container/creative_inventory/tab_inventory.png
+	[item_groups.background]
+		test = "minecraft:missingno"
+
+	#Set the enchantment categories for an item group. Must be a list of valid enchantment category names. Use [] for no enchantment groups (this is the default for newly-created groups). Example (without the leading #):
+	#["vanishable", "breakable", "digger"]
+	#Default enchantment groups (mods may add more!): "armor", "armor_feet", "armor_legs", "armor_chest", "armor_head", "weapon", "digger", "fishing_rod", "trident", "breakable", "bow", "wearable", "crossbow", "vanishable"
+	[item_groups.enchantments]
+		test = []
+
+#Set the respective values here by adding lines in the respective groups. Keys can be either a block (e.g. "minecraft:stripped_birch_wood"), a block regex (e.g. "minecraft:.*_block") or a blockstate definition (e.g. "minecraft:grass_block[snowy=true]"). Block regexes cannot contain the [] characters, as their presence will be interpreted as a blockstate definition instead.
+[blocks_and_blockstates]
+
+	#Set the destroy time for a block (state). Dirt has 0.5, stone has 1.5, obsidian has 50. -1 makes the block unbreakable. Examples (without the leading #):
+	#"minecraft:grass_block[snowy=true]" = 100
+	#"minecraft:.*_planks" = 100
+	[blocks_and_blockstates.destroy_time]
+		test = 0.0
+
+	#Set the tool requirement of a block (state). Must be true or false. Examples (without the leading #):
+	#"minecraft:diamond_ore" = false
+	#"minecraft:oak_log" = true
+	[blocks_and_blockstates.requires_tool]
+		test = false
+
+	#Set the light emission of a block (state). Must be an integer between 0 and 15. Examples (without the leading #):
+	#"minecraft:redstone_torch[lit=true]" = 15
+	#"minecraft:.*_bricks" = 7
+	[blocks_and_blockstates.light_emission]
+		"sullysmod:polished_chiseled_jade" = 15
+
+#Set the respective values here by adding lines in the respective groups. Keys can be either a block (e.g. "minecraft:stripped_birch_wood") or a block regex (e.g. "minecraft:.*_block").
+[blocks]
+
+	#Set the explosion resistance for a block. Dirt has 0.5, stone and has 6, obsidian has 1200. 3600000 or more makes the block completely explosion resistant. Example (without the leading #):
+	#"minecraft:dirt" = 1000
+	[blocks.explosion_resistance]
+		test = 0.0
+
+	#Set the friction for a block. 0.6 for most blocks, 0.8 for slime blocks, 0.98 for ice, packed ice and frosted ice, and 0.989 for blue ice. Example (without the leading #):
+	#"minecraft:.*ice" = 0.6
+	[blocks.friction]
+		test = 0.0
+
+	#Set the speed factor for a block. 1 for most blocks, 0.4 for soul sand and honey blocks. Example (without the leading #):
+	#"minecraft:soul_sand" = 1
+	[blocks.speed_factor]
+		test = 0.0
+
+	#Set the speed factor for a block. 1 for most blocks, 0.5 for honey blocks. Example (without the leading #):
+	#"minecraft:honey_block" = 1
+	[blocks.jump_factor]
+		test = 0.0
+
+#Set the respective values here by adding lines in the respective groups. Keys can be either an item (e.g. "minecraft:stripped_birch_wood") or an item regex (e.g. "minecraft:diamond.*").
+[items]
+
+	#Set the max damage (durability) of an item. Only items that already have durability can have this value altered. Example (without the leading #):
+	#"minecraft:diamond_.*" = 5000
+	[items.max_damage]
+		"minecraft:elytra" = 500
+		"caverns_and_chasms:silver_helmet" = 165
+		"caverns_and_chasms:silver_chestplate" = 240
+		"caverns_and_chasms:silver_leggings" = 225
+		"caverns_and_chasms:silver_boots" = 195
+		"minecraft:golden_helmet" = 165
+		"minecraft:golden_chestplate" = 240
+		"minecraft:golden_leggings" = 225
+		"minecraft:golden_boots" = 195
+		"caverns_and_chasms:silver_sword" = 250
+		"caverns_and_chasms:silver_pickaxe" = 250
+		"caverns_and_chasms:silver_axe" = 250
+		"caverns_and_chasms:silver_shovel" = 250
+		"caverns_and_chasms:silver_hoe" = 250
+		"abnormals_delight:silver_knife" = 250
+		"minecraft:golden_sword" = 250
+		"minecraft:golden_pickaxe" = 250
+		"minecraft:golden_axe" = 250
+		"minecraft:golden_shovel" = 250
+		"minecraft:golden_hoe" = 250
+		"farmersdelight:golden_knife" = 250
+		"minecraft:chainmail_helmet" = 55
+		"minecraft:chainmail_chestplate" = 80
+		"minecraft:chainmail_leggings" = 75
+		"minecraft:chainmail_boots" = 65
+		"minecraft:iron_helmet" = 125
+		"minecraft:iron_chestplate" = 160
+		"minecraft:iron_leggings" = 145
+		"minecraft:iron_boots" = 135
+
+	#Set the max stack size of an item. Only values between 2 and 64 are supported. Items that have durability cannot have this value altered. Example (without the leading #):
+	#"minecraft:ender_pearl" = 64
+	[items.max_stack_size]
+		"alexsmobs:lava_bottle" = 64
+
+	#Set the item group (creative tab) of an item. Use "missingno" to remove the item from any item groups. Example (without the leading #):
+	#"minecraft:command_block" = "decorations"
+	[items.group]
+		test = ""
+
+	#Set this value to true to make an item fire resistant (like netherite is), or set it to false to make it burn in fire and lava. Example (without the leading #):
+	#"minecraft:netherite_ingot" = false
+	[items.fire_resistant]
+		test = false
+
+	#Set the rarity (item color) of an item. Must be a valid rarity name. Example (without the leading #):
+	#"minecraft:beacon" = "common"
+	#Default rarities (mods may add more!): "common", "uncommon", "rare", "epic"
+	[items.rarity]
+		"minecraft:golden_apple" = "uncommon"
+		"minecraft:netherite_helmet" = "uncommon"
+		"minecraft:netherite_chestplate" = "uncommon"
+		"minecraft:netherite_leggings" = "uncommon"
+		"minecraft:netherite_boots" = "uncommon"
+		"minecraft:netherite_sword" = "uncommon"
+		"minecraft:netherite_pickaxe" = "uncommon"
+		"minecraft:netherite_axe" = "uncommon"
+		"minecraft:netherite_shovel" = "uncommon"
+		"minecraft:netherite_hoe" = "uncommon"
+		"farmersdelight:netherite_knife" = "uncommon"
+		"caverns_and_chasms:netherite_horse_armor" = "uncommon"
+		"caverns_and_chasms:necromium_helmet" = "uncommon"
+		"caverns_and_chasms:necromium_chestplate" = "uncommon"
+		"caverns_and_chasms:necromium_leggings" = "uncommon"
+		"caverns_and_chasms:necromium_boots" = "uncommon"
+		"caverns_and_chasms:necromium_sword" = "uncommon"
+		"caverns_and_chasms:necromium_pickaxe" = "uncommon"
+		"caverns_and_chasms:necromium_axe" = "uncommon"
+		"caverns_and_chasms:necromium_shovel" = "uncommon"
+		"caverns_and_chasms:necromium_hoe" = "uncommon"
+		"abnormals_delight:necromium_knife" = "uncommon"
+		"caverns_and_chasms:necromium_horse_armor" = "uncommon"
+		"quark:forgotten_hat" = "uncommon"
+		"quark:backpack" = "uncommon"
+		"undead_unleashed:moonlight_greatsword" = "rare"
+		"undead_unleashed:tombdigger_maul" = "uncommon"
+		"undead_unleashed:reaping_scythe" = "uncommon"
+		"undead_unleashed:necrotic_dust" = "uncommon"
+		"queen_bee:stinger_sword" = "uncommon"
+		"quark:ravager_hide" = "uncommon"
+
+	#Set the enchantment value of an item. Higher value means better enchantments on average. May not always have a noticeable effect. Example (without the leading #):
+	#"minecraft:.*_hoe" = 40
+	[items.enchantment_value]
+		test = 0
+
+	#Set the repair material of an item. May be an item or a tag containing multiple items, with a # before the tag id. Example (without the leading #):
+	#"minecraft:wooden_.*" = "#minecraft:fishes"
+	[items.repair_material]
+		test = ""
+
+	#Set the values for armor.
+	[items.armor]
+
+		#Set the defense value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
+		#"minecraft:golden_chestplate" = 10
+		[items.armor.defense]
+			"minecraft:leather_helmet" = 0
+			"minecraft:leather_chestplate" = 0
+			"minecraft:leather_leggings" = 0
+			"minecraft:leather_boots" = 0
+			"environmental:yak_pants" = 0
+			"metalworks:copper_chestplate" = 1
+			"metalworks:copper_leggings" = 1
+			"minecraft:chainmail_helmet" = 1
+			"minecraft:chainmail_chestplate" = 1
+			"minecraft:chainmail_leggings" = 1
+			"minecraft:iron_chestplate" = 2
+			"minecraft:iron_leggings" = 2
+			"environmental:thief_hood" = 2
+			"environmental:architect_belt" = 2
+			"autumnity:snail_shell_chestplate" = 2
+			"caverns_and_chasms:silver_helmet" = 2
+			"caverns_and_chasms:silver_chestplate" = 2
+			"caverns_and_chasms:silver_leggings" = 2
+			"caverns_and_chasms:silver_boots" = 2
+			"undead_unleashed:grave_metal_helmet" = 2
+			"undead_unleashed:grave_metal_chestplate" = 3
+			"undead_unleashed:grave_metal_leggings" = 3
+			"undead_unleashed:grave_metal_boots" = 2
+			"undead_unleashed:shadow_helmet" = 2
+			"undead_unleashed:shadow_chestplate" = 3
+			"undead_unleashed:shadow_leggings" = 3
+			"undead_unleashed:shadow_boots" = 2
+			"caverns_and_chasms:sanguine_helmet" = 3
+			"caverns_and_chasms:sanguine_chestplate" = 3
+			"caverns_and_chasms:sanguine_leggings" = 3
+			"caverns_and_chasms:sanguine_boots" = 3
+			"minecraft:golden_helmet" = 3
+			"minecraft:golden_chestplate" = 3
+			"minecraft:golden_leggings" = 3
+			"minecraft:golden_boots" = 3
+			"savage_and_ravage:griefer_helmet" = 3
+			"savage_and_ravage:griefer_chestplate" = 3
+			"savage_and_ravage:griefer_leggings" = 3
+			"savage_and_ravage:griefer_boots" = 3
+			"minecraft:diamond_helmet" = 4
+			"minecraft:diamond_chestplate" = 4
+			"minecraft:diamond_leggings" = 4
+			"minecraft:diamond_boots" = 4
+			"minecraft:netherite_helmet" = 5
+			"minecraft:netherite_chestplate" = 5
+			"minecraft:netherite_leggings" = 5
+			"minecraft:netherite_boots" = 5
+			"caverns_and_chasms:necromium_helmet" = 5
+			"caverns_and_chasms:necromium_chestplate" = 5
+			"caverns_and_chasms:necromium_leggings" = 5
+			"caverns_and_chasms:necromium_boots" = 5
+
+		#Set the toughness value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
+		#"minecraft:golden_boots" = 1
+		[items.armor.toughness]
+			test = 0
+
+		#Set the knockback resistance of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
+		#"minecraft:golden_leggings" = 0.1
+		[items.armor.knockback_resistance]
+			test = 0
+
+	#Set the values for tools, swords and tridents.
+	[items.tools]
+
+		#Set the efficiency value of a tool. May not work on modded tools, please file an issue if that's the case. Also doesn't work on shears, due to internal problems with that. Example (without the leading #):
+		#"minecraft:iron_pickaxe" = 16
+		[items.tools.efficiency]
+			test = 0.0
+
+		#Set the attack damage of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
+		#"minecraft:netherite_sword" = 12
+		[items.tools.attack_damage]
+			"minecraft:wooden_sword" = 3
+			"minecraft:wooden_pickaxe" = 1
+			"minecraft:wooden_axe" = 5
+			"minecraft:wooden_shovel" = 1.5
+			"farmersdelight:flint_knife" = 0.5
+			"minecraft:stone_sword" = 4
+			"minecraft:stone_pickaxe" = 2
+			"minecraft:stone_axe" = 6
+			"minecraft:stone_shovel" = 2.5
+			"metalworks:copper_sword" = 4
+			"metalworks:copper_pickaxe" = 2
+			"metalworks:copper_axe" = 6
+			"metalworks:copper_shovel" = 2.5
+			"metalworks:copper_knife" = 1.5
+			"minecraft:iron_sword" = 5
+			"minecraft:iron_pickaxe" = 3
+			"minecraft:iron_axe" = 7
+			"minecraft:iron_shovel" = 3.5
+			"farmersdelight:iron_knife" = 2.5
+			"farmersdelight:skillet" = 6
+			"caverns_and_chasms:silver_sword" = 3
+			"caverns_and_chasms:silver_pickaxe" = 3
+			"caverns_and_chasms:silver_axe" = 5
+			"caverns_and_chasms:silver_shovel" = 3.5
+			"abnormals_delight:silver_knife" = 2.5
+			"minecraft:golden_sword" = 6
+			"minecraft:golden_pickaxe" = 4
+			"minecraft:golden_axe" = 8
+			"minecraft:golden_shovel" = 4.5
+			"farmersdelight:golden_knife" = 3.5
+			"undead_unleashed:moonlight_greatsword" = 3
+			"undead_unleashed:tombdigger_maul" = 4
+			"undead_unleashed:reaping_scythe" = 5
+			"undead_unleashed:grave_metal_sword" = 5.5
+			"undead_unleashed:grave_metal_axe" = 7.5
+
+		#Set the attack speed of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
+		#"minecraft:netherite_pickaxe" = 2.5
+		[items.tools.attack_speed]
+			test = 0.0
+
+#Set the values for enchantments.
+[enchantments]
+
+	#Set the rarity of an enchantment. Must be a valid rarity name. Example (without the leading #):
+	#"minecraft:mending" = "common"
+	#Default rarities (mods may add more!): "common", "uncommon", "rare", "very_rare"
+	[enchantments.rarity]
+		test = ""
+
+#Add or remove compostables.
+[composting]
+	#Whether to remove all predefined compostables or not.
+	clear = false
+
+	#Add new compostables here. Consists of an item or item regex and a float between 0 and 1, representing the chance that the composter level is increased. Example (without the leading #):
+	#"minecraft:netherite_scrap" = 0.8
+	[composting.composting]
+		test = 0.0
+
+#Set the values for axe stripping.
+[stripping]
+	#Whether to remove all predefined stripping values or not.
+	clear = false
+
+	#Add new stripping transitions here. Consists of a block or block regex and a block or block state, representing the output. Example (without the leading #):
+	#"minecraft:.*_planks" = "minecraft:infested_cobblestone"
+	[stripping.stripping]
+		test = ""
+
+#Set the values for shovel flattening.
+[flattening]
+	#Whether to remove all predefined flattening values or not.
+	clear = false
+
+	#Add new flattening transitions here. Consists of a block or block regex and a block or block state, representing the output. Example (without the leading #):
+	#"minecraft:.*_planks" = "minecraft:infested_cobblestone"
+	[flattening.flattening]
+		test = ""
+
+#Set the values for hoe tilling.
+[tilling]
+	#Whether to remove all predefined tilling values or not.
+	clear = false
+
+	#Add new tilling transitions here. Consists of a block or block regex and a block or block state, representing the output. Example (without the leading #):
+	#"minecraft:diamond_block" = "minecraft:emerald_block"
+	[tilling.tilling]
+		test = ""
+
+	#Whether a certain tilling transition needs air above to work. Consists of a block or block regex and a boolean value (true or false). If left unspecified, true is assumed. Example (without the leading #):
+	#"minecraft:diamond_block" = false
+	[tilling.needs_air]
+		test = false
+
+	#The item that is dropped when tilling. Consists of a block or block regex and an item id. If left unspecified, no item is dropped. Example (without the leading #):
+	#"minecraft:diamond_block" = "minecraft:iron_nugget"
+	[tilling.item_drop]
+		test = "minecraft:missingno"
+
+#Set the values for entities.
+[entities]
+
+	#Set the default attributes for entities. Format is "entityid" = "attributeid;value". Cannot add new attributes to mobs, can only alter those that are present by default anyway. Example (without the leading #):
+	#"minecraft:zombie" = "minecraft:generic.attack_damage;10"
+	[entities.default_attributes]
+		"endergetic:brood_eetle" = "minecraft:generic.max_health;150"
+		"minecraft:stray" = "minecraft:generic.max_health;10"
+

@@ -3,7 +3,7 @@
 [general]
 	#The amount of time until a torch burns out, in minutes. Setting this to a negative value will disable torch burnout.
 	#Range: -1 ~ 2880
-	torchBurnoutTime = 20
+	torchBurnoutTime = -1
 	#The durability of the matchbox. Setting this to a negative value will result in unlimited uses.
 	#Range: -1 ~ 512
 	matchboxDurability = 64

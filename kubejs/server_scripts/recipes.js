@@ -135,10 +135,13 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'farmersdelight:skillet' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'create:rope_pulley' }, '#minecraft:wool', 'farmersdelight:rope')
   event.replaceInput({ output: 'minecraft:stonecutter' }, 'minecraft:iron_ingot', 'create:iron_sheet')
+  event.replaceInput({ output: 'woodworks:sawmill' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'minecraft:sea_lantern' }, 'minecraft:prismarine_shard', 'upgrade_aquatic:prismarine_rod')
   event.replaceInput({ output: 'windswept:frost_arrow' }, 'minecraft:stick', 'kubejs:ice_rod')
   event.replaceInput({ output: 'windswept:frost_arrow' }, 'windswept:icicles', 'minecraft:feather')
   event.replaceInput({ output: 'heart_crystals:heart_lantern' }, 'minecraft:iron_nugget', 'caverns_and_chasms:silver_nugget')
+  event.replaceInput({ output: 'create:filter' }, '#minecraft:wool', 'farmersdelight:canvas')
+  event.replaceInput({ output: 'create:attribute_filter' }, '#minecraft:wool', 'farmersdelight:canvas')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -148,7 +151,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:chain', ['N', 'N', 'N'], { N: 'minecraft:iron_nugget' })
   //event.shaped('architects_palette:nether_brass_chain', ['N', 'N', 'N'], { N: 'create:brass_nugget' })
   event.shaped('create:brass_hand', [' B ', 'BBB', ' S '], { B: 'create:brass_ingot', S: 'kubejs:silver_sheet' })
-  event.shapeless('caverns_and_chasms:sanguine_plating', ['kubejs:silver_sheet', 'minecraft:rotten_flesh', 'heart_crystals:heart_crystal_shard'])
+  event.shapeless('caverns_and_chasms:sanguine_plating', ['kubejs:silver_sheet', '#rrm:rotten_flesh', 'heart_crystals:heart_crystal_shard'])
   event.shaped('create:crushing_wheel', ['III', 'ICI', 'III'], { I: 'minecraft:iron_ingot', C: 'create:large_cogwheel' })
   event.shaped('caverns_and_chasms:tuning_fork', [' S ', ' IS', 'I  '], { S: 'create:copper_sheet', I: 'minecraft:copper_ingot' })
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })

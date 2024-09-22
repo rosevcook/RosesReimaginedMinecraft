@@ -81,6 +81,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('endermanoverhaul:desert_spawns', '#atmospheric:is_dunes')
   event.add('endermanoverhaul:ice_spikes_spawns', '#forge:is_snowy')
   event.add('endermanoverhaul:windswept_hills_spawns', '#forge:is_mountain')
+  //event.add('endermanoverhaul:soulsand_valley_spawns', 'gardens_of_the_dead:soulblight_forest')
   event.add('endermanoverhaul:dark_oak_spawns', 'minecraft:old_growth_spruce_taiga', 'windswept:pine_barrens', 'minecraft:old_growth_pine_taiga', 'windswept:chestnut_forest', 'atmospheric:aspen_parkland', 'minecraft:old_growth_birch_forest')
   event.remove('endermanoverhaul:windswept_hills_spawns', 'minecraft:meadow', 'windswept:lavender_meadow')
   event.add('minecraft:has_structure/desert_pyramid', 'atmospheric:spiny_thicket', 'atmospheric:petrified_dunes', 'atmospheric:flourishing_dunes', 'atmospheric:dunes', 'atmospheric:rocky_dunes', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland')

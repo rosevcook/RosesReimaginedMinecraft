@@ -21,3 +21,4 @@ config/xaeropatreon.txt
 rhino.local.properties
 kubejs/README.txt
 local/kubejs/dev.properties
+config/dynamic_lights_reforged.toml

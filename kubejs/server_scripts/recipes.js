@@ -62,8 +62,6 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:nether_wart_block' })
   event.remove({ output: 'minecraft:powered_rail' })
   event.remove({ id: 'environmental:mud_ball' })
-  event.remove({ output: 'minecraft:soul_torch' })
-  event.remove({ output: 'caverns_and_chasms:cupric_torch' })
   event.remove({ output: 'minecraft:pumpkin_pie' })
   event.remove({ id: 'farmersdelight:milk_bucket_from_bottles' })
   event.remove({ id: 'farmersdelight:pumpkin_from_slices' })
@@ -74,7 +72,6 @@ ServerEvents.recipes(event => {
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
-  event.replaceInput({ input: 'minecraft:torch' }, 'minecraft:torch', 'realistictorches:lit_torch')
   //event.replaceInput({ input: 'irons_spellbooks:arcane_essence' }, 'irons_spellbooks:arcane_essence', 'minecraft:lapis_lazuli')
   event.replaceInput({ input: 'create:brass_sheet' }, 'create:brass_sheet', 'create:brass_ingot')
   event.replaceInput({ input: 'create:andesite_alloy' }, 'create:andesite_alloy', 'create:zinc_ingot')
@@ -159,8 +156,6 @@ ServerEvents.recipes(event => {
   event.shapeless('minecraft:crying_obsidian', ['minecraft:obsidian', 'minecraft:amethyst_shard'])
   event.shaped(Item.of('minecraft:powered_rail', 3), ['NSN', 'NCN', 'NSN'], { N: 'minecraft:gold_nugget', S: 'minecraft:stick', C: 'kubejs:power_coil' })
   event.shapeless('environmental:lumberer_banner_pattern', ['minecraft:paper', 'windswept:pinecone'])
-  event.shapeless('minecraft:soul_torch', ['realistictorches:unlit_torch', 'realistictorches:matchbox', '#minecraft:soul_fire_base_blocks'])
-  event.shapeless('caverns_and_chasms:cupric_torch', ['realistictorches:unlit_torch', 'realistictorches:matchbox', '#caverns_and_chasms:cupric_fire_base_blocks'])
   event.shapeless('minecraft:flint', ['minecraft:gravel'])
   event.shapeless(Item.of('farmersdelight:raw_pasta', 2), ['#forge:eggs', 'create:wheat_flour', 'create:wheat_flour'])
   event.shapeless('minecraft:pumpkin_pie', ['farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'create:wheat_flour', 'minecraft:sugar', '#forge:eggs'])

@@ -17,8 +17,6 @@
 		"minecraft:redstone_wall_torch": "caverns_and_chasms:cupric_wall_torch",
 		"minecraft:cauldron": "create:basin",
 		"minecraft:nether_wart": "minecraft:air",
-		"minecraft:torch": "realistictorches:torch",
-		"minecraft:wall_torch": "realistictorches:torch_wall",
 		"minecraft:jungle_leaves": "atmospheric:rosewood_leaves",
 		"minecraft:jungle_log": "minecraft:air",
 		"minecraft:acacia_leaves": "minecraft:air",

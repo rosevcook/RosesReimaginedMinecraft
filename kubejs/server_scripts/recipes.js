@@ -69,6 +69,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'clash:spear' })
   event.remove({ output: 'clash:rod_of_gales' })
   event.remove({ output: 'farmersdelight:organic_compost' })
+  event.remove({ id: 'environmental:blue_dye_from_bluebell' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -133,6 +134,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'windswept:frost_arrow' }, 'windswept:icicles', 'minecraft:feather')
   event.replaceInput({ output: 'heart_crystals:heart_lantern' }, 'minecraft:iron_nugget', 'caverns_and_chasms:silver_nugget')
   event.replaceInput({ output: 'create:filter' }, '#minecraft:wool', 'farmersdelight:canvas')
+  event.replaceInput({ output: 'create:filter' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
   event.replaceInput({ output: 'create:attribute_filter' }, '#minecraft:wool', 'farmersdelight:canvas')
 
   // add recipes

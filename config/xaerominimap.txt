@@ -19,7 +19,7 @@ deathpoints:false
 oldDeathpoints:false
 distance:0
 lockNorth:false
-zoom:3
+zoom:2
 minimapSize:0
 chunkGrid:-1
 slimeChunks:false

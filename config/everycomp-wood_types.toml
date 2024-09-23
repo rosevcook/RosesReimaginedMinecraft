@@ -10,7 +10,7 @@
 
 		[types.wood_type.environmental]
 			willow = true
-			pine = true
+			pine = false
 			cherry = true
 			wisteria = true
 
@@ -43,7 +43,7 @@
 		[types.leaves_type.environmental]
 			hibiscus = true
 			willow = true
-			pine = true
+			pine = false
 			cherry = true
 			cheerful_cherry = true
 			moody_cherry = true

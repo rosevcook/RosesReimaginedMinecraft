@@ -19,7 +19,7 @@ deathpoints:false
 oldDeathpoints:false
 distance:0
 lockNorth:false
-zoom:2
+zoom:3
 minimapSize:0
 chunkGrid:-1
 slimeChunks:false
@@ -60,7 +60,7 @@ biomeColorsVanillaMode:false
 lookingAtAngle:10
 lookingAtAngleVertical:180
 centeredEnlarged:false
-zoomOnEnlarged:2
+zoomOnEnlarged:3
 minimapTextAlign:0
 waypointsMutualEdit:true
 compassLocation:2

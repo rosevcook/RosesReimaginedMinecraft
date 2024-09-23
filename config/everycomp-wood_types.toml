@@ -1,0 +1,101 @@
+
+[types]
+
+	[types.wood_type]
+
+		[types.wood_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+
+		[types.wood_type.environmental]
+			willow = true
+			pine = true
+			cherry = true
+			wisteria = true
+
+		[types.wood_type.caverns_and_chasms]
+			azalea = true
+
+		[types.wood_type.upgrade_aquatic]
+			driftwood = true
+			river = true
+
+		[types.wood_type.atmospheric]
+			rosewood = true
+			morado = true
+			yucca = true
+			aspen = true
+			laurel = true
+			kousa = true
+			grimwood = true
+
+		[types.wood_type.autumnity]
+			maple = true
+
+	[types.leaves_type]
+
+		[types.leaves_type.windswept]
+			holly = true
+			chestnut = true
+			pine = true
+
+		[types.leaves_type.environmental]
+			hibiscus = true
+			willow = true
+			pine = true
+			cherry = true
+			cheerful_cherry = true
+			moody_cherry = true
+			wisteria = true
+			pink_wisteria = true
+			blue_wisteria = true
+			purple_wisteria = true
+			white_wisteria = true
+
+		[types.leaves_type.upgrade_aquatic]
+			river = true
+
+		[types.leaves_type.atmospheric]
+			rosewood = true
+			morado = true
+			flowering_morado = true
+			yucca = true
+			aspen = true
+			green_aspen = true
+			laurel = true
+			dry_laurel = true
+			kousa = true
+			currant = true
+			grimwood = true
+
+		[types.leaves_type.autumnity]
+			maple = true
+			yellow_maple = true
+			orange_maple = true
+			red_maple = true
+
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.woodworks]
+			bookshelf = true
+			boards = true
+			chest = true
+			ladder = true
+			beehive = true
+			trapped_chest = true
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+
+	[entries.leaves_type]
+
+		[entries.leaves_type.woodworks]
+			leaf_pile = true
+

@@ -136,6 +136,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:filter' }, '#minecraft:wool', 'farmersdelight:canvas')
   event.replaceInput({ output: 'create:filter' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
   event.replaceInput({ output: 'create:attribute_filter' }, '#minecraft:wool', 'farmersdelight:canvas')
+  event.replaceInput({ output: 'farmersdelight:flint_knife' }, 'minecraft:flint', '#minecraft:planks')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

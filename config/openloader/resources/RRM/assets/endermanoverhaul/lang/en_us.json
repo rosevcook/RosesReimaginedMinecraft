@@ -10,7 +10,5 @@
   "item.endermanoverhaul.windswept_hills_enderman_spawn_egg": "Alpine Wanderer Spawn Egg",
   "entity.endermanoverhaul.windswept_hills_enderman": "Alpine Wanderer",
   "item.endermanoverhaul.ice_spikes_enderman_spawn_egg": "Arctic Wanderer Spawn Egg",
-  "entity.endermanoverhaul.ice_spikes_enderman": "Arctic Wanderer",
-  "item.endermanoverhaul.soulsand_valley_enderman_spawn_egg": "Soul Wanderer Spawn Egg",
-  "entity.endermanoverhaul.soulsand_valley_enderman": "Soul Wanderer"
+  "entity.endermanoverhaul.ice_spikes_enderman": "Arctic Wanderer"
 }

@@ -13,8 +13,6 @@ ServerEvents.tags('item', event => {
   event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant');
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
-  event.remove('forge:milk', 'farmersdelight:milk_bottle')
-  event.remove('forge:milk', 'farmersdelight:milk_bottle')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
   event.remove('forge:crops/cabbage', 'farmersdelight:cabbage_leaf')
   event.remove('forge:cooked_mutton', 'farmersdelight:cooked_mutton_chops')

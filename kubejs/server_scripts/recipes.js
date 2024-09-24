@@ -121,6 +121,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ input: 'create:electron_tube' }, 'create:electron_tube', 'kubejs:power_coil')
   event.replaceInput({ input: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:amethyst_shard')
   event.replaceInput({ input: '#forge:salad_ingredients' }, '#forge:salad_ingredients', 'farmersdelight:cabbage')
+  event.replaceInput({ input: '#forge:milk' }, '#forge:milk', '#forge:buckets/milk')
   event.replaceInput({ output: 'create:mechanical_arm' }, 'create:zinc_ingot', 'create:brass_hand')
   event.replaceInput({ output: 'minecraft:bucket' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'create:weighted_ejector' }, 'create:golden_sheet', 'kubejs:silver_sheet')

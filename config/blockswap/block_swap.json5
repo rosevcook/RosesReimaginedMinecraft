@@ -24,6 +24,8 @@
 		"environmental:bluebell": "windswept:bluebells",
 		"environmental:potted_bluebell": "windswept:potted_bluebells",
 		"farmersdelight:sandy_shrub": "upgrade_aquatic:beachgrass",
+		"farmersdelight:brown_mushroom_colony": "minecraft:brown_mushroom",
+		"farmersdelight:red_mushroom_colony": "minecraft:red_mushroom",
 		"upgrade_aquatic:elder_prismarine_coral_block": "upgrade_aquatic:prismarine_coral_block",
 		"upgrade_aquatic:elder_prismarine_coral": "upgrade_aquatic:prismarine_coral",
 		"upgrade_aquatic:elder_prismarine_coral_fan": "upgrade_aquatic:prismarine_coral_fan",

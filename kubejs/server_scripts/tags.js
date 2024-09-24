@@ -8,6 +8,7 @@ ServerEvents.tags('item', event => {
   event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
+  event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')

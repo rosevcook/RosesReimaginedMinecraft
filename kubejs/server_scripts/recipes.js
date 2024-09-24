@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'create:deploying' });
   event.remove({ type: 'create:splashing' });
   event.remove({ type: 'farmersdelight:cutting' });
+  event.remove({ type: 'farmersdelight:cooking' });
 
   event.remove({ output: 'buzzier_bees:crystallized_honey_block' })
   event.remove({ output: 'buzzier_bees:honey_lamp' })
@@ -70,6 +71,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'clash:rod_of_gales' })
   event.remove({ output: 'farmersdelight:organic_compost' })
   event.remove({ id: 'environmental:blue_dye_from_bluebell' })
+  event.remove({ output: 'farmersdelight:pie_crust' })
+  event.remove({ output: 'farmersdelight:cabbage_leaf' })
+  event.remove({ output: 'minecraft:beetroot_soup' })
+  event.remove({ output: 'minecraft:rabbit_stew' })
+  event.remove({ output: 'minecraft:mushroom_stew' })
+  event.remove({ output: 'incubation:scrambled_eggs' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -177,6 +184,8 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('endermanoverhaul:summoner_pearl', 2), [' L ', 'LPL', ' L '], { P: 'minecraft:ender_pearl', L: 'minecraft:lapis_lazuli' })
   event.shaped(Item.of('endermanoverhaul:bubble_pearl', 2), [' C ', 'CPC', ' C '], { P: 'minecraft:ender_pearl', C: 'minecraft:prismarine_crystals' })
   event.shaped('kubejs:ice_rod', [' I', 'I '], { I: 'windswept:icicles' })
+  event.shapeless(Item.of('autumnity:turkey_piece', 5), ['autumnity:turkey'])
+  event.shapeless(Item.of('farmersdelight:bacon', 2), ['minecraft:porkchop'])
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')
@@ -184,7 +193,39 @@ ServerEvents.recipes(event => {
   event.recipes.create.pressing('windswept:gelisol_path', 'windswept:gelisol')
 
   event.recipes.create.mixing(['minecraft:slime_ball'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:kelp', 2)])
+  event.recipes.create.mixing(['minecraft:slime_ball'], [Item.of('atmospheric:aloe_leaves', 2)])
   event.recipes.create.mixing(['create:blaze_cake'], [Fluid.of('minecraft:lava', 1000), Item.of('create:cinder_flour', 4), Item.of('create:wheat_flour', 2), '#forge:eggs']).heated()
+  event.recipes.create.mixing(['abnormals_delight:pickerelweed_juice'], ['#rrm:pickerelweed', '#rrm:pickerelweed', 'minecraft:sugar', 'minecraft:glass_bottle'])
+  event.recipes.create.mixing(['abnormals_delight:passion_aloe_nectar'], [Item.of('atmospheric:passion_fruit', 2), 'atmospheric:aloe_leaves', 'minecraft:glass_bottle'])
+  event.recipes.create.mixing(['abnormals_delight:slabdish'], ['#forge:raw_fishes', 'environmental:dianthus', 'minecraft:bone_meal', '#abnormals_delight:slabdish_ingredients', '#abnormals_delight:slabdish_ingredients', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['abnormals_delight:duck_noodles'], ['environmental:duck', 'farmersdelight:raw_pasta', 'minecraft:carrot', 'windswept:ginger_root', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['abnormals_delight:escargot'], [Fluid.of('minecraft:milk'), Item.of('autumnity:snail_goo', 2), 'farmersdelight:onion', 'autumnity:snail_shell_piece']).heated()
+  event.recipes.create.mixing(['abnormals_delight:pike_with_beetroot'], ['#rrm:pickerelweed', 'upgrade_aquatic:pike', 'minecraft:bowl', Item.of('minecraft:beetroot', 2)]).heated()
+  event.recipes.create.mixing(['abnormals_delight:perch_with_mushrooms'], ['upgrade_aquatic:perch', Item.of('minecraft:red_mushroom', 2), 'farmersdelight:rice', 'farmersdelight:tomato', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['windswept:ginger_tea'], [Item.of('windswept:ginger_root', 2), 'minecraft:sugar', 'minecraft:glass_bottle']).heated()
+  event.recipes.create.mixing(['windswept:lavender_tea'], [Item.of('windswept:lavender', 4), 'minecraft:glass_bottle']).heated()
+  event.recipes.create.mixing(['farmersdelight:apple_cider'], [Item.of('minecraft:apple', 2), 'minecraft:sugar', 'minecraft:glass_bottle']).heated()
+  event.recipes.create.mixing(['abnormals_delight:venison_with_bamboo_shoots'], ['environmental:venison', Item.of('minecraft:bamboo', 2), 'minecraft:beetroot', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['autumnity:foul_soup'], [Item.of('autumnity:foul_berries', 2), 'minecraft:spider_eye', 'farmersdelight:onion', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['minecraft:beetroot_soup'], [Item.of('minecraft:beetroot', 4), 'minecraft:bowl'])
+  event.recipes.create.mixing(['windswept:goat_stew'], ['windswept:goat', 'farmersdelight:rice', 'minecraft:potato', 'farmersdelight:tomato', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['incubation:scrambled_eggs'], [Fluid.of('minecraft:milk', 250), '#forge:eggs', '#forge:eggs', 'minecraft:bowl'])
+  event.recipes.create.mixing(['minecraft:mushroom_stew'], ['minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:bowl'])
+  event.recipes.create.mixing(['farmersdelight:cooked_rice'], ['farmersdelight:rice', 'farmersdelight:rice', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['windswept:chestnut_soup'], [Item.of('windswept:chestnuts', 2), 'farmersdelight:onion', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['windswept:chestnut_risotto'], [Item.of('windswept:chestnuts', 3), 'farmersdelight:onion', 'farmersdelight:rice', 'minecraft:chicken', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:squid_ink_pasta'], ['#forge:raw_fishes', 'farmersdelight:raw_pasta', 'farmersdelight:tomato', 'minecraft:ink_sac', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['minecraft:rabbit_stew'], ['minecraft:red_mushroom', 'minecraft:potato', 'minecraft:rabbit', 'minecraft:carrot', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:bone_broth'], ['minecraft:bone', 'minecraft:bone', 'minecraft:brown_mushroom', 'minecraft:hanging_roots', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:beef_stew'], ['minecraft:beef', 'minecraft:carrot', 'minecraft:potato', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:mushroom_rice'], ['minecraft:red_mushroom', 'minecraft:brown_mushroom', 'farmersdelight:rice', 'minecraft:carrot', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:vegetable_noodles'], ['minecraft:brown_mushroom', 'minecraft:carrot', 'farmersdelight:raw_pasta', 'farmersdelight:cabbage', 'minecraft:potato', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:fried_rice'], ['minecraft:carrot', 'farmersdelight:rice', 'farmersdelight:onion', '#forge:eggs', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:dog_food'], ['#rrm:rotten_flesh', 'farmersdelight:rice', 'minecraft:bone_meal', '#farmersdelight:wolf_prey', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:ratatouille'], ['farmersdelight:tomato', 'farmersdelight:onion', 'minecraft:beetroot', 'minecraft:potato', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:pasta_with_mutton_chop'], ['minecraft:mutton', 'farmersdelight:tomato', 'farmersdelight:raw_pasta', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:pumpkin_soup'], [Fluid.of('minecraft:milk'), 'farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'farmersdelight:cabbage', 'minecraft:porkchop', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['farmersdelight:fish_stew'], ['#forge:raw_fishes', 'farmersdelight:tomato', 'farmersdelight:onion', 'minecraft:bowl']).heated()
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
 })

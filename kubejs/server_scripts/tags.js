@@ -3,9 +3,10 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:head')
   event.removeAll('curios:back')
   event.removeAll('curios:charm')
+  event.removeAll('curios:spyglass')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
 
-  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying')
+  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'minecraft:spyglass')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
 

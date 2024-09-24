@@ -10,4 +10,8 @@ identifier = "back"
 identifier = "charm"
   visible = false
   locked = true
+[[curiosSettings]]
+identifier = "spyglass"
+  visible = false
+  locked = true
 

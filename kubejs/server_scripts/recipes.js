@@ -137,6 +137,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:filter' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
   event.replaceInput({ output: 'create:attribute_filter' }, '#minecraft:wool', 'farmersdelight:canvas')
   event.replaceInput({ output: 'farmersdelight:flint_knife' }, 'minecraft:flint', '#minecraft:planks')
+  event.replaceInput({ output: 'endermanoverhaul:corrupted_shield' }, 'minecraft:iron_ingot', 'create:brass_ingot')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -173,6 +174,8 @@ ServerEvents.recipes(event => {
   event.shapeless('upgrade_aquatic:red_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:red_dye'])
   event.shapeless('upgrade_aquatic:white_jelly_torch', ['upgrade_aquatic:prismarine_rod', 'minecraft:glow_ink_sac', 'minecraft:white_dye'])
   event.shaped(Item.of('endermanoverhaul:icy_pearl', 2), [' I ', 'IPI', ' I '], { P: 'minecraft:ender_pearl', I: 'windswept:icicles' })
+  event.shaped(Item.of('endermanoverhaul:summoner_pearl', 2), [' L ', 'LPL', ' L '], { P: 'minecraft:ender_pearl', L: 'minecraft:lapis_lazuli' })
+  event.shaped(Item.of('endermanoverhaul:bubble_pearl', 2), [' C ', 'CPC', ' C '], { P: 'minecraft:ender_pearl', C: 'minecraft:prismarine_crystals' })
   event.shaped('kubejs:ice_rod', [' I', 'I '], { I: 'windswept:icicles' })
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')

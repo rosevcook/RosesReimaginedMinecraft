@@ -110,6 +110,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'berry_good:glowgurt' })
   event.remove({ output: 'atmospheric:passion_fruit_sorbet' })
   event.remove({ output: 'atmospheric:orange_sorbet' })
+  event.remove({ output: 'windswept:wild_berry_juice' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -281,6 +282,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['minecraft:netherite_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 4)]).superheated()
   event.recipes.create.mixing(['caverns_and_chasms:necromium_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('caverns_and_chasms:silver_ingot', 4)]).superheated()
   event.recipes.create.mixing(['farmersdelight:melon_juice'], [Item.of('minecraft:melon_slice', 4), 'minecraft:sugar', 'minecraft:glass_bottle'])
+  event.recipes.create.mixing(['windswept:wild_berry_juice'], [Item.of('windswept:wild_berries', 4), 'minecraft:sugar', 'minecraft:glass_bottle'])
   event.recipes.create.mixing(['berry_good:glowgurt'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:glow_berries', 2), 'minecraft:sugar', 'minecraft:bowl'])
   event.recipes.create.mixing(['atmospheric:passion_fruit_sorbet'], ['atmospheric:passion_fruit', 'windswept:icicles', 'minecraft:sugar', 'minecraft:bowl'])
   event.recipes.create.mixing(['atmospheric:orange_sorbet'], ['atmospheric:orange', 'windswept:icicles', 'minecraft:sugar', 'minecraft:bowl'])

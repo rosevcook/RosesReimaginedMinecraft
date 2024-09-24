@@ -77,6 +77,18 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:rabbit_stew' })
   event.remove({ output: 'minecraft:mushroom_stew' })
   event.remove({ output: 'incubation:scrambled_eggs' })
+  event.remove({ output: 'autumnity:pancake' })
+  event.remove({ output: 'atmospheric:currant_muffin' })
+  event.remove({ id: 'windswept:christmas_pudding' })
+  event.remove({ id: 'atmospheric:yucca_gateau' })
+  event.remove({ id: 'minecraft:brown_dye' })
+  event.remove({ output: 'atmospheric:orange_pudding' })
+  event.remove({ id: 'minecraft:netherite_ingot' })
+  event.remove({ id: 'caverns_and_chasms:necromium_ingot' })
+  event.remove({ output: 'minecraft:coarse_dirt' })
+  event.remove({ output: 'caverns_and_chasms:rocky_dirt' })
+  event.remove({ id: 'create:crushing/tuff' })
+  event.remove({ id: 'create:crushing/tuff_recycling' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -145,6 +157,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:attribute_filter' }, '#minecraft:wool', 'farmersdelight:canvas')
   event.replaceInput({ output: 'farmersdelight:flint_knife' }, 'minecraft:flint', '#minecraft:planks')
   event.replaceInput({ output: 'endermanoverhaul:corrupted_shield' }, 'minecraft:iron_ingot', 'create:brass_ingot')
+  event.replaceInput({ output: 'create:wrench' }, 'create:golden_sheet', 'create:brass_ingot')
+  event.replaceInput({ output: 'create:goggles' }, 'create:golden_sheet', 'create:brass_ingot')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -194,6 +208,9 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.mixing(['minecraft:slime_ball'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:kelp', 2)])
   event.recipes.create.mixing(['minecraft:slime_ball'], [Item.of('atmospheric:aloe_leaves', 2)])
+  event.recipes.create.mixing(['upgrade_aquatic:driftwood_log'], [Fluid.of('minecraft:water', 250), '#minecraft:logs'])
+  event.recipes.create.mixing([Item.of('minecraft:coarse_dirt', 2)], ['minecraft:dirt', 'minecraft:gravel'])
+  event.recipes.create.mixing([Item.of('caverns_and_chasms:rocky_dirt', 2)], ['minecraft:dirt', 'minecraft:cobblestone'])
   event.recipes.create.mixing(['create:blaze_cake'], [Fluid.of('minecraft:lava', 1000), Item.of('create:cinder_flour', 4), Item.of('create:wheat_flour', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['abnormals_delight:pickerelweed_juice'], ['#rrm:pickerelweed', '#rrm:pickerelweed', 'minecraft:sugar', 'minecraft:glass_bottle'])
   event.recipes.create.mixing(['abnormals_delight:passion_aloe_nectar'], [Item.of('atmospheric:passion_fruit', 2), 'atmospheric:aloe_leaves', 'minecraft:glass_bottle'])
@@ -226,6 +243,13 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['farmersdelight:pasta_with_mutton_chop'], ['minecraft:mutton', 'farmersdelight:tomato', 'farmersdelight:raw_pasta', 'minecraft:bowl']).heated()
   event.recipes.create.mixing(['farmersdelight:pumpkin_soup'], [Fluid.of('minecraft:milk'), 'farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'farmersdelight:cabbage', 'minecraft:porkchop', 'minecraft:bowl']).heated()
   event.recipes.create.mixing(['farmersdelight:fish_stew'], ['#forge:raw_fishes', 'farmersdelight:tomato', 'farmersdelight:onion', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing([Item.of('atmospheric:currant_muffin', 2)], [Item.of('atmospheric:currant', 3), 'create:wheat_flour', '#forge:eggs', 'minecraft:sugar']).heated()
+  event.recipes.create.mixing(['autumnity:pancake'], [Fluid.of('minecraft:milk', 250), 'autumnity:syrup_bottle', Item.of('create:wheat_flour', 2), '#forge:eggs', 'minecraft:sugar']).heated()
+  event.recipes.create.mixing(['windswept:christmas_pudding'], [Fluid.of('minecraft:milk'), 'windswept:ginger_root', 'windswept:holly_berries', 'windswept:roasted_chestnuts', 'create:wheat_flour', '#forge:eggs', 'minecraft:sugar']).heated()
+  event.recipes.create.mixing(['atmospheric:yucca_gateau'], [Fluid.of('minecraft:milk'), Item.of('atmospheric:roasted_yucca_fruit', 2), Item.of('atmospheric:aloe_leaves', 2), Item.of('create:wheat_flour', 2), 'atmospheric:yucca_flower', 'minecraft:sugar']).heated()
+  event.recipes.create.mixing([Item.of('atmospheric:orange_pudding', 2)], [Fluid.of('minecraft:milk'), Item.of('atmospheric:orange', 2), 'minecraft:sweet_berries', 'create:wheat_flour', '#forge:eggs']).heated()
+  event.recipes.create.mixing(['minecraft:netherite_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 4)]).superheated()
+  event.recipes.create.mixing(['caverns_and_chasms:necromium_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('caverns_and_chasms:silver_ingot', 4)]).superheated()
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
 })

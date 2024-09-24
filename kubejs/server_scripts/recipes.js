@@ -89,6 +89,12 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:rocky_dirt' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
+  event.remove({ id: 'minecraft:lead' })
+  event.remove({ id: 'minecraft:scaffolding' })
+  event.remove({ id: 'minecraft:painting' })
+  event.remove({ output: 'farmersdelight:melon_popsicle' })
+  event.remove({ output: 'farmersdelight:melon_juice' })
+  event.remove({ id: 'farmersdelight:cabbage_from_leaves' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -98,6 +104,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ input: 'minecraft:redstone' }, 'minecraft:redstone', 'kubejs:copper_wire')
   event.replaceInput({ input: 'create:electron_tube' }, 'create:electron_tube', 'kubejs:power_coil')
   event.replaceInput({ input: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:amethyst_shard')
+  event.replaceInput({ input: '#forge:salad_ingredients' }, '#forge:salad_ingredients', 'farmersdelight:cabbage')
   event.replaceInput({ output: 'create:mechanical_arm' }, 'create:zinc_ingot', 'create:brass_hand')
   event.replaceInput({ output: 'minecraft:bucket' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'create:weighted_ejector' }, 'create:golden_sheet', 'kubejs:silver_sheet')
@@ -159,6 +166,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'endermanoverhaul:corrupted_shield' }, 'minecraft:iron_ingot', 'create:brass_ingot')
   event.replaceInput({ output: 'create:wrench' }, 'create:golden_sheet', 'create:brass_ingot')
   event.replaceInput({ output: 'create:goggles' }, 'create:golden_sheet', 'create:brass_ingot')
+  event.replaceInput({ output: 'farmersdelight:roasted_mutton_chops' }, 'farmersdelight:cooked_mutton_chops', 'minecraft:cooked_mutton')
+  event.replaceInput({ output: 'create:clockwork_bearing' }, 'kubejs:power_coil', 'minecraft:clock')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -250,6 +259,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing([Item.of('atmospheric:orange_pudding', 2)], [Fluid.of('minecraft:milk'), Item.of('atmospheric:orange', 2), 'minecraft:sweet_berries', 'create:wheat_flour', '#forge:eggs']).heated()
   event.recipes.create.mixing(['minecraft:netherite_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 4)]).superheated()
   event.recipes.create.mixing(['caverns_and_chasms:necromium_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('caverns_and_chasms:silver_ingot', 4)]).superheated()
+  event.recipes.create.mixing(['farmersdelight:melon_juice'], [Item.of('minecraft:melon_slice', 4), 'minecraft:sugar', 'minecraft:glass_bottle'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
 })

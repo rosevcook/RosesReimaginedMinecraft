@@ -9,11 +9,19 @@ ServerEvents.tags('item', event => {
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
+  event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio');
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
+  event.remove('forge:crops/cabbage', 'farmersdelight:cabbage_leaf')
+  event.remove('forge:cooked_mutton', 'farmersdelight:cooked_mutton_chops')
+  event.remove('forge:cooked_chicken', 'farmersdelight:cooked_chicken_cuts')
+  event.remove('forge:cooked_beef', 'farmersdelight:beef_patty')
+  event.remove('forge:cooked_fishes/salmon', 'farmersdelight:cooked_salmon_slice')
+  event.remove('forge:cooked_venison', 'abnormals_delight:cooked_venison_shanks')
+  event.remove('forge:cooked_duck', 'abnormals_delight:cooked_duck_fillet')
 
   //event.remove('forge:stripped_logs', 'stripped_jungle_log', 'stripped_acacia_log', 'stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
   //event.remove('forge:stripped_wood', 'stripped_jungle_wood', 'stripped_acacia_wood', 'stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')

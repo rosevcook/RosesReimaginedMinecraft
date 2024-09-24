@@ -10,6 +10,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
   event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio');
+  event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant');
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('forge:milk', 'farmersdelight:milk_bottle')

@@ -6,6 +6,10 @@
   "attribute.modifier.equals.1": "+%s%% %s",
   "attribute.modifier.equals.2": "+%s%% %s",
 
+  "attribute.name.generic.luck": "Item Discovery",
+
+  "advMode.mode.redstoneTriggered": "Needs Signal",
+
   "block.minecraft.bed.occupied": "",
   "block.minecraft.bed.obstructed": "",
   "block.minecraft.bed.no_sleep": "",
@@ -16,7 +20,27 @@
   "block.minecraft.nether_wart_block": "Crimson Wart Block",
   "block.minecraft.redstone_lamp": "Powered Lamp",
 
+  "block.minecraft.shulker_box": "Sculker Box",
+  "block.minecraft.white_shulker_box": "White Sculker Box",
+  "block.minecraft.orange_shulker_box": "Orange Sculker Box",
+  "block.minecraft.magenta_shulker_box": "Magenta Sculker Box",
+  "block.minecraft.light_blue_shulker_box": "Light Blue Sculker Box",
+  "block.minecraft.yellow_shulker_box": "Yellow Sculker Box",
+  "block.minecraft.lime_shulker_box": "Lime Sculker Box",
+  "block.minecraft.pink_shulker_box": "Pink Sculker Box",
+  "block.minecraft.gray_shulker_box": "Gray Sculker Box",
+  "block.minecraft.light_gray_shulker_box": "Light Gray Sculker Box",
+  "block.minecraft.cyan_shulker_box": "Cyan Sculker Box",
+  "block.minecraft.purple_shulker_box": "Purple Sculker Box",
+  "block.minecraft.blue_shulker_box": "Blue Sculker Box",
+  "block.minecraft.brown_shulker_box": "Brown Sculker Box",
+  "block.minecraft.green_shulker_box": "Green Sculker Box",
+  "block.minecraft.red_shulker_box": "Red Sculker Box",
+  "block.minecraft.black_shulker_box": "Black Sculker Box",
+
   "item.minecraft.ender_eye": "Ancient Eye",
   "item.minecraft.ender_pearl": "Wanderers Pearl",
-  "item.minecraft.ender_chest": "Dimensional Chest"
+  "item.minecraft.ender_chest": "Dimensional Chest",
+  "item.minecraft.bread": "Wheat Bread",
+  "item.minecraft.lead": "Leash"
 }

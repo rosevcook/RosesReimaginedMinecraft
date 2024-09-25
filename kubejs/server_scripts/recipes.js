@@ -248,6 +248,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:lodestone', ['SSS', 'SPS', 'SSS'], { S: 'minecraft:smooth_stone', P: 'minecraft:ender_pearl' })
   event.shaped('minecraft:bundle', ['S', 'L'], { S: 'minecraft:string', L: 'minecraft:leather' })
   event.shaped('artifacts:obsidian_skull', ['OOO', 'OSO', ' O '], { S: 'minecraft:wither_skeleton_skull', O: 'minecraft:obsidian' })
+  event.shaped('clash:rod_of_gales', ['  N', ' S ', 'T  '], { S: 'caverns_and_chasms:spinel', T: 'minecraft:stick', N: 'caverns_and_chasms:silver_nugget' })
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')

@@ -186,6 +186,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'farmersdelight:roasted_mutton_chops' }, 'farmersdelight:cooked_mutton_chops', 'minecraft:cooked_mutton')
   event.replaceInput({ output: 'create:clockwork_bearing' }, 'kubejs:power_coil', 'minecraft:clock')
   event.replaceInput({ output: 'minecraft:loom' }, 'minecraft:string', 'farmersdelight:canvas')
+  event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

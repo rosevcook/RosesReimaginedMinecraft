@@ -257,7 +257,9 @@ ServerEvents.recipes(event => {
   event.shaped('atmospheric:green_aspen_leaves', ['LL', 'LL'], { L: 'atmospheric:green_aspen_leaf_pile' })
   event.shapeless(Item.of('atmospheric:green_aspen_leaf_pile', 4), ['atmospheric:green_aspen_leaves'])
   // green aspen hedge
-  
+  event.shaped(Item.of('caverns_and_chasms:fragile_stone', 16), ['BBB', 'BSB', 'BBB'], { B: 'minecraft:stone', S: 'caverns_and_chasms:spinel' })
+  event.shaped(Item.of('caverns_and_chasms:fragile_deepslate', 16), ['DDD', 'DSD', 'DDD'], { D: 'minecraft:deepslate', S: 'caverns_and_chasms:spinel' })
+
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
   event.smithing('create:copper_diving_boots', 'metalworks:copper_boots', 'minecraft:deepslate')

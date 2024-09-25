@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'create:cutting' });
   event.remove({ type: 'create:deploying' });
   event.remove({ type: 'create:splashing' });
+  event.remove({ type: 'create:emptying' });
   event.remove({ type: 'farmersdelight:cutting' });
   event.remove({ type: 'farmersdelight:cooking' });
 
@@ -125,6 +126,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'neapolitan:banana/banana_cake' })
   event.remove({ output: 'neapolitan:strawberry_banana_smoothie' })
   event.remove({ output: 'windswept:snow_boots' })
+  event.remove({ id: 'create:emptying/compat/neapolitan/milk_bottle' })
+  event.remove({ id: 'create:emptying/compat/farmersdelight/milk_bottle' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -257,6 +260,12 @@ ServerEvents.recipes(event => {
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')
   event.recipes.create.pressing('environmental:dirt_path', 'minecraft:dirt')
   event.recipes.create.pressing('windswept:gelisol_path', 'windswept:gelisol')
+
+  event.recipes.create.emptying([Fluid.water(), 'windswept:wooden_bucket'], 'windswept:wooden_water_bucket')
+  event.recipes.create.emptying([Fluid.of('minecraft:milk'), 'windswept:wooden_bucket'], 'windswept:wooden_milk_bucket')
+  event.recipes.create.emptying([Fluid.water(), 'caverns_and_chasms:golden_bucket'], 'caverns_and_chasms:golden_water_bucket')
+  event.recipes.create.emptying([Fluid.of('minecraft:milk'), 'caverns_and_chasms:golden_bucket'], 'caverns_and_chasms:golden_milk_bucket')
+  event.recipes.create.emptying([Fluid.lava(), 'caverns_and_chasms:golden_bucket'], 'caverns_and_chasms:golden_lava_bucket')
 
   event.recipes.create.mixing(['minecraft:slime_ball'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:kelp', 2)])
   event.recipes.create.mixing(['minecraft:slime_ball'], [Item.of('atmospheric:aloe_leaves', 2)])

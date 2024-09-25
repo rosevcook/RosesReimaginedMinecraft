@@ -289,5 +289,10 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['atmospheric:orange_sorbet'], ['atmospheric:orange', 'windswept:icicles', 'minecraft:sugar', 'minecraft:bowl'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
+  event.recipes.create.crushing([Item.of('caverns_and_chasms:silver_ingot', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('caverns_and_chasms:silver_ingot', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:silver_nugget', 8).withChance(0.25)], 'caverns_and_chasms:silver_horse_armor')
+  event.recipes.create.crushing([Item.of('minecraft:copper_ingot', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:copper_ingot', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:copper_nugget', 8).withChance(0.25)], 'metalworks:copper_horse_armor')
+  event.recipes.create.crushing([Item.of('caverns_and_chasms:necromium_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:necromium_nugget', 2).withChance(0.5)], 'caverns_and_chasms:necromium_horse_armor')
+  event.recipes.create.crushing([Item.of('caverns_and_chasms:netherite_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:netherite_nugget', 2).withChance(0.5)], 'caverns_and_chasms:netherite_horse_armor')
+
 })
 

@@ -129,6 +129,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:emptying/compat/neapolitan/milk_bottle' })
   event.remove({ id: 'create:emptying/compat/farmersdelight/milk_bottle' })
   event.remove({ id: 'minecraft:sugar_from_sugar_cane' })
+  event.remove({ output: 'create:copper_diving_boots' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -255,9 +256,11 @@ ServerEvents.recipes(event => {
   event.shaped('clash:rod_of_gales', ['  N', ' S ', 'T  '], { S: 'caverns_and_chasms:spinel', T: 'minecraft:stick', N: 'caverns_and_chasms:silver_nugget' })
   event.shaped('atmospheric:green_aspen_leaves', ['LL', 'LL'], { L: 'atmospheric:green_aspen_leaf_pile' })
   event.shapeless(Item.of('atmospheric:green_aspen_leaf_pile', 4), ['atmospheric:green_aspen_leaves'])
-
+  // green aspen hedge
+  
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
+  event.smithing('create:copper_diving_boots', 'metalworks:copper_boots', 'minecraft:deepslate')
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')

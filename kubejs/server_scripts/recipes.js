@@ -120,9 +120,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:crushing/compat/neapolitan/ice' })
   event.remove({ output: 'neapolitan:vanilla_pudding' })
   event.remove({ output: 'neapolitan:vanilla_fudge' })
-  event.remove({ output: 'neapolitan:vanilla_cake' })
-  event.remove({ output: 'neapolitan:strawberry_cake' })
-  event.remove({ output: 'neapolitan:banana_cake' })
+  event.remove({ id: 'neapolitan:vanilla/vanilla_cake' })
+  event.remove({ id: 'neapolitan:strawberry/strawberry_cake' })
+  event.remove({ id: 'neapolitan:banana/banana_cake' })
   event.remove({ output: 'neapolitan:strawberry_banana_smoothie' })
   event.remove({ output: 'windswept:snow_boots' })
 

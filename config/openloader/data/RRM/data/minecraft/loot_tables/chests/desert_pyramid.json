@@ -107,6 +107,22 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
+                "max": 5,
+                "min": 1
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "neapolitan:vanilla_pods",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
                 "max": 12,
                 "min": 3
               },

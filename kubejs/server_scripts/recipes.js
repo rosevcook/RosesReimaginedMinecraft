@@ -124,6 +124,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'neapolitan:strawberry_cake' })
   event.remove({ output: 'neapolitan:banana_cake' })
   event.remove({ output: 'neapolitan:strawberry_banana_smoothie' })
+  event.remove({ output: 'windswept:snow_boots' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -246,6 +247,10 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:shulker_box', ['SSS', 'SCS', 'SSS'], { S: 'minecraft:echo_shard', C: '#forge:chests/wooden' })
   event.shaped('minecraft:lodestone', ['SSS', 'SPS', 'SSS'], { S: 'minecraft:smooth_stone', P: 'minecraft:ender_pearl' })
   event.shaped('minecraft:bundle', ['S', 'L'], { S: 'minecraft:string', L: 'minecraft:leather' })
+  event.shaped('artifacts:obsidian_skull', ['OOO', 'OSO', ' O '], { S: 'minecraft:wither_skeleton_skull', O: 'minecraft:obsidian' })
+
+  event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
+  event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')

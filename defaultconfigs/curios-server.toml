@@ -10,4 +10,20 @@ identifier = "back"
 identifier = "charm"
   visible = false
   locked = true
+[[curiosSettings]]
+identifier = "necklace"
+  visible = false
+  locked = true
+[[curiosSettings]]
+identifier = "hands"
+  visible = false
+  locked = true
+[[curiosSettings]]
+identifier = "belt"
+  visible = false
+  locked = true
+[[curiosSettings]]
+identifier = "feet"
+  visible = false
+  locked = true
 

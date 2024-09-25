@@ -3,9 +3,12 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:head')
   event.removeAll('curios:back')
   event.removeAll('curios:charm')
+  event.removeAll('curios:necklace')
+  event.removeAll('curios:belt')
+  event.removeAll('curios:feet')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
 
-  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying')
+  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')

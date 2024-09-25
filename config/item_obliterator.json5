@@ -159,6 +159,8 @@
     "artifacts:steadfast_spikes",
     "artifacts:flippers",
     "artifacts:whoopee_cushion",
+    "upgrade_aquatic:elder_guardian_spine",
+    "upgrade_aquatic:guardian_spine",
     "!upgrade_aquatic:.*bedroll.*",
     "!upgrade_aquatic:.*thorny.*",
     "!upgrade_aquatic:.*ochre.*",

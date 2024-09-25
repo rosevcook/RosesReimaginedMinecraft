@@ -111,6 +111,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'atmospheric:passion_fruit_sorbet' })
   event.remove({ output: 'atmospheric:orange_sorbet' })
   event.remove({ output: 'windswept:wild_berry_juice' })
+  event.remove({ output: 'minecraft:bundle' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -230,6 +231,7 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('farmersdelight:bacon', 2), ['minecraft:porkchop'])
   event.shaped('minecraft:shulker_box', ['SSS', 'SCS', 'SSS'], { S: 'minecraft:echo_shard', C: '#forge:chests/wooden' })
   event.shaped('minecraft:lodestone', ['SSS', 'SPS', 'SSS'], { S: 'minecraft:smooth_stone', P: 'minecraft:ender_pearl' })
+  event.shaped('minecraft:bundle', ['S', 'L'], { S: 'minecraft:string', L: 'minecraft:leather' })
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')

@@ -112,6 +112,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'atmospheric:orange_sorbet' })
   event.remove({ output: 'windswept:wild_berry_juice' })
   event.remove({ output: 'minecraft:bundle' })
+  event.remove({ id: 'create:pressing/compat/environmental/mycelium_path' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

@@ -10,7 +10,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
   event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio');
-  event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant');
+  event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries');
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -71,6 +71,8 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('windswept:has_structure/frozen_village')
   event.removeAll('environmental:has_animal/cow')
   event.removeAll('upgrade_aquatic:has_animal/pike_extra')
+  event.removeAll('neapolitan:has_feature/mint_pond')
+  event.removeAll('neapolitan:has_feature/adzuki_sprouts')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
@@ -80,7 +82,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('environmental:has_feature/hibiscus', '#atmospheric:is_rainforest')
   event.add('environmental:has_animal/tapir', '#atmospheric:is_rainforest')
   event.add('minecraft:has_structure/desert_pyramid', '#atmospheric:is_dunes', 'atmospheric:spiny_thicket')
-  //event.add('neapolitan:has_feature/vanilla_vine', '#atmospheric:is_dunes', '#minecraft:is_badlands', 'atmospheric:spiny_thicket')
+  event.add('neapolitan:has_feature/vanilla_vine', '#atmospheric:is_dunes', '#minecraft:is_badlands', 'atmospheric:spiny_thicket')
   event.add('environmental:has_animal/zebra', '#atmospheric:is_dunes', 'atmospheric:laurel_forest')
   event.add('environmental:has_animal/yak', 'windswept:pine_barrens', 'windswept:chestnut_forest', 'windswept:snowy_chestnut_forest', 'environmental:blossom_woods', 'minecraft:old_growth_pine_taiga', 'atmospheric:kousa_jungle', 'atmospheric:aspen_parkland')
   event.remove('upgrade_aquatic:has_animal/pike', 'minecraft:river');

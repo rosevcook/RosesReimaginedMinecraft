@@ -1,0 +1,13 @@
+{
+  "entity.undead_unleashed.projectile_fiend_fire_projectile": "Fire Breath",
+  "effect.undead_unleashed.flame_breathing.description": "Causes Fire Breath to emits from the entities mouth.",
+  "effect.undead_unleashed.shadow_form.description": "Players in Shadow Form will be able to move much faster whilst being invisible.",
+  "effect.undead_unleashed.skill_exhaustion.description": "Cooldown until Player can use Skill again.",
+  "effect.undead_unleashed.skill_exhaustion_1.description": "Cooldown until Player can use Skill again.",
+  "effect.undead_unleashed.skill_exhaustion_2.description": "Cooldown until Player can use Skill again.",
+  "effect.undead_unleashed.skill_exhaustion_4.description": "Cooldown until Player can use Skill again.",
+  "effect.undead_unleashed.grounded.description": "Entities that are Grounded are temporarily stuck in the Ground.",
+  "effect.undead_unleashed.spirit_protection.description": "The power of Lost Souls will protect you.",
+  "item.undead_unleashed.grave_metal_ingot": "Grave Metal Plating",
+  "item.undead_unleashed.cursed_cloth": "Gloomy Cloth"
+}

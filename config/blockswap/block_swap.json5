@@ -33,6 +33,8 @@
 		"minecraft:enchanting_table": "minecraft:air",
 		"minecraft:cake": "neapolitan:strawberry_cake",
 		"minecraft:cocoa": "minecraft:air",
+		"undead_unleashed:ancient_dirt": "minecraft:grass_block",
+		"undead_unleashed:grave_soil": "minecraft:grass_block",
 		"upgrade_aquatic:elder_prismarine_coral_block": "upgrade_aquatic:prismarine_coral_block",
 		"upgrade_aquatic:elder_prismarine_coral": "upgrade_aquatic:prismarine_coral",
 		"upgrade_aquatic:elder_prismarine_coral_fan": "upgrade_aquatic:prismarine_coral_fan",

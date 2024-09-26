@@ -2894,3 +2894,110 @@
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
 		removeAggressively = true
 
+#Options for the undead_unleashed mod.
+[undead_unleashed]
+
+	#Spawning options for undead_unleashed:frenzied_knight
+	[undead_unleashed.frenzied_knight]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = true
+
+	#Spawning options for undead_unleashed:shadewraith
+	[undead_unleashed.shadewraith]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = true
+
+	#Spawning options for undead_unleashed:haunter
+	[undead_unleashed.haunter]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = false
+
+	#Spawning options for undead_unleashed:flamebreather
+	[undead_unleashed.flamebreather]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = true
+
+	#Spawning options for undead_unleashed:graveriser
+	[undead_unleashed.graveriser]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = false
+
+	#Spawning options for undead_unleashed:projectile_fiend_fire_projectile
+	[undead_unleashed.projectile_fiend_fire_projectile]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = false
+
+	#Spawning options for undead_unleashed:projectile_moon_slash_projectile
+	[undead_unleashed.projectile_moon_slash_projectile]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = false
+
+	#Spawning options for undead_unleashed:projectile_soul_projectile
+	[undead_unleashed.projectile_soul_projectile]
+		#Should the entity be allowed to spawn normally?
+		allowNormalSpawning = true
+		#Should spawners be able to spawn the entity?
+		allowSpawners = true
+		#Should spawn eggs be able to spawn the entity?
+		allowSpawnEggs = true
+		#Should the entity spawn via mob conversion? i.e. villager -> zombie
+		allowConversions = true
+		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
+		removeAggressively = false
+

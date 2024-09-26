@@ -130,6 +130,17 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:emptying/compat/farmersdelight/milk_bottle' })
   event.remove({ id: 'minecraft:sugar_from_sugar_cane' })
   event.remove({ output: 'create:copper_diving_boots' })
+  event.remove({ output: 'undead_unleashed:grave_metal_ingot' })
+  event.remove({ output: 'undead_unleashed:grave_metal_chestplate' })
+  event.remove({ output: 'undead_unleashed:grave_metal_leggings' })
+  event.remove({ output: 'undead_unleashed:grave_metal_boots' })
+  event.remove({ output: 'undead_unleashed:moonlight_greatsword' })
+  event.remove({ output: 'undead_unleashed:shadow_helmet' })
+  event.remove({ output: 'undead_unleashed:shadow_chestplate' })
+  event.remove({ output: 'undead_unleashed:shadow_leggings' })
+  event.remove({ output: 'undead_unleashed:shadow_boots' })
+  event.remove({ id: 'undead_unleashed:bonemeal_craft_alt' })
+  event.remove({ id: 'undead_unleashed:trident_crafting' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -208,6 +219,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:clockwork_bearing' }, 'kubejs:power_coil', 'minecraft:clock')
   event.replaceInput({ output: 'minecraft:loom' }, 'minecraft:string', 'farmersdelight:canvas')
   event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
+  event.replaceInput({ output: 'minecraft:fire_charge' }, 'minecraft:blaze_powder', 'undead_unleashed:charstone_shard')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -223,7 +235,7 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
   event.shaped(Item.of('kubejs:copper_wire', 2), ['CIC'], { C: 'caverns_and_chasms:copper_nugget', I: 'minecraft:copper_ingot' })
   event.shaped('minecraft:elytra', ['F F', 'FFF', 'F F'], { F: 'kubejs:torn_elytra_fragment' })
-  event.shapeless('kubejs:power_coil', ['kubejs:copper_wire', 'minecraft:blaze_powder'])
+  event.shaped('kubejs:power_coil', ['CCC', 'CWC', 'CCC'], { C: 'undead_unleashed:charstone_shard', W: 'kubejs:copper_wire' })
   event.shaped('minecraft:daylight_detector', ['GG', 'SS'], { G: 'minecraft:glass', S: 'create:copper_sheet' })
   event.shaped(Item.of('create:andesite_bars', 16), ['III', 'III'], { I: 'create:zinc_ingot' })
   event.shaped(Item.of('create:brass_bars', 16), ['III', 'III'], { I: 'create:brass_ingot' })
@@ -259,6 +271,19 @@ ServerEvents.recipes(event => {
   // green aspen hedge
   event.shaped(Item.of('caverns_and_chasms:fragile_stone', 16), ['BBB', 'BSB', 'BBB'], { B: 'minecraft:stone', S: 'caverns_and_chasms:spinel' })
   event.shaped(Item.of('caverns_and_chasms:fragile_deepslate', 16), ['DDD', 'DSD', 'DDD'], { D: 'minecraft:deepslate', S: 'caverns_and_chasms:spinel' })
+  event.shapeless('undead_unleashed:grave_metal_ingot', ['create:iron_sheet', 'undead_unleashed:grave_metal_scrap', 'minecraft:bone'])
+  event.shaped('undead_unleashed:grave_metal_helmet', ['GGG', 'GDG'], { G: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust' })
+  event.shaped('undead_unleashed:grave_metal_chestplate', ['GDG', 'GGG', 'GGG'], { G: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust' })
+  event.shaped('undead_unleashed:grave_metal_leggings', ['GGG', 'GDG', 'G G'], { G: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust' })
+  event.shaped('undead_unleashed:grave_metal_boots', ['GDG', 'G G'], { G: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust' })
+  event.shapeless('undead_unleashed:moonlight_greatsword', ['minecraft:diamond_sword', 'caverns_and_chasms:silver_sword', 'undead_unleashed:grave_metal_sword', 'undead_unleashed:lost_soul', 'windswept:nightshade'])
+  event.shapeless('windswept:nightshade', ['#minecraft:small_flowers', 'minecraft:lapis_lazuli'])
+  event.shaped('undead_unleashed:shadow_helmet', ['GGG', 'G G'], { G: 'undead_unleashed:cursed_cloth' })
+  event.shaped('undead_unleashed:shadow_chestplate', ['G G', 'GGG', 'GGG'], { G: 'undead_unleashed:cursed_cloth' })
+  event.shaped('undead_unleashed:shadow_leggings', ['GGG', 'G G', 'G G'], { G: 'undead_unleashed:cursed_cloth' })
+  event.shaped('undead_unleashed:shadow_boots', ['G G', 'G G'], { G: 'undead_unleashed:cursed_cloth'  })
+  event.shapeless(Item.of('undead_unleashed:cursed_cloth', 2), ['minecraft:amethyst_shard', 'atmospheric:grimweb', 'atmospheric:grimweb'])
+  event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'minecraft:glass_bottle'])
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
@@ -341,7 +366,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
   event.recipes.create.crushing(['minecraft:sugar', Item.of('minecraft:sugar').withChance(0.5)], 'minecraft:sugar_cane')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:silver_ingot', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('caverns_and_chasms:silver_ingot', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:silver_nugget', 8).withChance(0.25)], 'caverns_and_chasms:silver_horse_armor')
-  event.recipes.create.crushing([Item.of('minecraft:copper_ingot', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:copper_ingot', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:copper_nugget', 8).withChance(0.25)], 'metalworks:copper_horse_armor')
+  event.recipes.create.crushing([Item.of('minecraft:copper_ingot', 2), Item.of('minecraft:leather').withChance(0.5), Item.of('minecraft:copper_ingot').withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:copper_nugget', 4).withChance(0.25)], 'metalworks:copper_horse_armor')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:necromium_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:necromium_nugget', 2).withChance(0.5)], 'caverns_and_chasms:necromium_horse_armor')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:netherite_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:netherite_nugget', 2).withChance(0.5)], 'caverns_and_chasms:netherite_horse_armor')
   event.recipes.create.crushing([Item.of('minecraft:leather', 2), Item.of('minecraft:leather').withChance(0.5), Item.of('minecraft:string', 2).withChance(0.5)], 'minecraft:saddle')
@@ -351,6 +376,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing([Item.of('atmospheric:red_arid_sand', 2), Item.of('atmospheric:red_arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:red_arid_sandstone')
   event.recipes.create.crushing([Item.of('atmospheric:arid_sand', 2), Item.of('atmospheric:arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:arid_sandstone')
   event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:ice').withChance(0.33), Item.of('minecraft:packed_ice').withChance(0.33), Item.of('minecraft:blue_ice').withChance(0.33), Item.of('caverns_and_chasms:silver_nugget').withChance(0.05)], 'windswept:shale')
+  event.recipes.create.crushing([Item.of('minecraft:gunpowder').withChance(0.1), Item.of('create:brass_nugget').withChance(0.05), Item.of('minecraft:glowstone_dust').withChance(0.1), Item.of('create:cinder_flour').withChance(0.1)], 'undead_unleashed:charstone_shard')
+  event.recipes.create.crushing([Item.of('minecraft:iron_nugget', 2), Item.of('caverns_and_chasms:silver_nugget', 2).withChance(0.5)], 'undead_unleashed:grave_metal_scrap')
 
 })
 

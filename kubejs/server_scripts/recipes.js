@@ -141,6 +141,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'undead_unleashed:shadow_boots' })
   event.remove({ id: 'undead_unleashed:bonemeal_craft_alt' })
   event.remove({ id: 'undead_unleashed:trident_crafting' })
+  event.remove({ output: 'savage_and_ravage:blast_proof_plating' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -220,6 +221,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:loom' }, 'minecraft:string', 'farmersdelight:canvas')
   event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
   event.replaceInput({ output: 'minecraft:fire_charge' }, 'minecraft:blaze_powder', 'undead_unleashed:charstone_shard')
+  event.replaceInput({ output: 'savage_and_ravage:gloomy_tiles' }, 'minecraft:phantom_membrane', 'undead_unleashed:cursed_cloth')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -258,6 +260,7 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('endermanoverhaul:icy_pearl', 2), [' I ', 'IPI', ' I '], { P: 'minecraft:ender_pearl', I: 'windswept:icicles' })
   event.shaped(Item.of('endermanoverhaul:summoner_pearl', 2), [' L ', 'LPL', ' L '], { P: 'minecraft:ender_pearl', L: 'minecraft:lapis_lazuli' })
   event.shaped(Item.of('endermanoverhaul:bubble_pearl', 2), [' C ', 'CPC', ' C '], { P: 'minecraft:ender_pearl', C: 'minecraft:prismarine_crystals' })
+  event.shaped(Item.of('endermanoverhaul:soul_pearl', 2), [' S ', 'SPS', ' S '], { P: 'minecraft:ender_pearl', S: 'undead_unleashed:lost_soul' })
   event.shaped('kubejs:ice_rod', [' I', 'I '], { I: 'windswept:icicles' })
   event.shapeless(Item.of('autumnity:turkey_piece', 5), ['autumnity:turkey'])
   event.shapeless(Item.of('farmersdelight:bacon', 2), ['minecraft:porkchop'])
@@ -284,6 +287,9 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:shadow_boots', ['G G', 'G G'], { G: 'undead_unleashed:cursed_cloth'  })
   event.shapeless(Item.of('undead_unleashed:cursed_cloth', 2), ['minecraft:amethyst_shard', 'atmospheric:grimweb', 'atmospheric:grimweb'])
   event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'minecraft:glass_bottle'])
+  event.shaped('savage_and_ravage:wand_of_freezing', ['  P', ' R ', 'R  '], { P: 'endermanoverhaul:icy_pearl', R: 'kubejs:ice_rod'  })
+  event.shapeless('savage_and_ravage:runed_gloomy_tiles', ['savage_and_ravage:gloomy_tiles', 'undead_unleashed:lost_soul'])
+  event.shapeless('savage_and_ravage:blast_proof_plating', ['create:golden_sheet', 'savage_and_ravage:creeper_spores', 'minecraft:gunpowder'])
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')

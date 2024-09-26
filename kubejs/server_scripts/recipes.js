@@ -290,6 +290,12 @@ ServerEvents.recipes(event => {
   event.shaped('savage_and_ravage:wand_of_freezing', ['  P', ' R ', 'R  '], { P: 'endermanoverhaul:icy_pearl', R: 'kubejs:ice_rod'  })
   event.shapeless('savage_and_ravage:runed_gloomy_tiles', ['savage_and_ravage:gloomy_tiles', 'undead_unleashed:lost_soul'])
   event.shapeless('savage_and_ravage:blast_proof_plating', ['create:golden_sheet', 'savage_and_ravage:creeper_spores', 'minecraft:gunpowder'])
+  event.shaped(Item.of('kubejs:grave_metal_plates', 12), ['PP', 'PP'], { P: 'undead_unleashed:grave_metal_ingot' })
+  event.shaped(Item.of('kubejs:grave_metal_plate_stairs', 4), ['P  ', 'PP ', 'PPP'], { P: 'kubejs:grave_metal_plates' })
+  event.shaped(Item.of('kubejs:grave_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:grave_metal_plates' })
+
+  event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
+  event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')

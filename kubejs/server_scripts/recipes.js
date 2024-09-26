@@ -267,7 +267,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:shulker_box', ['SSS', 'SCS', 'SSS'], { S: 'minecraft:echo_shard', C: '#forge:chests/wooden' })
   event.shaped('minecraft:lodestone', ['SSS', 'SPS', 'SSS'], { S: 'minecraft:smooth_stone', P: 'minecraft:ender_pearl' })
   event.shaped('minecraft:bundle', ['S', 'L'], { S: 'minecraft:string', L: 'minecraft:leather' })
-  event.shaped('artifacts:obsidian_skull', ['OOO', 'OSO', ' O '], { S: 'minecraft:wither_skeleton_skull', O: 'minecraft:obsidian' })
+  event.shaped('artifacts:obsidian_skull', ['OOO', 'OSO', ' O '], { S: 'minecraft:wither_skeleton_skull', O: 'create:powdered_obsidian' })
   event.shaped('clash:rod_of_gales', ['  N', ' S ', 'T  '], { S: 'caverns_and_chasms:spinel', T: 'minecraft:stick', N: 'caverns_and_chasms:silver_nugget' })
   event.shaped('atmospheric:green_aspen_leaves', ['LL', 'LL'], { L: 'atmospheric:green_aspen_leaf_pile' })
   event.shapeless(Item.of('atmospheric:green_aspen_leaf_pile', 4), ['atmospheric:green_aspen_leaves'])

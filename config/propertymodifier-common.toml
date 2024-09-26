@@ -189,6 +189,7 @@
 		"undead_unleashed:necrotic_dust" = "uncommon"
 		"queen_bee:stinger_sword" = "uncommon"
 		"quark:ravager_hide" = "uncommon"
+		"artifacts:umbrella" = "common"
 
 	#Set the enchantment value of an item. Higher value means better enchantments on average. May not always have a noticeable effect. Example (without the leading #):
 	#"minecraft:.*_hoe" = 40

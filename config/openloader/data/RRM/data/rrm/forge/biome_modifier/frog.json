@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#rrm:has_animal/frog",
+  "spawners": {
+    "type": "minecraft:frog",
+    "maxCount": 5,
+    "minCount": 2,
+    "weight": 10
+  }
+}

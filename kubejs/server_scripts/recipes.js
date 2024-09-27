@@ -142,6 +142,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'undead_unleashed:bonemeal_craft_alt' })
   event.remove({ id: 'undead_unleashed:trident_crafting' })
   event.remove({ output: 'savage_and_ravage:blast_proof_plating' })
+  event.remove({ id: 'neapolitan:milk/milk_bottles_from_bucket' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

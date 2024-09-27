@@ -13,9 +13,9 @@ ServerEvents.tags('item', event => {
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
   event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio');
-  event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries');
-  event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe');
-  event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword');
+  event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries')
+  event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe')
+  event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -96,7 +96,6 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('endermanoverhaul:desert_spawns', '#atmospheric:is_dunes')
   event.add('endermanoverhaul:ice_spikes_spawns', '#forge:is_snowy')
   event.add('endermanoverhaul:windswept_hills_spawns', '#forge:is_mountain')
-  //event.add('endermanoverhaul:soulsand_valley_spawns', 'gardens_of_the_dead:soulblight_forest')
   event.add('endermanoverhaul:dark_oak_spawns', 'minecraft:old_growth_spruce_taiga', 'windswept:pine_barrens', 'minecraft:old_growth_pine_taiga', 'windswept:chestnut_forest', 'atmospheric:aspen_parkland', 'minecraft:old_growth_birch_forest')
   event.remove('endermanoverhaul:windswept_hills_spawns', 'minecraft:meadow', 'windswept:lavender_meadow')
   event.add('minecraft:has_structure/desert_pyramid', 'atmospheric:spiny_thicket', 'atmospheric:petrified_dunes', 'atmospheric:flourishing_dunes', 'atmospheric:dunes', 'atmospheric:rocky_dunes', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland')

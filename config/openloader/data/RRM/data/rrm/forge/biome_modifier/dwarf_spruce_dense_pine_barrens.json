@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#windswept:is_pine_barrens",
+  "features": "environmental:dwarf_spruce",
+  "step": "vegetal_decoration"
+}

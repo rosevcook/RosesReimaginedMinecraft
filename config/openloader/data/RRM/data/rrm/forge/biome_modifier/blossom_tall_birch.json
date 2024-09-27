@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "environmental:blossom_woods",
+  "features": "windswept:blossom_tall_birch_trees",
+  "step": "vegetal_decoration"
+}

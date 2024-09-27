@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:nether_wart",
+  "replaces_with": "minecraft:soul_fire",
+  "selector": "betterfortresses:fortress"
+}

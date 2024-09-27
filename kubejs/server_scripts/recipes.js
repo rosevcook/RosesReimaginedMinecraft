@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:shadow_leggings', ['GGG', 'G G', 'G G'], { G: 'undead_unleashed:cursed_cloth' })
   event.shaped('undead_unleashed:shadow_boots', ['G G', 'G G'], { G: 'undead_unleashed:cursed_cloth'  })
   event.shapeless(Item.of('undead_unleashed:cursed_cloth', 2), ['minecraft:amethyst_shard', 'atmospheric:grimweb', 'atmospheric:grimweb'])
-  event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'minecraft:glass_bottle'])
+  event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'windswept:nightshade', 'minecraft:glass_bottle'])
   event.shaped('savage_and_ravage:wand_of_freezing', ['  P', ' R ', 'R  '], { P: 'endermanoverhaul:icy_pearl', R: 'kubejs:ice_rod'  })
   event.shapeless('savage_and_ravage:runed_gloomy_tiles', ['savage_and_ravage:gloomy_tiles', 'undead_unleashed:lost_soul'])
   event.shapeless('savage_and_ravage:blast_proof_plating', ['create:golden_sheet', 'savage_and_ravage:creeper_spores', 'minecraft:gunpowder'])

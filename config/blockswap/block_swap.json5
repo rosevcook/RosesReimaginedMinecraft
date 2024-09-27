@@ -36,6 +36,8 @@
 		"minecraft:enchanting_table": "minecraft:air",
 		"minecraft:cake": "neapolitan:strawberry_cake",
 		"minecraft:cocoa": "minecraft:air",
+		"minecraft:chest": "woodworks:oak_chest",
+		"minecraft:trapped_chest": "woodworks:spruce_chest",
 		"undead_unleashed:ancient_dirt": "minecraft:grass_block",
 		"undead_unleashed:grave_soil": "minecraft:grass_block",
 		"upgrade_aquatic:elder_prismarine_coral_block": "upgrade_aquatic:prismarine_coral_block",

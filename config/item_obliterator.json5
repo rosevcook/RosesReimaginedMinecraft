@@ -1,5 +1,7 @@
 {
   "blacklisted_items": [
+    "!.*trapped_chest.*",
+    "minecraft:chest",
     "!minecraft:.*mangrove.*",
     "farmersdelight:mangrove_cabinet",
     "!create:.*mangrove.*",

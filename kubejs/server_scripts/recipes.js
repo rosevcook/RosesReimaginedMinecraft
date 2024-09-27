@@ -143,6 +143,15 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'undead_unleashed:trident_crafting' })
   event.remove({ output: 'savage_and_ravage:blast_proof_plating' })
   event.remove({ id: 'neapolitan:milk/milk_bottles_from_bucket' })
+  event.remove({ id: 'neapolitan:milk/milk_bottles_from_bucket' })
+  event.remove({ output: 'minecraft:trapped_chest' })
+  event.remove({ input: 'minecraft:tripwire_hook', mod: 'woodworks' })
+  event.remove({ input: 'minecraft:tripwire_hook', mod: 'windswept' })
+  event.remove({ input: 'minecraft:tripwire_hook', mod: 'environmental' })
+  event.remove({ input: 'minecraft:tripwire_hook', mod: 'atmospheric' })
+  event.remove({ input: 'minecraft:tripwire_hook', mod: 'upgrade_aquatic' })
+  event.remove({ output: 'autumnity:maple_trapped_chest' })
+  event.remove({ output: 'caverns_and_chasms:azalea_trapped_chest' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

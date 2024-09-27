@@ -70,6 +70,8 @@
     "buzzier_bees:endermite_bottle",
     "environmental:bluebell",
     "caverns_and_chasms:bejeweled_apple",
+    "!caverns_and_chasms:.*sugilite.*",
+    "!atmospheric:.*travertine.*",
     "farmersdelight:cutting_board",
     "farmersdelight:fried_egg",
     "farmersdelight:milk_bottle",

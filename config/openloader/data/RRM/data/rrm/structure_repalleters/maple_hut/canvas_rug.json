@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:green_carpet",
-  "replaces_with": "farmersdelight:canvas_rug",
-  "selector": "autumnity:maple_hut"
-}

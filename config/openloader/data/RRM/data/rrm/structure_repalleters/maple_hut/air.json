@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:water_cauldron",
-  "replaces_with": "minecraft:air",
-  "selector": "autumnity:maple_hut"
-}

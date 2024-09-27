@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:chest",
-  "replaces_with": "autumnity:maple_chest",
-  "selector": "autumnity:maple_hut"
-}

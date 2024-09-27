@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:green_stained_glass_pane",
-  "replaces_with": "autumnity:maple_fence",
-  "selector": "autumnity:maple_hut"
-}

@@ -74,6 +74,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('minecraft:has_structure/woodland_mansion')
   event.removeAll('atmospheric:has_structure/village_scrubland')
   event.removeAll('windswept:has_structure/frozen_village')
+  event.removeAll('autumnity:has_structure/maple_hut')
   event.removeAll('environmental:has_animal/cow')
   event.removeAll('upgrade_aquatic:has_animal/pike_extra')
   event.removeAll('neapolitan:has_feature/mint_pond')

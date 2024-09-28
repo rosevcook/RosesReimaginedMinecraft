@@ -120,7 +120,6 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'neapolitan:banana_ice_cream' })
   event.remove({ id: 'create:crushing/compat/neapolitan/ice' })
   event.remove({ output: 'neapolitan:vanilla_pudding' })
-  event.remove({ output: 'neapolitan:vanilla_fudge' })
   event.remove({ id: 'neapolitan:vanilla/vanilla_cake' })
   event.remove({ id: 'neapolitan:strawberry/strawberry_cake' })
   event.remove({ id: 'neapolitan:banana/banana_cake' })
@@ -152,6 +151,8 @@ ServerEvents.recipes(event => {
   event.remove({ input: 'minecraft:tripwire_hook', mod: 'upgrade_aquatic' })
   event.remove({ output: 'autumnity:maple_trapped_chest' })
   event.remove({ output: 'caverns_and_chasms:azalea_trapped_chest' })
+  event.remove({ output: 'atmospheric:dolerite' })
+  event.remove({ id: 'caverns_and_chasms:golden_milk_bucket' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -329,6 +330,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing([Item.of('caverns_and_chasms:rocky_dirt', 2)], ['minecraft:dirt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('minecraft:tuff', 2)], ['minecraft:basalt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('windswept:shale', 2)], ['minecraft:blue_ice', 'minecraft:cobblestone'])
+  event.recipes.create.mixing([Item.of('atmospheric:dolerite', 2)], ['atmospheric:arid_sandstone', 'minecraft:cobblestone'])
+  event.recipes.create.mixing([Item.of('atmospheric:dolerite', 2)], ['atmospheric:red_arid_sandstone', 'minecraft:cobblestone'])
   event.recipes.create.mixing(['berry_good:sweet_berry_mince'], ['minecraft:sweet_berries', 'minecraft:porkchop'])
   event.recipes.create.mixing(['create:blaze_cake'], [Fluid.of('minecraft:lava', 1000), Item.of('create:cinder_flour', 4), Item.of('create:wheat_flour', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['abnormals_delight:pickerelweed_juice'], ['#rrm:pickerelweed', '#rrm:pickerelweed', 'minecraft:sugar', 'minecraft:glass_bottle'])
@@ -379,7 +382,6 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['neapolitan:strawberry_ice_cream'], [Fluid.of('minecraft:milk', 250), 'neapolitan:strawberries', 'windswept:icicles', 'minecraft:sugar', 'minecraft:bowl'])
   event.recipes.create.mixing(['neapolitan:banana_ice_cream'], [Fluid.of('minecraft:milk', 250), 'neapolitan:banana', 'windswept:icicles', 'minecraft:sugar', 'minecraft:bowl'])
   event.recipes.create.mixing(['neapolitan:vanilla_pudding'], ['neapolitan:dried_vanilla_pods', '#forge:eggs', 'minecraft:sugar', 'minecraft:bowl'])
-  event.recipes.create.mixing([Item.of('neapolitan:vanilla_fudge', 4)], [Fluid.of('minecraft:milk', 250), Item.of('neapolitan:dried_vanilla_pods', 2), 'create:wheat_flour', 'minecraft:sugar'])
   event.recipes.create.mixing(['neapolitan:vanilla_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:dried_vanilla_pods', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:strawberry_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:strawberries', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:banana_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:banana', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()

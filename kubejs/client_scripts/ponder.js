@@ -1,6 +1,6 @@
 Ponder.registry((event) => {
     event.create('farmersdelight:rope').scene('rope', 'Using Rope', (scene, util) => {
-        //scene.showStructure();
+        scene.showStructure();
         scene.idle(10);
         scene.world.createEntity('environmental:yak', [2.5, 1, 2.5]);
         scene

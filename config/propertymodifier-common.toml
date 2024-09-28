@@ -138,6 +138,7 @@
 		"minecraft:iron_chestplate" = 160
 		"minecraft:iron_leggings" = 145
 		"minecraft:iron_boots" = 135
+		"clash:rod_of_gales" = 175
 
 	#Set the max stack size of an item. Only values between 2 and 64 are supported. Items that have durability cannot have this value altered. Example (without the leading #):
 	#"minecraft:ender_pearl" = 64

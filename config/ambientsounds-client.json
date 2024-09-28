@@ -79,7 +79,7 @@
     "cave_lush": {
       "overall": 1,
       "cave-lush": 1,
-      "frog": 1
+      "frog": 0.2
     },
     "surface": {
       "overall": 1
@@ -93,7 +93,7 @@
     },
     "forest": {
       "overall": 1,
-      "bird-ambience": 0.2,
+      "bird-ambience": 0.1,
       "owl": 0.2
     },
     "forest_cold": {
@@ -120,27 +120,27 @@
     "grass": {
       "overall": 1,
       "cricket": 0,
-      "cricket-night": 1,
-      "cicadas-night": 1
+      "cricket-night": 0.7,
+      "cicadas-night": 0.7
     },
     "plains": {
       "overall": 1,
       "cricket": 0,
-      "cricket-night": 1,
-      "cicadas-night": 1
+      "cricket-night": 0.7,
+      "cicadas-night": 0.7
     },
     "savanna": {
       "overall": 1,
       "cricket": 0,
       "cicadas": 0.2,
-      "cicadas-desert": 0.5,
+      "cicadas-desert": 0.25,
       "cricket-warm-night": 1,
       "wolf": 1,
       "bird-warm": 0.5
     },
     "desert": {
       "overall": 1,
-      "cicadas-desert": 1,
+      "cicadas-desert": 0.7,
       "light-wind": 0.5
     },
     "swamp": {
@@ -167,8 +167,8 @@
     "beach": {
       "overall": 1,
       "beach": 1,
-      "seagull": 1,
-      "seagull-long": 1
+      "seagull": 0.2,
+      "seagull-long": 0.2
     },
     "ocean": {
       "overall": 1,

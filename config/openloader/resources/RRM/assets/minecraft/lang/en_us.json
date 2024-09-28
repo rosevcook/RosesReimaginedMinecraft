@@ -19,6 +19,11 @@
   "block.minecraft.nether_quartz_ore": "Nether Charcoal Ore",
   "block.minecraft.nether_wart_block": "Crimson Wart Block",
   "block.minecraft.redstone_lamp": "Powered Lamp",
+  "block.minecraft.bricks": "Clay Bricks",
+  "block.minecraft.brick_stairs": "Clay Brick Stairs",
+  "block.minecraft.brick_slab": "Clay Brick Slab",
+  "block.minecraft.brick_wall": "Clay Brick Wall",
+  "block.minecraft.flower_pot": "Clay Pot",
 
   "block.minecraft.shulker_box": "Sculker Box",
   "block.minecraft.white_shulker_box": "White Sculker Box",
@@ -43,5 +48,6 @@
   "item.minecraft.ender_chest": "Dimensional Chest",
   "item.minecraft.bread": "Wheat Bread",
   "item.minecraft.lead": "Leash",
+  "item.minecraft.brick": "Clay Brick",
   "item.minecraft.enchanted_golden_apple": "Bejeweled Apple"
 }

@@ -84,8 +84,6 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
   event.add('forge:is_snowy', 'atmospheric:snowy_scrubland')
-  event.add('environmental:has_feature/violet', 'atmospheric:grimwoods')
-  event.add('environmental:has_feature/hibiscus', '#atmospheric:is_rainforest')
   event.add('environmental:has_animal/tapir', '#atmospheric:is_rainforest')
   event.add('minecraft:has_structure/desert_pyramid', '#atmospheric:is_dunes', 'atmospheric:spiny_thicket')
   event.add('neapolitan:has_feature/vanilla_vine', '#atmospheric:is_dunes', '#minecraft:is_badlands', 'atmospheric:spiny_thicket')

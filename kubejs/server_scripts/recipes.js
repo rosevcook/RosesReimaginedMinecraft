@@ -153,9 +153,15 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:azalea_trapped_chest' })
   event.remove({ output: 'atmospheric:dolerite' })
   event.remove({ id: 'caverns_and_chasms:golden_milk_bucket' })
+  event.remove({ id: 'environmental:red_dye_from_red_hibiscus' })
+  event.remove({ id: 'environmental:orange_dye_from_orange_hibiscus' })
+  event.remove({ output: 'environmental:hibiscus_leaves' })
+  event.remove({ output: 'environmental:hibiscus_leaf_pile' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
+  event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
+  event.replaceOutput({ input: 'environmental:magenta_hibiscus' }, 'minecraft:magenta_dye', 'minecraft:light_blue_dye')
   //event.replaceInput({ input: 'irons_spellbooks:arcane_essence' }, 'irons_spellbooks:arcane_essence', 'minecraft:lapis_lazuli')
   event.replaceInput({ input: 'create:brass_sheet' }, 'create:brass_sheet', 'create:brass_ingot')
   event.replaceInput({ input: 'create:andesite_alloy' }, 'create:andesite_alloy', 'create:zinc_ingot')

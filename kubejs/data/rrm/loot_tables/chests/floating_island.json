@@ -21,6 +21,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "clash:spear",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
           "name": "artifacts:antidote_vessel",
           "weight": 1
         },

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "rrm:pine_windmill",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1691267232,
+    "spacing": 22,
+    "separation": 8
+  }
+}

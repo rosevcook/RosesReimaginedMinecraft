@@ -100,6 +100,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('minecraft:has_structure/desert_pyramid', 'atmospheric:spiny_thicket', 'atmospheric:petrified_dunes', 'atmospheric:flourishing_dunes', 'atmospheric:dunes', 'atmospheric:rocky_dunes', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland')
   event.add('rrm:has_animal/frog', 'atmospheric:rainforest_basin', 'atmospheric:sparse_rainforest_basin')
   event.add('rrm:has_animal/cat', '#minecraft:is_forest')
+  event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
 })
 
 ServerEvents.tags('worldgen/structure', event => {

@@ -106,3 +106,7 @@ ServerEvents.tags('worldgen/structure', event => {
   event.removeAll('minecraft:eye_of_ender_located')
   event.add('minecraft:eye_of_ender_located', 'minecraft:ancient_city')
 })
+
+ServerEvents.tags('worldgen/template_pool', event => {
+  event.add('structure_no_rotate:do_not_rotate', 'rrm:floating_island')
+})

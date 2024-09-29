@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "rrm:floating_island",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1211891232,
+    "spacing": 32,
+    "separation": 1
+  }
+}

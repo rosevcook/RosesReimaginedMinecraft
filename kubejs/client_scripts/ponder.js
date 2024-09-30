@@ -2,16 +2,16 @@ Ponder.registry((event) => {
     event.create('farmersdelight:rope').scene('rope', 'Using Rope', (scene, util) => {
         scene.showStructure();
         scene.idle(10);
-        scene.world.createEntity('environmental:yak', [2.5, 1, 2.5]);
+        scene.world.createEntity('upgrade_aquatic:goose', [2.5, 1, 2.5]);
+        scene.idle(10);
         scene
-	    .text(60, 'im gay', [2.0, 2.5, 2.5])
+	    .text(60, 'this goose...', [2.0, 2.5, 2.5])
             .placeNearTarget()
             .attachKeyFrame();
+        scene.idle(20);
         scene
-            .showControls(60, [2.5, 3, 2.5], 'down')
-            .rightClick()
-            .withItem('minecraft:shears')
-            .whileSneaking()
-            .whileCTRL();
+	    .text(60, 'is GAY!!', [2.0, 1.5, 2.5])
+            .placeNearTarget()
+            .attachKeyFrame();
     })
 })

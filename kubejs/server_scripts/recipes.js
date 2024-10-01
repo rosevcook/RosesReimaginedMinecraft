@@ -313,6 +313,7 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('kubejs:grave_metal_plate_stairs', 4), ['P  ', 'PP ', 'PPP'], { P: 'kubejs:grave_metal_plates' })
   event.shaped(Item.of('kubejs:grave_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:grave_metal_plates' })
   //event.shaped('irons_spellbooks:silver_ring', ['LS ', 'S S', ' S '], { L: 'minecraft:lapis_lazuli', S: 'caverns_and_chasms:silver_ingot' })
+  event.shaped('caverns_and_chasms:golden_lava_bucket', ['SSS', 'SBS', 'SSS'], { S: 'undead_unleashed:charstone_shard', B: 'caverns_and_chasms:golden_bucket' })
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')

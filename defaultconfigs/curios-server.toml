@@ -26,4 +26,9 @@ identifier = "belt"
 identifier = "feet"
   visible = false
   locked = true
+[[curiosSettings]]
+identifier = "ring"
+  visible = false
+  locked = true
+
 

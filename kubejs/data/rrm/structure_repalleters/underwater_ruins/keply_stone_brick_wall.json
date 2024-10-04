@@ -1,0 +1,14 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mossy_stone_brick_wall",
+  "replaces_with": "upgrade_aquatic:kelpy_stone_brick_wall",
+  "selector": {
+    "type": "names",
+    "config": [
+      "hopo:underwater_ruins",
+      "hopo:underwater_small_ruins",
+      "hopo:underwater_warm_small_ruins"
+    ]
+  }
+}

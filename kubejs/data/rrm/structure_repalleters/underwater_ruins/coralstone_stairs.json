@@ -1,0 +1,14 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:brick_stairs",
+  "replaces_with": "upgrade_aquatic:coralstone_stairs",
+  "selector": {
+    "type": "names",
+    "config": [
+      "hopo:underwater_ruins",
+      "hopo:underwater_small_ruins",
+      "hopo:underwater_warm_small_ruins"
+    ]
+  }
+}

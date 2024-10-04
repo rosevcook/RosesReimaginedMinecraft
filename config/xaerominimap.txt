@@ -60,7 +60,7 @@ biomeColorsVanillaMode:false
 lookingAtAngle:10
 lookingAtAngleVertical:180
 centeredEnlarged:false
-zoomOnEnlarged:3
+zoomOnEnlarged:2
 minimapTextAlign:0
 waypointsMutualEdit:true
 compassLocation:2

@@ -1,0 +1,14 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:tube_coral_block",
+  "replaces_with": "upgrade_aquatic:petal_coral_block",
+  "selector": {
+    "type": "names",
+    "config": [
+      "hopo:underwater_ruins",
+      "hopo:underwater_small_ruins",
+      "hopo:underwater_warm_small_ruins"
+    ]
+  }
+}

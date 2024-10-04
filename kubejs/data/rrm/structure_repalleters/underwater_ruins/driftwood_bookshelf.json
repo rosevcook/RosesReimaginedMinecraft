@@ -1,0 +1,14 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:bookshelf",
+  "replaces_with": "upgrade_aquatic:driftwood_bookshelf",
+  "selector": {
+    "type": "names",
+    "config": [
+      "hopo:underwater_ruins",
+      "hopo:underwater_small_ruins",
+      "hopo:underwater_warm_small_ruins"
+    ]
+  }
+}

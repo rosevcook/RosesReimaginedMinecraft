@@ -21,6 +21,7 @@
 		"minecraft:jungle_log": "minecraft:air",
 		"minecraft:acacia_leaves": "minecraft:air",
 		"minecraft:acacia_log": "minecraft:air",
+		"minecraft:polished_granite": "atmospheric:polished_dolerite",
 		"environmental:bluebell": "windswept:bluebells",
 		"environmental:potted_bluebell": "windswept:potted_bluebells",
 		"environmental:pine_log": "minecraft:air",

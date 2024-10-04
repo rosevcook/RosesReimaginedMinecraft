@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:grindstone",
+  "replaces_with": "minecraft:air",
+  "selector": "cataclysm:soul_black_smith"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:soul_lantern",
+  "replaces_with": "caverns_and_chasms:brazier",
+  "selector": "cataclysm:burning_arena"
+}

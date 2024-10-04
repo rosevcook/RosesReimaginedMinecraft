@@ -6,9 +6,10 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:necklace')
   event.removeAll('curios:belt')
   event.removeAll('curios:feet')
+  event.removeAll('curios:hands')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
 
-  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection')
+  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
@@ -80,6 +81,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('neapolitan:has_feature/mint_pond')
   event.removeAll('neapolitan:has_feature/adzuki_sprouts')
   event.removeAll('sullysmod:jade_generates_in')
+  event.removeAll('cataclysm:has_structure/ancient_factory_biomes')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')

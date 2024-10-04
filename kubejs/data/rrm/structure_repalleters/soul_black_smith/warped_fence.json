@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:crimson_fence",
+  "replaces_with": "caverns_and_chasms:silver_bars",
+  "selector": "cataclysm:soul_black_smith"
+}

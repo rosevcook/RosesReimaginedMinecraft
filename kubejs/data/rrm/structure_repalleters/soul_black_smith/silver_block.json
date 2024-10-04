@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:ancient_debris",
+  "replaces_with": "caverns_and_chasms:silver_block",
+  "selector": "cataclysm:soul_black_smith"
+}

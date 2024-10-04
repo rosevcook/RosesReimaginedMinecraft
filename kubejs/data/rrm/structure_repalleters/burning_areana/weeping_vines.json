@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:twisting_vines",
+  "replaces_with": "minecraft:weeping_vines",
+  "selector": "cataclysm:burning_arena"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:gilded_blackstone",
+  "replaces_with": "caverns_and_chasms:soul_silver_ore",
+  "selector": "cataclysm:soul_black_smith"
+}

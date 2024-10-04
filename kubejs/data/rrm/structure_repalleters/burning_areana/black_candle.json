@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:candle",
+  "replaces_with": "minecraft:black_candle",
+  "selector": "cataclysm:burning_arena"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:netherrack",
+  "replaces_with": "minecraft:air",
+  "selector": "cataclysm:burning_arena"
+}

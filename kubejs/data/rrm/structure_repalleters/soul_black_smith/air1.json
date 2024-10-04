@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:iron_trapdoor",
+  "replaces_with": "minecraft:air",
+  "selector": "cataclysm:soul_black_smith"
+}

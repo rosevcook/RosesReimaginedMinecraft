@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:soul_soil",
+  "replaces_with": "minecraft:magma_block",
+  "selector": "cataclysm:burning_arena"
+}

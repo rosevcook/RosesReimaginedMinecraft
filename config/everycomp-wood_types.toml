@@ -33,6 +33,9 @@
 		[types.wood_type.autumnity]
 			maple = true
 
+		[types.wood_type.cataclysm]
+			chorus = false
+
 	[types.leaves_type]
 
 		[types.leaves_type.windswept]

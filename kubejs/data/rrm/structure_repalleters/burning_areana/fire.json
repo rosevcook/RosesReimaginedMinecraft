@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:soul_fire",
+  "replaces_with": "minecraft:fire",
+  "selector": "cataclysm:burning_arena"
+}

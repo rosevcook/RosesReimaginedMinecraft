@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smithing_table",
+  "replaces_with": "caverns_and_chasms:raw_silver_block",
+  "selector": "cataclysm:soul_black_smith"
+}

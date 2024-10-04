@@ -79,6 +79,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('upgrade_aquatic:has_animal/pike_extra')
   event.removeAll('neapolitan:has_feature/mint_pond')
   event.removeAll('neapolitan:has_feature/adzuki_sprouts')
+  event.removeAll('sullysmod:jade_generates_in')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
@@ -101,6 +102,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('rrm:has_animal/frog', 'atmospheric:rainforest_basin', 'atmospheric:sparse_rainforest_basin')
   event.add('rrm:has_animal/cat', '#minecraft:is_forest')
   event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
+  event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
 })
 
 ServerEvents.tags('worldgen/structure', event => {

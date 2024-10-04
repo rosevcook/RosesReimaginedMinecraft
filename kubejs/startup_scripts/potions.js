@@ -16,6 +16,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   event.removeByPotion(null, null, 'upgrade_aquatic:restfulness_strong')
   event.removeByPotion(null, null, 'upgrade_aquatic:insomnia')
   event.removeByPotion(null, null, 'upgrade_aquatic:insomnia_strong')
+  event.removeByPotion(null, null, 'sullysmod:unluck')
 
   // add potions
   replacePotion('kubejs:silver_feather', 'minecraft:slow_falling')
@@ -32,7 +33,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   replacePotion('windswept:holly_berries', 'windswept:thorns')
   replacePotion('windswept:frozen_branch', 'windswept:frost_resistance')
   replacePotion('minecraft:amethyst_shard', 'caverns_and_chasms:rewind')
-  replacePotion('buzzier_bees:four_leaf_clover', 'minecraft:luck')
+  replacePotion('sullysmod:polished_jade', 'minecraft:luck')
   replacePotion('upgrade_aquatic:lionfish', 'upgrade_aquatic:repellence')
   replacePotion('atmospheric:aloe_leaves', 'atmospheric:relief')
   replacePotion('autumnity:snail_goo', 'autumnity:extension')

@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'create:emptying' });
   event.remove({ type: 'farmersdelight:cutting' });
   event.remove({ type: 'farmersdelight:cooking' });
+  event.remove({ type: 'sullysmod:grindstone_polishing' });
 
   event.remove({ output: 'buzzier_bees:crystallized_honey_block' })
   event.remove({ output: 'buzzier_bees:honey_lamp' })
@@ -157,6 +158,13 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'environmental:orange_dye_from_orange_hibiscus' })
   event.remove({ output: 'environmental:hibiscus_leaves' })
   event.remove({ output: 'environmental:hibiscus_leaf_pile' })
+  event.remove({ output: 'sullysmod:jade_shield' })
+  event.remove({ output: 'sullysmod:polished_chiseled_jade' })
+  event.remove({ output: 'caverns_and_chasms:lapis_lamp' })
+  event.remove({ output: 'caverns_and_chasms:spinel_lamp' })
+  event.remove({ output: 'caverns_and_chasms:lapis_bricks' })
+  event.remove({ output: 'caverns_and_chasms:spinel_bricks' })
+  event.remove({ id: 'sullysmod:stonecutting/polished_jade_bricks_from_polished_jade_block_stonecutting' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -241,6 +249,12 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
   event.replaceInput({ output: 'minecraft:fire_charge' }, 'minecraft:blaze_powder', 'undead_unleashed:charstone_shard')
   event.replaceInput({ output: 'savage_and_ravage:gloomy_tiles' }, 'minecraft:phantom_membrane', 'undead_unleashed:cursed_cloth')
+  event.replaceInput({ output: 'echoplus:echo_shield' }, 'minecraft:sculk_catalyst', 'minecraft:echo_shard')
+  event.replaceInput({ output: 'sullysmod:lanternfish_roll' }, 'sullysmod:lanternfish_slice', 'sullysmod:lanternfish')
+  event.replaceInput({ output: 'sullysmod:jade_totem' }, 'sullysmod:polished_jade_shingles', 'sullysmod:polished_jade')
+  event.replaceInput({ output: 'sullysmod:jade_flinger_totem' }, 'sullysmod:polished_jade_shingles', 'sullysmod:polished_jade')
+  event.replaceInput({ output: 'sullysmod:polished_jade_bricks' }, 'sullysmod:polished_jade_block', 'sullysmod:polished_jade')
+  event.replaceInput({ output: 'sullysmod:polished_jade_pillar' }, 'sullysmod:polished_jade_block', 'sullysmod:polished_jade_bricks')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -314,6 +328,14 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('kubejs:grave_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:grave_metal_plates' })
   //event.shaped('irons_spellbooks:silver_ring', ['LS ', 'S S', ' S '], { L: 'minecraft:lapis_lazuli', S: 'caverns_and_chasms:silver_ingot' })
   event.shaped('caverns_and_chasms:golden_lava_bucket', ['SSS', 'SBS', 'SSS'], { S: 'undead_unleashed:charstone_shard', B: 'caverns_and_chasms:golden_bucket' })
+  event.shaped('sullysmod:jade_shield', ['JJJ', 'JSJ', 'JJJ'], { S: 'minecraft:shield', J: 'sullysmod:polished_jade' })
+  event.shaped('otherworldly_accessories:battle_horseshoe', ['B B', 'BJB', ' B '], { B: 'create:brass_ingot', J: 'sullysmod:polished_jade' })
+  event.shaped('otherworldly_accessories:mount_effigy', ['JJJ', 'JBJ', 'JJJ'], { B: 'otherworldly_accessories:battle_horseshoe', J: 'sullysmod:polished_jade' })
+  event.shaped('caverns_and_chasms:spinel_lamp', [' D ', 'DSD', ' D '], { D: 'minecraft:glowstone_dust', S: 'caverns_and_chasms:spinel' })
+  event.shaped('caverns_and_chasms:lapis_lamp', [' D ', 'DLD', ' D '], { D: 'minecraft:glowstone_dust', L: 'minecraft:lapis_lazuli' })
+  event.shaped('sullysmod:polished_chiseled_jade', [' D ', 'DJD', ' D '], { D: 'minecraft:glowstone_dust', J: 'sullysmod:polished_jade' })
+  event.shaped(Item.of('caverns_and_chasms:spinel_bricks', 4), ['SS', 'SS'], { S: 'caverns_and_chasms:spinel' })
+  event.shaped(Item.of('caverns_and_chasms:lapis_bricks', 4), ['LL', 'LL'], { L: 'minecraft:lapis_lazuli' })
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
@@ -396,6 +418,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['neapolitan:strawberry_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:strawberries', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:banana_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:banana', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:strawberry_banana_smoothie'], [Item.of('neapolitan:strawberries', 2), 'neapolitan:banana', 'minecraft:glass_bottle'])
+  event.recipes.create.mixing(['sullysmod:cave_chum_bucket'], ['sullysmod:cooked_lanternfish', 'minecraft:glow_berries', 'minecraft:glow_ink_sac', 'minecraft:bucket'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
   event.recipes.create.crushing(['minecraft:sugar', Item.of('minecraft:sugar').withChance(0.5)], 'minecraft:sugar_cane')

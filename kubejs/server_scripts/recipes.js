@@ -165,6 +165,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:lapis_bricks' })
   event.remove({ output: 'caverns_and_chasms:spinel_bricks' })
   event.remove({ id: 'sullysmod:stonecutting/polished_jade_bricks_from_polished_jade_block_stonecutting' })
+  event.remove({ output: 'farmersdelight:canvas_sign' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -255,6 +256,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'sullysmod:jade_flinger_totem' }, 'sullysmod:polished_jade_shingles', 'sullysmod:polished_jade')
   event.replaceInput({ output: 'sullysmod:polished_jade_bricks' }, 'sullysmod:polished_jade_block', 'sullysmod:polished_jade')
   event.replaceInput({ output: 'sullysmod:polished_jade_pillar' }, 'sullysmod:polished_jade_block', 'sullysmod:polished_jade_bricks')
+  event.replaceInput({ output: 'create:nozzle' }, '#minecraft:wool', 'farmersdelight:canvas')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -336,6 +338,7 @@ ServerEvents.recipes(event => {
   event.shaped('sullysmod:polished_chiseled_jade', [' D ', 'DJD', ' D '], { D: 'minecraft:glowstone_dust', J: 'sullysmod:polished_jade' })
   event.shaped(Item.of('caverns_and_chasms:spinel_bricks', 4), ['SS', 'SS'], { S: 'caverns_and_chasms:spinel' })
   event.shaped(Item.of('caverns_and_chasms:lapis_bricks', 4), ['LL', 'LL'], { L: 'minecraft:lapis_lazuli' })
+  event.shapeless('farmersdelight:canvas_sign', ['#minecraft:signs', 'farmersdelight:canvas'])
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')

@@ -1,3 +1,7 @@
 {
-  "item.cataclysm.sandstorm_in_a_bottle": "Bottle o'Sandstorm"
+  "item.cataclysm.sandstorm_in_a_bottle": "Bottle o'Sandstorm",
+  "item.cataclysm.flame_eye": "Eye of Ignis",
+  "item.cataclysm.monstrous_eye": "Monstrous Eye",
+  "item.cataclysm.netherite_monstrosity_spawn_egg": "Nether Monstrosity Spawn Egg",
+  "entity.cataclysm.netherite_monstrosity": "Nether Monstrosity"
 }

@@ -191,6 +191,15 @@
 		"queen_bee:stinger_sword" = "uncommon"
 		"quark:ravager_hide" = "uncommon"
 		"artifacts:umbrella" = "common"
+		"cataclysm:ignitium_ingot" = "uncommon"
+		"cataclysm:ignitium_block" = "uncommon"
+		"clash:greatblade" = "uncommon"
+		"cataclysm:sandstorm_in_a_bottle" = "uncommon"
+		"cataclysm:bone_reptile_helmet" = "uncommon"
+		"cataclysm:flame_eye" = "uncommon"
+		"cataclysm:monstrous_eye" = "uncommon"
+		"cataclysm:abyss_eye" = "uncommon"
+		"minecraft:ender_eye" = "uncommon"
 
 	#Set the enchantment value of an item. Higher value means better enchantments on average. May not always have a noticeable effect. Example (without the leading #):
 	#"minecraft:.*_hoe" = 40
@@ -317,6 +326,7 @@
 			"undead_unleashed:reaping_scythe" = 5
 			"undead_unleashed:grave_metal_sword" = 5.5
 			"undead_unleashed:grave_metal_axe" = 7.5
+			"clash:greatblade" = 9
 
 		#Set the attack speed of a tool or weapon. May not work on modded tools, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:netherite_pickaxe" = 2.5

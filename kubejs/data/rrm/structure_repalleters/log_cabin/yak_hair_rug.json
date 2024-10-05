@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:brown_carpet",
+  "replaces_with": "environmental:yak_hair_rug",
+  "selector": "environmental:log_cabin"
+}

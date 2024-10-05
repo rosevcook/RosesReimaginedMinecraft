@@ -106,6 +106,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('rrm:has_animal/cat', '#minecraft:is_forest')
   event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
   event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
+  event.add('environmental:has_structure/log_cabin', '#windswept:is_pine_barrens')
 })
 
 ServerEvents.tags('worldgen/structure', event => {

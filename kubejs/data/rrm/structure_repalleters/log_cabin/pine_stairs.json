@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "environmental:pine_stairs",
+  "replaces_with": "windswept:pine_stairs",
+  "selector": "environmental:log_cabin"
+}

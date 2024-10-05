@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "environmental:potted_pine_sapling",
+  "replaces_with": "windswept:potted_pine_sapling",
+  "selector": "environmental:log_cabin"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:flower_pot",
+  "replaces_with": "windswept:potted_foxglove",
+  "selector": "environmental:log_cabin"
+}

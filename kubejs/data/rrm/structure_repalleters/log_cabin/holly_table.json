@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cauldron",
+  "replaces_with": "everycomp:af/windswept/holly_table",
+  "selector": "environmental:log_cabin"
+}

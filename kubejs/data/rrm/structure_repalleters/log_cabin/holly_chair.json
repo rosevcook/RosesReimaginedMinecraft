@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:spruce_fence",
+  "replaces_with": "everycomp:af/windswept/holly_chair",
+  "selector": "environmental:log_cabin"
+}

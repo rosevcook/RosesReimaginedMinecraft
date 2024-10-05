@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "environmental:pinecone",
+  "replaces_with": "windswept:pinecone_block",
+  "selector": "environmental:log_cabin"
+}

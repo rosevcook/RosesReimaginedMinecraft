@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "windswept:pine_chest",
+  "selector": "environmental:log_cabin"
+}

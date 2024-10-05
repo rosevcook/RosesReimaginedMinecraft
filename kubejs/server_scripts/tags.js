@@ -82,6 +82,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('neapolitan:has_feature/adzuki_sprouts')
   event.removeAll('sullysmod:jade_generates_in')
   event.removeAll('cataclysm:has_structure/ancient_factory_biomes')
+  event.removeAll('cataclysm:has_structure/frosted_prison_biomes')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')

@@ -171,6 +171,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'cataclysm:abyss_eye' })
   event.remove({ output: 'clash:greatblade' })
   event.remove({ output: 'create:goggles' })
+  event.remove({ id: 'cataclysm:bloom_stone_pauldrons' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

@@ -373,6 +373,11 @@
           "type": "minecraft:item",
           "name": "minecraft:name_tag",
           "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spyglass",
+          "weight": 3
         }
       ],
       "rolls": {

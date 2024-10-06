@@ -13,7 +13,7 @@ ServerEvents.tags('item', event => {
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
-  event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio');
+  event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio', 'artifacts:umbrella');
   event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries')
   event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe')
   event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword')

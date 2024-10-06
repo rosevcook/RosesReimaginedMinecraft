@@ -2,6 +2,14 @@
   "item.cataclysm.sandstorm_in_a_bottle": "Bottle o'Sandstorm",
   "item.cataclysm.flame_eye": "Eye of Ignis",
   "item.cataclysm.monstrous_eye": "Monstrous Eye",
+  "item.cataclysm.coral_chunk": "Coral Heart",
   "item.cataclysm.netherite_monstrosity_spawn_egg": "Nether Monstrosity Spawn Egg",
-  "entity.cataclysm.netherite_monstrosity": "Nether Monstrosity"
+  "entity.cataclysm.netherite_monstrosity": "Nether Monstrosity",
+  "entity.cataclysm.lionfish": "Anglerfish",
+  "item.cataclysm.lionfish": "Anglerfish",
+  "item.cataclysm.lionfish_spawn_egg": "Anglerfish Spawn Egg",
+  "item.cataclysm.monstrous_helm.desc": "§7Wearer will be provided with extra Armor and Knockback Resistance",
+  "item.cataclysm.monstrous_helm2.desc": "§7for a short peroid when below 50% health",
+  "item.cataclysm.sandstorm_in_a_bottle.desc": "§7Press %s §7to temporarily turn into a sandstorm",
+  "item.cataclysm.bloom_stone_pauldrons.desc": "§7Press %s §7to fire amethyst shards around you"
 }

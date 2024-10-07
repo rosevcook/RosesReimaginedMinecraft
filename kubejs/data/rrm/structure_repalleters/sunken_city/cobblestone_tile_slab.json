@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "cataclysm:stone_tile_slab",
+  "replaces_with": "caverns_and_chasms:cobblestone_tile_slab",
+  "selector": "cataclysm:sunken_city"
+}

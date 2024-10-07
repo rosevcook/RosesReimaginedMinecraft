@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:deepslate_emerald_ore",
+  "replaces_with": "caverns_and_chasms:deepslate_silver_ore",
+  "selector": "cataclysm:sunken_city"
+}

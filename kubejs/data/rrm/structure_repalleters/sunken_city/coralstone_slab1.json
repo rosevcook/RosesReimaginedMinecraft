@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:andesite_slab",
+  "replaces_with": "upgrade_aquatic:coralstone_slab",
+  "selector": "cataclysm:sunken_city"
+}

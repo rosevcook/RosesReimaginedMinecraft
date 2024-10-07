@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:emerald_block",
+  "replaces_with": "caverns_and_chasms:raw_silver_block",
+  "selector": "cataclysm:sunken_city"
+}

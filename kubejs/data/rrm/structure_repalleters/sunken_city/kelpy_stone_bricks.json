@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cracked_stone_bricks",
+  "replaces_with": "upgrade_aquatic:kelpy_stone_bricks",
+  "selector": "cataclysm:sunken_city"
+}

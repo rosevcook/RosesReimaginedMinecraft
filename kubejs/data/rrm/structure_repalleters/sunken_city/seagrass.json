@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:sea_pickle",
+  "replaces_with": "minecraft:seagrass",
+  "selector": "cataclysm:sunken_city"
+}

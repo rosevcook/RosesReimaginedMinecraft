@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:tuff",
+  "replaces_with": "minecraft:cobbled_deepslate",
+  "selector": "cataclysm:sunken_city"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:dandelion",
+  "replaces_with": "minecraft:azalea",
+  "selector": "cataclysm:sunken_city"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:polished_andesite_stairs",
+  "replaces_with": "upgrade_aquatic:coralstone_stairs",
+  "selector": "cataclysm:sunken_city"
+}

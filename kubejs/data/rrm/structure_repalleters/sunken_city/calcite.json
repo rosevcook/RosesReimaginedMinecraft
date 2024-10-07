@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smooth_quartz",
+  "replaces_with": "minecraft:calcite",
+  "selector": "cataclysm:sunken_city"
+}

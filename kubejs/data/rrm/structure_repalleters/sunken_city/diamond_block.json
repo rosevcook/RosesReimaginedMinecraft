@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "cataclysm:altar_of_amethyst",
+  "replaces_with": "minecraft:diamond_block",
+  "selector": "cataclysm:sunken_city"
+}

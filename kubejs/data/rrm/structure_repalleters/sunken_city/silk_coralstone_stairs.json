@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mud_brick_stairs",
+  "replaces_with": "upgrade_aquatic:silk_coralstone_stairs",
+  "selector": "cataclysm:sunken_city"
+}

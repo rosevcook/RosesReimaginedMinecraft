@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smooth_quartz_stairs",
+  "replaces_with": "caverns_and_chasms:calcite_stairs",
+  "selector": "cataclysm:sunken_city"
+}

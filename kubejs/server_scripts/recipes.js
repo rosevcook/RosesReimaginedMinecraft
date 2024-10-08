@@ -265,6 +265,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:mechanical_plough' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:cart_assembler' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:sticker' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
+  event.replaceInput({ output: 'minecraft:arrow' }, 'minecraft:flint', '#minecraft:planks')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:flower_pot",
+  "replaces_with": "upgrade_aquatic:potted_white_searocket",
+  "selector": "cataclysm:sunken_city"
+}

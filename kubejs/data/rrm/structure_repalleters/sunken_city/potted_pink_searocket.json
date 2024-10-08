@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:potted_bamboo",
+  "replaces_with": "upgrade_aquatic:potted_pink_searocket",
+  "selector": "cataclysm:sunken_city"
+}

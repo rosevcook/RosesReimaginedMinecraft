@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:diamond_block",
+  "replaces_with": "caverns_and_chasms:spinel_block",
+  "selector": "cataclysm:sunken_city"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:potted_mangrove_propagule",
+  "replaces_with": "windswept:potted_mossy_sprouts",
+  "selector": "cataclysm:sunken_city"
+}

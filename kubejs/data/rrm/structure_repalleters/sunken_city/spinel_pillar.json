@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:quartz_pillar",
+  "replaces_with": "caverns_and_chasms:spinel_pillar",
+  "selector": "cataclysm:sunken_city"
+}

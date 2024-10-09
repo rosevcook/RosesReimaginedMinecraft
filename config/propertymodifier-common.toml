@@ -203,6 +203,7 @@
 		"cataclysm:monstrous_helm" = "uncommon"
 		"cataclysm:coral_chunk" = "uncommon"
 		"cataclysm:burning_ashes" = "uncommon"
+		"cataclysm:ancient_spear" = "uncommon"
 
 	#Set the enchantment value of an item. Higher value means better enchantments on average. May not always have a noticeable effect. Example (without the leading #):
 	#"minecraft:.*_hoe" = 40

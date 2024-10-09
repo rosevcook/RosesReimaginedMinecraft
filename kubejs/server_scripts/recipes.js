@@ -176,6 +176,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'cataclysm:ancient_metal_ingot' })
   event.remove({ output: 'cataclysm:ancient_metal_nugget' })
   event.remove({ output: 'cataclysm:bone_reptile_helmet' })
+  event.remove({ output: 'cataclysm:ancient_spear' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -358,8 +359,9 @@ ServerEvents.recipes(event => {
   event.shaped('cataclysm:khopesh', ['A', 'S'], { A: 'cataclysm:ancient_metal_ingot', S: 'minecraft:stick' })
   event.shapeless('cataclysm:abyss_eye', ['minecraft:ender_pearl', 'minecraft:crying_obsidian'])
   event.shaped('create:goggles', [' R ', 'ABA'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
-  event.shapeless('cataclysm:ancient_metal_ingot', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:koboleton_bone'])
+  event.shapeless('cataclysm:ancient_metal_ingot', ['create:brass_sheet', 'cataclysm:koboleton_bone', 'cataclysm:ancient_metal_nugget'])
   event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA', 'AAA'], { A: 'cataclysm:ancient_metal_ingot', H: 'cataclysm:kobolediator_skull'})
+  event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'cataclysm:ancient_metal_ingot', T: 'kubejs:wadjet_tail'})
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')

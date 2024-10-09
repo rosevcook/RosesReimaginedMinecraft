@@ -173,6 +173,9 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'create:goggles' })
   event.remove({ id: 'cataclysm:bloom_stone_pauldrons' })
   event.remove({ id: 'cataclysm:smithing/monstrous_helm' })
+  event.remove({ output: 'cataclysm:ancient_metal_ingot' })
+  event.remove({ output: 'cataclysm:ancient_metal_nugget' })
+  event.remove({ output: 'cataclysm:bone_reptile_helmet' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -266,6 +269,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:cart_assembler' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:sticker' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'minecraft:arrow' }, 'minecraft:flint', '#minecraft:planks')
+  event.replaceInput({ output: 'minecraft:conduit' }, 'minecraft:heart_of_the_sea', 'upgrade_aquatic:elder_eye')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -354,11 +358,13 @@ ServerEvents.recipes(event => {
   event.shaped('cataclysm:khopesh', ['A', 'S'], { A: 'cataclysm:ancient_metal_ingot', S: 'minecraft:stick' })
   event.shapeless('cataclysm:abyss_eye', ['minecraft:ender_pearl', 'minecraft:crying_obsidian'])
   event.shaped('create:goggles', [' R ', 'ABA'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
+  event.shapeless('cataclysm:ancient_metal_ingot', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:koboleton_bone'])
+  event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA', 'AAA'], { A: 'cataclysm:ancient_metal_ingot', H: 'cataclysm:kobolediator_skull'})
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
 
-  event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'minecraft:heart_of_the_sea')
+  event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'cataclysm:coral_chunk')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
   event.smithing('create:copper_diving_boots', 'metalworks:copper_boots', 'minecraft:deepslate')
   event.smithing('clash:greatblade', 'savage_and_ravage:cleaver_of_beheading', 'cataclysm:ignitium_ingot')

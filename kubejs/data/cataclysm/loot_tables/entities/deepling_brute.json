@@ -41,7 +41,7 @@
               "count": {
                 "type": "minecraft:uniform",
                 "max": 1.0,
-                "min": -1.0
+                "min": 0.0
               },
               "function": "minecraft:set_count"
             },
@@ -54,7 +54,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "endermanoverhaul:enderman_tooth"
+          "name": "endermanoverhaul:bubble_pearl"
         }
       ],
       "rolls": 1.0
@@ -69,8 +69,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 3.0,
-                "min": 0.0
+                "max": 1.0,
+                "min": -1.0
               },
               "function": "minecraft:set_count"
             },
@@ -83,7 +83,7 @@
               "function": "minecraft:looting_enchant"
             }
           ],
-          "name": "atmospheric:arid_sand"
+          "name": "endermanoverhaul:enderman_tooth"
         }
       ],
       "rolls": 1.0

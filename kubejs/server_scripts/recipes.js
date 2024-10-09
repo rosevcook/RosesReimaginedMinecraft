@@ -362,9 +362,14 @@ ServerEvents.recipes(event => {
   event.shapeless('cataclysm:ancient_metal_ingot', ['create:brass_sheet', 'cataclysm:koboleton_bone', 'cataclysm:ancient_metal_nugget'])
   event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA', 'AAA'], { A: 'cataclysm:ancient_metal_ingot', H: 'cataclysm:kobolediator_skull'})
   event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'cataclysm:ancient_metal_ingot', T: 'kubejs:wadjet_tail'})
+  event.shaped(Item.of('kubejs:dune_metal_plates', 12), ['PP', 'PP'], { P: 'cataclysm:ancient_metal_ingot' })
+  event.shaped(Item.of('kubejs:dune_metal_plate_stairs', 4), ['P  ', 'PP ', 'PPP'], { P: 'kubejs:dune_metal_plates' })
+  event.shaped(Item.of('kubejs:dune_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:dune_metal_plates' })
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
+  event.stonecutting('kubejs:dune_metal_plate_stairs', 'kubejs:dune_metal_plates')
+  event.stonecutting(Item.of('kubejs:dune_metal_plate_slab', 2), 'kubejs:dune_metal_plates')
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'cataclysm:coral_chunk')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')

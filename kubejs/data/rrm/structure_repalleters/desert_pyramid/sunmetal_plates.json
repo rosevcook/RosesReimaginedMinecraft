@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:orange_terracotta",
+  "replaces_with": "architects_palette:sunmetal_block",
+  "selector": "minecraft:desert_pyramid"
+}

@@ -190,6 +190,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'architects_palette:ender_pearl_from_block' })
   event.remove({ output: 'architects_palette:sunmetal_brick' })
   event.remove({ output: 'architects_palette:sunmetal_block' })
+  event.remove({ id: 'cataclysm:bone_meal' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -379,7 +380,7 @@ ServerEvents.recipes(event => {
   event.shaped('cataclysm:khopesh', [' A', 'S '], { A: 'architects_palette:sunmetal_brick', S: 'minecraft:stick' })
   event.shapeless('cataclysm:abyss_eye', ['minecraft:ender_pearl', 'minecraft:crying_obsidian'])
   event.shaped('create:goggles', [' R ', 'ABA'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
-  event.shapeless('architects_palette:sunmetal_brick', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:koboleton_bone'])
+  event.shapeless('architects_palette:sunmetal_brick', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:ancient_metal_nugget'])
   event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA'], { A: 'architects_palette:sunmetal_brick', H: 'cataclysm:kobolediator_skull'})
   event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'architects_palette:sunmetal_brick', T: 'kubejs:wadjet_tail'})
   event.shaped('architects_palette:nether_brass_block', ['BBB', 'BBB', 'BBB'], { B: 'create:brass_ingot' })

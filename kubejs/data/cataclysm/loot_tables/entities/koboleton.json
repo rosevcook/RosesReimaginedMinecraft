@@ -17,7 +17,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "cataclysm:koboleton_bone"
+          "name": "minecraft:bone"
         }
       ],
       "rolls": 1.0

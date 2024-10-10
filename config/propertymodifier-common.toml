@@ -273,6 +273,7 @@
 			"caverns_and_chasms:necromium_leggings" = 5
 			"caverns_and_chasms:necromium_boots" = 5
 			"cataclysm:bloom_stone_pauldrons" = 3
+			"cataclysm:bone_reptile_helmet" = 4
 
 		#Set the toughness value of an armor item. May not work on modded armors, please file an issue if that's the case. Example (without the leading #):
 		#"minecraft:golden_boots" = 1

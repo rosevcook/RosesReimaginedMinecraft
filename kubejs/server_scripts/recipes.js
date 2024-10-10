@@ -189,6 +189,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:flooded_dripstone_shingles' })
   event.remove({ id: 'architects_palette:ender_pearl_from_block' })
   event.remove({ output: 'architects_palette:sunmetal_brick' })
+  event.remove({ output: 'architects_palette:sunmetal_block' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -375,15 +376,12 @@ ServerEvents.recipes(event => {
   event.shaped('cataclysm:abyssal_sacrifice', ['AAA', 'AHA', ' A '], { A: 'minecraft:amethyst_shard', H: 'heart_crystals:heart_crystal' })
   event.shapeless('cataclysm:monstrous_eye', ['minecraft:ender_pearl', 'minecraft:blaze_powder'])
   event.shapeless(Item.of('cataclysm:flame_eye', 2), ['cataclysm:flame_eye', 'minecraft:blaze_powder'])
-  event.shaped('cataclysm:khopesh', ['A', 'S'], { A: 'cataclysm:ancient_metal_ingot', S: 'minecraft:stick' })
+  event.shaped('cataclysm:khopesh', [' A', 'S '], { A: 'architects_palette:sunmetal_brick', S: 'minecraft:stick' })
   event.shapeless('cataclysm:abyss_eye', ['minecraft:ender_pearl', 'minecraft:crying_obsidian'])
   event.shaped('create:goggles', [' R ', 'ABA'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
-  event.shapeless('cataclysm:ancient_metal_ingot', ['create:brass_sheet', 'cataclysm:koboleton_bone', 'cataclysm:ancient_metal_nugget'])
-  event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA', 'AAA'], { A: 'cataclysm:ancient_metal_ingot', H: 'cataclysm:kobolediator_skull'})
-  event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'cataclysm:ancient_metal_ingot', T: 'kubejs:wadjet_tail'})
-  event.shaped(Item.of('kubejs:dune_metal_plates', 12), ['PP', 'PP'], { P: 'cataclysm:ancient_metal_ingot' })
-  event.shaped(Item.of('kubejs:dune_metal_plate_stairs', 4), ['P  ', 'PP ', 'PPP'], { P: 'kubejs:dune_metal_plates' })
-  event.shaped(Item.of('kubejs:dune_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:dune_metal_plates' })
+  event.shapeless('architects_palette:sunmetal_brick', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:koboleton_bone'])
+  event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA'], { A: 'architects_palette:sunmetal_brick', H: 'cataclysm:kobolediator_skull'})
+  event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'architects_palette:sunmetal_brick', T: 'kubejs:wadjet_tail'})
   event.shaped('architects_palette:nether_brass_block', ['BBB', 'BBB', 'BBB'], { B: 'create:brass_ingot' })
   event.shaped('architects_palette:monazite_rod', ['SD', 'DS'], { S: 'undead_unleashed:charstone_shard', D: 'minecraft:glowstone_dust' })
   event.shaped('architects_palette:charcoal_block', ['CCC', 'CCC', 'CCC'], { C: 'minecraft:charcoal' })
@@ -391,14 +389,13 @@ ServerEvents.recipes(event => {
   event.shaped('architects_palette:spool', ['SSS', 'SSS', 'SSS'], { S: 'minecraft:string' })
   event.shapeless(Item.of('minecraft:string', 9), ['architects_palette:spool'])
   event.shaped('savage_and_ravage:conch_of_conjuring', [' WS', 'WNW', 'WW '], { W: 'architects_palette:withered_bone', N: 'minecraft:nautilus_shell', S: 'undead_unleashed:lost_soul' })
+  event.shaped(Item.of('architects_palette:sunmetal_block', 12), ['PP', 'PP'], { P: 'architects_palette:sunmetal_brick' })
 
   event.shaped(Item.of('minecraft:bone_block', 3), ['BBB', 'BBB', 'BBB'], { B: 'minecraft:bone' })
   event.shapeless(Item.of('minecraft:bone', 3), ['minecraft:bone_block'])
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
-  event.stonecutting('kubejs:dune_metal_plate_stairs', 'kubejs:dune_metal_plates')
-  event.stonecutting(Item.of('kubejs:dune_metal_plate_slab', 2), 'kubejs:dune_metal_plates')
   event.stonecutting('architects_palette:dripstone_pillar', 'minecraft:dripstone_block')
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'cataclysm:coral_chunk')

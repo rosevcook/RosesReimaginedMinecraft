@@ -1,4 +1,11 @@
 {
+  "item.architects_palette.sunmetal_brick": "Sunmetal Plating",
+  "block.architects_palette.sunmetal_block": "Sunmetal Plates",
+  "block.architects_palette.sunmetal_slab": "Sunmetal Plate Slab",
+  "block.architects_palette.sunmetal_stairs": "Sunmetal Plate Stairs",
+  "block.architects_palette.ancient_plating": "Ancient Plates",
+  "block.architects_palette.ancient_plating_stairs": "Ancient Plate Stairs",
+  "block.architects_palette.ancient_plating_slab": "Ancient Plate Slab",
   "block.architects_palette.spool": "Spool of String",
   "block.architects_palette.monazite_rod": "Charstone Crystal",
   "block.architects_palette.nether_brass_block": "Block of Brass",

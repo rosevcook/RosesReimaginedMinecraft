@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "cataclysm:dungeon_block",
-  "replaces_with": "upgrade_aquatic:coralstone",
-  "selector": "cataclysm:sunken_city"
-}

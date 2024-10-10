@@ -1,0 +1,6 @@
+{
+    "parent": "item/bone",
+    "textures": {
+        "layer0": "architects_palette:item/withered_bone"
+    }
+}

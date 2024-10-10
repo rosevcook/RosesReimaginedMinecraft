@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:magma_block",
+  "replaces_with": "architects_palette:molten_nether_bricks",
+  "selector": "betterfortresses:fortress"
+}

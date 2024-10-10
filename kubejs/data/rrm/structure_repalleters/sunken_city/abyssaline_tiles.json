@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:quartz_bricks",
-  "replaces_with": "caverns_and_chasms:spinel_bricks",
+  "replaces_with": "architects_palette:abyssaline_tiles",
   "selector": "cataclysm:sunken_city"
 }

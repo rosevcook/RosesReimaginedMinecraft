@@ -27,6 +27,8 @@
 		"environmental:pine_log": "minecraft:air",
 		"environmental:pine_leaves": "minecraft:air",
 		"environmental:pinecone": "minecraft:air",
+		"architects_palette:heliodor_rod": "minecraft:air",
+		"architects_palette:ekanite_rod": "minecraft:air",
 		"farmersdelight:sandy_shrub": "upgrade_aquatic:beachgrass",
 		"farmersdelight:brown_mushroom_colony": "minecraft:brown_mushroom",
 		"farmersdelight:red_mushroom_colony": "minecraft:red_mushroom",

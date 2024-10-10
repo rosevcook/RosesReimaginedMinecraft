@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:shroomlight",
+  "replaces_with": "architects_palette:polished_glowstone",
+  "selector": "cataclysm:burning_arena"
+}

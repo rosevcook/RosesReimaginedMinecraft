@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:coal_block",
+  "replaces_with": "architects_palette:charcoal_block",
+  "selector": "betterfortresses:fortress"
+}

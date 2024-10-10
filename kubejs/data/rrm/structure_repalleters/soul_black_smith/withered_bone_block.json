@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:bone_block",
+  "replaces_with": "architects_palette:withered_bone_block",
+  "selector": "cataclysm:soul_black_smith"
+}

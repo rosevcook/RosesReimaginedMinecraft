@@ -36,6 +36,9 @@
 		[types.wood_type.cataclysm]
 			chorus = false
 
+		[types.wood_type.architects_palette]
+			twisted = false
+
 	[types.leaves_type]
 
 		[types.leaves_type.windswept]
@@ -78,6 +81,9 @@
 			orange_maple = true
 			red_maple = true
 
+		[types.leaves_type.architects_palette]
+			twisted = false
+
 [entries]
 
 	[entries.wood_type]
@@ -96,6 +102,13 @@
 		[entries.wood_type.create]
 			window_pane = true
 			window = true
+
+		[entries.wood_type.architects_palette]
+			boards = false
+			board_stairs = false
+			railing = true
+			board_wall = false
+			board_slab = false
 
 	[entries.leaves_type]
 

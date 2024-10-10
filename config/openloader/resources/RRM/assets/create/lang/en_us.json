@@ -6,5 +6,6 @@
   "block.create.shaft": "Zinc Shaft",
   "block.create.mechanical_piston": "Piston",
   "block.create.sticky_mechanical_piston": "Sticky Piston",
-  "block.create.redstone_contact": "Power Contact"
+  "block.create.redstone_contact": "Power Contact",
+  "item.create.wrench": "Brass Wrench"
 }

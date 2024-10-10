@@ -185,6 +185,10 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:bone_meal_from_bone_block' })
   event.remove({ id: 'minecraft:bone_block' })
   event.remove({ id: 'minecraft:red_nether_bricks' })
+  event.remove({ output: 'architects_palette:molten_nether_bricks' })
+  event.remove({ output: 'caverns_and_chasms:flooded_dripstone_shingles' })
+  event.remove({ id: 'architects_palette:ender_pearl_from_block' })
+  event.remove({ output: 'architects_palette:sunmetal_brick' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -281,6 +285,11 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:arrow' }, 'minecraft:flint', '#minecraft:planks')
   event.replaceInput({ output: 'minecraft:conduit' }, 'minecraft:heart_of_the_sea', 'upgrade_aquatic:elder_eye')
   event.replaceInput({ id: 'create:crafting/materials/brass_ingot_from_decompacting' }, 'create:brass_block', 'architects_palette:nether_brass_block')
+  event.replaceInput({ output: 'architects_palette:calcite_lamp' }, 'minecraft:glow_ink_sac', 'minecraft:echo_shard')
+  event.replaceInput({ output: 'architects_palette:dripstone_pillar' }, 'architects_palette:dripstone_bricks', 'caverns_and_chasms:dripstone_shingles')
+  event.replaceInput({ output: 'architects_palette:dripstone_lamp' }, 'minecraft:dripstone_block', 'caverns_and_chasms:dripstone_shingles')
+  event.replaceInput({ output: 'architects_palette:calcite_lamp' }, 'minecraft:calcite', 'caverns_and_chasms:polished_calcite')
+  event.replaceInput({ output: 'architects_palette:tuff_lamp' }, 'minecraft:tuff', 'caverns_and_chasms:polished_tuff')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -390,6 +399,7 @@ ServerEvents.recipes(event => {
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
   event.stonecutting('kubejs:dune_metal_plate_stairs', 'kubejs:dune_metal_plates')
   event.stonecutting(Item.of('kubejs:dune_metal_plate_slab', 2), 'kubejs:dune_metal_plates')
+  event.stonecutting('architects_palette:dripstone_pillar', 'minecraft:dripstone_block')
 
   event.smithing('artifacts:aqua_dashers', 'minecraft:leather_boots', 'cataclysm:coral_chunk')
   event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
@@ -415,10 +425,12 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing([Item.of('caverns_and_chasms:rocky_dirt', 2)], ['minecraft:dirt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('architects_palette:coarse_snow', 2)], ['minecraft:snow_block', 'minecraft:gravel'])
   event.recipes.create.mixing([Item.of('minecraft:red_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:nether_wart_block'])
+  event.recipes.create.mixing([Item.of('architects_palette:molten_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:magma_block'])
   event.recipes.create.mixing([Item.of('minecraft:tuff', 2)], ['minecraft:basalt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('windswept:shale', 2)], ['minecraft:blue_ice', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('atmospheric:dolerite', 2)], ['atmospheric:arid_sandstone', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('atmospheric:dolerite', 2)], ['atmospheric:red_arid_sandstone', 'minecraft:cobblestone'])
+  event.recipes.create.mixing(['caverns_and_chasms:flooded_dripstone_shingles'], [Fluid.of('minecraft:water', 125), 'caverns_and_chasms:dripstone_shingles'])
   event.recipes.create.mixing(['berry_good:sweet_berry_mince'], ['minecraft:sweet_berries', 'minecraft:porkchop'])
   event.recipes.create.mixing(['create:blaze_cake'], [Fluid.of('minecraft:lava', 1000), Item.of('create:cinder_flour', 4), Item.of('create:wheat_flour', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['abnormals_delight:pickerelweed_juice'], ['#rrm:pickerelweed', '#rrm:pickerelweed', 'minecraft:sugar', 'minecraft:glass_bottle'])

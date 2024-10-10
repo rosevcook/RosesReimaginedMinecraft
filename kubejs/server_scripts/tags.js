@@ -35,6 +35,9 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
+  event.add('minecraft:snow', 'architects_palette:coarse_snow')
+  event.removeAll('architects_palette:green_fire_supporting')
+
   // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver
   event.get('minecraft:needs_stone_tool').getObjectIds().forEach(block => {
     if (Ingredient.of(/.*copper.*/).test(block)) 

@@ -184,7 +184,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'architects_palette:spool' })
   event.remove({ id: 'minecraft:bone_meal_from_bone_block' })
   event.remove({ id: 'minecraft:bone_block' })
-  event.remove({ id: 'minecraft:red_nether_bricks' })
+  event.remove({ output: 'minecraft:red_nether_bricks' })
+  event.remove({ output: 'quark:blue_nether_bricks' })
   event.remove({ output: 'architects_palette:molten_nether_bricks' })
   event.remove({ output: 'caverns_and_chasms:flooded_dripstone_shingles' })
   event.remove({ id: 'architects_palette:ender_pearl_from_block' })
@@ -292,6 +293,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'architects_palette:dripstone_lamp' }, 'minecraft:dripstone_block', 'caverns_and_chasms:dripstone_shingles')
   event.replaceInput({ output: 'architects_palette:calcite_lamp' }, 'minecraft:calcite', 'caverns_and_chasms:polished_calcite')
   event.replaceInput({ output: 'architects_palette:tuff_lamp' }, 'minecraft:tuff', 'caverns_and_chasms:polished_tuff')
+  event.replaceInput({ output: 'quark:trowel' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
+  event.replaceInput({ output: 'minecraft:shears' }, 'minecraft:iron_ingot', 'create:zinc_ingot')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -423,6 +426,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing([Item.of('caverns_and_chasms:rocky_dirt', 2)], ['minecraft:dirt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('architects_palette:coarse_snow', 2)], ['minecraft:snow_block', 'minecraft:gravel'])
   event.recipes.create.mixing([Item.of('minecraft:red_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:nether_wart_block'])
+  event.recipes.create.mixing([Item.of('quark:blue_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:warped_wart_block'])
   event.recipes.create.mixing([Item.of('architects_palette:molten_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:magma_block'])
   event.recipes.create.mixing([Item.of('minecraft:tuff', 2)], ['minecraft:basalt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('windswept:shale', 2)], ['minecraft:blue_ice', 'minecraft:cobblestone'])

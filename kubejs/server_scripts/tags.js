@@ -9,7 +9,7 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:hands')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
 
-  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves')
+  event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves', 'quark:backpack')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
@@ -17,6 +17,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries')
   event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe')
   event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword')
+  event.add('quark:seed_pouch_holdable', 'windswept:ginger_root', 'farmersdelight:onion')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -27,6 +28,7 @@ ServerEvents.tags('item', event => {
   event.remove('forge:cooked_fishes/salmon', 'farmersdelight:cooked_salmon_slice')
   event.remove('forge:cooked_venison', 'abnormals_delight:cooked_venison_shanks')
   event.remove('forge:cooked_duck', 'abnormals_delight:cooked_duck_fillet')
+  event.remove('quark:seed_pouch_holdable', '#minecraft:saplings', 'minecraft:cocoa_beans', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:sweet_berries', 'minecraft:nether_wart', 'minecraft:sugar_cane', 'minecraft:bamboo', 'minecraft:kelp')
 
   event.remove('forge:stripped_logs', 'minecraft:stripped_jungle_log', 'minecraft:stripped_acacia_log', 'minecraft:stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
   event.remove('forge:stripped_wood', 'minecraft:stripped_jungle_wood', 'minecraft:stripped_acacia_wood', 'minecraft:stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')

@@ -39,6 +39,12 @@
 		[types.wood_type.architects_palette]
 			twisted = false
 
+		[types.wood_type.quark]
+			bamboo = true
+			azalea = false
+			ancient = false
+			blossom = false
+
 	[types.leaves_type]
 
 		[types.leaves_type.windswept]
@@ -84,6 +90,15 @@
 		[types.leaves_type.architects_palette]
 			twisted = false
 
+		[types.leaves_type.quark]
+			ancient = false
+			blue_blossom = false
+			lavender_blossom = false
+			orange_blossom = false
+			pink_blossom = false
+			yellow_blossom = false
+			red_blossom = false
+
 [entries]
 
 	[entries.wood_type]
@@ -93,7 +108,7 @@
 
 		[entries.wood_type.woodworks]
 			bookshelf = true
-			boards = true
+			boards = false
 			chest = true
 			ladder = true
 			beehive = true
@@ -110,8 +125,22 @@
 			board_wall = false
 			board_slab = false
 
+		[entries.wood_type.quark]
+			vertical_planks = false
+			post = true
+			trapped_chest = false
+			bookshelf = false
+			chest = false
+			stripped_post = true
+			ladder = false
+			hollow_log = false
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.woodworks]
 			leaf_pile = true
+
+		[entries.leaves_type.quark]
+			hedge = true
+			leaf_carpet = true
 

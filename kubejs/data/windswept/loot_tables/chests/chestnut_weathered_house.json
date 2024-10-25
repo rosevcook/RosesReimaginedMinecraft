@@ -200,6 +200,11 @@
           "type": "minecraft:item",
           "name": "otherworldly_accessories:aglet",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "quark:seed_pouch",
+          "weight": 2
         }
       ],
       "rolls": {

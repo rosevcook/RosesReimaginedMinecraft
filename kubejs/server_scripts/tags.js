@@ -38,6 +38,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('block', event => {
   event.add('minecraft:snow', 'architects_palette:coarse_snow')
+  event.add('quark:hedges', 'atmospheric:green_aspen_hedge')
   event.removeAll('architects_palette:green_fire_supporting')
 
   // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver

@@ -344,7 +344,7 @@ ServerEvents.recipes(event => {
   event.shaped('clash:rod_of_gales', ['  N', ' S ', 'T  '], { S: 'caverns_and_chasms:spinel', T: 'minecraft:stick', N: 'caverns_and_chasms:silver_nugget' })
   event.shaped('atmospheric:green_aspen_leaves', ['LL', 'LL'], { L: 'atmospheric:green_aspen_leaf_pile' })
   event.shapeless(Item.of('atmospheric:green_aspen_leaf_pile', 4), ['atmospheric:green_aspen_leaves'])
-  // green aspen hedge
+  event.shaped(Item.of('atmospheric:green_aspen_hedge', 2), ['G', 'L'], { L: '#atmospheric:aspen_logs', G: 'atmospheric:green_aspen_leaves' })
   event.shaped(Item.of('caverns_and_chasms:fragile_stone', 16), ['BBB', 'BSB', 'BBB'], { B: 'minecraft:stone', S: 'caverns_and_chasms:spinel' })
   event.shaped(Item.of('caverns_and_chasms:fragile_deepslate', 16), ['DDD', 'DSD', 'DDD'], { D: 'minecraft:deepslate', S: 'caverns_and_chasms:spinel' })
   event.shapeless('undead_unleashed:grave_metal_ingot', ['create:iron_sheet', 'undead_unleashed:grave_metal_scrap', 'minecraft:bone'])

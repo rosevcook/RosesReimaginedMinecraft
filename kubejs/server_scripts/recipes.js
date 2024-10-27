@@ -295,6 +295,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'architects_palette:tuff_lamp' }, 'minecraft:tuff', 'caverns_and_chasms:polished_tuff')
   event.replaceInput({ output: 'quark:trowel' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'minecraft:shears' }, 'minecraft:iron_ingot', 'create:zinc_ingot')
+  event.replaceInput({ output: 'minecraft:furnace' }, '#forge:cobblestone', 'minecraft:cobblestone')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

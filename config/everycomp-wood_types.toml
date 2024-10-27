@@ -53,7 +53,7 @@
 			pine = true
 
 		[types.leaves_type.environmental]
-			hibiscus = true
+			hibiscus = false
 			willow = true
 			pine = false
 			cherry = true
@@ -104,14 +104,14 @@
 	[entries.wood_type]
 
 		[entries.wood_type.farmersdelight]
-			cabinet = true
+			cabinet = false
 
 		[entries.wood_type.woodworks]
 			bookshelf = true
 			boards = false
 			chest = true
 			ladder = true
-			beehive = true
+			beehive = false
 			trapped_chest = true
 
 		[entries.wood_type.create]

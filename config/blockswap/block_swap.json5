@@ -22,6 +22,7 @@
 		"minecraft:acacia_leaves": "minecraft:air",
 		"minecraft:acacia_log": "minecraft:air",
 		"minecraft:polished_granite": "atmospheric:polished_dolerite",
+		"minecraft:polished_diorite": "atmospheric:polished_dolerite",
 		"environmental:bluebell": "windswept:bluebells",
 		"environmental:potted_bluebell": "windswept:potted_bluebells",
 		"environmental:pine_log": "minecraft:air",
@@ -74,6 +75,7 @@
 		"upgrade_aquatic:pillow_coral_fan": "upgrade_aquatic:petal_coral_fan",
 		"upgrade_aquatic:pillow_coral_wall_fan": "upgrade_aquatic:petal_coral_wall_fan",
 		"upgrade_aquatic:pillow_coralstone": "upgrade_aquatic:petal_coralstone",
-		"quark:shale": "windswept:shale"
+		"quark:shale": "windswept:shale",
+		"quark:limestone": "atmospheric:dolerite"
 	}
 }

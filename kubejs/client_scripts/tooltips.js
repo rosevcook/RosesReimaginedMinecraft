@@ -6,6 +6,7 @@ ItemEvents.tooltip(event => {
   event.add(['clash:greatblade'], " §9+1 Staggering Infliction")
   event.add(['cataclysm:abyssal_sacrifice'], "§7Offer to the Altar of Abyss to summon the Leviathan")
   event.add(['cataclysm:burning_ashes'], "§7Offer to the Altar of Fire to summon Ignis")
+  event.add(['minecraft:dark_oak_sapling', 'atmospheric:grimwood_sapling'], "§7Must be grown in 2x2 shape")
   event.addAdvanced('clash:rod_of_gales', (item, advanced, text) => text.add(1, Text.of("§7Hold and release R-Click when grounded to propel yourself")))
   event.addAdvanced('minecraft:wooden_pickaxe', (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Stone, Coal, Copper")))
   event.addAdvanced('metalworks:copper_pickaxe', (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Iron, Zinc")))

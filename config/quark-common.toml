@@ -1046,9 +1046,9 @@
 		"Ancient City Loot Quality" = 1
 
 	[world.new_stone_types]
-		"Enable Limestone" = false
+		"Enable Limestone" = true
 		"Enable Jasper" = true
-		"Enable Shale" = false
+		"Enable Shale" = true
 		"Enable Myalite" = false
 
 		[world.new_stone_types.limestone]

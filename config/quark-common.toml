@@ -1358,7 +1358,7 @@
 
 	[mobs.foxhound]
 		#The chance coal will tame a foxhound
-		"Tame Chance" = 0.05
+		"Tame Chance" = 0.25
 		"Foxhounds Speed Up Furnaces" = true
 
 		[mobs.foxhound.spawn_config]

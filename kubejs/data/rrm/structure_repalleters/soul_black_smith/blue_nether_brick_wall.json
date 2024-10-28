@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:nether_brick_wall",
+  "replaces_with": "quark:blue_nether_bricks_wall",
+  "selector": "cataclysm:soul_black_smith"
+}

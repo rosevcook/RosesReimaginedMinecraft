@@ -434,6 +434,7 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('caverns_and_chasms:fragile_stone', 16), ['BBB', 'BSB', 'BBB'], { B: 'minecraft:stone', S: 'caverns_and_chasms:spinel' })
   event.shaped(Item.of('caverns_and_chasms:fragile_deepslate', 16), ['DDD', 'DSD', 'DDD'], { D: 'minecraft:deepslate', S: 'caverns_and_chasms:spinel' })
   event.shapeless('undead_unleashed:grave_metal_ingot', ['kubejs:zinc_sheet', 'undead_unleashed:grave_metal_scrap', 'minecraft:bone'])
+  event.shapeless(Item.of('undead_unleashed:grave_metal_ingot', 2), ['kubejs:zinc_sheet', 'undead_unleashed:grave_metal_scrap', 'architects_palette:withered_bone'])
   event.shaped('undead_unleashed:grave_metal_helmet', ['GGG', 'G G'], { G: 'undead_unleashed:grave_metal_ingot' })
   event.shaped('undead_unleashed:grave_metal_chestplate', ['G G', 'GGG', 'GGG'], { G: 'undead_unleashed:grave_metal_ingot' })
   event.shaped('undead_unleashed:grave_metal_leggings', ['GGG', 'G G', 'G G'], { G: 'undead_unleashed:grave_metal_ingot' })

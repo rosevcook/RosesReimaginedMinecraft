@@ -67,6 +67,8 @@
     "!minecraft:.*smooth_quartz.*",
     "!minecraft:.*redstone_ore.*",
     "!autumnity:.*redstone.*",
+    "!quark:.*crab.*",
+    "quark:moss_paste",
     "minecraft:quartz_pillar",
     "minecraft:chiseled_quartz_block",
     "minecraft:quartz_bricks",

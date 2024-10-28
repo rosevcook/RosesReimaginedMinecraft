@@ -107,7 +107,7 @@
 			cabinet = false
 
 		[entries.wood_type.woodworks]
-			bookshelf = true
+			bookshelf = false
 			boards = false
 			chest = true
 			ladder = true
@@ -134,6 +134,15 @@
 			stripped_post = true
 			ladder = false
 			hollow_log = false
+
+		[entries.wood_type.another_furniture]
+			shelf = false
+			shutter = false
+			planter_box = false
+			bench = true
+			table = true
+			drawer = false
+			chair = true
 
 	[entries.leaves_type]
 

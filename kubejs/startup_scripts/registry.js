@@ -16,11 +16,11 @@ StartupEvents.registry('block', event => {
 
   event.create('raw_silver_bricks').material('metal').displayName('Raw Silver Bricks').soundType('stone').hardness(3.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('raw_silver_brick_stairs', 'stairs').material('metal').displayName('Raw Silver Brick Stairs').soundType('stone').textureAll('kubejs:block/raw_silver_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
-  event.create('raw_silver_brick_slab', 'slab').material('metal').displayName('Raw Silver Slab').soundType('stone').textureAll('kubejs:block/raw_silver_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
+  event.create('raw_silver_brick_slab', 'slab').material('metal').displayName('Raw Silver Brick Slab').soundType('stone').textureAll('kubejs:block/raw_silver_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
 
   event.create('raw_zinc_bricks').material('metal').displayName('Raw Zinc Bricks').soundType('stone').hardness(3.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('raw_zinc_brick_stairs', 'stairs').material('metal').displayName('Raw Zinc Brick Stairs').soundType('stone').textureAll('kubejs:block/raw_zinc_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
-  event.create('raw_zinc_brick_slab', 'slab').material('metal').displayName('Raw Zinc Slab').soundType('stone').textureAll('kubejs:block/raw_zinc_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
+  event.create('raw_zinc_brick_slab', 'slab').material('metal').displayName('Raw Zinc Brick Slab').soundType('stone').textureAll('kubejs:block/raw_zinc_bricks').hardness(3.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
 })
 
 

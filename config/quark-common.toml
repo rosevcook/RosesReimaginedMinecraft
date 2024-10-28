@@ -947,7 +947,7 @@
 			[world.big_stone_clusters.jasper.biomes]
 
 				[world.big_stone_clusters.jasper.biomes.tags]
-					"Biome Tags" = ["minecraft:is_badlands", "forge:is_sandy"]
+					"Biome Tags" = ["minecraft:is_badlands", "forge:is_sandy", "atmospheric:is_dunes"]
 					"Is Blacklist" = false
 
 				[world.big_stone_clusters.jasper.biomes.biomes]
@@ -1350,7 +1350,7 @@
 [mobs]
 	Foxhound = true
 	Wraith = false
-	Crabs = true
+	Crabs = false
 	Forgotten = true
 	Shiba = true
 	Stonelings = false

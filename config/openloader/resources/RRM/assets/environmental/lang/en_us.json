@@ -4,5 +4,16 @@
   "block.environmental.potted_yellow_hibiscus": "Potted White Hibiscus",
   "block.environmental.magenta_hibiscus": "Blue Hibiscus",
   "block.environmental.magenta_wall_hibiscus": "Blue Wall Hibiscus",
-  "block.environmental.potted_magenta_hibiscus": "Potted Blue Hibiscus"
+  "block.environmental.potted_magenta_hibiscus": "Potted Blue Hibiscus",
+  "block.environmental.duck_egg_crate": "Crate of Duck Eggs",
+  "block.environmental.yak_hair_block": "Block of Yak Hair",
+  "block.environmental.willow_hedge": "Willow Leaf Hedge",
+  "block.environmental.cherry_hedge": "Cherry Leaf Hedge",
+  "block.environmental.cheerful_cherry_hedge": "Cheerful Cherry Leaf Hedge",
+  "block.environmental.moody_cherry_hedge": "Moody Cherry Leaf Hedge",
+  "block.environmental.wisteria_hedge": "Wisteria Leaf Hedge",
+  "block.environmental.pink_wisteria_hedge": "Pink Wisteria Leaf Hedge",
+  "block.environmental.blue_wisteria_hedge": "Blue Wisteria Leaf Hedge",
+  "block.environmental.purple_wisteria_hedge": "Purple Wisteria Leaf Hedge",
+  "block.environmental.white_wisteria_hedge": "White Wisteria Leaf Hedge"
 }

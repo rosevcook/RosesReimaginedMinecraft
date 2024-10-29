@@ -38,6 +38,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   replacePotion('atmospheric:aloe_leaves', 'atmospheric:relief')
   replacePotion('autumnity:snail_goo', 'autumnity:extension')
   event.addPotionBrewing('windswept:nightshade', 'minecraft:night_vision')
+  event.addPotionBrewing('quark:glow_shroom', 'minecraft:invisibility')
   event.addPotionBrewing('atmospheric:yucca_branch', 'windswept:thorns')
 
   // long potions

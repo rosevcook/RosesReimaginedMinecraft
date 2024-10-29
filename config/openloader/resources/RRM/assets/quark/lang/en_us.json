@@ -3,5 +3,8 @@
   "block.quark.blue_nether_bricks": "Warped Nether Bricks",
   "block.quark.blue_nether_bricks_slab": "Warped Nether Brick Slab",
   "block.quark.blue_nether_bricks_stairs": "Warped Nether Brick Stairs",
-  "block.quark.blue_nether_bricks_wall": "Warped Nether Brick Wall"
+  "block.quark.blue_nether_bricks_wall": "Warped Nether Brick Wall",
+  "block.quark.golden_apple_crate": "Crate of Golden Apples",
+  "block.quark.golden_carrot_crate": "Crate of Golden Carrots",
+  "block.quark.apple_crate": "Crate of Apples"
 }

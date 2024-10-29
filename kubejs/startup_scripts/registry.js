@@ -10,6 +10,8 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+  event.create('bejeweled_apple_crate').material('wood').displayName('Crate of Bejeweled Apples').soundType('wood').hardness(1.5).tagBlock('minecraft:mineable/axe')
+
   event.create('grave_metal_plates').material('metal').displayName('Grave Metal Plates').soundType('metal').hardness(2.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('grave_metal_plate_stairs', 'stairs').material('metal').displayName('Grave Metal Plate Stairs').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
   event.create('grave_metal_plate_slab', 'slab').material('metal').displayName('Grave Metal Plate Slab').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')

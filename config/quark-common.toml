@@ -1,6 +1,6 @@
 
 [general]
-	"Enable 'q' Button" = true
+	"Enable 'q' Button" = false
 	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
@@ -65,7 +65,7 @@
 	"Obsidian Plate" = false
 	"Chains Connect Blocks" = false
 	Gravisand = false
-	"Jukebox Automation" = true
+	"Jukebox Automation" = false
 	"Dispensers Place Blocks" = false
 	Chute = false
 
@@ -333,7 +333,7 @@
 		"Enable Shift Lock" = false
 
 [tools]
-	"Beacon Redirection" = true
+	"Beacon Redirection" = false
 	"Ambient Discs" = false
 	"Pathfinder Maps" = false
 	"Color Runes" = false
@@ -541,7 +541,7 @@
 	"Coral On Cactus" = false
 	"Glass Shard" = false
 	"Pig Litters" = false
-	"Campfires Boost Elytra" = true
+	"Campfires Boost Elytra" = false
 	"Dyeable Item Frames" = true
 	"Slabs To Blocks" = false
 	"Map Washing" = true
@@ -566,8 +566,8 @@
 	"Safer Creatures" = true
 	"Lock Rotation" = false
 	"Villagers Follow Emeralds" = false
-	"Compasses Work Everywhere" = true
-	"No Durability On Cosmetics" = true
+	"Compasses Work Everywhere" = false
+	"No Durability On Cosmetics" = false
 	"Sponges Better" = true
 	"Sign Editing" = true
 	"Simple Harvest" = true
@@ -795,7 +795,7 @@
 		"Right Clickable Blocks" = ["minecraft:sweet_berry_bush", "minecraft:cave_vines"]
 
 [world]
-	"Nether Obsidian Spikes" = true
+	"Nether Obsidian Spikes" = false
 	Permafrost = false
 	"Fairy Rings" = true
 	"Big Stone Clusters" = true

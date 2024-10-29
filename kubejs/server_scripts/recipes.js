@@ -1,4 +1,13 @@
 ServerEvents.recipes(event => {
+  function baking(output, input) {
+    event.custom({
+      type: 'clayworks:baking',
+      cookingTime: 100,
+      ingredient: [ { item: input } ],
+      result: output
+    })
+  }
+
   // remove recipes
   event.remove({ type: 'create:sandpaper_polishing' })
   event.remove({ type: 'create:milling' })
@@ -275,6 +284,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'caverns_and_chasms:silver_ingot_from_smelting_deepslate_silver_ore' })
   event.remove({ id: 'caverns_and_chasms:silver_ingot_from_smelting_soul_silver_ore' })
   event.remove({ output: 'quark:moss_paste' })
+  event.remove({ output: 'quark:framed_glass' })
+  event.remove({ output: 'quark:midori_block' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -381,6 +392,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:furnace' }, '#forge:cobblestone', 'minecraft:cobblestone')
   event.replaceInput({ output: 'create:minecart_coupling' }, 'create:iron_sheet', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:minecart_coupling' }, 'create:zinc_ingot', 'minecraft:iron_ingot')
+  event.replaceInput({ output: 'minecraft:glow_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
+  event.replaceInput({ output: 'quark:glowing_glass_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -440,6 +453,7 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:grave_metal_leggings', ['GGG', 'G G', 'G G'], { G: 'undead_unleashed:grave_metal_ingot' })
   event.shaped('undead_unleashed:grave_metal_boots', ['G G', 'G G'], { G: 'undead_unleashed:grave_metal_ingot' })
   event.shapeless('undead_unleashed:moonlight_greatsword', ['minecraft:diamond_sword', 'caverns_and_chasms:silver_sword', 'undead_unleashed:grave_metal_sword', 'undead_unleashed:lost_soul', 'windswept:nightshade'])
+  event.shapeless('undead_unleashed:moonlight_greatsword', ['minecraft:diamond_sword', 'caverns_and_chasms:silver_sword', 'undead_unleashed:grave_metal_sword', 'undead_unleashed:lost_soul', 'quark:glow_shroom'])
   event.shapeless('windswept:nightshade', ['#minecraft:small_flowers', 'minecraft:lapis_lazuli'])
   event.shaped('undead_unleashed:shadow_helmet', ['GGG', 'G G'], { G: 'undead_unleashed:cursed_cloth' })
   event.shaped('undead_unleashed:shadow_chestplate', ['G G', 'GGG', 'GGG'], { G: 'undead_unleashed:cursed_cloth' })
@@ -447,6 +461,7 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:shadow_boots', ['G G', 'G G'], { G: 'undead_unleashed:cursed_cloth'  })
   event.shapeless(Item.of('undead_unleashed:cursed_cloth', 2), ['minecraft:amethyst_shard', 'atmospheric:grimweb', 'atmospheric:grimweb'])
   event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'windswept:nightshade', 'minecraft:glass_bottle'])
+  event.shapeless('otherworldly_accessories:bottle_o_glinting', ['undead_unleashed:lost_soul', 'quark:glow_shroom', 'minecraft:glass_bottle'])
   event.shaped('savage_and_ravage:wand_of_freezing', ['  P', ' R ', 'L  '], { P: 'endermanoverhaul:icy_pearl', R: 'kubejs:ice_rod', L: 'minecraft:lapis_lazuli'  })
   event.shapeless('savage_and_ravage:runed_gloomy_tiles', ['savage_and_ravage:gloomy_tiles', 'undead_unleashed:lost_soul'])
   event.shapeless('savage_and_ravage:blast_proof_plating', ['create:golden_sheet', 'savage_and_ravage:creeper_spores', 'minecraft:gunpowder'])
@@ -493,9 +508,23 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:chainmail_chestplate', ['G G', 'GGG', 'GGG'], { G: 'architects_palette:nether_brass_chain' })
   event.shaped('minecraft:chainmail_leggings', ['GGG', 'G G', 'G G'], { G: 'architects_palette:nether_brass_chain' })
   event.shaped('minecraft:chainmail_boots', ['G G', 'G G'], { G: 'architects_palette:nether_brass_chain' })
-  
+  event.shapeless('minecraft:grass_block', ['minecraft:dirt', 'minecraft:grass'])
+  event.shapeless('minecraft:podzol', ['minecraft:grass_block', 'windswept:dry_moss_block'])
+  event.shapeless('windswept:gelisol', ['minecraft:grass_block', 'windswept:gelisol_sprouts'])
+  event.shapeless('atmospheric:crustose', ['minecraft:grass_block', 'atmospheric:golden_growths'])
+  event.shapeless('atmospheric:crustose_log', ['atmospheric:aspen_log', 'atmospheric:golden_growths'])
+  event.shapeless('atmospheric:crustose_wood', ['atmospheric:aspen_wood', 'atmospheric:golden_growths'])
+  event.shaped(Item.of('quark:framed_glass', 4), ['GI', 'IG'], { G: 'minecraft:glass', I: 'minecraft:iron_ingot' })
+  event.shaped('kubejs:bejeweled_apple_crate', ['AAA', 'AAA', 'AAA'], { A: 'minecraft:enchanted_golden_apple' })
+  event.shapeless(Item.of('minecraft:enchanted_golden_apple', 9), ['kubejs:bejeweled_apple_crate'])
+
   event.shaped(Item.of('minecraft:bone_block', 3), ['BBB', 'BBB', 'BBB'], { B: 'minecraft:bone' })
   event.shapeless(Item.of('minecraft:bone', 3), ['minecraft:bone_block'])
+
+  event.smelting('quark:midori_block', 'minecraft:moss_block')
+
+  baking('quark:midori_block', 'minecraft:moss_block')
+  baking('architects_palette:cracked_basalt_tiles', 'architects_palette:basalt_tiles')
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')
@@ -604,7 +633,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['neapolitan:strawberry_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:strawberries', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:banana_cake'], [Fluid.of('minecraft:milk'), Item.of('neapolitan:banana', 2), Item.of('create:wheat_flour', 2), Item.of('minecraft:sugar', 2), '#forge:eggs']).heated()
   event.recipes.create.mixing(['neapolitan:strawberry_banana_smoothie'], [Item.of('neapolitan:strawberries', 2), 'neapolitan:banana', 'minecraft:glass_bottle'])
-  event.recipes.create.mixing(['sullysmod:cave_chum_bucket'], ['sullysmod:cooked_lanternfish', 'minecraft:glow_berries', 'minecraft:glow_ink_sac', 'minecraft:bucket'])
+  event.recipes.create.mixing(['sullysmod:cave_chum_bucket'], ['sullysmod:cooked_lanternfish', 'quark:glow_shroom', 'minecraft:bucket'])
   event.recipes.create.mixing(['minecraft:coal_ore'], ['minecraft:coal', 'minecraft:stone'])
   event.recipes.create.mixing(['minecraft:deepslate_coal_ore'], ['minecraft:coal', 'minecraft:deepslate'])
   event.recipes.create.mixing(['minecraft:iron_ore'], ['minecraft:raw_iron', 'minecraft:stone'])

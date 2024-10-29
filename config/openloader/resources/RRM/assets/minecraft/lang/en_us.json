@@ -6,6 +6,16 @@
   "attribute.modifier.equals.1": "+%s%% %s",
   "attribute.modifier.equals.2": "+%s%% %s",
 
+  "itemGroup.combat": "Weapons & Armor",
+  "itemGroup.decorations": "Plants & Decorations",
+  "itemGroup.tools": "Tools & Accessories",
+  "itemGroup.transportation": "Materials & Consumables",
+  "itemGroup.brewing": "Potions",
+  "itemGroup.redstone": "Contraptions",
+
+  "menu.singleplayer": "Play",
+  "menu.quit": "Quit...",
+
   "attribute.name.generic.luck": "Item Discovery",
 
   "advMode.mode.redstoneTriggered": "Needs Signal",
@@ -29,6 +39,8 @@
   "block.minecraft.red_nether_brick_slab": "Crimson Nether Brick Slab",
   "block.minecraft.red_nether_brick_stairs": "Crimson Nether Brick Stairs",
   "block.minecraft.red_nether_brick_wall": "Crimson Nether Brick Wall",
+  "block.minecraft.light_weighted_pressure_plate": "Golden Pressure Plate",
+  "block.minecraft.heavy_weighted_pressure_plate": "Iron Pressure Plate",
 
   "block.minecraft.shulker_box": "Sculker Box",
   "block.minecraft.white_shulker_box": "White Sculker Box",

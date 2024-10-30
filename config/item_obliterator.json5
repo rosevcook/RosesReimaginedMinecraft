@@ -302,6 +302,7 @@
     "!create:.*small_deepslate.*",
     "create:layered_deepslate",
     "create:deepslate_pillar",
+    "create:industrial_iron_block",
     "!create:.*dripstone.*",
     "!create:.*cut_andesite.*",
     "!create:.*small_andesite.*",

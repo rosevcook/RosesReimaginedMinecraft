@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: boards, type: 'minecraft:crafting_shaped' })
     event.remove({ output: ladder, type: 'minecraft:crafting_shaped' })
     event.remove({ output: fence, type: 'minecraft:crafting_shaped' })
-    event.remove({ output: button, type: 'minecraft:crafting_shaped' })
+    event.remove({ output: button, type: 'minecraft:crafting_shapeless' })
     event.remove({ output: chair, type: 'minecraft:crafting_shaped' })
     event.remove({ output: bench, type: 'minecraft:crafting_shaped' })
     event.remove({ output: table, type: 'minecraft:crafting_shaped' })

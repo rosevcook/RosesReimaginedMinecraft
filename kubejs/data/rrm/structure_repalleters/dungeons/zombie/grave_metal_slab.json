@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:smooth_stone_slab",
-  "replaces_with": "minecraft:end_stone_brick_slab",
+  "replaces_with": "kubejs:grave_metal_plate_slab",
   "selector": "betterdungeons:zombie_dungeon"
 }

@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:stone_stairs",
-  "replaces_with": "minecraft:end_stone_brick_stairs",
+  "replaces_with": "kubejs:grave_metal_plate_stairs",
   "selector": "betterdungeons:skeleton_dungeon"
 }

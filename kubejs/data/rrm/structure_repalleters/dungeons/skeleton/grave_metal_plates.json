@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:barrel",
-  "replaces_with": "minecraft:end_stone_bricks",
+  "replaces_with": "kubejs:grave_metal_plates",
   "selector": "betterdungeons:skeleton_dungeon"
 }

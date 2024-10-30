@@ -315,7 +315,7 @@
               }
             }
           ],
-          "name": "create:andesite_alloy"
+          "name": "create:zinc_ingot"
         },
         {
           "type": "minecraft:item",

@@ -11,7 +11,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "minecraft:ghast_tear"
+          "name": "kubejs:silver_feather"
         },
         {
           "type": "minecraft:item",
@@ -32,6 +32,11 @@
           "type": "minecraft:item",
           "weight": 2,
           "name": "otherworldly_accessories:broken_shackle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "otherworldly_accessories:sanguine_knife"
         },
         {
           "type": "minecraft:item",

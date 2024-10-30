@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cobblestone",
+  "replaces_with": "minecraft:deepslate",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

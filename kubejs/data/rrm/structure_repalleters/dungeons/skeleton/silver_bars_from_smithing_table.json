@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smithing_table",
+  "replaces_with": "caverns_and_chasms:silver_bars",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

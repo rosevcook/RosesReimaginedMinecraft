@@ -98,6 +98,16 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('sullysmod:jade_generates_in')
   event.removeAll('cataclysm:has_structure/ancient_factory_biomes')
   event.removeAll('cataclysm:has_structure/frosted_prison_biomes')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_overgrown')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_desert')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_spruce_snowy')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_ice')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_acacia')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_jungle')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_mesa')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_red_desert')
+  event.removeAll('bettermineshafts:has_structure/better_mineshaft_mushroom')
+  event.removeAll('betterdungeons:has_structure/spider_dungeon')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
@@ -122,6 +132,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
   event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
   event.add('environmental:has_structure/log_cabin', '#windswept:is_pine_barrens')
+  event.add('bettermineshafts:has_structure/better_mineshaft_mushroom', 'quark:glimmering_weald')
 })
 
 ServerEvents.tags('worldgen/structure', event => {

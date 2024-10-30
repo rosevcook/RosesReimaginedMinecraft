@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mycelium",
+  "replaces_with": "minecraft:deepslate",
+  "selector": "bettermineshafts:mineshaft_mushroom"
+}

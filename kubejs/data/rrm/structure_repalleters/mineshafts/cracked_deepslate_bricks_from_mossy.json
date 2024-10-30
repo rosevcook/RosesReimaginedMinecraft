@@ -1,0 +1,13 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mossy_stone_bricks",
+  "replaces_with": "minecraft:cracked_deepslate_bricks",
+  "selector": {
+    "type": "names",
+    "config": [
+      "bettermineshafts:mineshaft_oak",
+      "bettermineshafts:mineshaft_spruce"
+    ]
+  }
+}

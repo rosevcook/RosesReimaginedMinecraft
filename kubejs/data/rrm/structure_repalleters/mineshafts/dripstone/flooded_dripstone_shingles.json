@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mossy_stone_bricks",
+  "replaces_with": "caverns_and_chasms:flooded_dripstone_shingles",
+  "selector": "bettermineshafts:mineshaft_dripstone"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:soul_campfire",
+  "replaces_with": "caverns_and_chasms:cupric_campfire",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

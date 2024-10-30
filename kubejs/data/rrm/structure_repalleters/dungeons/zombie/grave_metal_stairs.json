@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:polished_andesite_stairs",
+  "replaces_with": "minecraft:end_stone_brick_stairs",
+  "selector": "betterdungeons:zombie_dungeon"
+}

@@ -1,0 +1,18 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:oak_planks",
+  "replaces_with": "caverns_and_chasms:azalea_planks",
+  "selector": {
+    "type": "names",
+    "conditions": [
+      {
+        "type": "forge:mod_loaded",
+        "modid": "caverns_and_chasms"
+      }
+    ],
+    "config": [
+      "bettermineshafts:mineshaft_lush"
+    ]
+  }
+}

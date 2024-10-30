@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:grass",
+  "replaces_with": "windswept:mossy_sprouts",
+  "selector": "bettermineshafts:mineshaft_lush"
+}

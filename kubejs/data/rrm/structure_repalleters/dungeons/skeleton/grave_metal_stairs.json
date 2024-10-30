@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:stone_stairs",
+  "replaces_with": "minecraft:end_stone_brick_stairs",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

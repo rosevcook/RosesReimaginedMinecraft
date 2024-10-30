@@ -1,0 +1,8 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:oak_fence",
+  "replaces_with": "caverns_and_chasms:azalea_fence",
+  "selector": "bettermineshafts:mineshaft_lush"
+
+}

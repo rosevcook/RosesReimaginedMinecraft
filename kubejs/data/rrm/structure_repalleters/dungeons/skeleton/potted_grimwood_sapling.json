@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:redstone_wire",
+  "replaces_with": "atmospheric:potted_grimwood_sapling",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

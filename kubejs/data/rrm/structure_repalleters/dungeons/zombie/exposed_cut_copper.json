@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:soul_sand",
+  "replaces_with": "minecraft:exposed_cut_copper",
+  "selector": "betterdungeons:zombie_dungeon"
+}

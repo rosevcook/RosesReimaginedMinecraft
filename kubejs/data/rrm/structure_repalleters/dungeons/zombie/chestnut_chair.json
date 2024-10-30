@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:stone_stairs",
+  "replaces_with": "everycomp:af/windswept/chestnut_chair",
+  "selector": "betterdungeons:zombie_dungeon"
+}

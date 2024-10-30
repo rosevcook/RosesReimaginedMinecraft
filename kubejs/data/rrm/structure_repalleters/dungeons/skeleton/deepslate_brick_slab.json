@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:stone_brick_slab",
+  "replaces_with": "minecraft:deepslate_brick_slab",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

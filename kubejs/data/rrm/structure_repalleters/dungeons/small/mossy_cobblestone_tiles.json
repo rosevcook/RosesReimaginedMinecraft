@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mossy_cobblestone",
+  "replaces_with": "caverns_and_chasms:mossy_cobblestone_tiles",
+  "selector": "betterdungeons:small_dungeon"
+}

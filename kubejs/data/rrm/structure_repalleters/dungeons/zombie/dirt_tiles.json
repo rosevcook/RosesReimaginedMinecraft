@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cyan_terracotta",
+  "replaces_with": "environmental:dirt_tiles",
+  "selector": "betterdungeons:zombie_dungeon"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:smooth_stone",
+  "replaces_with": "minecraft:end_stone_bricks",
+  "selector": "betterdungeons:zombie_dungeon"
+}

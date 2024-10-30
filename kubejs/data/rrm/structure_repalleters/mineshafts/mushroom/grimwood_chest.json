@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "atmospheric:grimwood_chest",
+  "selector": "bettermineshafts:mineshaft_mushroom"
+}

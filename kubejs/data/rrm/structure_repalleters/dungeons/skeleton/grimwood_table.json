@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:jukebox",
+  "replaces_with": "everycomp:af/atmospheric/grimwood_table",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:black_candle",
+  "replaces_with": "caverns_and_chasms:cupric_candle",
+  "selector": "betterdungeons:zombie_dungeon"
+}

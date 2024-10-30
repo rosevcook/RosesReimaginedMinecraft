@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cobblestone",
+  "replaces_with": "environmental:dirt_bricks",
+  "selector": "betterdungeons:zombie_dungeon"
+}

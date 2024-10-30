@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:mossy_stone_bricks",
+  "replaces_with": "quark:midori_block",
+  "selector": "bettermineshafts:mineshaft_lush"
+}

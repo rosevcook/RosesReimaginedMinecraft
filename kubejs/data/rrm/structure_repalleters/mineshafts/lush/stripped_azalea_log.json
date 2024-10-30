@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:stripped_oak_log",
+  "replaces_with": "caverns_and_chasms:stripped_azalea_log",
+  "selector": "bettermineshafts:mineshaft_lush"
+}

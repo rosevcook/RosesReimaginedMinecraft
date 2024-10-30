@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:red_mushroom",
+  "replaces_with": "quark:glow_shroom",
+  "selector": "bettermineshafts:mineshaft_mushroom"
+}

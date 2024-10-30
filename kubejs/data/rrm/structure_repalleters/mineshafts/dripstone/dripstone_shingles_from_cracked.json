@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cracked_stone_bricks",
+  "replaces_with": "caverns_and_chasms:dripstone_shingles",
+  "selector": "bettermineshafts:mineshaft_dripstone"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:ladder",
+  "replaces_with": "caverns_and_chasms:azalea_ladder",
+  "selector": "bettermineshafts:mineshaft_lush"
+}

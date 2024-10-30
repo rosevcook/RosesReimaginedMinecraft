@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:coarse_dirt",
+  "replaces_with": "environmental:dirt_path",
+  "selector": "betterdungeons:zombie_dungeon"
+}

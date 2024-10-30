@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:spruce_trapdoor",
+  "replaces_with": "atmospheric:grimwood_trapdoor",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

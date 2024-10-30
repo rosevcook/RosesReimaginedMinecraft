@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:crafting_table",
+  "replaces_with": "atmospheric:grimweb",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

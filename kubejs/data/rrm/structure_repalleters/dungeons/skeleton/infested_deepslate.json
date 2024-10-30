@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:infested_chiseled_stone_bricks",
+  "replaces_with": "minecraft:infested_deepslate",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

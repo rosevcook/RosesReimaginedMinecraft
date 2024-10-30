@@ -1,0 +1,16 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:emerald_ore",
+  "replaces_with": "caverns_and_chasms:deepslate_spinel_ore",
+  "selector": {
+    "type": "names",
+    "config": [
+      "bettermineshafts:mineshaft_oak",
+      "bettermineshafts:mineshaft_spruce",
+      "bettermineshafts:mineshaft_lush",
+      "bettermineshafts:mineshaft_dripstone",
+      "bettermineshafts:mineshaft_mushroom"
+    ]
+  }
+}

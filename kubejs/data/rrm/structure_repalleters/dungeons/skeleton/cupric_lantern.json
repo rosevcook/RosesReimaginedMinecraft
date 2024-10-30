@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:potted_dead_bush",
+  "replaces_with": "caverns_and_chasms:cupric_lantern",
+  "selector": "betterdungeons:skeleton_dungeon"
+}

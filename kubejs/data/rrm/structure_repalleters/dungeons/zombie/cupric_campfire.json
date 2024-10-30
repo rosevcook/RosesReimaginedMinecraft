@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:iron_bars",
+  "replaces_with": "caverns_and_chasms:cupric_campfire",
+  "selector": "betterdungeons:zombie_dungeon"
+}

@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
   }
 
   function plank(planks, stairs, slab, boards, fence, button, ladder, fence_gate, chair, bench, table, railing, pressure_plate) {
+    event.shapeless(planks, [boards])
     event.remove({ output: fence_gate })
     event.remove({ output: pressure_plate })
     event.remove({ output: boards, type: 'minecraft:crafting_shaped' })

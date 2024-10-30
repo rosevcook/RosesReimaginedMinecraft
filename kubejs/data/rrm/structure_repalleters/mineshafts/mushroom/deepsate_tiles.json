@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:brown_mushroom_block",
+  "replaces_with": "minecraft:deepslate_tiles",
+  "selector": "bettermineshafts:mineshaft_mushroom"
+}

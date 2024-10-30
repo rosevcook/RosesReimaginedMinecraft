@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cobblestone",
+  "replaces_with": "caverns_and_chasms:dripstone_block",
+  "selector": "bettermineshafts:mineshaft_dripstone"
+}

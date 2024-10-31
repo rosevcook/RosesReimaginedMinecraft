@@ -287,6 +287,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'quark:moss_paste' })
   event.remove({ output: 'quark:framed_glass' })
   event.remove({ output: 'quark:midori_block' })
+  event.remove({ id: 'queen_bee:stinger_sword' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -515,7 +516,7 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('quark:framed_glass', 4), ['GI', 'IG'], { G: 'minecraft:glass', I: 'minecraft:iron_ingot' })
   event.shaped('kubejs:bejeweled_apple_crate', ['AAA', 'AAA', 'AAA'], { A: 'minecraft:enchanted_golden_apple' })
   event.shapeless(Item.of('minecraft:enchanted_golden_apple', 9), ['kubejs:bejeweled_apple_crate'])
-  event.shapeless('undead_unleashed:tome_of_reflection', ['undead_unleashed:lost_soul', 'minecraft:book', 'undead_unleashed:necrotic_dust', 'minecraft:ink_sac', 'quark:glow_shroom', 'minecraft:echo_shard' ])
+  event.shapeless('undead_unleashed:tome_of_reflection', ['undead_unleashed:lost_soul', 'minecraft:book', 'undead_unleashed:necrotic_dust', 'minecraft:ink_sac', 'quark:glow_shroom' ])
 
   event.shaped(Item.of('minecraft:bone_block', 3), ['BBB', 'BBB', 'BBB'], { B: 'minecraft:bone' })
   event.shapeless(Item.of('minecraft:bone', 3), ['minecraft:bone_block'])

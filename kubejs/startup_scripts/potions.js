@@ -19,7 +19,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   event.removeByPotion(null, null, 'sullysmod:unluck')
 
   // add potions
-  replacePotion('kubejs:silver_feather', 'minecraft:slow_falling')
+  replacePotion('quark:glow_shroom', 'minecraft:slow_falling')
   replacePotion('minecraft:rabbit_foot', 'minecraft:leaping')
   replacePotion('minecraft:sugar', 'minecraft:swiftness')
   replacePotion('minecraft:turtle_helmet', 'minecraft:turtle_master')
@@ -38,7 +38,6 @@ MoreJSEvents.registerPotionBrewing(event => {
   replacePotion('atmospheric:aloe_leaves', 'atmospheric:relief')
   replacePotion('autumnity:snail_goo', 'autumnity:extension')
   event.addPotionBrewing('windswept:nightshade', 'minecraft:night_vision')
-  event.addPotionBrewing('quark:glow_shroom', 'minecraft:invisibility')
   event.addPotionBrewing('atmospheric:yucca_branch', 'windswept:thorns')
 
   // long potions

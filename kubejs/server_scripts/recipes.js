@@ -407,7 +407,6 @@ ServerEvents.recipes(event => {
   event.shapeless('caverns_and_chasms:sanguine_plating', ['kubejs:silver_sheet', '#rrm:rotten_flesh', 'heart_crystals:heart_crystal_shard'])
   event.shaped('create:crushing_wheel', ['III', 'ICI', 'III'], { I: 'minecraft:iron_ingot', C: 'create:large_cogwheel' })
   event.shaped('caverns_and_chasms:tuning_fork', [' S ', ' IS', 'I  '], { S: 'create:copper_sheet', I: 'minecraft:copper_ingot' })
-  event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
   event.shaped(Item.of('kubejs:copper_wire', 2), ['CIC'], { C: 'caverns_and_chasms:copper_nugget', I: 'minecraft:copper_ingot' })
   event.shaped('minecraft:elytra', ['F F', 'FFF', 'F F'], { F: 'kubejs:torn_elytra_fragment' })
   event.shaped('kubejs:power_coil', ['CCC', 'CWC', 'CCC'], { C: 'undead_unleashed:charstone_shard', W: 'kubejs:copper_wire' })

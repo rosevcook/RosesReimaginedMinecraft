@@ -11,7 +11,7 @@
         {
           "type": "minecraft:item",
           "weight": 1,
-          "name": "kubejs:silver_feather"
+          "name": "quark:glow_shroom"
         },
         {
           "type": "minecraft:item",

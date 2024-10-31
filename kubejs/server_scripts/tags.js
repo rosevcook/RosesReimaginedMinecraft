@@ -108,6 +108,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('bettermineshafts:has_structure/better_mineshaft_red_desert')
   event.removeAll('bettermineshafts:has_structure/better_mineshaft_mushroom')
   event.removeAll('betterdungeons:has_structure/spider_dungeon')
+  event.removeAll('queen_bee:has_structure/beehive')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')

@@ -4,6 +4,7 @@ ItemEvents.tooltip(event => {
   event.add(['cataclysm:abyss_eye'], "§7Locates the Sunken City")
   event.add(['cataclysm:flame_eye'], "§7Locates the Burning Arena")
   event.add(['clash:greatblade'], " §9+1 Staggering Infliction")
+  event.add(['queen_bee:stinger_sword'], " §9+1 Poison Infliction")
   event.add(['cataclysm:abyssal_sacrifice'], "§7Offer to the Altar of Abyss to summon the Leviathan")
   event.add(['cataclysm:burning_ashes'], "§7Offer to the Altar of Fire to summon Ignis")
   event.add(['minecraft:dark_oak_sapling', 'atmospheric:grimwood_sapling'], "§7Must be grown in 2x2 shape")

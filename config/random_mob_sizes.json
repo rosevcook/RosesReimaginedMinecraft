@@ -1,0 +1,32 @@
+{
+	"keep_scaling_on_conversion": true,
+	"minecraft:spider": {
+		"type": "gaussian",
+		"min_scaling": 0.75,
+		"max_scaling": 1.1
+	},
+	"minecraft:blaze": {
+		"type": "gaussian",
+		"min_scaling": 1.2,
+		"max_scaling": 1.75
+	},
+	"environmental:yak": 1.1,
+	"minecraft:parrot": 1.15,
+	"queen_bee:queen_bee": 1.8,
+	"minecraft:tropical_fish": {
+		"type": "gaussian",
+		"min_scaling": 0.75,
+		"max_scaling": 1.25
+	},
+	"undead_unleashed:graveriser": 1.1,
+	"minecraft:bee": {
+		"type": "gaussian",
+		"min_scaling": 0.75,
+		"max_scaling": 1.0
+	},
+	"minecraft:frog": {
+		"type": "gaussian",
+		"min_scaling": 0.5,
+		"max_scaling": 1.5
+	}
+}

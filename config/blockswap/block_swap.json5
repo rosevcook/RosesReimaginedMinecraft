@@ -76,6 +76,7 @@
 		"upgrade_aquatic:pillow_coral_wall_fan": "upgrade_aquatic:petal_coral_wall_fan",
 		"upgrade_aquatic:pillow_coralstone": "upgrade_aquatic:petal_coralstone",
 		"quark:shale": "windswept:shale",
-		"quark:limestone": "atmospheric:dolerite"
+		"quark:limestone": "atmospheric:dolerite",
+		"supplementaries:ash": "minecraft:air"
 	}
 }

@@ -38,6 +38,7 @@ ServerEvents.tags('item', event => {
   event.remove('forge:cooked_venison', 'abnormals_delight:cooked_venison_shanks')
   event.remove('forge:cooked_duck', 'abnormals_delight:cooked_duck_fillet')
   event.remove('quark:seed_pouch_holdable', '#minecraft:saplings', 'minecraft:cocoa_beans', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:sweet_berries', 'minecraft:nether_wart', 'minecraft:sugar_cane', 'minecraft:bamboo', 'minecraft:kelp')
+  event.remove('supplementaries:ropes', 'supplementaries:rope', 'quark:rope')
 
   event.remove('forge:stripped_logs', 'minecraft:stripped_jungle_log', 'minecraft:stripped_acacia_log', 'minecraft:stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
   event.remove('forge:stripped_wood', 'minecraft:stripped_jungle_wood', 'minecraft:stripped_acacia_wood', 'minecraft:stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')

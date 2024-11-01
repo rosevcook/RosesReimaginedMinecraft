@@ -41,6 +41,8 @@
     "queen_bee:stinger",
     "queen_bee:antenna",
     "create:content_observer",
+    "supplementaries:gold_gate",
+    "supplementaries:sconce_nether_brass",
     "minecraft:redstone_torch",
     "minecraft:repeater", 
     "minecraft:phantom_membrane",

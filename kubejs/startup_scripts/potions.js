@@ -39,6 +39,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   replacePotion('autumnity:snail_goo', 'autumnity:extension')
   event.addPotionBrewing('windswept:nightshade', 'minecraft:night_vision')
   event.addPotionBrewing('atmospheric:yucca_branch', 'windswept:thorns')
+  event.addPotionBrewing('cataclysm:lionfish', 'minecraft:water_breathing')
 
   // long potions
   longPotion('minecraft:invisibility', 'minecraft:long_invisibility')
@@ -57,7 +58,6 @@ MoreJSEvents.registerPotionBrewing(event => {
   longPotion('minecraft:night_vision', 'minecraft:long_night_vision')
   longPotion('windswept:thorns', 'windswept:long_thorns')
   longPotion('windswept:frost_resistance', 'windswept:long_frost_resistance')
-  //longPotion('quark:resilience', 'quark:long_resilience')
   longPotion('caverns_and_chasms:rewind', 'caverns_and_chasms:long_rewind')
   longPotion('buzzier_bees:unluck', 'buzzier_bees:long_unluck')
   longPotion('upgrade_aquatic:repellence', 'upgrade_aquatic:repellence_long')

@@ -8,6 +8,7 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:feet')
   event.removeAll('curios:hands')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
+  event.removeAll('supplementaries:ropes')
 
   event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves', 'quark:backpack')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
@@ -16,6 +17,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:sandstone', 'minecraft:sandstone', 'minecraft:red_sandstone', 'atmospheric:arid_sandstone', 'atmospheric:red_arid_sandstone')
   event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio', 'artifacts:umbrella');
   event.add('forge:berries', 'autumnity:foul_berries', 'upgrade_aqutic:mulberry', 'atmospheric:currant', 'neapolitan:strawberries', 'neapolitan:white_strawberries')
+  event.add('supplementaries:ropes', 'farmersdelight:rope')
   event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe')
   event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword')
   event.add('quark:seed_pouch_holdable', 'windswept:ginger_root', 'farmersdelight:onion')
@@ -38,7 +40,6 @@ ServerEvents.tags('item', event => {
   event.remove('forge:cooked_venison', 'abnormals_delight:cooked_venison_shanks')
   event.remove('forge:cooked_duck', 'abnormals_delight:cooked_duck_fillet')
   event.remove('quark:seed_pouch_holdable', '#minecraft:saplings', 'minecraft:cocoa_beans', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:sweet_berries', 'minecraft:nether_wart', 'minecraft:sugar_cane', 'minecraft:bamboo', 'minecraft:kelp')
-  event.remove('supplementaries:ropes', 'supplementaries:rope', 'quark:rope')
 
   event.remove('forge:stripped_logs', 'minecraft:stripped_jungle_log', 'minecraft:stripped_acacia_log', 'minecraft:stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
   event.remove('forge:stripped_wood', 'minecraft:stripped_jungle_wood', 'minecraft:stripped_acacia_wood', 'minecraft:stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')

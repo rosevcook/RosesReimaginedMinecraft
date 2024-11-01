@@ -289,6 +289,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'quark:midori_block' })
   event.remove({ id: 'queen_bee:stinger_sword' })
   event.remove({ output: 'supplementaries:goblet' })
+  event.remove({ output: 'mace_backport:mace' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -398,6 +399,9 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:glow_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
   event.replaceInput({ output: 'quark:glowing_glass_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
   event.replaceInput({ output: '#supplementaries:sconces' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
+  event.replaceInput({ output: 'caverns_and_chasms:brazier' }, '#minecraft:coals', 'minecraft:torch')
+  event.replaceInput({ output: 'caverns_and_chasms:soul_brazier' }, '#minecraft:soul_fire_base_blocks', 'minecraft:soul_torch')
+  event.replaceInput({ output: 'caverns_and_chasms:cupric_brazier' }, 'minecraft:copper_ingot', 'caverns_and_chasms:cupric_torch')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -521,6 +525,7 @@ ServerEvents.recipes(event => {
   event.shapeless('undead_unleashed:tome_of_reflection', ['undead_unleashed:lost_soul', 'minecraft:book', 'undead_unleashed:necrotic_dust', 'minecraft:ink_sac', 'quark:glow_shroom' ])
   event.shaped('supplementaries:goblet', ['N N', 'N N', ' N '], { N: 'caverns_and_chasms:silver_nugget' })
   event.shaped('supplementaries:doormat', ['HH'], { H: 'environmental:yak_hair' })
+  event.shaped('mace_backport:mace', ['  S', ' R ', 'R  '], { R: 'kubejs:ice_rod', S: 'caverns_and_chasms:silver_block' })
 
   event.shaped(Item.of('minecraft:bone_block', 3), ['BBB', 'BBB', 'BBB'], { B: 'minecraft:bone' })
   event.shapeless(Item.of('minecraft:bone', 3), ['minecraft:bone_block'])

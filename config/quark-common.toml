@@ -681,7 +681,7 @@
 		#Allowed values: [0,1]
 		Leniency = 0.5
 		Whitelist = []
-		Blacklist = []
+		Blacklist = ["minecraft:sweet_berries", "minecraft:glow_berries"]
 		Display = "[  ]"
 		"Display Horizontal" = "<  >"
 

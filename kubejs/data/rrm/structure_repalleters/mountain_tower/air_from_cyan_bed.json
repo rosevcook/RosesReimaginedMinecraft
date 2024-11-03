@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:cyan_bed",
+  "replaces_with": "minecraft:air",
+  "selector": "irons_spellbooks:mountain_tower"
+}

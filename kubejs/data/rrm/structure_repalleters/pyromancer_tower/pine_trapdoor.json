@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:oak_trapdoor",
+  "replaces_with": "windswept:pine_trapdoor",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

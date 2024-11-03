@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:oak_log",
+  "replaces_with": "windswept:stripped_pine_log",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

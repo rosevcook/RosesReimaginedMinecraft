@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:potted_blue_orchid",
+  "replaces_with": "windswept:potted_nightshade",
+  "selector": "irons_spellbooks:mountain_tower"
+}

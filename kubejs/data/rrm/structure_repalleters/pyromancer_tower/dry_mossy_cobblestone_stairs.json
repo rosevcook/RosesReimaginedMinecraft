@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:mossy_cobblestone_stairs",
+  "replaces_with": "windswept:dry_mossy_cobblestone_stairs",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

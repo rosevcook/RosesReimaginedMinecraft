@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:diorite_wall",
+  "replaces_with": "windswept:icicles",
+  "selector": "irons_spellbooks:mountain_tower"
+}

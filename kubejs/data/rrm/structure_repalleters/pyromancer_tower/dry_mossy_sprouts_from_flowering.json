@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:flowering_azalea",
+  "replaces_with": "windswept:dry_mossy_sprouts",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

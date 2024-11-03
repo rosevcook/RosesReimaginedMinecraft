@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:deepslate",
+  "replaces_with": "architects_palette:twisting_blackstone",
+  "selector": "irons_spellbooks:ancient_battleground"
+}

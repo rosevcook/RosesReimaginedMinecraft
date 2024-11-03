@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:deepslate_brick_stairs",
+  "replaces_with": "minecraft:polished_blackstone_brick_stairs",
+  "selector": "irons_spellbooks:ancient_battleground"
+}

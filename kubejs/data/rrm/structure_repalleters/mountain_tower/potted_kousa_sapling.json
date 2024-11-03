@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:potted_spruce_sapling",
+  "replaces_with": "atmospheric:potted_kousa_sapling",
+  "selector": "irons_spellbooks:mountain_tower"
+}

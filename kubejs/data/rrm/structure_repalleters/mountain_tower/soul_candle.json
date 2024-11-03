@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:candle",
+  "replaces_with": "buzzier_bees:soul_candle",
+  "selector": "irons_spellbooks:mountain_tower"
+}

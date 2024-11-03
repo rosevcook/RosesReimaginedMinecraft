@@ -26,6 +26,15 @@
     },
     {
       "category": "emi:fuel"
+    },
+    {
+      "category": "irons_spellbooks:alchemist_cauldron"
+    },
+    {
+      "category": "irons_spellbooks:arcane_anvil"
+    },
+    {
+      "category": "irons_spellbooks:scroll_forge"
     }
   ]
 }

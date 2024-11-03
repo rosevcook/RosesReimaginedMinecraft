@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:hanging_roots",
+  "replaces_with": "windswept:icicles",
+  "selector": "irons_spellbooks:mountain_tower"
+}

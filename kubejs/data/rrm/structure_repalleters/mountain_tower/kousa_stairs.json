@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:dark_oak_stairs",
+  "replaces_with": "atmospheric:kousa_stairs",
+  "selector": "irons_spellbooks:mountain_tower"
+}

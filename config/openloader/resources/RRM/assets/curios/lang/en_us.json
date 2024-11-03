@@ -3,5 +3,7 @@
   "key.curios.open.desc": "Open/Close Trinkets Inventory",
   "key.curios.category": "Trinkets",
   "curios.identifier.curio": "Trinket",
-  "curios.modifiers.curio": "§7When Equipped:"
+  "curios.modifiers.curio": "§7When Equipped:",
+  "curios.modifiers.ring": "§7When Equipped:",
+  "curios.modifiers.necklace": "§7When Equipped:"
 }

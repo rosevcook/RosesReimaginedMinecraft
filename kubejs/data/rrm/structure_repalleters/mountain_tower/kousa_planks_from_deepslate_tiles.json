@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:deepslate_tiles",
+  "replaces_with": "atmospheric:kousa_planks",
+  "selector": "irons_spellbooks:mountain_tower"
+}

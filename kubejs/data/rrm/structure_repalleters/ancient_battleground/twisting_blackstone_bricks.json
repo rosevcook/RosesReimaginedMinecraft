@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:cracked_deepslate_bricks",
+  "replaces_with": "architects_palette:twisting_blackstone_bricks",
+  "selector": "irons_spellbooks:ancient_battleground"
+}

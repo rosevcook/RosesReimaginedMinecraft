@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:ladder",
+  "replaces_with": "windswept:pine_ladder",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

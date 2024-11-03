@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:chiseled_deepslate",
+  "replaces_with": "minecraft:chiseled_polished_blackstone",
+  "selector": "irons_spellbooks:ancient_battleground"
+}

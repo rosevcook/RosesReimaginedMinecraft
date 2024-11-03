@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:lectern",
+  "replaces_with": "everycomp:af/atmospheric/kousa_shelf",
+  "selector": "irons_spellbooks:mountain_tower"
+}

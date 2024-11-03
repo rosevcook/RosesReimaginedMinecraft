@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:oak_slab",
+  "replaces_with": "everycomp:af/atmospheric/kousa_table",
+  "selector": "irons_spellbooks:mountain_tower"
+}

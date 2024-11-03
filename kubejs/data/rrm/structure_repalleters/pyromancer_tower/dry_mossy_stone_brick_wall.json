@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:mossy_stone_brick_wall",
+  "replaces_with": "windswept:dry_mossy_stone_brick_wall",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:crimson_slab",
+  "replaces_with": "everycomp:af/windswept/holly_table",
+  "selector": "irons_spellbooks:pyromancer_tower"
+}

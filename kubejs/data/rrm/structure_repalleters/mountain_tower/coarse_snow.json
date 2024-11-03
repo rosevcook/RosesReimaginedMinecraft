@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:mossy_cobblestone",
+  "replaces_with": "architects_palette:coarse_snow",
+  "selector": "irons_spellbooks:mountain_tower"
+}

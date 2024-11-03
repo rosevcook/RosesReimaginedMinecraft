@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:yellow_carpet",
+  "replaces_with": "minecraft:amethyst_cluster",
+  "selector": "irons_spellbooks:mountain_tower"
+}

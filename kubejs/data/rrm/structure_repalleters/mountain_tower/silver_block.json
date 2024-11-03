@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:emerald_block",
+  "replaces_with": "caverns_and_chasms:silver_block",
+  "selector": "irons_spellbooks:mountain_tower"
+}

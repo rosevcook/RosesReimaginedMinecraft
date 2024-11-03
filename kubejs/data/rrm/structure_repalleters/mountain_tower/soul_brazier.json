@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:soul_campfire",
+  "replaces_with": "caverns_and_chasms:soul_brazier",
+  "selector": "irons_spellbooks:mountain_tower"
+}

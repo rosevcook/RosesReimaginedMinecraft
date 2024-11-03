@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:deepslate_tile_slab",
+  "replaces_with": "atmospheric:kousa_slab",
+  "selector": "irons_spellbooks:mountain_tower"
+}

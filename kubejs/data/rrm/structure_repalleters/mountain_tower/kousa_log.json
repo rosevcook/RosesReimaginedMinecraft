@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:dark_oak_log",
+  "replaces_with": "atmospheric:kousa_log",
+  "selector": "irons_spellbooks:mountain_tower"
+}

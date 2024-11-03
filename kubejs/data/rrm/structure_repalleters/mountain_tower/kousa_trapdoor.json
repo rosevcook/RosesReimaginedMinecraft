@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:dark_oak_trapdoor",
+  "replaces_with": "atmospheric:kousa_trapdoor",
+  "selector": "irons_spellbooks:mountain_tower"
+}

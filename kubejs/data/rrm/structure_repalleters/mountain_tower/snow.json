@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:cobblestone",
+  "replaces_with": "minecraft:snow_block",
+  "selector": "irons_spellbooks:mountain_tower"
+}

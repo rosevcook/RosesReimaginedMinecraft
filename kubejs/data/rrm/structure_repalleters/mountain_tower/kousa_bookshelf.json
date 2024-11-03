@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:bookshelf",
+  "replaces_with": "atmospheric:kousa_bookshelf",
+  "selector": "irons_spellbooks:mountain_tower"
+}

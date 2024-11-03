@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:soul_lantern",
+  "replaces_with": "windswept:ice_lantern",
+  "selector": "irons_spellbooks:mountain_tower"
+}

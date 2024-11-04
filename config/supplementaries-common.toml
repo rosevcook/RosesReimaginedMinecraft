@@ -155,7 +155,7 @@
 		enabled = true
 		#Chance for an urn to spawn a critter from the urn_spawn tag
 		#Range: 0.0 ~ 1.0
-		critter_spawn_chance = 0.009999999776482582
+		critter_spawn_chance = 0.1
 
 		[functional.urn.cave_urns]
 			enabled = true

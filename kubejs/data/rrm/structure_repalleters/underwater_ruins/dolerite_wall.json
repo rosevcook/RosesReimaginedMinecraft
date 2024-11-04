@@ -1,8 +1,8 @@
 {
   "type": "blueprint:simple",
   "priority": "normal",
-  "replaces_block": "minecraft:polished_granite_slab",
-  "replaces_with": "quark:polished_limestone_slab",
+  "replaces_block": "minecraft:granite_wall",
+  "replaces_with": "atmospheric:dolerite_wall",
   "selector": {
     "type": "names",
     "config": [

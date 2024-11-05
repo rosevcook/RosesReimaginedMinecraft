@@ -1550,7 +1550,7 @@
 	"Uses For Curses" = false
 	"Wool Shuts Up Minecarts" = true
 	"Back Button Keybind" = true
-	"Chest Searching" = false
+	"Chest Searching" = true
 	"Long Range Pick Block" = true
 	"Usage Ticker" = true
 

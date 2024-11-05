@@ -142,10 +142,6 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('irons_spellbooks:has_structure/pyromancer_tower', '#windswept:is_pine_barrens')
 })
 
-ServerEvents.tags('entities', event => {
-  event.add('supplementaries:urn_spawn', 'alexsmobs:fly', 'alexsmobs:cockroach')
-})
-
 ServerEvents.tags('worldgen/structure', event => {
   event.removeAll('minecraft:eye_of_ender_located')
   event.add('minecraft:eye_of_ender_located', 'minecraft:ancient_city')

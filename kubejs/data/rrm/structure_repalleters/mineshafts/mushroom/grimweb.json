@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:cobweb",
-  "replaces_with": "atmospheric:grimweb",
-  "selector": "bettermineshafts:mineshaft_mushroom"
-}

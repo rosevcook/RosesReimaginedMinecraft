@@ -4,7 +4,7 @@
 	[mobs.creeper]
 		"Creeper explosions drop all blocks" = true
 		#Creeper explosions have a weaker power
-		"Creeper explosion nerf" = true
+		"Creeper explosion nerf" = false
 		#How much weaker Creeper explosions are
 		#Range: 0.0 ~ 1.7976931348623157E308
 		"Creeper explosion nerf factor" = 0.5

@@ -53,6 +53,7 @@ ServerEvents.tags('block', event => {
   event.add('minecraft:snow', 'architects_palette:coarse_snow')
   event.add('quark:hedges', 'atmospheric:green_aspen_hedge')
   event.removeAll('architects_palette:green_fire_supporting')
+  event.add('caverns_and_chasms:cupric_fire_base_blocks', 'quark:raw_copper_bricks', 'quark:raw_copper_bricks_stairs', 'quark:raw_copper_bricks_slab')
 
   // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver
   event.get('minecraft:needs_stone_tool').getObjectIds().forEach(block => {

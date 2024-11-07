@@ -115,6 +115,8 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('betterdungeons:has_structure/spider_dungeon')
   event.removeAll('queen_bee:has_structure/beehive')
   event.removeAll('irons_spellbooks:has_structure/pyromancer_tower')
+  event.removeAll('irons_spellbooks:has_structure/evoker_fort')
+  event.removeAll('irons_spellbooks:has_structure/mangrove_hut')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')

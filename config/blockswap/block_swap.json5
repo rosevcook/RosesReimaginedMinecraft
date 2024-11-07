@@ -78,6 +78,7 @@
 		"quark:shale": "windswept:shale",
 		"quark:limestone": "atmospheric:dolerite",
 		"supplementaries:ash": "minecraft:air",
-		"supplementaries:wild_flax": "minecraft:air"
+		"supplementaries:wild_flax": "minecraft:air",
+		"irons_spellbooks:arcane_debris": "minecraft:deepslate"
 	}
 }

@@ -124,7 +124,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('minecraft:has_structure/desert_pyramid', '#atmospheric:is_dunes', 'atmospheric:spiny_thicket')
   event.add('neapolitan:has_feature/vanilla_vine', '#atmospheric:is_dunes', '#minecraft:is_badlands', 'atmospheric:spiny_thicket')
   event.add('environmental:has_animal/zebra', '#atmospheric:is_dunes', 'atmospheric:laurel_forest')
-  event.add('environmental:has_animal/yak', 'windswept:pine_barrens', 'windswept:chestnut_forest', 'windswept:snowy_chestnut_forest', 'environmental:blossom_woods', 'minecraft:old_growth_pine_taiga', 'atmospheric:kousa_jungle', 'atmospheric:aspen_parkland')
+  event.add('environmental:has_animal/yak', 'windswept:pine_barrens', 'windswept:chestnut_forest', 'windswept:snowy_chestnut_forest', 'environmental:blossom_woods', 'minecraft:old_growth_pine_taiga', 'atmospheric:kousa_jungle', 'atmospheric:aspen_parkland', 'minecraft:dark_forest', 'windswept:lavender_meadow')
   event.remove('upgrade_aquatic:has_animal/pike', 'minecraft:river');
   event.add('upgrade_aquatic:has_animal/perch', 'environmental:marsh');
   event.add('upgrade_aquatic:has_animal/pike', '#atmospheric:is_rainforest');

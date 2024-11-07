@@ -294,6 +294,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'irons_spellbooks:cooldown_ring' })
   event.remove({ output: 'irons_spellbooks:cast_time_ring' })
   event.remove({ output: 'irons_spellbooks:fireward_ring' })
+  event.remove({ id: 'irons_spellbooks:hogskin_to_leather' })
+  event.remove({ id: 'irons_spellbooks:lesser_spell_slot_upgrade' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

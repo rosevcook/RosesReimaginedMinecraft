@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:perch",
+          "weight": 33
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:pike",
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:lionfish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 13
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

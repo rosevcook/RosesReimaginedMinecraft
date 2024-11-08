@@ -1,0 +1,135 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lily_pad",
+          "weight": 17
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "minecraft:leather_boots",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:straw",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "otherworldly_accessories:broken_shackle",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "otherworldly_accessories:aglet",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:rope",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "undead_unleashed:grave_metal_scrap",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:water"
+            }
+          ],
+          "name": "minecraft:potion",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "minecraft:fishing_rod",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 10,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:ink_sac"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:mulberry",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:blue_pickerelweed",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "upgrade_aquatic:purple_pickerelweed",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "windswept:frozen_flesh",
+          "weight": 10
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

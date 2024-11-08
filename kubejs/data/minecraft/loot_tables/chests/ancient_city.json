@@ -126,6 +126,22 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
+                "max": 10,
+                "min": 4
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "quark:glow_shroom",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
                 "max": 3,
                 "min": 1
               },
@@ -276,8 +292,8 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 10,
-        "min": 5
+        "max": 12,
+        "min": 7
       }
     }
   ]

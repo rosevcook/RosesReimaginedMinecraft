@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:soul_lantern",
+  "replaces_with": "caverns_and_chasms:ender_brazier",
+  "selector": "irons_spellbooks:catacombs"
+}

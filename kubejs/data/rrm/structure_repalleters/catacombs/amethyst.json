@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:magma_block",
+  "replaces_with": "minecraft:amethyst_block",
+  "selector": "irons_spellbooks:catacombs"
+}

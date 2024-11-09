@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:polished_andesite",
+  "replaces_with": "caverns_and_chasms:polished_sugilite",
+  "selector": "irons_spellbooks:catacombs"
+}

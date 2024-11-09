@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:chest",
+  "replaces_with": "caverns_and_chasms:azalea_chest",
+  "selector": "irons_spellbooks:catacombs"
+}

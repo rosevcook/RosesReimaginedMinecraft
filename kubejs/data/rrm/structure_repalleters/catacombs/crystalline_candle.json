@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:candle",
+  "replaces_with": "otherworldly_accessories:ender_candle",
+  "selector": "irons_spellbooks:catacombs"
+}

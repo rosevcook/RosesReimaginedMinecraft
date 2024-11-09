@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:stripped_mangrove_log",
+  "replaces_with": "caverns_and_chasms:stripped_azalea_log",
+  "selector": "irons_spellbooks:catacombs"
+}

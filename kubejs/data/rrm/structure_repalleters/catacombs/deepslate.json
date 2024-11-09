@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:stone",
+  "replaces_with": "minecraft:deepslate",
+  "selector": "irons_spellbooks:catacombs"
+}

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:red_carpet",
+  "replaces_with": "minecraft:purple_carpet",
+  "selector": "irons_spellbooks:catacombs"
+}

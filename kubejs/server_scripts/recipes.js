@@ -296,6 +296,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'irons_spellbooks:fireward_ring' })
   event.remove({ id: 'irons_spellbooks:hogskin_to_leather' })
   event.remove({ id: 'irons_spellbooks:lesser_spell_slot_upgrade' })
+  event.remove({ output: 'caverns_and_chasms:sugilite' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -597,6 +598,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing([Item.of('architects_palette:molten_nether_bricks', 2)], ['minecraft:nether_bricks', 'minecraft:magma_block'])
   event.recipes.create.mixing([Item.of('minecraft:tuff', 2)], ['minecraft:basalt', 'minecraft:cobblestone'])
   event.recipes.create.mixing([Item.of('windswept:shale', 2)], ['minecraft:blue_ice', 'minecraft:cobblestone'])
+  event.recipes.create.mixing([Item.of('caverns_and_chasms:sugilite', 2)], ['minecraft:amethyst_shard', 'minecraft:tuff'])
   event.recipes.create.mixing([Item.of('atmospheric:dolerite', 2)], ['#rrm:sandstone', 'minecraft:cobblestone'])
   event.recipes.create.mixing(['caverns_and_chasms:flooded_dripstone_shingles'], [Fluid.of('minecraft:water', 125), 'caverns_and_chasms:dripstone_shingles'])
   event.recipes.create.mixing(['berry_good:sweet_berry_mince'], ['minecraft:sweet_berries', 'minecraft:porkchop'])

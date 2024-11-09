@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:spruce_door",
+  "replaces_with": "caverns_and_chasms:azalea_door",
+  "selector": "irons_spellbooks:catacombs"
+}

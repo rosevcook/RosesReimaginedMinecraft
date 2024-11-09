@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:mangrove_stairs",
+  "replaces_with": "caverns_and_chasms:azalea_stairs",
+  "selector": "irons_spellbooks:catacombs"
+}

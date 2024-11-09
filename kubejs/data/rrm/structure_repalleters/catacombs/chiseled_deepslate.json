@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:chiseled_stone_bricks",
+  "replaces_with": "minecraft:chiseled_deepslate",
+  "selector": "irons_spellbooks:catacombs"
+}

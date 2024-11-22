@@ -73,6 +73,8 @@
     "!autumnity:.*redstone.*",
     "!quark:.*crab.*",
     "quark:moss_paste",
+    "quark:pathfinders_quill",
+    "quark:ancient_tome",
     "minecraft:quartz_pillar",
     "minecraft:chiseled_quartz_block",
     "minecraft:quartz_bricks",

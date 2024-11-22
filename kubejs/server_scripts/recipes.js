@@ -538,6 +538,8 @@ ServerEvents.recipes(event => {
   event.shaped('irons_spellbooks:cooldown_ring', ['JG ', 'G G', ' G '], { J: 'sullysmod:polished_jade_block', G: 'minecraft:gold_ingot' })
   event.shaped('irons_spellbooks:cast_time_ring', ['AC ', 'C C', ' C '], { A: 'caverns_and_chasms:amethyst_block', C: 'minecraft:copper_ingot' })
   event.shaped('irons_spellbooks:fireward_ring', ['HB ', 'BSB', ' B '], { H: 'heart_crystals:heart_crystal_shard', B: 'create:brass_sheet', S: 'minecraft:netherite_scrap' })
+  event.shaped('environmental:large_lily_pad', ['LL', 'LL'], { L: 'minecraft:lily_pad' })
+  event.shaped('environmental:giant_lily_pad', ['LLL', 'LLL', 'LLL'], { L: 'minecraft:lily_pad' })
 
   event.shaped(Item.of('minecraft:bone_block', 3), ['BBB', 'BBB', 'BBB'], { B: 'minecraft:bone' })
   event.shapeless(Item.of('minecraft:bone', 3), ['minecraft:bone_block'])

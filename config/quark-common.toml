@@ -384,8 +384,8 @@
 		"Allow Retrying" = true
 		"Search Radius" = 6400
 		"Xp From Trade" = 5
-		"Add To Cartographer" = true
-		"Add To Wandering Trader Forced" = true
+		"Add To Cartographer" = false
+		"Add To Wandering Trader Forced" = false
 		"Add To Wandering Trader Generic" = false
 		"Add To Wandering Trader Rare" = false
 		"Draw Hud" = true
@@ -503,7 +503,7 @@
 		"Item Quality" = 2
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Cost" = 30
-		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
+		"Valid Enchantments" = []
 		"Overleveled Books Glow Rainbow" = true
 		#When enabled, Efficiency VI Diamond and Netherite pickaxes can instamine Deepslate when under Haste 2
 		"Deepslate Tweak" = true

@@ -204556,7 +204556,7 @@
         }
       },
       {
-        "biome": "blueprint:original_source_marker",
+        "biome": "quark:glimmering_weald",
         "parameters": {
           "continentalness": [
             0.8,
@@ -204586,7 +204586,7 @@
         }
       },
       {
-        "biome": "blueprint:original_source_marker",
+        "biome": "quark:glimmering_weald",
         "parameters": {
           "continentalness": [
             -1.0,

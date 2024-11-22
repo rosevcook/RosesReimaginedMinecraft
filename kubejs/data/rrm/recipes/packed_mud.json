@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:mud"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:packed_mud"
+    }
+  ]
+}
+

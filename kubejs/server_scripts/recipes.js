@@ -378,6 +378,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'quark:building/crafting/carved_mud_bricks' })
   event.remove({ id: 'quark:building/crafting/mud_pillar' })
   event.remove({ id: 'quark:building/crafting/mud_brick_lattice' })
+  event.remove({ output: 'minecraft:packed_mud', type: 'minecraft:crafting_shapeless' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

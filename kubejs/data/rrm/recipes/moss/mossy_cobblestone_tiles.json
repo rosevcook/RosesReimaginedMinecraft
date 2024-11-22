@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "caverns_and_chasms:cobblestone_tiles"
+    },
+    {
+      "item": "kubejs:moss"
+    }
+  ],
+  "results": [
+    {
+      "item": "caverns_and_chasms:mossy_cobblestone_tiles"
+    }
+  ]
+}
+

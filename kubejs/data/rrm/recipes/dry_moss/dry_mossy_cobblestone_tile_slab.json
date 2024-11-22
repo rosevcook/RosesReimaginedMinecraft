@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "caverns_and_chasms:cobblestone_tile_slab"
+    },
+    {
+      "item": "kubejs:dry_moss"
+    }
+  ],
+  "results": [
+    {
+      "item": "windswept:dry_mossy_cobblestone_tile_slab"
+    }
+  ]
+}

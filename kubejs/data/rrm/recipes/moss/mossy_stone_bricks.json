@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "item": "kubejs:moss"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    }
+  ]
+}
+

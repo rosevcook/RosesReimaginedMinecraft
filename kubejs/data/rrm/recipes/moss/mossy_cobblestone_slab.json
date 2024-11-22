@@ -1,0 +1,17 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone_slab"
+    },
+    {
+      "item": "kubejs:moss"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:mossy_cobblestone_slab"
+    }
+  ]
+}
+

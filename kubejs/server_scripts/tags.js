@@ -11,6 +11,7 @@ ServerEvents.tags('item', event => {
   event.removeAll('curios:spellbook')
   event.removeAll('caverns_and_chasms:cupric_fire_base_blocks')
   event.removeAll('supplementaries:ropes')
+  event.removeAll('endergetic:ender_fire_base_blocks')
 
   event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves', 'quark:backpack', 'irons_spellbooks:mana_ring', 'irons_spellbooks:silver_ring', 'irons_spellbooks:cooldown_ring', 'irons_spellbooks:cast_time_ring', 'irons_spellbooks:fireward_ring', 'irons_spellbooks:frostward_ring', 'irons_spellbooks:poisonward_ring', 'irons_spellbooks:heavy_chain_necklace', 'irons_spellbooks:concentration_amulet', 'irons_spellbooks:amethyst_resonance_charm')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
@@ -31,6 +32,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:zinc_equipment', 'minecraft:shears', 'quark:trowel')
   event.add('rrm:netherite_equipment', 'minecraft:netherite_sword', 'savage_and_ravage:cleaver_of_beheading', 'minecraft:netherite_pickaxe', 'minecraft:netherite_shovel', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'farmersdelight:netherite_knife', 'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots')
   event.add('rrm:necromium_equipment', 'caverns_and_chasms:necromium_sword', 'caverns_and_chasms:necromium_pickaxe', 'caverns_and_chasms:necromium_shovel', 'caverns_and_chasms:necromium_axe', 'caverns_and_chasms:necromium_hoe', 'abnormals_delight:necromium_knife', 'caverns_and_chasms:necromium_helmet', 'caverns_and_chasms:necromium_chestplate', 'caverns_and_chasms:necromium_leggings', 'caverns_and_chasms:necromium_boots')
+  event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_shard')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -50,11 +52,15 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('block', event => {
+  event.removeAll('architects_palette:green_fire_supporting')
+  event.removeAll('endergetic:ender_fire_base_blocks')
+
   event.add('minecraft:snow', 'architects_palette:coarse_snow')
   event.add('quark:hedges', 'atmospheric:green_aspen_hedge')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'quark:raw_copper_bricks', 'quark:raw_copper_bricks_stairs', 'quark:raw_copper_bricks_slab')
+  event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_block', 'minecraft:budding_amethyst', 'caverns_and_chasms:amethyst_block', 'caverns_and_chasms:cut_amethyst', 'caverns_and_chasms:cut_amethyst_bricks', 'caverns_and_chasms:cut_amethyst_brick_slab', 'caverns_and_chasms:cut_amethyst_brick_stairs', 'minecraft:crying_obsidian')
+
   event.remove('minecraft:needs_diamond_tool', 'irons_spellbooks:armor_pile')
-  event.removeAll('architects_palette:green_fire_supporting')
 
   // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver
   event.get('minecraft:needs_stone_tool').getObjectIds().forEach(block => {

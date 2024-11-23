@@ -13,7 +13,12 @@
     "upgrade_aquatic:yellow_jelly_torch",
     "upgrade_aquatic:orange_jelly_torch",
     "upgrade_aquatic:red_jelly_torch",
-    "upgrade_aquatic:white_jelly_torch"
+    "upgrade_aquatic:white_jelly_torch",
+    "supplementaries:sconce",
+    "supplementaries:sconce_soul",
+    "supplementaries:sconce_ender",
+    "supplementaries:sconce_green",
+    "supplementaries:sconce_lever"
   ],
   "enableAnimationSmoothing": true,
   "enableInWorldMapRendering": true,

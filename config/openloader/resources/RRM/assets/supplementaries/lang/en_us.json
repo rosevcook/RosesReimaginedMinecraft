@@ -1,5 +1,7 @@
 {
   "block.supplementaries.gold_door": "Golden Door",
   "block.supplementaries.gold_trapdoor": "Golden Trapdoor",
-  "block.supplementaries.goblet": "Silver Chalice"
+  "block.supplementaries.goblet": "Silver Chalice",
+  "block.supplementaries.sconce_ender": "Crystalline Sconce",
+  "item.supplementaries.slingshot": "Blocksling"
 }

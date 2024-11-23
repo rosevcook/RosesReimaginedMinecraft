@@ -45,6 +45,9 @@
 			ancient = false
 			blossom = false
 
+		[types.wood_type.endergetic]
+			poise = false
+
 	[types.leaves_type]
 
 		[types.leaves_type.windswept]

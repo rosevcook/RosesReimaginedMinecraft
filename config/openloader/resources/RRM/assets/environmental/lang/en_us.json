@@ -15,5 +15,7 @@
   "block.environmental.pink_wisteria_hedge": "Pink Wisteria Leaf Hedge",
   "block.environmental.blue_wisteria_hedge": "Blue Wisteria Leaf Hedge",
   "block.environmental.purple_wisteria_hedge": "Purple Wisteria Leaf Hedge",
-  "block.environmental.white_wisteria_hedge": "White Wisteria Leaf Hedge"
+  "block.environmental.white_wisteria_hedge": "White Wisteria Leaf Hedge",
+  "block.environmental.dwarf_spruce_ender_torch": "Dwarf Spruce with Crystalline Torches",
+  "block.environmental.dwarf_spruce_plant_ender_torch": "Dwarf Spruce Plant with Crystalline Torches"
 }

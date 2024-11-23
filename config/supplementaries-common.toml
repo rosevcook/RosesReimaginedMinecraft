@@ -218,7 +218,7 @@
 	flower_box = true
 	doormat = true
 	flint_block = false
-	candle_holder = true
+	candle_holder = false
 
 	[building.blackboard]
 		enabled = false

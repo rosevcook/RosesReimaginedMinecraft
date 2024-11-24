@@ -1,5 +1,5 @@
 #If enabled will output to the debug.log when a structure is disabled.
 "Enable Debug" = false
 #This list defines the structures that should be disabled from generating.
-"Disabled Structures" = ["minecraft:swamp_hut", "minecraft:stronghold", "minecraft:igloo"]
+"Disabled Structures" = ["minecraft:swamp_hut", "minecraft:stronghold", "minecraft:igloo", "minecraft:village_taiga"]
 

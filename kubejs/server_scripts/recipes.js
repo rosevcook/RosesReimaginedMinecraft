@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:rocky_dirt' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
-  event.remove({ id: 'minecraft:lead' })
+  event.remove({ output: 'minecraft:lead' })
   event.remove({ id: 'minecraft:scaffolding' })
   event.remove({ id: 'minecraft:painting' })
   event.remove({ output: 'farmersdelight:melon_popsicle' })
@@ -398,6 +398,10 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'quark:building/crafting/iron_pillar' })
   event.remove({ id: 'caverns_and_chasms:spinel_pillar' })
   event.remove({ id: 'caverns_and_chasms:lapis_pillar' })
+  event.remove({ output: 'caverns_and_chasms:brazier' })
+  event.remove({ output: 'caverns_and_chasms:soul_brazier' })
+  event.remove({ output: 'caverns_and_chasms:cupric_brazier' })
+  event.remove({ output: 'caverns_and_chasms:ender_brazier' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -512,9 +516,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:glow_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
   event.replaceInput({ output: 'quark:glowing_glass_item_frame' }, 'minecraft:glow_ink_sac', 'minecraft:glow_berries')
   event.replaceInput({ output: '#supplementaries:sconces' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
-  event.replaceInput({ output: 'caverns_and_chasms:brazier' }, '#minecraft:coals', 'minecraft:torch')
-  event.replaceInput({ output: 'caverns_and_chasms:soul_brazier' }, '#minecraft:soul_fire_base_blocks', 'minecraft:soul_torch')
-  event.replaceInput({ output: 'caverns_and_chasms:cupric_brazier' }, 'minecraft:copper_ingot', 'caverns_and_chasms:cupric_torch')
+  event.replaceInput({ output: 'minecraft:campfire' }, '#minecraft:coals', 'minecraft:torch')
+  event.replaceInput({ output: 'minecraft:soul_campfire' }, '#minecraft:soul_fire_base_blocks', 'minecraft:soul_torch')
+  event.replaceInput({ output: 'caverns_and_chasms:cupric_campfire' }, 'minecraft:copper_ingot', 'caverns_and_chasms:cupric_torch')
+  event.replaceInput({ output: 'endergetic:ender_campfire' }, 'minecraft:amethyst_block', 'endergetic:ender_torch')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -651,6 +656,11 @@ ServerEvents.recipes(event => {
   event.shaped('windswept:dry_moss_block', ['MM', 'MM'], { M: 'kubejs:dry_moss' })
   event.shaped('minecraft:moss_carpet', ['MM'], { M: 'kubejs:moss' })
   event.shaped('windswept:dry_moss_carpet', ['MM'], { M: 'kubejs:dry_moss' })
+  event.shaped(Item.of('minecraft:lead', 2), ['RR ', 'RR ', '  R'], { R: 'farmersdelight:rope' })
+  event.shaped(Item.of('caverns_and_chasms:brazier', 2), ['STS', ' S '], { T: 'minecraft:torch', S: 'kubejs:silver_sheet' })
+  event.shaped(Item.of('caverns_and_chasms:soul_brazier', 2), ['STS', ' S '], { T: 'minecraft:soul_torch', S: 'kubejs:silver_sheet' })
+  event.shaped(Item.of('caverns_and_chasms:cupric_brazier', 2), ['STS', ' S '], { T: 'caverns_and_chasms:cupric_torch', S: 'kubejs:silver_sheet' })
+  event.shaped(Item.of('caverns_and_chasms:ender_brazier', 2), ['STS', ' S '], { T: 'endergetic:ender_torch', S: 'kubejs:silver_sheet' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

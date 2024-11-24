@@ -32,7 +32,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:zinc_equipment', 'minecraft:shears', 'quark:trowel')
   event.add('rrm:netherite_equipment', 'minecraft:netherite_sword', 'savage_and_ravage:cleaver_of_beheading', 'minecraft:netherite_pickaxe', 'minecraft:netherite_shovel', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'farmersdelight:netherite_knife', 'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots')
   event.add('rrm:necromium_equipment', 'caverns_and_chasms:necromium_sword', 'caverns_and_chasms:necromium_pickaxe', 'caverns_and_chasms:necromium_shovel', 'caverns_and_chasms:necromium_axe', 'caverns_and_chasms:necromium_hoe', 'abnormals_delight:necromium_knife', 'caverns_and_chasms:necromium_helmet', 'caverns_and_chasms:necromium_chestplate', 'caverns_and_chasms:necromium_leggings', 'caverns_and_chasms:necromium_boots')
-  event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_shard')
+  event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_block')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')

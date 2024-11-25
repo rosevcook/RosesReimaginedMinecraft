@@ -23,7 +23,6 @@ ServerEvents.tags('item', event => {
   event.add('supplementaries:ropes', 'farmersdelight:rope')
   event.add('caverns_and_chasms:slowness_inflicting_items', 'undead_unleashed:reaping_scythe')
   event.add('caverns_and_chasms:magic_damage_items', 'undead_unleashed:moonlight_greatsword')
-  event.add('quark:seed_pouch_holdable', 'windswept:ginger_root', 'farmersdelight:onion')
   event.add('rrm:iron_equipment', 'minecraft:iron_sword', 'minecraft:iron_pickaxe', 'minecraft:iron_shovel', 'minecraft:iron_axe', 'minecraft:iron_hoe', 'farmersdelight:iron_knife', 'minecraft:iron_helmet', 'minecraft:iron_chestplate', 'minecraft:iron_leggings', 'minecraft:iron_boots', 'minecraft:compass', 'otherworldly_accessories:broken_shackle')
   event.add('rrm:copper_equipment', 'metalworks:copper_sword', 'metalworks:copper_pickaxe', 'metalworks:copper_shovel', 'metalworks:copper_axe', 'metalworks:copper_hoe', 'metalworks:copper_knife', 'metalworks:copper_helmet', 'metalworks:copper_chestplate', 'metalworks:copper_leggings', 'metalworks:copper_boots', 'caverns_and_chasms:tuning_fork', 'caverns_and_chasms:barometer')
   event.add('rrm:golden_equipment', 'minecraft:golden_sword', 'minecraft:golden_pickaxe', 'minecraft:golden_shovel', 'minecraft:golden_axe', 'minecraft:golden_hoe', 'farmersdelight:golden_knife', 'minecraft:golden_helmet', 'minecraft:golden_chestplate', 'minecraft:golden_leggings', 'minecraft:golden_boots', 'minecraft:clock')
@@ -43,8 +42,6 @@ ServerEvents.tags('item', event => {
   event.remove('forge:cooked_fishes/salmon', 'farmersdelight:cooked_salmon_slice')
   event.remove('forge:cooked_venison', 'abnormals_delight:cooked_venison_shanks')
   event.remove('forge:cooked_duck', 'abnormals_delight:cooked_duck_fillet')
-  event.remove('quark:seed_pouch_holdable', '#minecraft:saplings', 'minecraft:cocoa_beans', 'minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:crimson_fungus', 'minecraft:warped_fungus', 'minecraft:sweet_berries', 'minecraft:nether_wart', 'minecraft:sugar_cane', 'minecraft:bamboo', 'minecraft:kelp')
-
   event.remove('forge:stripped_logs', 'minecraft:stripped_jungle_log', 'minecraft:stripped_acacia_log', 'minecraft:stripped_mangrove_log', 'architects_palette:stripped_twisted_log', 'quark:stripped_azalea_log', 'quark:stripped_blossom_log')
   event.remove('forge:stripped_wood', 'minecraft:stripped_jungle_wood', 'minecraft:stripped_acacia_wood', 'minecraft:stripped_mangrove_wood', 'architects_palette:stripped_twisted_wood', 'quark:stripped_azalea_wood', 'quark:stripped_blossom_wood')
   event.add('forge:stripped_logs', 'windswept:stripped_pine_log', 'windswept:stripped_holly_log', 'windswept:stripped_chestnut_log', 'caverns_and_chasms:stripped_azalea_log', 'upgrade_aquatic:stripped_driftwood_log', 'upgrade_aquatic:stripped_river_log', 'autumnity:stripped_maple_log', 'atmospheric:stripped_laurel_log')

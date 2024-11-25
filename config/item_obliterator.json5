@@ -72,7 +72,7 @@
     "!minecraft:.*redstone_ore.*",
     "!autumnity:.*redstone.*",
     "!quark:.*crab.*",
-    "quark:moss_paste",
+    "quark:seed_pouch",
     "quark:pathfinders_quill",
     "quark:ancient_tome",
     "minecraft:quartz_pillar",

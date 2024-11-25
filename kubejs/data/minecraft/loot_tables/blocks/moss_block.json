@@ -59,7 +59,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "kubejs:moss"
+              "name": "quark:moss_paste"
             }
           ]
         }

@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "windswept:chestnut_fence",
+  "replaces_with": "everycomp:ap/windswept/chestnut_railing",
+  "selector": "windswept:chestnut_weathered_house"
+}

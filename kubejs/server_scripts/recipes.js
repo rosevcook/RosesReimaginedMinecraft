@@ -409,6 +409,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'endergetic:ender_lantern' })
   event.remove({ id: 'upgrade_aquatic:mulberry_jam_bottle' })
   event.remove({ id: 'windswept:pinecone_jam_bottle' })
+  event.remove({ output: 'supplementaries:cog_block' })
+  event.remove({ id: 'irons_spellbooks:poisonous_potato' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -490,7 +492,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:wrench' }, 'create:golden_sheet', 'create:brass_sheet')
   event.replaceInput({ output: 'farmersdelight:roasted_mutton_chops' }, 'farmersdelight:cooked_mutton_chops', 'minecraft:cooked_mutton')
   event.replaceInput({ output: 'create:clockwork_bearing' }, 'kubejs:power_coil', 'minecraft:clock')
-  event.replaceInput({ output: 'minecraft:loom' }, 'minecraft:string', 'farmersdelight:canvas')
   event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
   event.replaceInput({ output: 'minecraft:fire_charge' }, 'minecraft:blaze_powder', 'undead_unleashed:charstone_shard')
   event.replaceInput({ output: 'savage_and_ravage:gloomy_tiles' }, 'minecraft:phantom_membrane', 'undead_unleashed:cursed_cloth')
@@ -526,6 +527,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:soul_campfire' }, '#minecraft:soul_fire_base_blocks', 'minecraft:soul_torch')
   event.replaceInput({ output: 'caverns_and_chasms:cupric_campfire' }, 'minecraft:copper_ingot', 'caverns_and_chasms:cupric_torch')
   event.replaceInput({ output: 'endergetic:ender_campfire' }, 'minecraft:amethyst_block', 'endergetic:ender_torch')
+  event.replaceInput({ output: 'minecraft:anvil' }, 'minecraft:iron_ingot', 'create:iron_sheet')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -672,6 +674,8 @@ ServerEvents.recipes(event => {
   event.shapeless('minecraft:soul_lantern', ['minecraft:iron_ingot', 'minecraft:soul_torch', 'minecraft:chain' ])
   event.shapeless('caverns_and_chasms:cupric_lantern', ['minecraft:iron_ingot', 'caverns_and_chasms:cupric_torch', 'minecraft:chain' ])
   event.shapeless('endergetic:ender_lantern', ['minecraft:iron_ingot', 'endergetic:ender_torch', 'minecraft:chain' ])
+  event.shaped(Item.of('supplementaries:cog_block', 2), [' S ', 'SCS', ' S '], { S: 'create:brass_ingot', C: 'create:large_cogwheel' })
+  event.shaped('minecraft:bell', ['SSS', 'III', 'INI'], { S: 'minecraft:stick', I: 'minecraft:gold_ingot', N: 'minecraft:gold_nugget' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

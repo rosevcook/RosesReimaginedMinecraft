@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:polished_basalt",
-  "replaces_with": "architects_palette:basalt_tiles",
+  "replaces_with": "architects_palette:chiseled_basalt_tiles",
   "selector": "betterfortresses:fortress"
 }

@@ -19,8 +19,8 @@ deathpoints:false
 oldDeathpoints:false
 distance:0
 lockNorth:false
-zoom:2
-minimapSize:0
+zoom:1
+minimapSize:160
 chunkGrid:-1
 slimeChunks:false
 mapSafeMode:false

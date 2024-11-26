@@ -10,5 +10,7 @@
   "block.atmospheric.rosewood_hedge": "Rosewood Leaf Hedge",
   "block.atmospheric.morado_hedge": "Morado Leaf Hedge",
   "block.atmospheric.flowering_morado_hedge": "Flowering Morado Leaf Hedge",
-  "block.atmospheric.currant_hedge": "Currant Leaf Hedge"
+  "block.atmospheric.currant_hedge": "Currant Leaf Hedge",
+  "block.atmospheric.barrel_cactus": "Cactus",
+  "block.atmospheric.barrel_cactus_batch": "Cactus Bundle"
 }

@@ -84,6 +84,9 @@
 		"quark:limestone": "atmospheric:dolerite",
 		"supplementaries:ash": "minecraft:air",
 		"supplementaries:wild_flax": "minecraft:air",
+		"minecraft:cactus": "minecraft:air",
+		"minecraft:potted_cactus": "atmospheric:potted_barrel_cactus",
+		"atmospheric:snowy_cactus": "minecraft:air",
 		"irons_spellbooks:arcane_debris": "caverns_and_chasms:deepslate_silver_ore"
 	}
 }

@@ -60,5 +60,5 @@
 
 [blocks]
 	#Cacti generate with a Cactus Bobble on top to prevent natural growth
-	"Cactus bobble" = true
+	"Cactus bobble" = false
 

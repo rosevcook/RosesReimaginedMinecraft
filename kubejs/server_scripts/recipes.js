@@ -676,6 +676,8 @@ ServerEvents.recipes(event => {
   event.shapeless('endergetic:ender_lantern', ['minecraft:iron_ingot', 'endergetic:ender_torch', 'minecraft:chain' ])
   event.shaped(Item.of('supplementaries:cog_block', 2), [' S ', 'SCS', ' S '], { S: 'create:brass_ingot', C: 'create:large_cogwheel' })
   event.shaped('minecraft:bell', ['SSS', 'III', 'INI'], { S: 'minecraft:stick', I: 'minecraft:gold_ingot', N: 'minecraft:gold_nugget' })
+  event.shaped('atmospheric:barrel_cactus_batch', ['CCC', 'CCC', 'CCC'], { C: 'atmospheric:barrel_cactus' })
+  event.shapeless(Item.of('atmospheric:barrel_cactus', 9), ['atmospheric:barrel_cactus_batch'])
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

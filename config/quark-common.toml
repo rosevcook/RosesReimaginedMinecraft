@@ -170,7 +170,7 @@
 		"Enable Charcoal Block" = false
 		"Enable Sugar Cane Block" = true
 		"Enable Bamboo Block" = true
-		"Enable Cactus Block" = true
+		"Enable Cactus Block" = false
 		"Enable Chorus Fruit Block" = false
 		"Enable Stick Block" = true
 		"Enable Apple Crate" = true

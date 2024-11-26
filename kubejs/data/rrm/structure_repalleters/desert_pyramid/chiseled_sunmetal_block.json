@@ -2,6 +2,6 @@
   "type": "blueprint:simple",
   "priority": "normal",
   "replaces_block": "minecraft:chiseled_sandstone",
-  "replaces_with": "atmospheric:chiseled_arid_sandstone",
+  "replaces_with": "architects_palette:chiseled_sunmetal_block",
   "selector": "minecraft:desert_pyramid"
 }

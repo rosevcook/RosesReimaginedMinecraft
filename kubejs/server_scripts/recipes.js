@@ -559,6 +559,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'caverns_and_chasms:cupric_campfire' }, 'minecraft:copper_ingot', 'caverns_and_chasms:cupric_torch')
   event.replaceInput({ output: 'endergetic:ender_campfire' }, 'minecraft:amethyst_block', 'endergetic:ender_torch')
   event.replaceInput({ output: 'minecraft:anvil' }, 'minecraft:iron_ingot', 'create:iron_sheet')
+  event.replaceInput({ output: 'alexsmobs:shark_tooth_arrow' }, 'alexsmobs:shark_tooth', 'upgrade_aquatic:thrasher_tooth')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

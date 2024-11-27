@@ -441,6 +441,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:blue_dye_from_cornflower' })
   event.remove({ id: 'minecraft:pink_dye_from_pink_tulip' })
   event.remove({ id: 'windswept:red_dye_from_wild_ginger' })
+  event.remove({ output: 'archers_paradox:blaze_arrow' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -708,6 +709,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:bell', ['SSS', 'III', 'INI'], { S: 'minecraft:stick', I: 'minecraft:gold_ingot', N: 'minecraft:gold_nugget' })
   event.shaped('atmospheric:barrel_cactus_batch', ['CCC', 'CCC', 'CCC'], { C: 'atmospheric:barrel_cactus' })
   event.shapeless(Item.of('atmospheric:barrel_cactus', 9), ['atmospheric:barrel_cactus_batch'])
+  event.shaped('archers_paradox:blaze_arrow', ['P', 'B', 'F'], { P: 'minecraft:blaze_powder', B: 'architects_palette:withered_bone', F: 'minecraft:feather' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

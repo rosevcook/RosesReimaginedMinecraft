@@ -11,13 +11,6 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:gravel_beach"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
         "value": "minecraft:stony_shore"
       }
     ]

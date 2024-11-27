@@ -3,5 +3,5 @@
 	breakSpeed = true
 	lastSpawn = true
 	breakWither = true
-	breakTorches = true
+	breakTorches = false
 

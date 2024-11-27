@@ -1,11 +1,1 @@
-{
-  "biomes": [
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": true,
-        "value": "minecraft:mushroom_fields"
-      }
-    ]
-  ]
-}
+{ }

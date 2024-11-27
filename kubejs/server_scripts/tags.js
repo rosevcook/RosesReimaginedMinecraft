@@ -32,6 +32,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:netherite_equipment', 'minecraft:netherite_sword', 'savage_and_ravage:cleaver_of_beheading', 'minecraft:netherite_pickaxe', 'minecraft:netherite_shovel', 'minecraft:netherite_axe', 'minecraft:netherite_hoe', 'farmersdelight:netherite_knife', 'minecraft:netherite_helmet', 'minecraft:netherite_chestplate', 'minecraft:netherite_leggings', 'minecraft:netherite_boots')
   event.add('rrm:necromium_equipment', 'caverns_and_chasms:necromium_sword', 'caverns_and_chasms:necromium_pickaxe', 'caverns_and_chasms:necromium_shovel', 'caverns_and_chasms:necromium_axe', 'caverns_and_chasms:necromium_hoe', 'abnormals_delight:necromium_knife', 'caverns_and_chasms:necromium_helmet', 'caverns_and_chasms:necromium_chestplate', 'caverns_and_chasms:necromium_leggings', 'caverns_and_chasms:necromium_boots')
   event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_block')
+  event.add('alexsmobs:bald_eagle_tameables', '#forge:raw_fishes')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -56,6 +57,7 @@ ServerEvents.tags('block', event => {
   event.add('quark:hedges', 'atmospheric:green_aspen_hedge')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'quark:raw_copper_bricks', 'quark:raw_copper_bricks_stairs', 'quark:raw_copper_bricks_slab')
   event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_block', 'minecraft:budding_amethyst', 'caverns_and_chasms:amethyst_block', 'caverns_and_chasms:cut_amethyst', 'caverns_and_chasms:cut_amethyst_bricks', 'caverns_and_chasms:cut_amethyst_brick_slab', 'caverns_and_chasms:cut_amethyst_brick_stairs', 'minecraft:crying_obsidian')
+  event.add('alexsmobs:crow_fears', 'windswept:carved_pinecone_block', 'windswept:will_o_the_wisp', 'autumnity:soul_jack_o_lantern', 'autumnity:large_soul_jack_o_lantern_slice', 'autumnity:cupric_jack_o_lantern', 'autumnity:large_cupric_jack_o_lantern_slice', 'autumnity:large_jack_o_lantern_slice', 'autumnity:carved_large_pumpkin_slice', 'autumnity:ender_jack_o_lantern', 'autumnity:large_ender_jack_o_lantern_slice')
 
   event.remove('minecraft:needs_diamond_tool', 'irons_spellbooks:armor_pile')
 
@@ -147,6 +149,9 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('environmental:has_structure/log_cabin', '#windswept:is_pine_barrens')
   event.add('bettermineshafts:has_structure/better_mineshaft_mushroom', 'quark:glimmering_weald')
   event.add('irons_spellbooks:has_structure/pyromancer_tower', '#windswept:is_pine_barrens')
+  event.add('alexsmobs:spawns_red_gusters', 'atmospheric:spiny_thicket')
+  event.add('alexsmobs:spawns_desert_crocodiles', 'atmospheric:spiny_thicket', '#atmospheric:is_dunes', '#atmospheric:is_rainforest')
+
 })
 
 ServerEvents.tags('worldgen/structure', event => {

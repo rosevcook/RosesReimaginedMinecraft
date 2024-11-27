@@ -5,11 +5,6 @@
         "type": "BIOME_TAG",
         "negate": false,
         "value": "minecraft:is_overworld"
-      },
-      {
-        "type": "BIOME_TAG",
-        "negate": false,
-        "value": "minecraft:is_deep_ocean"
       }
     ]
   ]

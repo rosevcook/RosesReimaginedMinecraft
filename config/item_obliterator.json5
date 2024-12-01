@@ -370,6 +370,7 @@
     "!create:.*cut_deepslate.*",
     "!create:.*small_deepslate.*",
     "create:layered_deepslate",
+    "create:mechanical_saw",
     "create:deepslate_pillar",
     "create:industrial_iron_block",
     "!create:.*dripstone.*",

@@ -208,80 +208,6 @@
           ],
           "name": "minecraft:beetroot_seeds",
           "weight": 10
-        }
-      ],
-      "rolls": {
-        "type": "minecraft:uniform",
-        "max": 4,
-        "min": 2
-      }
-    },
-    {
-      "bonus_rolls": 0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 8,
-                "min": 4
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:rail",
-          "weight": 20
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:powered_rail",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:detector_rail",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:activator_rail",
-          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -300,7 +226,11 @@
           "weight": 15
         }
       ],
-      "rolls": 3
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 4,
+        "min": 2
+      }
     }
   ]
 }

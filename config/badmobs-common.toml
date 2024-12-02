@@ -702,7 +702,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:chest_minecart
 	[minecraft.chest_minecart]
@@ -715,7 +715,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:command_block_minecart
 	[minecraft.command_block_minecart]
@@ -728,7 +728,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:furnace_minecart
 	[minecraft.furnace_minecart]
@@ -741,7 +741,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:hopper_minecart
 	[minecraft.hopper_minecart]
@@ -754,7 +754,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:spawner_minecart
 	[minecraft.spawner_minecart]
@@ -767,7 +767,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:tnt_minecart
 	[minecraft.tnt_minecart]
@@ -780,7 +780,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = false
+		removeAggressively = true
 
 	#Spawning options for minecraft:mule
 	[minecraft.mule]

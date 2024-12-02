@@ -382,7 +382,7 @@
 		bound_distance = 64
 
 	[tools.bomb]
-		enabled = false
+		enabled = true
 		#Bomb explosion radius (damage depends on this)
 		#Range: 0.1 ~ 10.0
 		explosion_radius = 2.0

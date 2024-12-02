@@ -8,29 +8,13 @@
       },
       {
         "type": "BIOME_TAG",
-        "negate": false,
-        "value": "minecraft:is_mountain"
-      }
-    ],
-    [
+        "negate": true,
+        "value": "minecraft:is_ocean"
+      },
       {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "minecraft:snowy_slopes"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "minecraft:frozen_peaks"
-      }
-    ],
-    [
-      {
-        "type": "REGISTRY_NAME",
-        "negate": false,
-        "value": "minecraft:jagged_peaks"
+        "type": "BIOME_TAG",
+        "negate": true,
+        "value": "forge:is_cave"
       }
     ]
   ]

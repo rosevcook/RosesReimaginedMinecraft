@@ -440,6 +440,9 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'create:mechanical_drill' })
   event.remove({ id: 'minecraft:orange_dye_from_orange_tulip' })
   event.remove({ id: 'minecraft:light_gray_dye_from_azure_bluet' })
+  event.remove({ id: 'minecraft:light_gray_dye_from_oxeye_daisy' })
+  event.remove({ id: 'minecraft:light_blue_dye_from_blue_orchid' })
+  event.remove({ id: 'minecraft:white_dye_from_lily_of_the_valley' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

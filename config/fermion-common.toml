@@ -17,7 +17,7 @@
 	[tab-tweaks.tab-icons]
 		"Building Blocks Tab Icon" = "minecraft:bricks"
 		"Decorations Tab Icon" = "windswept:vine_wreath"
-		"Redstone Tab Icon" = "create:mechanical_saw"
+		"Redstone Tab Icon" = "create:mechanical_piston"
 		"Misc Tab Icon" = "upgrade_aquatic:lionfish_bucket"
 		"Foodstuffs Tab Icon" = "environmental:cherries"
 		"Tools Tab Icon" = "otherworldly_accessories:power_locket"

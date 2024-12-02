@@ -442,6 +442,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:pink_dye_from_pink_tulip' })
   event.remove({ id: 'windswept:red_dye_from_wild_ginger' })
   event.remove({ output: 'archers_paradox:blaze_arrow' })
+  event.remove({ output: 'create:mechanical_drill' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -534,7 +535,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'sullysmod:polished_jade_pillar' }, 'sullysmod:polished_jade_block', 'sullysmod:polished_jade_bricks')
   event.replaceInput({ output: 'create:nozzle' }, '#minecraft:wool', 'farmersdelight:canvas')
   event.replaceInput({ output: 'minecraft:ender_eye' }, 'minecraft:blaze_powder', 'architects_palette:withered_bone')
-  event.replaceInput({ output: 'create:mechanical_drill' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:mechanical_plough' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:cart_assembler' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:sticker' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
@@ -710,7 +710,8 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:bell', ['SSS', 'III', 'INI'], { S: 'minecraft:stick', I: 'minecraft:gold_ingot', N: 'minecraft:gold_nugget' })
   event.shaped('atmospheric:barrel_cactus_batch', ['CCC', 'CCC', 'CCC'], { C: 'atmospheric:barrel_cactus' })
   event.shapeless(Item.of('atmospheric:barrel_cactus', 9), ['atmospheric:barrel_cactus_batch'])
-  event.shaped('archers_paradox:blaze_arrow', ['P', 'B', 'F'], { P: 'minecraft:blaze_powder', B: 'architects_palette:withered_bone', F: 'minecraft:feather' })
+  event.shaped(Item.of('archers_paradox:blaze_arrow', 4), ['P', 'B', 'F'], { P: 'minecraft:blaze_powder', B: 'architects_palette:withered_bone', F: 'minecraft:feather' })
+  event.shaped('create:mechanical_drill', [' D ', 'SSS', ' Z '], { D: 'minecraft:diamond', S: 'kubejs:zinc_sheet', Z: 'create:andesite_casing' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

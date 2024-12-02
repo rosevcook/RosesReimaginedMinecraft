@@ -70,7 +70,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'create:emptying/honey_bottle' })
   event.remove({ id: 'create:pressing/path' })
   event.remove({ output: 'minecraft:quartz', type: 'create:crushing' });
-  event.remove({ output: 'minecraft:daylight_detector' })
   event.remove({ output: 'create:andesite_bars' })
   event.remove({ output: 'create:brass_bars' })
   event.remove({ output: 'minecraft:glass_pane', type: 'minecraft:smelting' })
@@ -443,6 +442,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'windswept:red_dye_from_wild_ginger' })
   event.remove({ output: 'archers_paradox:blaze_arrow' })
   event.remove({ output: 'create:mechanical_drill' })
+  event.remove({ id: 'minecraft:orange_dye_from_orange_tulip' })
+  event.remove({ id: 'minecraft:light_gray_dye_from_azure_bluet' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -498,7 +499,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:heavy_weighted_pressure_plate' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'minecraft:light_weighted_pressure_plate' }, 'minecraft:gold_ingot', 'create:golden_sheet')
   event.replaceInput({ output: 'caverns_and_chasms:medium_weighted_pressure_plate' }, 'caverns_and_chasms:silver_ingot', 'kubejs:silver_sheet')
-  event.replaceInput({ output: 'create:sticker' }, 'kubejs:copper_wire', 'kubejs:power_coil')
   event.replaceInput({ output: 'neapolitan:strawberry_scones' }, 'minecraft:wheat', 'create:wheat_flour')
   event.replaceInput({ output: 'windswept:mutton_pie' }, 'minecraft:wheat', 'create:wheat_flour')
   event.replaceInput({ output: 'windswept:lavender_scones' }, 'minecraft:wheat', 'create:wheat_flour')
@@ -537,7 +537,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:ender_eye' }, 'minecraft:blaze_powder', 'architects_palette:withered_bone')
   event.replaceInput({ output: 'create:mechanical_plough' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'create:cart_assembler' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
-  event.replaceInput({ output: 'create:sticker' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'minecraft:arrow' }, 'minecraft:flint', '#minecraft:planks')
   event.replaceInput({ output: 'minecraft:conduit' }, 'minecraft:heart_of_the_sea', 'upgrade_aquatic:elder_eye')
   event.replaceInput({ id: 'create:crafting/materials/brass_ingot_from_decompacting' }, 'create:brass_block', 'architects_palette:nether_brass_block')
@@ -575,7 +574,6 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('kubejs:copper_wire', 2), ['CIC'], { C: 'caverns_and_chasms:copper_nugget', I: 'minecraft:copper_ingot' })
   event.shaped('minecraft:elytra', ['F F', 'FFF', 'F F'], { F: 'kubejs:torn_elytra_fragment' })
   event.shaped('kubejs:power_coil', ['CCC', 'CWC', 'CCC'], { C: 'undead_unleashed:charstone_shard', W: 'kubejs:copper_wire' })
-  event.shaped('minecraft:daylight_detector', ['GG', 'SS'], { G: 'minecraft:glass', S: 'create:copper_sheet' })
   event.shaped(Item.of('create:andesite_bars', 16), ['III', 'III'], { I: 'create:zinc_ingot' })
   event.shaped(Item.of('create:brass_bars', 16), ['III', 'III'], { I: 'create:brass_ingot' })
   event.shapeless('minecraft:crying_obsidian', ['minecraft:obsidian', 'minecraft:amethyst_shard'])

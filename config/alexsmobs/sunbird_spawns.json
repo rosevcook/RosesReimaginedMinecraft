@@ -14,6 +14,11 @@
       {
         "type": "BIOME_TAG",
         "negate": true,
+        "value": "minecraft:is_river"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": true,
         "value": "forge:is_cave"
       }
     ]

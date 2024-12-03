@@ -160,6 +160,8 @@
 	#Default rarities (mods may add more!): "common", "uncommon", "rare", "epic"
 	[items.rarity]
 		"minecraft:golden_apple" = "uncommon"
+		"minecraft:enchanted_golden_apple" = "uncommon"
+		"caverns_and_chasms:bejeweled_apple" = "epic"
 		"minecraft:netherite_helmet" = "uncommon"
 		"minecraft:netherite_chestplate" = "uncommon"
 		"minecraft:netherite_leggings" = "uncommon"

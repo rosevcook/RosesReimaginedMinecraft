@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "kubejs:block/bejeweled_apple_crate_bottom",
-    "side": "kubejs:block/bejeweled_apple_crate",
-    "top": "kubejs:block/bejeweled_apple_crate_top"
-  }
-}

@@ -304,7 +304,7 @@
 				creative_motor = 16384.0
 				large_water_wheel = 128.0
 				water_wheel = 32.0
-				windmill_bearing = 512.0
+				windmill_bearing = 256.0
 
 #.
 #Create's liquid manipulation tools

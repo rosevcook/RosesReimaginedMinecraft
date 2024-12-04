@@ -60,6 +60,7 @@ ServerEvents.tags('block', event => {
   event.add('alexsmobs:crow_fears', 'windswept:carved_pinecone_block', 'windswept:will_o_the_wisp', 'autumnity:soul_jack_o_lantern', 'autumnity:large_soul_jack_o_lantern_slice', 'autumnity:cupric_jack_o_lantern', 'autumnity:large_cupric_jack_o_lantern_slice', 'autumnity:large_jack_o_lantern_slice', 'autumnity:carved_large_pumpkin_slice', 'autumnity:ender_jack_o_lantern', 'autumnity:large_ender_jack_o_lantern_slice')
 
   event.remove('minecraft:needs_diamond_tool', 'irons_spellbooks:armor_pile')
+  event.remove('create:windmill_sails', '#minecraft:wool')
 
   // needs_stone = iron, needs_wood = copper, needs_iron = gold/silver
   event.get('minecraft:needs_stone_tool').getObjectIds().forEach(block => {

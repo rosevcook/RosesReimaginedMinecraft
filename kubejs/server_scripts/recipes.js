@@ -31,7 +31,6 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'farmersdelight:cooking' })
   event.remove({ type: 'sullysmod:grindstone_polishing' })
 
-  event.remove({ output: 'buzzier_bees:crystallized_honey_block' })
   event.remove({ output: 'buzzier_bees:honey_lamp' })
   event.remove({ output: 'caverns_and_chasms:lava_lamp' })
   event.remove({ output: 'minecraft:chain' })

@@ -520,6 +520,7 @@
     "create:andesite_pillar",
     "create:brass_block",
     "create:minecart_coupling",
+    "create:cart_assembler",
     "!create:.*calcite.*",
     "!create:.*toolbox.*",
     "!create:.*experience.*",

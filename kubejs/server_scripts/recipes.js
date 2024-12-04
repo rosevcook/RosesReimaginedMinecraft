@@ -532,7 +532,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:nozzle' }, '#minecraft:wool', 'farmersdelight:canvas')
   event.replaceInput({ output: 'minecraft:ender_eye' }, 'minecraft:blaze_powder', 'architects_palette:withered_bone')
   event.replaceInput({ output: 'create:mechanical_plough' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
-  event.replaceInput({ output: 'create:cart_assembler' }, 'create:zinc_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'minecraft:arrow' }, 'minecraft:flint', '#minecraft:planks')
   event.replaceInput({ output: 'minecraft:conduit' }, 'minecraft:heart_of_the_sea', 'upgrade_aquatic:elder_eye')
   event.replaceInput({ id: 'create:crafting/materials/brass_ingot_from_decompacting' }, 'create:brass_block', 'architects_palette:nether_brass_block')

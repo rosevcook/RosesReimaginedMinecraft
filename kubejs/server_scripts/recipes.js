@@ -637,7 +637,7 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('cataclysm:flame_eye', 2), ['cataclysm:flame_eye', 'minecraft:blaze_powder'])
   event.shaped('cataclysm:khopesh', [' A', 'S '], { A: 'architects_palette:sunmetal_brick', S: 'minecraft:stick' })
   event.shapeless('cataclysm:abyss_eye', ['minecraft:ender_pearl', 'minecraft:crying_obsidian'])
-  event.shaped('create:goggles', [' R ', 'ABA'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
+  event.shaped('create:goggles', [' R ', 'BBB', 'A A'], { R: 'farmersdelight:rope', A: 'minecraft:amethyst_shard', B: 'create:brass_sheet' })
   event.shapeless('architects_palette:sunmetal_brick', ['create:brass_sheet', 'cataclysm:ancient_metal_nugget', 'cataclysm:ancient_metal_nugget'])
   event.shaped('cataclysm:bone_reptile_helmet', ['AAA', 'AHA'], { A: 'architects_palette:sunmetal_brick', H: 'cataclysm:kobolediator_skull'})
   event.shaped('cataclysm:ancient_spear', [' AT', ' AA', 'A  '], { A: 'architects_palette:sunmetal_brick', T: 'kubejs:wadjet_tail'})

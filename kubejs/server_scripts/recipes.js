@@ -551,6 +551,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'endergetic:ender_campfire' }, 'minecraft:amethyst_block', 'endergetic:ender_torch')
   event.replaceInput({ output: 'minecraft:anvil' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'alexsmobs:shark_tooth_arrow' }, 'alexsmobs:shark_tooth', 'upgrade_aquatic:thrasher_tooth')
+  event.replaceInput({ output: 'quark:blaze_lantern' }, 'minecraft:blaze_powder', 'minecraft:glowstone_dust')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -701,6 +702,7 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('atmospheric:barrel_cactus', 9), ['atmospheric:barrel_cactus_batch'])
   event.shaped(Item.of('archers_paradox:blaze_arrow', 4), ['P', 'B', 'F'], { P: 'minecraft:blaze_powder', B: 'architects_palette:withered_bone', F: 'minecraft:feather' })
   event.shaped('create:mechanical_drill', [' D ', 'SSS', ' Z '], { D: 'minecraft:diamond', S: 'kubejs:zinc_sheet', Z: 'create:andesite_casing' })
+  event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

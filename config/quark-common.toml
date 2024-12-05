@@ -113,7 +113,7 @@
 	"Duskbound Blocks" = false
 	"Wooden Posts" = true
 	Thatch = false
-	"More Stone Variants" = false
+	"More Stone Variants" = true
 	"Shear Vines" = true
 	"Nether Brick Fence Gate" = true
 	"Gold Bars" = false

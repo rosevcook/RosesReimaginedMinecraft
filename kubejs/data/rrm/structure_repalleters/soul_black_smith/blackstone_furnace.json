@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:blast_furnace",
+  "replaces_with": "quark:blackstone_furnace",
+  "selector": "cataclysm:soul_black_smith"
+}

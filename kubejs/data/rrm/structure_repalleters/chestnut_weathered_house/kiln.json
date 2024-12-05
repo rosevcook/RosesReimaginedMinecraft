@@ -1,7 +1,0 @@
-{
-  "type": "blueprint:simple",
-  "priority": "normal",
-  "replaces_block": "minecraft:smoker",
-  "replaces_with": "clayworks:kiln",
-  "selector": "windswept:chestnut_weathered_house"
-}

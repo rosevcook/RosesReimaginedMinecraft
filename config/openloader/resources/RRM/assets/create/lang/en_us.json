@@ -7,5 +7,6 @@
   "block.create.mechanical_piston": "Piston",
   "block.create.sticky_mechanical_piston": "Sticky Piston",
   "block.create.redstone_contact": "Power Contact",
-  "item.create.wrench": "Brass Wrench"
+  "item.create.wrench": "Brass Wrench",
+  "item.create.propeller": "Brass Propeller"
 }

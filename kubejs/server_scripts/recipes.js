@@ -1,13 +1,4 @@
 ServerEvents.recipes(event => {
-  function baking(output, input) {
-    event.custom({
-      type: 'clayworks:baking',
-      cookingTime: 100,
-      ingredient: [ { item: input } ],
-      result: output
-    })
-  }
-
   function application(block, input, output) {
     event.custom({
       type: 'create:item_application',
@@ -30,6 +21,8 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'farmersdelight:cutting' })
   event.remove({ type: 'farmersdelight:cooking' })
   event.remove({ type: 'sullysmod:grindstone_polishing' })
+  event.remove({ type: 'minecraft:blasting' })
+  event.remove({ type: 'clayworks:baking' })
 
   event.remove({ output: 'buzzier_bees:honey_lamp' })
   event.remove({ output: 'caverns_and_chasms:lava_lamp' })
@@ -417,16 +410,12 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'upgrade_aquatic:magenta_dye_from_mulberry' })
   event.remove({ id: 'neapolitan:vanilla/lime_dye_from_vanilla_pods' })
   event.remove({ id: 'minecraft:lime_dye_from_smelting' })
-  event.remove({ id: 'clayworks:lime_dye_from_baking' })
   event.remove({ id: 'minecraft:blue_dye' })
   event.remove({ id: 'minecraft:green_dye' })
-  event.remove({ id: 'clayworks:green_dye_from_baking' })
   event.remove({ id: 'atmospheric:cyan_dye' })
-  event.remove({ id: 'clayworks:atmospheric/cyan_dye_from_baking' })
   event.remove({ id: 'upgrade_aquatic:cyan_dye_from_pickerelweed' })
   event.remove({ id: 'upgrade_aquatic:purple_dye_from_pickerelweed' })
   event.remove({ id: 'windswept:brown_dye_from_pinecone_smelting' })
-  event.remove({ id: 'windswept:baking/brown_dye_from_pinecone_baking' })
   event.remove({ id: 'atmospheric:purple_dye_from_currant' })
   event.remove({ id: 'atmospheric:pink_dye_from_dragon_fruit' })
   event.remove({ id: 'atmospheric:red_dye_from_carmine_husk' })
@@ -443,6 +432,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:light_blue_dye_from_blue_orchid' })
   event.remove({ id: 'minecraft:white_dye_from_lily_of_the_valley' })
   event.remove({ id: 'neapolitan:adzuki/adzuki_crate' })
+  event.remove({ id: 'architects_palette:smelting/black_dye_from_withered_bone_smelting' })
+  event.remove({ id: 'clayworks:kiln' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -552,6 +543,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:anvil' }, 'minecraft:iron_ingot', 'create:iron_sheet')
   event.replaceInput({ output: 'alexsmobs:shark_tooth_arrow' }, 'alexsmobs:shark_tooth', 'upgrade_aquatic:thrasher_tooth')
   event.replaceInput({ output: 'quark:blaze_lantern' }, 'minecraft:blaze_powder', 'minecraft:glowstone_dust')
+  event.replaceInput({ output: 'create:propeller' }, 'create:iron_sheet', 'create:brass_sheet')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -850,9 +842,6 @@ ServerEvents.recipes(event => {
   application('caverns_and_chasms:cobblestone_tile_slab', 'kubejs:dry_moss', 'windswept:dry_mossy_cobblestone_tile_slab')
   application('caverns_and_chasms:cobblestone_tile_stairs', 'kubejs:dry_moss', 'windswept:dry_mossy_cobblestone_tile_stairs')
   application('caverns_and_chasms:cobblestone_tile_wall', 'kubejs:dry_moss', 'windswept:dry_mossy_cobblestone_tile_wall')
-
-  baking('quark:midori_block', 'minecraft:moss_block')
-  baking('architects_palette:cracked_basalt_tiles', 'architects_palette:basalt_tiles')
 
   event.stonecutting('kubejs:grave_metal_plate_stairs', 'kubejs:grave_metal_plates')
   event.stonecutting(Item.of('kubejs:grave_metal_plate_slab', 2), 'kubejs:grave_metal_plates')

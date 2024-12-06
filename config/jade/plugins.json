@@ -39,7 +39,7 @@
     "total_enchantment_power": false,
     "potion_effects": true,
     "command_block": true,
-    "mob_growth": false,
+    "mob_growth": true,
     "painting": true,
     "harvest_tool.new_line": false,
     "entity_health.max_for_render": 40,

@@ -2878,22 +2878,6 @@
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
 		removeAggressively = false
 
-#Options for the artifacts mod.
-[artifacts]
-
-	#Spawning options for artifacts:mimic
-	[artifacts.mimic]
-		#Should the entity be allowed to spawn normally?
-		allowNormalSpawning = true
-		#Should spawners be able to spawn the entity?
-		allowSpawners = true
-		#Should spawn eggs be able to spawn the entity?
-		allowSpawnEggs = true
-		#Should the entity spawn via mob conversion? i.e. villager -> zombie
-		allowConversions = true
-		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = true
-
 #Options for the undead_unleashed mod.
 [undead_unleashed]
 

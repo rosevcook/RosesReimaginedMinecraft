@@ -84,6 +84,13 @@ ServerEvents.recipes(event => {
     }
   }
 
+  sawingTag('minecraft:planks', 'supplementaries:timber_frame', 1)
+  sawingTag('minecraft:planks', 'supplementaries:timber_brace', 1)
+  sawingTag('minecraft:planks', 'supplementaries:timber_cross_brace', 1)
+  sawingTag('minecraft:logs', 'supplementaries:timber_frame', 4)
+  sawingTag('minecraft:logs', 'supplementaries:timber_brace', 4)
+  sawingTag('minecraft:logs', 'supplementaries:timber_cross_brace', 4)
+
   sawing('quark:bamboo_planks', 'quark:bamboo_planks_stairs', 1)
   sawing('quark:bamboo_planks', 'quark:bamboo_planks_slab', 2)
   sawing('quark:bamboo_planks', 'quark:bamboo_ladder', 1)

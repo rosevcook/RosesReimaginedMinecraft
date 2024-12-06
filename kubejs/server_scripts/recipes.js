@@ -434,6 +434,9 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'neapolitan:adzuki/adzuki_crate' })
   event.remove({ id: 'architects_palette:smelting/black_dye_from_withered_bone_smelting' })
   event.remove({ id: 'clayworks:kiln' })
+  event.remove({ id: 'supplementaries:timber_frame' })
+  event.remove({ id: 'supplementaries:timber_brace' })
+  event.remove({ id: 'supplementaries:timber_cross_brace' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')

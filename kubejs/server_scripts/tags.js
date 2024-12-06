@@ -33,6 +33,7 @@ ServerEvents.tags('item', event => {
   event.add('rrm:necromium_equipment', 'caverns_and_chasms:necromium_sword', 'caverns_and_chasms:necromium_pickaxe', 'caverns_and_chasms:necromium_shovel', 'caverns_and_chasms:necromium_axe', 'caverns_and_chasms:necromium_hoe', 'abnormals_delight:necromium_knife', 'caverns_and_chasms:necromium_helmet', 'caverns_and_chasms:necromium_chestplate', 'caverns_and_chasms:necromium_leggings', 'caverns_and_chasms:necromium_boots')
   event.add('endergetic:ender_fire_base_blocks', 'minecraft:amethyst_block')
   event.add('alexsmobs:bald_eagle_tameables', '#forge:raw_fishes')
+  event.add('naturalist:giraffe_food_items', 'atmospheric:orange', 'atmospheric:blood_orange')
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
@@ -149,6 +150,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('minecraft:has_structure/ruined_portal_ocean')
   event.removeAll('minecraft:has_structure/ruined_portal_standard')
   event.removeAll('minecraft:has_structure/ruined_portal_swamp')
+  event.removeAll('atmospheric:has_structure/kousa_sanctum')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
@@ -177,6 +179,8 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('irons_spellbooks:has_structure/pyromancer_tower', '#windswept:is_pine_barrens')
   event.add('alexsmobs:spawns_red_gusters', 'atmospheric:spiny_thicket')
   event.add('alexsmobs:spawns_desert_crocodiles', 'atmospheric:spiny_thicket', '#atmospheric:is_dunes', '#atmospheric:is_rainforest')
+  event.add('autumnity:has_feature/spotted_maple_tree/red', 'atmospheric:aspen_parkland')
+  event.add('naturalist:has_giraffe', 'atmospheric:laurel_forest', '#atmospheric:is_dunes')
 
 })
 

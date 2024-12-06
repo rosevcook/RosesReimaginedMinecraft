@@ -13,7 +13,6 @@
   "lootItems": {
     "entries": {
       "gold_nugget": 0.2,
-      "nether_wart": 0.1,
       "gold_ingot": 0.1
     },
     "defaultItem": "air"

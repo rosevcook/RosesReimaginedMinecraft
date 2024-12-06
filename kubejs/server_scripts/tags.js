@@ -54,8 +54,9 @@ ServerEvents.tags('block', event => {
   event.removeAll('endergetic:ender_fire_base_blocks')
 
   event.add('auditory:leaf_sounds', '#minecraft:leaves', '#woodworks:leaf_piles', '#minecraft:saplings', 'environmental:hanging_willow_leaves', 'environmental:pink_hanging_wisteria_leaves', 'environmental:blue_hanging_wisteria_leaves', 'environmental:purple_hanging_wisteria_leaves', 'environmental:white_hanging_wisteria_leaves', 'atmospheric:passion_vine_bundle')
-  event.add('auditory:string_sounds', 'atmospheric:grimweb', 'quark:glow_lichen_growth', 'incubation:hay_nest', 'incubation:twig_nest')
+  event.add('auditory:string_sounds', 'atmospheric:grimweb', 'quark:glow_lichen_growth', 'incubation:hay_nest', 'incubation:twig_nest', 'vanillapluscompat:hay_emu_nest', 'vanillapluscompat:twig_emu_nest', 'incubation:hay_chicken_nest', 'incubation:twig_chicken_nest', 'incubation:hay_turkey_nest', 'incubation:twig_turkey_nest', 'incubation:hay_duck_nest', 'incubation:twig_duck_nest')
   event.add('auditory:clay_brick_sounds', 'clayworks:chiseled_bricks')
+  event.add('auditory:dirt_sounds', 'caverns_and_chasms:rocky_dirt')
   event.add('auditory:plant_sounds', 'atmospheric:agave', 'environmental:dwarf_spruce', 'environmental:dwarf_spruce_torch', 'environmental:dwarf_spruce_cupric_torch', 'environmental:dwarf_spruce_ender_torch', 'environmental:dwarf_spruce_soul_torch', 'environmental:dwarf_spruce_plant', 'environmental:dwarf_spruce_plant_torch', 'environmental:dwarf_spruce_plant_cupric_torch', 'environmental:dwarf_spruce_plant_ender_torch', 'environmental:dwarf_spruce_plant_soul_torch', '#minecraft:small_flowers', 'upgrade_aquatic:beachgrass', 'upgrade_aquatic:tall_beachgrass', 'minecraft:large_fern', 'environmental:giant_tall_grass', 'farmersdelight:wild_rice', '#minecraft:tall_flowers', 'atmospheric:aloe_bundle')
   event.add('auditory:small_object_sounds', 'supplementaries:goblet', '#minecraft:wooden_buttons', 'windswept:pinecone', 'caverns_and_chasms:cupric_torch', 'endergetic:ender_torch', 'caverns_and_chasms:cupric_wall_torch', 'endergetic:ender_wall_torch', 'upgrade_aquatic:pink_jelly_torch', 'upgrade_aquatic:purple_jelly_torch', 'upgrade_aquatic:blue_jelly_torch', 'upgrade_aquatic:green_jelly_torch', 'upgrade_aquatic:yellow_jelly_torch', 'upgrade_aquatic:orange_jelly_torch', 'upgrade_aquatic:red_jelly_torch', 'upgrade_aquatic:white_jelly_torch', 'upgrade_aquatic:pink_jelly_wall_torch', 'upgrade_aquatic:purple_jelly_wall_torch', 'upgrade_aquatic:blue_jelly_wall_torch', 'upgrade_aquatic:green_jelly_wall_torch', 'upgrade_aquatic:yellow_jelly_wall_torch', 'upgrade_aquatic:orange_jelly_wall_torch', 'upgrade_aquatic:red_jelly_wall_torch', 'upgrade_aquatic:white_jelly_wall_torch', 'windswept:fairy_light', 'windswept:soul_fairy_light', 'windswept:cupric_fairy_light', 'windswept:ender_fairy_light', 'minecraft:lever', 'upgrade_aquatic:elder_eye', 'minecraft:ladder', 'windswept:holly_ladder', 'windswept:chestnut_ladder', 'windswept:pine_ladder', 'quark:bamboo_ladder', 'environmental:willow_ladder', 'environmental:cherry_ladder', 'environmental:wisteria_ladder', 'caverns_and_chasms:azalea_ladder', 'woodworks:spruce_ladder', 'woodworks:birch_ladder', 'woodworks:dark_oak_ladder', 'woodworks:crimson_ladder', 'woodworks:warped_ladder', 'upgrade_aquatic:driftwood_ladder', 'upgrade_aquatic:river_ladder', 'autumnity:maple_ladder', 'atmospheric:rosewood_ladder', 'atmospheric:morado_ladder', 'atmospheric:aspen_ladder', 'atmospheric:laurel_ladder', 'atmospheric:kousa_ladder', 'atmospheric:grimwood_ladder', 'atmospheric:yucca_ladder', '#minecraft:wooden_pressure_plates', '#minecraft:signs')
   event.add('auditory:obsidian_sounds', 'cataclysm:alter_of_abyss')
@@ -142,6 +143,12 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('irons_spellbooks:has_structure/pyromancer_tower')
   event.removeAll('irons_spellbooks:has_structure/evoker_fort')
   event.removeAll('irons_spellbooks:has_structure/mangrove_hut')
+  event.removeAll('minecraft:has_structure/ruined_portal_desert')
+  event.removeAll('minecraft:has_structure/ruined_portal_jungle')
+  event.removeAll('minecraft:has_structure/ruined_portal_mountain')
+  event.removeAll('minecraft:has_structure/ruined_portal_ocean')
+  event.removeAll('minecraft:has_structure/ruined_portal_standard')
+  event.removeAll('minecraft:has_structure/ruined_portal_swamp')
 
   event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')

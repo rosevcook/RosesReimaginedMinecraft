@@ -23,7 +23,7 @@
     "armor_stand": true,
     "fluid": true,
     "horse_stats": true,
-    "item_tooltip": true,
+    "item_tooltip": false,
     "entity_health": true,
     "energy_storage": true,
     "entity_armor.max_for_render": 40,

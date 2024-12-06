@@ -112,6 +112,12 @@ ServerEvents.tags('block', event => {
   })
 })
 
+ServerEvents.tags('entity_type', event => {
+  event.add('windswept:holly_immune', 'alexsmobs:bald_eagle', 'alexsmobs:sunbird')
+  event.add('atmospheric:yucca_immune', 'naturalist:giraffe', 'naturalist:lizard_tail', 'naturalist:lizard', 'alexsmobs:guster', 'alexsmobs:emu', 'alexsmobs:fly', 'alexsmobs:jerboa', 'alexsmobs:komodo_dragon', 'environmental:zebra', 'endermanoverhaul:desert_enderman', 'alexsmobs:sunbird', 'cataclysm:kobolediator', 'cataclysm:koboleton', 'cataclysm:wadjet')
+  event.add('atmospheric:cactus_immune', '#atmospheric:yucca_immune')
+})
+
 ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('minecraft:has_structure/village_desert')
   event.removeAll('minecraft:has_structure/village_plains')

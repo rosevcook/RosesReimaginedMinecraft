@@ -114,7 +114,7 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('entity_type', event => {
   event.add('windswept:holly_immune', 'alexsmobs:bald_eagle', 'alexsmobs:sunbird')
-  event.add('atmospheric:yucca_immune', 'naturalist:giraffe', 'naturalist:lizard_tail', 'naturalist:lizard', 'alexsmobs:guster', 'alexsmobs:emu', 'alexsmobs:fly', 'alexsmobs:jerboa', 'alexsmobs:komodo_dragon', 'environmental:zebra', 'endermanoverhaul:desert_enderman', 'alexsmobs:sunbird', 'cataclysm:kobolediator', 'cataclysm:koboleton', 'cataclysm:wadjet')
+  event.add('atmospheric:yucca_immune', 'naturalist:giraffe', 'naturalist:lizard_tail', 'naturalist:lizard', 'alexsmobs:guster', 'alexsmobs:emu', 'alexsmobs:fly', 'alexsmobs:jerboa', 'alexsmobs:komodo_dragon', 'environmental:zebra', 'endermanoverhaul:desert_enderman', 'alexsmobs:sunbird', 'cataclysm:kobolediator', 'cataclysm:koboleton', 'cataclysm:wadjet', 'naturalist:rattlesnake', 'naturalist:rhino', 'naturalist:hippo')
   event.add('atmospheric:cactus_immune', '#atmospheric:yucca_immune')
 })
 
@@ -187,6 +187,9 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('alexsmobs:spawns_desert_crocodiles', 'atmospheric:spiny_thicket', '#atmospheric:is_dunes', '#atmospheric:is_rainforest')
   event.add('autumnity:has_feature/spotted_maple_tree/red', 'atmospheric:aspen_parkland')
   event.add('naturalist:has_giraffe', 'atmospheric:laurel_forest', '#atmospheric:is_dunes')
+  event.add('naturalist:has_rattlesnake', '#atmospheric:is_dunes', '#atmospheric:is_dunes')
+  event.add('naturalist:has_rhino', '#atmospheric:is_dunes', '#atmospheric:is_dunes')
+  event.add('naturalist:has_hippo', '#atmospheric:is_rainforest')
 
 })
 

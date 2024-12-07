@@ -443,6 +443,7 @@ ServerEvents.recipes(event => {
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
   event.replaceOutput({ input: 'environmental:magenta_hibiscus' }, 'minecraft:magenta_dye', 'minecraft:light_blue_dye')
   event.replaceInput({ input: 'irons_spellbooks:arcane_essence' }, 'irons_spellbooks:arcane_essence', 'minecraft:lapis_lazuli')
+  event.replaceInput({ input: 'alexsmobs:bear_fur' }, 'alexsmobs:bear_fur', 'naturalist:bear_fur')
   event.replaceInput({ output: 'irons_spellbooks:mana_ring' }, 'irons_spellbooks:arcane_ingot', 'caverns_and_chasms:silver_ingot')
   event.replaceInput({ output: 'irons_spellbooks:mana_ring' }, 'minecraft:diamond', 'minecraft:diamond_block')
   event.replaceInput({ output: 'irons_spellbooks:amethyst_resonance_charm' }, 'minecraft:leather', 'farmersdelight:rope')

@@ -64,7 +64,7 @@
 	giraffeSpawnWeight = 10
 	#Hippo Spawn Weight
 	#Range: 0 ~ 1000
-	hippoSpawnWeight = 15
+	hippoSpawnWeight = 28
 	#Vulture Spawn Weight
 	#Range: 0 ~ 1000
 	vultureSpawnWeight = 15

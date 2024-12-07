@@ -13,13 +13,13 @@
 	snailSpawnWeight = 5
 	#Snake Spawn Weight
 	#Range: 0 ~ 1000
-	snakeSpawnWeight = 4
+	snakeSpawnWeight = 5
 	#Coral Snake Spawn Weight
 	#Range: 0 ~ 1000
-	coralSnakeSpawnWeight = 4
+	coralSnakeSpawnWeight = 5
 	#Rattlesnake Spawn Weight
 	#Range: 0 ~ 1000
-	rattlesnakeSpawnWeight = 4
+	rattlesnakeSpawnWeight = 5
 	#Firefly Spawn Weight
 	#Range: 0 ~ 1000
 	fireflySpawnWeight = 8

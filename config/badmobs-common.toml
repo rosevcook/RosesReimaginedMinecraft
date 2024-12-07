@@ -7702,7 +7702,7 @@
 		#Should the entity spawn via mob conversion? i.e. villager -> zombie
 		allowConversions = true
 		#When enabled the entity type will be aggresively removed from worlds. This will bypass all other options.
-		removeAggressively = true
+		removeAggressively = false
 
 	#Spawning options for naturalist:rattlesnake
 	[naturalist.rattlesnake]

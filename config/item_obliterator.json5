@@ -33,6 +33,7 @@
     "minecraft:end_rod",
     "!minecraft:.*purpur.*",
     "!minecraft:.*chorus.*",
+    "!.*domesticationinnovation:.*",
     "minecraft:dragon_head",
     "minecraft:dragon_breath",
     "minecraft:end_portal_frame",

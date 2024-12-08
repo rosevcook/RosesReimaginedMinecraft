@@ -1,6 +1,8 @@
 {
   "defaultCycleTime": 5000,
-  "ignoredNamespaces": [],
+  "ignoredNamespaces": [
+    "tipsmod"
+  ],
   "ignoredTips": [],
-  "useAmericanEnglishAsDefault": false
+  "useAmericanEnglishAsDefault": true
 }

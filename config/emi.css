@@ -162,7 +162,7 @@
 	/**
 	 * The pages in the left sidebar
 	 */
-	left-sidebar-pages: craftables, favorites;
+	left-sidebar-pages: craftables;
 
 	/**
 	 * The subpanels in the left sidebar
@@ -333,7 +333,7 @@
 	 * Favorite the item to display on the side of the screen opposite of recipies for
 	 * quick access.
 	 */
-	favorite: "key.keyboard.f";
+	favorite: "key.keyboard.unknown";
 
 	/**
 	 * Set the default recipe for a given stack in the output of a recipe to that

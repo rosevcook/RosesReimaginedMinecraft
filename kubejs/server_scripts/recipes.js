@@ -517,7 +517,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'minecraft:recovery_compass' }, 'minecraft:echo_shard', 'caverns_and_chasms:spinel')
   event.replaceInput({ output: 'minecraft:fire_charge' }, 'minecraft:blaze_powder', 'undead_unleashed:charstone_shard')
   event.replaceInput({ output: 'savage_and_ravage:gloomy_tiles' }, 'minecraft:phantom_membrane', 'undead_unleashed:cursed_cloth')
-  event.replaceInput({ output: 'echoplus:echo_shield' }, 'minecraft:sculk_catalyst', 'minecraft:echo_shard')
   event.replaceInput({ output: 'sullysmod:lanternfish_roll' }, 'sullysmod:lanternfish_slice', 'sullysmod:lanternfish')
   event.replaceInput({ output: 'sullysmod:jade_totem' }, 'sullysmod:polished_jade_shingles', 'sullysmod:polished_jade')
   event.replaceInput({ output: 'sullysmod:jade_flinger_totem' }, 'sullysmod:polished_jade_shingles', 'sullysmod:polished_jade')

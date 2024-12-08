@@ -437,6 +437,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'supplementaries:timber_frame' })
   event.remove({ id: 'supplementaries:timber_brace' })
   event.remove({ id: 'supplementaries:timber_cross_brace' })
+  event.remove({ id: 'minecraft:paper' })
+  event.remove({ id: 'neapolitan:banana/paper_from_banana_frond' })
 
   // edit recipes
   event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
@@ -878,6 +880,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')
   event.recipes.create.pressing('environmental:dirt_path', 'minecraft:dirt')
   event.recipes.create.pressing('windswept:gelisol_path', 'windswept:gelisol')
+  event.recipes.create.pressing('minecraft:paper', 'neapolitan:banana_frond')
 
   event.recipes.create.emptying([Fluid.water(), 'windswept:wooden_bucket'], 'windswept:wooden_water_bucket')
   event.recipes.create.emptying([Fluid.of('minecraft:milk'), 'windswept:wooden_bucket'], 'windswept:wooden_milk_bucket')
@@ -940,8 +943,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['windswept:christmas_pudding'], [Fluid.of('minecraft:milk'), 'windswept:ginger_root', 'windswept:holly_berries', 'windswept:roasted_chestnuts', 'create:wheat_flour', '#forge:eggs', 'minecraft:sugar']).heated()
   event.recipes.create.mixing(['atmospheric:yucca_gateau'], [Fluid.of('minecraft:milk'), Item.of('atmospheric:roasted_yucca_fruit', 2), Item.of('atmospheric:aloe_leaves', 2), Item.of('create:wheat_flour', 2), 'atmospheric:yucca_flower', 'minecraft:sugar']).heated()
   event.recipes.create.mixing([Item.of('atmospheric:orange_pudding', 2)], [Fluid.of('minecraft:milk'), Item.of('atmospheric:orange', 2), 'minecraft:sweet_berries', 'create:wheat_flour', '#forge:eggs'])
-  event.recipes.create.mixing(['minecraft:netherite_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 4)]).superheated()
-  event.recipes.create.mixing(['caverns_and_chasms:necromium_ingot'], [Fluid.of('minecraft:lava'), Item.of('minecraft:netherite_scrap', 4), Item.of('caverns_and_chasms:silver_ingot', 4)]).superheated()
+  event.recipes.create.mixing(['minecraft:netherite_ingot'], [Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 4)]).superheated()
+  event.recipes.create.mixing(['caverns_and_chasms:necromium_ingot'], [Item.of('minecraft:netherite_scrap', 4), Item.of('caverns_and_chasms:silver_ingot', 4)]).superheated()
   event.recipes.create.mixing(['farmersdelight:melon_juice'], [Item.of('minecraft:melon_slice', 4), 'minecraft:sugar', 'minecraft:glass_bottle'])
   event.recipes.create.mixing(['windswept:wild_berry_juice'], [Item.of('windswept:wild_berries', 4), 'minecraft:sugar', 'minecraft:glass_bottle'])
   event.recipes.create.mixing(['berry_good:glowgurt'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:glow_berries', 2), 'minecraft:sugar', 'minecraft:bowl'])

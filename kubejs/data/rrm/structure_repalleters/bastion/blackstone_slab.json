@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:smooth_quartz_slab",
+  "replaces_with": "minecraft:blackstone_slab",
+  "selector": "minecraft:bastion_remnant"
+}

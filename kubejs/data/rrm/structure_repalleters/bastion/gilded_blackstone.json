@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "high",
+  "replaces_block": "minecraft:gold_block",
+  "replaces_with": "minecraft:gilded_blackstone",
+  "selector": "minecraft:bastion_remnant"
+}

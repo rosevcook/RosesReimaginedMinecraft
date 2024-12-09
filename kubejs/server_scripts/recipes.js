@@ -441,7 +441,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'neapolitan:banana/paper_from_banana_frond' })
 
   // edit recipes
-  event.replaceOutput({ output: 'minecraft:quartz' }, 'minecraft:quartz', 'minecraft:charcoal')
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
   event.replaceOutput({ input: 'environmental:magenta_hibiscus' }, 'minecraft:magenta_dye', 'minecraft:light_blue_dye')
   event.replaceInput({ input: 'irons_spellbooks:arcane_essence' }, 'irons_spellbooks:arcane_essence', 'minecraft:lapis_lazuli')
@@ -980,8 +979,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['caverns_and_chasms:spinel_ore'], ['caverns_and_chasms:spinel', 'minecraft:stone'])
   event.recipes.create.mixing(['caverns_and_chasms:deepslate_spinel_ore'], ['caverns_and_chasms:spinel', 'minecraft:deepslate'])
   event.recipes.create.mixing(['minecraft:nether_gold_ore'], ['minecraft:raw_gold', 'minecraft:netherrack'])
-  event.recipes.create.mixing(['minecraft:nether_quartz_ore'], ['minecraft:charcoal', 'minecraft:netherrack'])
-  event.recipes.create.mixing(['minecraft:gilded_blackstone'], ['minecraft:raw_gold', 'minecraft:blackstone'])
+  event.recipes.create.mixing(['minecraft:gilded_blackstone'], ['caverns_and_chasms:raw_silver', 'minecraft:blackstone'])
   event.recipes.create.mixing(['caverns_and_chasms:soul_silver_ore'], ['caverns_and_chasms:raw_silver', '#minecraft:soul_fire_base_blocks'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')

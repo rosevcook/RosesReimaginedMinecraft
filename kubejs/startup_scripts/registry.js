@@ -1,13 +1,13 @@
 StartupEvents.registry('item', event => {
-  event.create('silver_sheet').displayName('Silver Sheet').texture('kubejs:item/silver_sheet')
-  event.create('zinc_sheet').displayName('Zinc Sheet').texture('kubejs:item/zinc_sheet')
-  event.create('silver_feather').displayName('Silver Feather').texture('kubejs:item/silver_feather')
-  event.create('copper_wire').displayName('Copper Wire').texture('kubejs:item/copper_wire')
-  event.create('power_coil').displayName('Power Coil').texture('kubejs:item/power_coil')
-  event.create('torn_elytra_fragment').displayName('Torn Elytra Fragment').texture('kubejs:item/torn_elytra_fragment')
-  event.create('ice_rod').displayName('Ice Rod').parentModel('item/handheld').texture('kubejs:item/ice_rod')
-  event.create('wadjet_tail').displayName('Wadjet Tail').texture('kubejs:item/wadjet_tail').rarity('uncommon')
-  event.create('dry_moss').displayName('Dry Moss').texture('kubejs:item/dry_moss')
+  event.create('silver_sheet').displayName('Silver Sheet').texture('kubejs:item/silver_sheet').group('transportation')
+  event.create('zinc_sheet').displayName('Zinc Sheet').texture('kubejs:item/zinc_sheet').group('transportation')
+  event.create('silver_feather').displayName('Silver Feather').texture('kubejs:item/silver_feather').group('transportation')
+  event.create('copper_wire').displayName('Copper Wire').texture('kubejs:item/copper_wire').group('transportation')
+  event.create('power_coil').displayName('Power Coil').texture('kubejs:item/power_coil').group('transportation')
+  event.create('torn_elytra_fragment').displayName('Torn Elytra Fragment').texture('kubejs:item/torn_elytra_fragment').group('transportation')
+  event.create('ice_rod').displayName('Ice Rod').parentModel('item/handheld').texture('kubejs:item/ice_rod').group('transportation')
+  event.create('wadjet_tail').displayName('Wadjet Tail').texture('kubejs:item/wadjet_tail').rarity('uncommon').group('transportation')
+  event.create('dry_moss').displayName('Dry Moss').texture('kubejs:item/dry_moss').group('transportation')
 })
 
 StartupEvents.registry('block', event => {

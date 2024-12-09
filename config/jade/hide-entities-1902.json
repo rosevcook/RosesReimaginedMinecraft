@@ -3,7 +3,9 @@
   "values": [
     "minecraft:area_effect_cloud",
     "minecraft:firework_rocket",
-    "minecraft:item"
+    "minecraft:item",
+    "create:super_glue",
+    "create:crushing_wheel_controller"
   ],
   "version": 1
 }

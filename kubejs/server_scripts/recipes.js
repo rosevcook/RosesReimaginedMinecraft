@@ -128,7 +128,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'neapolitan:strawberry/strawberry_cake' })
   event.remove({ id: 'neapolitan:banana/banana_cake' })
   event.remove({ output: 'neapolitan:strawberry_banana_smoothie' })
-  event.remove({ output: 'windswept:snow_boots' })
   event.remove({ id: 'create:emptying/compat/neapolitan/milk_bottle' })
   event.remove({ id: 'create:emptying/compat/farmersdelight/milk_bottle' })
   event.remove({ id: 'minecraft:sugar_from_sugar_cane' })
@@ -870,7 +869,6 @@ ServerEvents.recipes(event => {
   event.stonecutting('kubejs:raw_zinc_brick_stairs', 'create:raw_zinc_block')
   event.stonecutting(Item.of('kubejs:raw_zinc_brick_slab', 2), 'create:raw_zinc_block')
 
-  event.smithing('windswept:snow_boots', 'minecraft:leather_boots', 'caverns_and_chasms:silver_ingot')
   event.smithing('create:copper_diving_boots', 'metalworks:copper_boots', 'minecraft:deepslate')
   event.smithing('clash:greatblade', 'savage_and_ravage:cleaver_of_beheading', 'cataclysm:ignitium_ingot')
 
@@ -979,7 +977,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['caverns_and_chasms:spinel_ore'], ['caverns_and_chasms:spinel', 'minecraft:stone'])
   event.recipes.create.mixing(['caverns_and_chasms:deepslate_spinel_ore'], ['caverns_and_chasms:spinel', 'minecraft:deepslate'])
   event.recipes.create.mixing(['minecraft:nether_gold_ore'], ['minecraft:raw_gold', 'minecraft:netherrack'])
-  event.recipes.create.mixing(['minecraft:gilded_blackstone'], ['caverns_and_chasms:raw_silver', 'minecraft:blackstone'])
+  event.recipes.create.mixing(['minecraft:gilded_blackstone'], ['minecraft:raw_gold', 'minecraft:blackstone'])
   event.recipes.create.mixing(['caverns_and_chasms:soul_silver_ore'], ['caverns_and_chasms:raw_silver', '#minecraft:soul_fire_base_blocks'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')

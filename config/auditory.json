@@ -34,7 +34,7 @@
   },
   "item_sounds": {
     "ender_pearl_sounds": false,
-    "spawn_egg_sounds": true,
+    "spawn_egg_sounds": false,
     "lead_sounds": true,
     "boat_sounds": true,
     "minecart_sounds": true

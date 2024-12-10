@@ -1,0 +1,503 @@
+{
+  "replace": true,
+  "trades": [
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "otherworldly_accessories:broken_shackle"
+      },
+      "payment_item": {
+        "count": 6,
+        "item": "minecraft:iron_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "minecraft:name_tag"
+      },
+      "payment_item": {
+        "count": 11,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "minecraft:saddle"
+      },
+      "payment_item": {
+        "count": 11,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 3,
+        "item": "minecraft:leather"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "otherworldly_accessories:aglet"
+      },
+      "payment_item": {
+        "count": 8,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "quark:forgotten_hat"
+      },
+      "payment_item": {
+        "count": 25,
+        "item": "minecraft:iron_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 8,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "caverns_and_chasms:barometer"
+      },
+      "payment_item": {
+        "count": 12,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 4,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "caverns_and_chasms:depth_gauge"
+      },
+      "payment_item": {
+        "count": 23,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 4,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "minecraft:bundle"
+      },
+      "payment_item": {
+        "count": 20,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "otherworldly_accessories:quiver"
+      },
+      "payment_item": {
+        "count": 20,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "clash:billhook"
+      },
+      "payment_item": {
+        "count": 17,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 8,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "windswept:snow_boots"
+      },
+      "payment_item": {
+        "count": 11,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 1,
+        "item": "minecraft:leather_boots"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "clash:spear"
+      },
+      "payment_item": {
+        "count": 19,
+        "item": "minecraft:gold_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 12,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "savage_and_ravage:mask_of_dishonesty"
+      },
+      "payment_item": {
+        "count": 42,
+        "item": "minecraft:gold_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 11,
+        "item": "minecraft:iron_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "environmental:thief_hood"
+      },
+      "payment_item": {
+        "count": 38,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 12,
+        "item": "minecraft:iron_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "environmental:healer_pouch"
+      },
+      "payment_item": {
+        "count": 38,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 12,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "environmental:architect_belt"
+      },
+      "payment_item": {
+        "count": 38,
+        "item": "minecraft:gold_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 12,
+        "item": "minecraft:iron_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "environmental:wanderer_boots"
+      },
+      "payment_item": {
+        "count": 38,
+        "item": "minecraft:gold_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 12,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "otherworldly_accessories:sanguine_knife"
+      },
+      "payment_item": {
+        "count": 19,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 1,
+        "item": "farmersdelight:iron_knife"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "minecraft:crossbow"
+      },
+      "payment_item": {
+        "count": 22,
+        "item": "create:zinc_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 1,
+        "item": "minecraft:bow"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "undead_unleashed:shadow_chestplate"
+      },
+      "payment_item": {
+        "count": 32,
+        "item": "minecraft:gold_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 8,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "undead_unleashed:shadow_boots"
+      },
+      "payment_item": {
+        "count": 27,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "secondary_payment_item": {
+        "count": 8,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 3,
+        "item": "savage_and_ravage:mischief_arrow"
+      },
+      "payment_item": {
+        "count": 12,
+        "item": "minecraft:iron_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 3,
+        "item": "minecraft:arrow"
+      },
+      "payment_item": {
+        "count": 12,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 5,
+        "item": "farmersdelight:rope"
+      },
+      "payment_item": {
+        "count": 18,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 2,
+        "item": "supplementaries:bomb"
+      },
+      "payment_item": {
+        "count": 30,
+        "item": "caverns_and_chasms:copper_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 1,
+        "item": "supplementaries:bomb_blue"
+      },
+      "payment_item": {
+        "count": 15,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 2,
+        "item": "undead_unleashed:grave_metal_ingot"
+      },
+      "payment_item": {
+        "count": 33,
+        "item": "create:zinc_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 2,
+        "item": "savage_and_ravage:blast_proof_plating"
+      },
+      "payment_item": {
+        "count": 33,
+        "item": "minecraft:gold_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 2,
+        "item": "caverns_and_chasms:sanguine_plating"
+      },
+      "payment_item": {
+        "count": 33,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 14,
+        "item": "caverns_and_chasms:silver_nugget"
+      },
+      "payment_item": {
+        "count": 3,
+        "item": "minecraft:lapis_lazuli"
+      },
+      "price_multiplier": 0.0
+    },
+    {
+      "type": "goblintraders:basic",
+      "experience": 0,
+      "max_trades": 5,
+      "offer_item": {
+        "count": 14,
+        "item": "minecraft:gold_nugget"
+      },
+      "payment_item": {
+        "count": 3,
+        "item": "caverns_and_chasms:spinel"
+      },
+      "price_multiplier": 0.0
+    }
+  ]
+}

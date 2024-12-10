@@ -35,7 +35,7 @@
 				minAmount = 5
 				#The maximum amount of common trades that a golbin can have.
 				#Range: > 0
-				maxAmount = 8
+				maxAmount = 10
 				#The chance this trade rarity will be included in the goblin's trades
 				#Range: 0.0 ~ 1.0
 				includeChance = 1.0
@@ -49,7 +49,7 @@
 				maxAmount = 5
 				#The chance this trade rarity will be included in the goblin's trades
 				#Range: 0.0 ~ 1.0
-				includeChance = 1.0
+				includeChance = 0.0
 
 			[common.goblin_trader.trades.rare]
 				#The minimum amount of rare trades that a golbin will have.
@@ -60,7 +60,7 @@
 				maxAmount = 4
 				#The chance this trade rarity will be included in the goblin's trades
 				#Range: 0.0 ~ 1.0
-				includeChance = 1.0
+				includeChance = 0.0
 
 			[common.goblin_trader.trades.epic]
 				#The minimum amount of epic trades that a golbin will have.
@@ -71,7 +71,7 @@
 				maxAmount = 2
 				#The chance this trade rarity will be included in the goblin's trades
 				#Range: 0.0 ~ 1.0
-				includeChance = 1.0
+				includeChance = 0.0
 
 			[common.goblin_trader.trades.legendary]
 				#The minimum amount of legendary trades that a golbin will have.
@@ -82,7 +82,7 @@
 				maxAmount = 1
 				#The chance this trade rarity will be included in the goblin's trades
 				#Range: 0.0 ~ 1.0
-				includeChance = 0.1
+				includeChance = 0.0
 
 	#Vein Goblin Trader settings
 	[common.vein_goblin_trader]

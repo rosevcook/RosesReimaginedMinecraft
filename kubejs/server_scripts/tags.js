@@ -119,6 +119,10 @@ ServerEvents.tags('painting_variant', event => {
   event.remove('minecraft:placeable', 'alexsmobs:nft', 'alexsmobs:dog_poker')
 })
 
+ServerEvents.tags('fluid', event => {
+  event.remove('forge:honey', 'cofh_core:honey')
+})
+
 ServerEvents.tags('entity_type', event => {
   event.add('windswept:holly_immune', 'alexsmobs:bald_eagle', 'alexsmobs:sunbird')
   event.add('atmospheric:yucca_immune', 'naturalist:giraffe', 'naturalist:lizard_tail', 'naturalist:lizard', 'alexsmobs:guster', 'alexsmobs:emu', 'alexsmobs:fly', 'alexsmobs:jerboa', 'alexsmobs:komodo_dragon', 'environmental:zebra', 'endermanoverhaul:desert_enderman', 'alexsmobs:sunbird', 'cataclysm:kobolediator', 'cataclysm:koboleton', 'cataclysm:wadjet', 'naturalist:rattlesnake', 'naturalist:rhino', 'naturalist:hippo')

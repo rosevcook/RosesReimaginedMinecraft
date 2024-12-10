@@ -438,6 +438,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'supplementaries:timber_cross_brace' })
   event.remove({ id: 'minecraft:paper' })
   event.remove({ id: 'neapolitan:banana/paper_from_banana_frond' })
+  event.remove({ id: 'minecraft:magma_cream' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -696,7 +697,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:bell', ['SSS', 'III', 'INI'], { S: 'minecraft:stick', I: 'minecraft:gold_ingot', N: 'minecraft:gold_nugget' })
   event.shaped('atmospheric:barrel_cactus_batch', ['CCC', 'CCC', 'CCC'], { C: 'atmospheric:barrel_cactus' })
   event.shapeless(Item.of('atmospheric:barrel_cactus', 9), ['atmospheric:barrel_cactus_batch'])
-  event.shaped(Item.of('archers_paradox:blaze_arrow', 4), ['P', 'B', 'F'], { P: 'minecraft:blaze_powder', B: 'architects_palette:withered_bone', F: 'minecraft:feather' })
+  event.shaped(Item.of('archers_paradox:blaze_arrow', 4), ['M', 'B', 'F'], { M: 'minecraft:magma_block', B: 'minecraft:blaze_rod', F: 'minecraft:feather' })
   event.shaped('create:mechanical_drill', [' D ', 'SSS', ' Z '], { D: 'minecraft:diamond', S: 'kubejs:zinc_sheet', Z: 'create:andesite_casing' })
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
 
@@ -888,6 +889,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.mixing(['minecraft:slime_ball'], [Fluid.of('minecraft:milk', 250), Item.of('minecraft:kelp', 2)])
   event.recipes.create.mixing(['minecraft:slime_ball'], [Item.of('atmospheric:aloe_leaves', 2)])
+  event.recipes.create.mixing(['minecraft:magma_cream'], ['minecraft:blaze_powder', 'minecraft:slime_ball']).heated()
   event.recipes.create.mixing(['upgrade_aquatic:driftwood_log'], [Fluid.of('minecraft:water', 250), '#minecraft:logs'])
   event.recipes.create.mixing([Item.of('minecraft:coarse_dirt', 2)], ['minecraft:dirt', 'minecraft:gravel'])
   event.recipes.create.mixing([Item.of('caverns_and_chasms:rocky_dirt', 2)], ['minecraft:dirt', 'minecraft:cobblestone'])

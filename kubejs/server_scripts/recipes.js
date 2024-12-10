@@ -548,6 +548,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'quark:blaze_lantern' }, 'minecraft:blaze_powder', 'minecraft:glowstone_dust')
   event.replaceInput({ output: 'create:propeller' }, 'create:iron_sheet', 'create:brass_sheet')
   event.replaceInput({ output: 'windswept:snow_charge_banner_pattern' }, '#forge:buckets/powder_snow', 'minecraft:snowball')
+  event.replaceInput({ output: 'minecraft:shield' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

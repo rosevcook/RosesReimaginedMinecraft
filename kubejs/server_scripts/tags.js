@@ -165,7 +165,6 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('atmospheric:has_structure/kousa_sanctum')
   event.removeAll('naturalist:has_coral_snake')
 
-  event.add('minecraft:has_structure/ruined_portal_jungle', '#atmospheric:is_rainforest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
   event.add('forge:is_snowy', 'atmospheric:snowy_scrubland')

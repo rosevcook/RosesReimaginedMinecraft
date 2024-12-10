@@ -998,6 +998,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing([Item.of('create:zinc_nugget', 2), Item.of('caverns_and_chasms:silver_nugget', 2).withChance(0.5)], 'undead_unleashed:grave_metal_scrap')
   event.recipes.create.crushing([Item.of('minecraft:iron_nugget', 9).withChance(0.5)], '#rrm:iron_equipment')
   event.recipes.create.crushing([Item.of('minecraft:gold_nugget', 9).withChance(0.5)], '#rrm:golden_equipment')
+  event.recipes.create.crushing([Item.of('undead_unleashed:grave_metal_scrap', 1).withChance(0.5)], '#rrm:grave_metal_equipment')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:copper_nugget', 9).withChance(0.5)], '#rrm:copper_equipment')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:silver_nugget', 9).withChance(0.5)], '#rrm:silver_equipment')
   event.recipes.create.crushing([Item.of('create:zinc_nugget', 9).withChance(0.5)], '#rrm:zinc_equipment')

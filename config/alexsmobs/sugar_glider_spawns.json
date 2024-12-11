@@ -4,7 +4,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:birch_forest"
+        "value": "atmospheric:aspen_parkland"
       }
     ],
     [
@@ -18,7 +18,7 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "terralith:white_cliffs"
+        "value": "windswept:lavender_meadow"
       }
     ]
   ]

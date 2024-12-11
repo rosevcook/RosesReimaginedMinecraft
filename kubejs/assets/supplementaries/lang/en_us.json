@@ -3,5 +3,6 @@
   "block.supplementaries.gold_trapdoor": "Golden Trapdoor",
   "block.supplementaries.goblet": "Silver Chalice",
   "block.supplementaries.sconce_ender": "Crystalline Sconce",
-  "item.supplementaries.slingshot": "Blocksling"
+  "item.supplementaries.slingshot": "Blocksling",
+  "item.supplementaries.bomb": "Lead Bomb"
 }

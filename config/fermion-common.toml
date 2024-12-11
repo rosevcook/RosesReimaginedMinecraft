@@ -52,3 +52,8 @@
 	#The item used as a fuel for brewing stands.
 	"Brewing Fuel" = "minecraft:lapis_lazuli"
 
+#Entity Tweaks
+[entity-tweaks]
+	#Player base movement speed attribute; default: 0.1
+	"Player Base Speed" = 0.085
+

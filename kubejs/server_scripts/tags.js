@@ -38,6 +38,7 @@ ServerEvents.tags('item', event => {
 
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg', 'naturalist:cooked_egg')
   event.remove('forge:fruits/banana', 'alexsmobs:banana')
+  event.remove('forge:ingots/silver', 'oreganized:silver_ingot')
   event.remove('forge:eggs', 'naturalist:duck_egg', 'naturalist:alligator_egg', 'alexsmobs:crocodile_egg', 'alexsmobs:terrapin_egg', 'minecraft:turtle_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
   event.remove('forge:crops/cabbage', 'farmersdelight:cabbage_leaf')

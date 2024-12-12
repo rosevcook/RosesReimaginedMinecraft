@@ -1,0 +1,7 @@
+{
+  "type": "blueprint:simple",
+  "priority": "normal",
+  "replaces_block": "minecraft:cobblestone",
+  "replaces_with": "atmospheric:arid_sandstone",
+  "selector": "betterdungeons:spider_dungeon"
+}

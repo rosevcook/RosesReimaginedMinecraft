@@ -170,6 +170,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('minecraft:has_structure/ruined_portal_swamp')
   event.removeAll('atmospheric:has_structure/kousa_sanctum')
   event.removeAll('naturalist:has_coral_snake')
+  event.removeAll('naturalist:has_rattlesnake')
 
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
@@ -203,7 +204,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('naturalist:has_rhino', '#atmospheric:is_dunes', '#atmospheric:is_dunes')
   event.add('naturalist:has_hippo', '#atmospheric:is_rainforest')
   event.add('naturalist:has_coral_snake', '#atmospheric:is_rainforest')
-
+  event.add('betterdungeons:has_structure/spider_dungeon', '#atmospheric:is_dunes')
 })
 
 ServerEvents.tags('mob_effect', event => {

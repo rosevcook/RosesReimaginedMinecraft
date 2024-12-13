@@ -16,6 +16,7 @@ ServerEvents.tags('item', event => {
   event.add('curios:curio', 'create:goggles', 'minecraft:elytra', 'minecraft:totem_of_undying', 'artifacts:cross_necklace', 'artifacts:shock_pendant', 'artifacts:flame_pendant', 'artifacts:cloud_in_a_bottle', 'artifacts:obsidian_skull', 'artifacts:antidote_vessel', 'artifacts:fire_gauntlet', 'artifacts:aqua_dashers', 'undead_unleashed:tome_of_reflection', 'cataclysm:sandstorm_in_a_bottle', 'cataclysm:sticky_gloves', 'quark:backpack', 'irons_spellbooks:mana_ring', 'irons_spellbooks:silver_ring', 'irons_spellbooks:cooldown_ring', 'irons_spellbooks:cast_time_ring', 'irons_spellbooks:fireward_ring', 'irons_spellbooks:frostward_ring', 'irons_spellbooks:poisonward_ring', 'irons_spellbooks:heavy_chain_necklace', 'irons_spellbooks:concentration_amulet', 'irons_spellbooks:amethyst_resonance_charm')
   event.add('caverns_and_chasms:cupric_fire_base_blocks', 'minecraft:copper_ingot')
   event.add('rrm:rotten_flesh', 'minecraft:rotten_flesh', 'windswept:frozen_flesh')
+  event.add('rrm:rope_ingredients', 'farmersdelight:straw', 'environmental:yak_hair', 'spelunkery:tangle_roots')
   event.add('rrm:pickerelweed', 'upgrade_aquatic:blue_pickerelweed', 'upgrade_aquatic:purple_pickerelweed')
   event.add('rrm:sandstone', 'minecraft:sandstone', 'minecraft:red_sandstone', 'atmospheric:arid_sandstone', 'atmospheric:red_arid_sandstone')
   event.add('caverns_and_chasms:additional_toolbox_tools', 'create:wrench', '#curios:curio', 'artifacts:umbrella');
@@ -39,6 +40,7 @@ ServerEvents.tags('item', event => {
   event.remove('forge:cooked_eggs', 'farmersdelight:fried_egg', 'naturalist:cooked_egg')
   event.remove('forge:fruits/banana', 'alexsmobs:banana')
   event.remove('forge:ingots/silver', 'oreganized:silver_ingot')
+  event.remove('forge:nuggets/silver', 'oreganized:silver_nugget')
   event.remove('forge:eggs', 'naturalist:duck_egg', 'naturalist:alligator_egg', 'alexsmobs:crocodile_egg', 'alexsmobs:terrapin_egg', 'minecraft:turtle_egg')
   event.remove('environmental:spawns_on_muddy_pig', 'minecraft:blue_orchid', 'minecraft:dandelion', 'minecraft:poppy')
   event.remove('forge:crops/cabbage', 'farmersdelight:cabbage_leaf')
@@ -171,6 +173,10 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('atmospheric:has_structure/kousa_sanctum')
   event.removeAll('naturalist:has_coral_snake')
   event.removeAll('naturalist:has_rattlesnake')
+  event.removeAll('spelunkery:has_lush_noise')
+  event.removeAll('spelunkery:has_sculk_noise')
+  event.removeAll('spelunkery:has_stone_noise')
+  event.removeAll('spelunkery:has_ocean_noise')
 
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
@@ -205,6 +211,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('naturalist:has_hippo', '#atmospheric:is_rainforest')
   event.add('naturalist:has_coral_snake', '#atmospheric:is_rainforest')
   event.add('betterdungeons:has_structure/spider_dungeon', '#atmospheric:is_dunes')
+  event.add('spelunkery:has_desert_noise', '#atmospheric:is_dunes')
 })
 
 ServerEvents.tags('mob_effect', event => {

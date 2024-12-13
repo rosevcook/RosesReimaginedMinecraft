@@ -27,6 +27,7 @@
 		"spelunkery:smooth_basalt_diamond_ore": "minecraft:deepslate_diamond_ore",
 		"minecraft:mycelium": "caverns_and_chasms:rocky_dirt",
 		"oreganized:glance": "caverns_and_chasms:rocky_dirt",
+		"oreganized:spotted_glance": "caverns_and_chasms:rocky_dirt",
 		"minecraft:polished_granite": "atmospheric:polished_dolerite",
 		"minecraft:polished_diorite": "atmospheric:polished_dolerite",
 		"environmental:bluebell": "windswept:bluebells",

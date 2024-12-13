@@ -728,6 +728,8 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
   event.shaped(Item.of('supplementaries:bomb', 2), [' I ', 'IGI', ' I '], { I: 'oreganized:lead_ingot', G: 'minecraft:gunpowder' })
   event.shaped('spelunkery:echo_fork', [' S ', 'SFS', ' S '], { S: 'minecraft:echo_shard', F: 'caverns_and_chasms:tuning_fork' })
+  event.shaped('kubejs:rough_spinel_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:rough_spinel' })
+  event.shapeless(Item.of('kubejs:rough_spinel', 9), ['kubejs:rough_spinel_block'])
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 
@@ -1003,6 +1005,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['minecraft:deepslate_gold_ore'], ['minecraft:raw_gold', 'minecraft:deepslate'])
   event.recipes.create.mixing(['minecraft:lapis_ore'], ['spelunkery:rough_lazurite', 'minecraft:stone'])
   event.recipes.create.mixing(['minecraft:deepslate_lapis_ore'], ['spelunkery:rough_lazurite', 'minecraft:deepslate'])
+  event.recipes.create.mixing(['spelunkery:sandstone_lapis_ore'], ['spelunkery:rough_lazurite', 'atmospheric:arid_sandstone'])
   event.recipes.create.mixing(['minecraft:diamond_ore'], ['spelunkery:rough_diamond', 'minecraft:stone'])
   event.recipes.create.mixing(['minecraft:deepslate_diamond_ore'], ['spelunkery:rough_diamond', 'minecraft:deepslate'])
   event.recipes.create.mixing(['sullysmod:jade_ore'], ['sullysmod:rough_jade', 'minecraft:stone'])
@@ -1037,7 +1040,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing([Item.of('atmospheric:red_arid_sand', 2), Item.of('atmospheric:red_arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:red_arid_sandstone')
   event.recipes.create.crushing([Item.of('atmospheric:arid_sand', 2), Item.of('atmospheric:arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:arid_sandstone')
   event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:ice').withChance(0.33), Item.of('minecraft:packed_ice').withChance(0.33), Item.of('minecraft:blue_ice').withChance(0.33), Item.of('caverns_and_chasms:silver_nugget').withChance(0.05)], 'windswept:shale')
-  event.recipes.create.crushing([Item.of('minecraft:gunpowder').withChance(0.1), Item.of('create:brass_nugget').withChance(0.05), Item.of('minecraft:glowstone_dust').withChance(0.1), Item.of('create:cinder_flour').withChance(0.1)], 'undead_unleashed:charstone_shard')
+  event.recipes.create.crushing([Item.of('minecraft:gunpowder').withChance(0.1), Item.of('minecraft:glowstone_dust').withChance(0.1), Item.of('create:cinder_flour').withChance(0.1)], 'undead_unleashed:charstone_shard')
   event.recipes.create.crushing([Item.of('create:zinc_nugget', 2), Item.of('caverns_and_chasms:silver_nugget', 2).withChance(0.5)], 'undead_unleashed:grave_metal_scrap')
   event.recipes.create.crushing([Item.of('minecraft:iron_nugget', 9).withChance(0.5)], '#rrm:iron_equipment')
   event.recipes.create.crushing([Item.of('minecraft:gold_nugget', 9).withChance(0.5)], '#rrm:golden_equipment')

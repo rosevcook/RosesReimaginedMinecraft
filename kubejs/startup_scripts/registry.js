@@ -1,6 +1,7 @@
 StartupEvents.registry('item', event => {
   event.create('silver_sheet').displayName('Silver Sheet').texture('kubejs:item/silver_sheet').group('transportation')
   event.create('zinc_sheet').displayName('Zinc Sheet').texture('kubejs:item/zinc_sheet').group('transportation')
+  event.create('rough_spinel').displayName('Rough Spinel').texture('kubejs:item/rough_spinel').group('transportation')
   event.create('silver_feather').displayName('Silver Feather').texture('kubejs:item/silver_feather').group('transportation')
   event.create('copper_wire').displayName('Copper Wire').texture('kubejs:item/copper_wire').group('transportation')
   event.create('power_coil').displayName('Power Coil').texture('kubejs:item/power_coil').group('transportation')
@@ -11,6 +12,8 @@ StartupEvents.registry('item', event => {
 })
 
 StartupEvents.registry('block', event => {
+  event.create('rough_spinel_block').material('stone').displayName('Block of Rough Spinel').soundType('stone').hardness(3).tagBlock('minecraft:mineable/pickaxe')
+
   event.create('grave_metal_plates').material('metal').displayName('Grave Metal Plates').soundType('metal').hardness(2.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('grave_metal_plate_stairs', 'stairs').material('metal').displayName('Grave Metal Plate Stairs').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
   event.create('grave_metal_plate_slab', 'slab').material('metal').displayName('Grave Metal Plate Slab').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')

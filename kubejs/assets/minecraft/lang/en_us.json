@@ -61,9 +61,11 @@
   "block.minecraft.red_shulker_box": "Red Sculker Box",
   "block.minecraft.black_shulker_box": "Black Sculker Box",
 
+  "container.enderchest": "Abyssal Chest",
+  "container.shulkerBox": "Sculker Box",
+
   "item.minecraft.ender_eye": "Ancient Eye",
-  "item.minecraft.ender_pearl": "Wanderers Pearl",
-  "item.minecraft.ender_chest": "Dimensional Chest",
+  "item.minecraft.ender_pearl": "Wandering Eye",
   "item.minecraft.bread": "Wheat Bread",
   "item.minecraft.lead": "Leash",
   "item.minecraft.brick": "Clay Brick",

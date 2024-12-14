@@ -479,6 +479,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'spelunkery:black_dye_from_inkcap' })
   event.remove({ id: 'spelunkery:white_dye_from_inkcap' })
   event.remove({ id: 'create:crushing/gravel' })
+  event.remove({ id: 'heartstone:heartstone' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -582,7 +583,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:propeller' }, 'create:iron_sheet', 'create:brass_sheet')
   event.replaceInput({ output: 'windswept:snow_charge_banner_pattern' }, '#forge:buckets/powder_snow', 'minecraft:snowball')
   event.replaceInput({ output: 'minecraft:shield' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
-  event.replaceInput({ output: 'heartstone:heartstone' }, 'minecraft:heart_of_the_sea', 'heart_crystals:heart_crystal')
   event.replaceInput({ output: 'supplementaries:slingshot' }, 'minecraft:rabbit_hide', 'spelunkery:tangle_roots')
   event.replaceInput({ output: 'supplementaries:slingshot' }, 'minecraft:string', 'spelunkery:tangle_roots')
   event.replaceInput({ output: 'farmersdelight:rope' }, 'farmersdelight:straw', '#rrm:rope_ingredients')
@@ -742,6 +742,7 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:rough_spinel_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:rough_spinel' })
   event.shapeless(Item.of('kubejs:rough_spinel', 9), ['kubejs:rough_spinel_block'])
   event.shaped('spelunkery:item_magnet', ['S L', 'M M', ' M '], { S: 'caverns_and_chasms:spinel', L: 'minecraft:lapis_lazuli', M: 'spelunkery:magnetite_chunk' })
+  event.shaped(Item.of('heartstone:heartstone', 2), ['SA', 'AS'], { S: 'heart_crystals:heart_crystal_shard', A: 'minecraft:amethyst_shard' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

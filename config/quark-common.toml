@@ -122,7 +122,7 @@
 	"Soul Sandstone" = false
 	"Variant Chests" = false
 	"Leaf Carpet" = false
-	"Framed Glass" = true
+	"Framed Glass" = false
 	"Vertical Planks" = false
 	"Variant Furnaces" = true
 	Hedges = true

@@ -4,6 +4,8 @@
   "block.create.andesite_tunnel": "Zinc Tunnel",
   "block.create.andesite_bars": "Zinc Bars",
   "block.create.shaft": "Zinc Shaft",
+  "block.create.ornate_iron_window": "Framed Window",
+  "block.create.ornate_iron_window_pane": "Framed Window Pane",
   "block.create.mechanical_piston": "Piston",
   "block.create.sticky_mechanical_piston": "Sticky Piston",
   "block.create.redstone_contact": "Power Contact",

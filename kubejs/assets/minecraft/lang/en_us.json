@@ -72,5 +72,9 @@
   "item.minecraft.chainmail_helmet": "Brass Chainmail Helmet",
   "item.minecraft.chainmail_chestplate": "Brass Chainmail Chestplate",
   "item.minecraft.chainmail_leggings": "Brass Chainmail Leggings",
-  "item.minecraft.chainmail_boots": "Brass Chainmail Boots"
+  "item.minecraft.chainmail_boots": "Brass Chainmail Boots",
+  "item.minecraft.bucket": "Iron Bucket",
+  "item.minecraft.water_bucket": "Iron Water Bucket",
+  "item.minecraft.milk_bucket": "Iron Milk Bucket",
+  "item.minecraft.lava_bucket": "Iron Lava Bucket"
 }

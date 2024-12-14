@@ -24,9 +24,10 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'minecraft:blasting' })
   event.remove({ type: 'clayworks:baking' })
 
-  event.remove({ type: 'create:crushing', modid: 'spelunkery' })
-  event.remove({ type: 'create:mixing', modid: 'spelunkery' })
-  event.remove({ type: 'create:mixing', modid: 'oreganized' })
+  event.remove({ type: 'create:crushing', mod: 'spelunkery' })
+  event.remove({ type: 'create:crushing', mod: 'oreganized' })
+  event.remove({ type: 'create:mixing', mod: 'spelunkery' })
+  event.remove({ type: 'create:mixing', mod: 'oreganized' })
 
   event.remove({ output: 'buzzier_bees:honey_lamp' })
   event.remove({ output: 'caverns_and_chasms:lava_lamp' })
@@ -478,6 +479,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'spelunkery:item_magnet' })
   event.remove({ id: 'spelunkery:black_dye_from_inkcap' })
   event.remove({ id: 'spelunkery:white_dye_from_inkcap' })
+  event.remove({ id: 'create:crushing/gravel' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -1037,6 +1039,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['abnormals_delight:seared_venison'], ['environmental:cooked_venison', 'environmental:cherries', 'environmental:cherries', 'minecraft:carrot', 'minecraft:bowl'])
   event.recipes.create.mixing([Item.of('farmersdelight:bacon', 2)], ['minecraft:porkchop'])
   event.recipes.create.mixing([Item.of('autumnity:turkey_piece', 5)], ['autumnity:turkey'])
+  event.recipes.create.mixing(['spelunkery:portal_fluid_bottle', 'minecraft:obsidian'], ['minecraft:glass_bottle', 'minecraft:crying_obsidian', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard', 'minecraft:amethyst_shard'])
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
   event.recipes.create.crushing(['minecraft:sugar', Item.of('minecraft:sugar').withChance(0.5)], 'minecraft:sugar_cane')
@@ -1064,7 +1067,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing([Item.of('caverns_and_chasms:necromium_nugget', 9).withChance(0.5)], '#rrm:necromium_equipment')
   event.recipes.create.crushing(['spelunkery:salt', Item.of('spelunkery:salt').withChance(0.5)], 'spelunkery:rock_salt')
   event.recipes.create.crushing([Item.of('minecraft:gravel', 2).withChance(0.5)], 'minecraft:cobblestone')
-  event.recipes.create.crushing([Item.of('minecraft:sand', 2).withChance(0.5)], 'minecraft:gravel')
+  event.recipes.create.crushing(['minecraft:sand', Item.of('minecraft:clay_ball').withChance(0.2)], 'minecraft:gravel')
   event.recipes.create.crushing(['minecraft:brown_dye', Item.of('minecraft:brown_dye').withChance(0.5)], 'windswept:pinecone')
   event.recipes.create.crushing(['minecraft:brown_dye', Item.of('minecraft:green_dye').withChance(0.5)], 'windswept:chestnuts')
   event.recipes.create.crushing(['minecraft:green_dye', Item.of('minecraft:orange_dye').withChance(0.5)], 'atmospheric:barrel_cactus')

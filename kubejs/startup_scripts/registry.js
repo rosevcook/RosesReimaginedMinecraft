@@ -13,6 +13,9 @@ StartupEvents.registry('item', event => {
 
 StartupEvents.registry('block', event => {
   event.create('rough_spinel_block').material('stone').displayName('Block of Rough Spinel').soundType('stone').hardness(3).tagBlock('minecraft:mineable/pickaxe')
+  event.create('rough_spinel_bricks').material('stone').displayName('Rough Spinel Bricks').soundType('stone').hardness(3).tagBlock('minecraft:mineable/pickaxe')
+  event.create('rough_spinel_brick_stairs', 'stairs').material('stone').displayName('Rough Spinel Brick Stairs').soundType('stone').textureAll('kubejs:block/rough_spinel_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
+  event.create('rough_spinel_brick_slab', 'slab').material('stone').displayName('Rough Spinel Brick Slab').soundType('stone').textureAll('kubejs:block/rough_spinel_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
 
   event.create('grave_metal_plates').material('metal').displayName('Grave Metal Plates').soundType('metal').hardness(2.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('grave_metal_plate_stairs', 'stairs').material('metal').displayName('Grave Metal Plate Stairs').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')

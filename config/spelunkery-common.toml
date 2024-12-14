@@ -50,7 +50,7 @@
 
 [worldgen]
 	stone_stripe_features = true
-	enable_sporophytes = false
+	enable_sporophytes = true
 	better_sculk_patches = true
 	dark_forest_portabellas = true
 	enable_mores = false

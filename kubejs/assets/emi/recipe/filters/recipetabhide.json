@@ -38,6 +38,9 @@
     },
     {
       "category": "minecraft:smoking"
+    },
+    {
+      "category": "pollen:grindstone"
     }
   ]
 }

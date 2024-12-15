@@ -37,6 +37,9 @@ MoreJSEvents.registerPotionBrewing(event => {
   event.removeByPotion(null, null, 'irons_spellbooks:instant_mana_two')
   event.removeByPotion(null, null, 'irons_spellbooks:instant_mana_three')
   event.removeByPotion(null, null, 'irons_spellbooks:instant_mana_four')
+  event.removeByPotion(null, null, 'oreganized:stunning')
+  event.removeByPotion(null, null, 'oreganized:long_stunning')
+  event.removeByPotion(null, null, 'oreganized:strong_stunning')
 
   // add potions
   replacePotion('kubejs:silver_feather', 'minecraft:slow_falling')

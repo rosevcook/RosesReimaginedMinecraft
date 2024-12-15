@@ -14,7 +14,7 @@
 	#Items that can be brewed into a potion will have a tooltip saying "Brewing Ingredient"; default: false
 	"Brewing Ingredient Tooltip" = true
 	#Blacklist of items to display brewing ingredient tooltip
-	"Brewing Ingredient Tooltip BlackList" = ["caverns_and_chasms:bejeweled_pearl", "minecraft:amethyst_cluster", "minecraft:blaze_powder"]
+	"Brewing Ingredient Tooltip BlackList" = ["caverns_and_chasms:bejeweled_pearl", "minecraft:amethyst_cluster", "minecraft:blaze_powder", "oreganized:lead_ingot"]
 	#Appends the Tooltip of a Music Disc to also display the Length of the Song
 	"Music Disc Tooltip" = true
 	#Displays the Mining Level of the Pickaxe as a Percentage

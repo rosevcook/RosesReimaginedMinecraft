@@ -894,6 +894,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('kubejs:zinc_sheet', 'create:zinc_ingot')
+  event.recipes.create.pressing('kubejs:lead_sheet', 'oreganized:lead_ingot')
   event.recipes.create.pressing('minecraft:dirt_path', 'minecraft:grass_block')
   event.recipes.create.pressing('environmental:dirt_path', 'minecraft:dirt')
   event.recipes.create.pressing('windswept:gelisol_path', 'windswept:gelisol')

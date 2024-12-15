@@ -480,6 +480,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'spelunkery:white_dye_from_inkcap' })
   event.remove({ id: 'create:crushing/gravel' })
   event.remove({ id: 'heartstone:heartstone' })
+  event.remove({ id: 'oreganized:lead_nugget_from_smelting' })
+  event.remove({ id: 'oreganized:netherite_from_netherite_nuggets' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -515,7 +517,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'neapolitan:banana_bread' }, 'minecraft:wheat', 'create:wheat_flour')
   event.replaceInput({ output: 'minecraft:tripwire_hook' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'minecraft:lever' }, 'minecraft:cobblestone', 'create:zinc_ingot')
-  event.replaceInput({ output: 'minecraft:smithing_table' }, 'minecraft:iron_ingot', 'oreganized:lead_ingot')
+  event.replaceInput({ output: 'minecraft:smithing_table' }, 'minecraft:iron_ingot', 'kubejs:lead_sheet')
   event.replaceInput({ output: 'create:basin' }, 'create:zinc_ingot', 'minecraft:iron_ingot')
   event.replaceInput({ output: 'minecraft:redstone_lamp' }, 'kubejs:copper_wire', 'minecraft:glowstone_dust')
   event.replaceInput({ output: 'minecraft:redstone_lamp' }, 'minecraft:glowstone', 'kubejs:copper_wire')
@@ -658,7 +660,7 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('kubejs:grave_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:grave_metal_plates' })
   event.shaped('caverns_and_chasms:golden_lava_bucket', ['SSS', 'SBS', 'SSS'], { S: 'undead_unleashed:charstone_shard', B: 'caverns_and_chasms:golden_bucket' })
   event.shaped('sullysmod:jade_shield', ['JJJ', 'JSJ', 'JJJ'], { S: 'minecraft:shield', J: 'sullysmod:polished_jade' })
-  event.shaped('otherworldly_accessories:battle_horseshoe', ['B B', 'BJB', ' B '], { B: 'create:brass_ingot', J: 'sullysmod:polished_jade' })
+  event.shaped('otherworldly_accessories:battle_horseshoe', ['B B', 'BJB', ' B '], { B: 'create:brass_ingot', J: 'sullysmod:polished_jade_block' })
   event.shaped('otherworldly_accessories:mount_effigy', ['JJJ', 'JBJ', 'JJJ'], { B: 'otherworldly_accessories:battle_horseshoe', J: 'sullysmod:polished_jade' })
   event.shaped('caverns_and_chasms:spinel_lamp', [' D ', 'DSD', ' D '], { D: 'minecraft:glowstone_dust', S: 'caverns_and_chasms:spinel' })
   event.shaped('caverns_and_chasms:lapis_lamp', [' D ', 'DLD', ' D '], { D: 'minecraft:glowstone_dust', L: 'minecraft:lapis_lazuli' })
@@ -737,12 +739,13 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('archers_paradox:blaze_arrow', 4), ['M', 'B', 'F'], { M: 'minecraft:magma_block', B: 'minecraft:blaze_rod', F: 'minecraft:feather' })
   event.shaped('create:mechanical_drill', [' D ', 'SSS', ' Z '], { D: 'minecraft:diamond', S: 'kubejs:zinc_sheet', Z: 'create:andesite_casing' })
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
-  event.shaped(Item.of('supplementaries:bomb', 2), [' I ', 'IGI', ' I '], { I: 'oreganized:lead_ingot', G: 'minecraft:gunpowder' })
+  event.shapeless(Item.of('supplementaries:bomb', 2), ['oreganized:lead_ingot', 'minecraft:gunpowder'])
   event.shaped('spelunkery:echo_fork', [' S ', 'SFS', ' S '], { S: 'minecraft:echo_shard', F: 'caverns_and_chasms:tuning_fork' })
   event.shaped('kubejs:rough_spinel_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:rough_spinel' })
   event.shapeless(Item.of('kubejs:rough_spinel', 9), ['kubejs:rough_spinel_block'])
   event.shaped('spelunkery:item_magnet', ['S L', 'M M', ' M '], { S: 'caverns_and_chasms:spinel', L: 'minecraft:lapis_lazuli', M: 'spelunkery:magnetite_chunk' })
   event.shaped(Item.of('heartstone:heartstone', 2), ['SA', 'AS'], { S: 'heart_crystals:heart_crystal_shard', A: 'minecraft:amethyst_shard' })
+  event.shaped('create:copper_diving_boots', ['S S', 'I I', 'D D'], { I: 'oreganized:lead_ingot', S: 'kubejs:lead_sheet', D: 'minecraft:deepslate' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 
@@ -889,7 +892,6 @@ ServerEvents.recipes(event => {
   event.recipes.create.sandpaper_polishing('sullysmod:polished_jade', 'sullysmod:rough_jade')
   event.recipes.create.sandpaper_polishing('caverns_and_chasms:spinel', 'kubejs:rough_spinel')
 
-  event.smithing('create:copper_diving_boots', 'metalworks:copper_boots', 'minecraft:deepslate')
   event.smithing('clash:greatblade', 'savage_and_ravage:cleaver_of_beheading', 'cataclysm:ignitium_ingot')
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')

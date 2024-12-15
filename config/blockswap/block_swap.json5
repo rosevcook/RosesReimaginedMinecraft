@@ -121,6 +121,8 @@
 		"minecraft:powder_snow": "minecraft:packed_ice",
 		"naturalist:duckweed": "minecraft:air",
 		"naturalist:cattail": "minecraft:air",
-		"minecraft:nether_quartz_ore": "minecraft:netherrack"
+		"minecraft:nether_quartz_ore": "minecraft:netherrack",
+		"oreganized:silver_ore": "caverns_and_chasms:silver_ore",
+		"oreganized:deepslate_silver_ore": "caverns_and_chasms:deepslate_silver_ore"
 	}
 }

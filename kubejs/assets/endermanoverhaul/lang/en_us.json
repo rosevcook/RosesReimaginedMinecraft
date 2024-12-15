@@ -12,7 +12,5 @@
   "item.endermanoverhaul.ice_spikes_enderman_spawn_egg": "Arctic Wanderer Spawn Egg",
   "entity.endermanoverhaul.ice_spikes_enderman": "Arctic Wanderer",
   "item.endermanoverhaul.enderman_tooth": "Wanderers Tooth",
-  "item.endermanoverhaul.badlands_hood": "Wanderers Hood",
-  "tooltip.endermanoverhaul.bubble_pearl": "Accurate pearl with no gravity",
-  "tooltip.endermanoverhaul.hood": "Allows you to look at Wanderers without angering them"
+  "tooltip.endermanoverhaul.bubble_pearl": "Accurate pearl with no gravity"
 }

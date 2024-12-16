@@ -2,6 +2,7 @@ StartupEvents.registry('item', event => {
   event.create('silver_sheet').displayName('Silver Sheet').texture('kubejs:item/silver_sheet').group('transportation')
   event.create('zinc_sheet').displayName('Zinc Sheet').texture('kubejs:item/zinc_sheet').group('transportation')
   event.create('lead_sheet').displayName('Lead Sheet').texture('kubejs:item/lead_sheet').group('transportation')
+  event.create('lead_dust').displayName('Lead Dust').texture('kubejs:item/lead_dust').group('transportation')
   event.create('rough_spinel').displayName('Rough Spinel').texture('kubejs:item/rough_spinel').group('transportation')
   event.create('silver_feather').displayName('Silver Feather').texture('kubejs:item/silver_feather').group('transportation')
   event.create('copper_wire').displayName('Copper Wire').texture('kubejs:item/copper_wire').group('transportation')

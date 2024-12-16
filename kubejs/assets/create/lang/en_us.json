@@ -9,6 +9,8 @@
   "block.create.mechanical_piston": "Piston",
   "block.create.sticky_mechanical_piston": "Sticky Piston",
   "block.create.redstone_contact": "Power Contact",
+  "block.create.copper_bars": "Lead Bars",
   "item.create.wrench": "Brass Wrench",
-  "item.create.propeller": "Brass Propeller"
+  "item.create.propeller": "Brass Propeller",
+  "item.create.copper_diving_boots": "Lead Diving Boots"
 }

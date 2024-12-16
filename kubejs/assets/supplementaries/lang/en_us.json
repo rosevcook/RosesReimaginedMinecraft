@@ -4,5 +4,7 @@
   "block.supplementaries.goblet": "Silver Chalice",
   "block.supplementaries.sconce_ender": "Crystalline Sconce",
   "item.supplementaries.slingshot": "Blocksling",
-  "item.supplementaries.bomb": "Lead Bomb"
+  "item.supplementaries.bomb": "Lead Bomb",
+  "item.supplementaries.bomb_blue": "Bejeweled Bomb",
+  "item.supplementaries.bomb_spiky": "Lead Shrapnel Bomb"
 }

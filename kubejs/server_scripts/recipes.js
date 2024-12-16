@@ -444,6 +444,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'neapolitan:banana/paper_from_banana_frond' })
   event.remove({ id: 'minecraft:magma_cream' })
   event.remove({ id: 'supplementaries:bomb' })
+  event.remove({ id: 'supplementaries:spiky_bomb' })
   event.remove({ id: 'oreganized:electrum_ingot' })
   event.remove({ id: 'minecraft:crossbow' })
   event.remove({ output: 'abnormals_delight:dune_platter' })
@@ -490,6 +491,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'oreganized:electrum_chestplate' })
   event.remove({ id: 'oreganized:electrum_leggings' })
   event.remove({ id: 'oreganized:electrum_boots' })
+  event.remove({ output: 'create:copper_bars' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -617,6 +619,7 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:power_coil', ['CCC', 'CWC', 'CCC'], { C: 'undead_unleashed:charstone_shard', W: 'kubejs:copper_wire' })
   event.shaped(Item.of('create:andesite_bars', 16), ['III', 'III'], { I: 'create:zinc_ingot' })
   event.shaped(Item.of('create:brass_bars', 16), ['III', 'III'], { I: 'create:brass_ingot' })
+  event.shaped(Item.of('create:copper_bars', 16), ['III', 'III'], { I: 'oreganized:lead_ingot' })
   event.shapeless('environmental:lumberer_banner_pattern', ['minecraft:paper', 'windswept:pinecone'])
   event.shapeless('caverns_and_chasms:abnormals_banner_pattern', ['minecraft:paper', 'caverns_and_chasms:bejeweled_apple'])
   event.shapeless('minecraft:flint', ['minecraft:gravel'])
@@ -748,6 +751,8 @@ ServerEvents.recipes(event => {
   event.shaped('create:mechanical_drill', [' D ', 'SSS', ' Z '], { D: 'minecraft:diamond', S: 'kubejs:zinc_sheet', Z: 'create:andesite_casing' })
   event.shaped('kubejs:silver_feather', ['NNN', 'NFN', 'NNN'], { N: 'caverns_and_chasms:silver_nugget', F: 'minecraft:feather' })
   event.shapeless(Item.of('supplementaries:bomb', 2), ['oreganized:lead_ingot', 'minecraft:gunpowder'])
+  event.shaped(Item.of('supplementaries:bomb_spiky', 2), [' D ', 'DBD', ' D '], { D: 'kubejs:lead_dust', B: 'supplementaries:bomb' })
+  event.shaped(Item.of('supplementaries:bomb_blue', 2), [' S ', 'SBS', ' S '], { S: 'caverns_and_chasms:spinel', B: 'supplementaries:bomb' })
   event.shaped('spelunkery:echo_fork', [' S ', 'SFS', ' S '], { S: 'minecraft:echo_shard', F: 'caverns_and_chasms:tuning_fork' })
   event.shaped('kubejs:rough_spinel_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:rough_spinel' })
   event.shapeless(Item.of('kubejs:rough_spinel', 9), ['kubejs:rough_spinel_block'])
@@ -1029,6 +1034,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.crushing(['create:wheat_flour', Item.of('create:wheat_flour').withChance(0.5)], 'minecraft:wheat')
   event.recipes.create.crushing(['minecraft:sugar', Item.of('minecraft:sugar').withChance(0.5)], 'minecraft:sugar_cane')
+  event.recipes.create.crushing(['kubejs:lead_dust', Item.of('kubejs:lead_dust').withChance(0.5)], 'oreganized:raw_lead')
   event.recipes.create.crushing([Item.of('minecraft:blaze_powder', 2), Item.of('minecraft:blaze_powder').withChance(0.5)], 'minecraft:blaze_rod')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:silver_ingot', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('caverns_and_chasms:silver_ingot', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:silver_nugget', 8).withChance(0.25)], 'caverns_and_chasms:silver_horse_armor')
   event.recipes.create.crushing([Item.of('minecraft:copper_ingot', 2), Item.of('minecraft:leather').withChance(0.5), Item.of('minecraft:copper_ingot').withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:copper_nugget', 4).withChance(0.25)], 'metalworks:copper_horse_armor')

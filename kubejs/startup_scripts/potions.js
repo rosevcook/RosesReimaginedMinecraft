@@ -6,7 +6,7 @@ MoreJSEvents.registerPotionBrewing(event => {
 
   function longPotion(effect, long) {
     event.removeByPotion(null, null, long)
-    event.addPotionBrewing('create:powdered_obsidian', effect, long)
+    event.addPotionBrewing('kubejs:lead_dust', effect, long)
   }
 
   // remove potions

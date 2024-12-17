@@ -179,6 +179,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('spelunkery:has_ocean_noise')
   event.removeAll('caverns_and_chasms:has_animal/glare')
 
+  event.add('minecraft:is_overworld', 'atmospheric:laurel_forest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
   event.add('forge:is_snowy', 'atmospheric:snowy_scrubland')
@@ -214,7 +215,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('spelunkery:has_desert_noise', '#atmospheric:is_dunes')
   event.add('spelunkery:has_dirt_noise', '#minecraft:is_taiga', '#minecraft:is_forest', 'autumnity:pumpkin_fields')
   event.add('caverns_and_chasms:has_animal/glare', 'minecraft:lush_caves')
-
+  event.add('caverns_and_chasms:has_feature/silver_ore', '#minecraft:is_overworld')
 })
 
 ServerEvents.tags('mob_effect', event => {

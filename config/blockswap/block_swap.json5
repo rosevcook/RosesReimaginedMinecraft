@@ -8,7 +8,7 @@
 		"minecraft:end_rod": "minecraft:air",
 		"minecraft:redstone_ore": "minecraft:stone",
 		"minecraft:emerald_ore": "minecraft:stone",
-		"minecraft:deepslate_redstone_ore": "minecraft:deepslate",
+		"minecraft:deepslate_redstone_ore": "oreganized:deepslate_lead_ore",
 		"minecraft:deepslate_emerald_ore": "caverns_and_chasms:deepslate_silver_ore",
 		"minecraft:andesite": "minecraft:stone",
 		"minecraft:diorite": "minecraft:stone",

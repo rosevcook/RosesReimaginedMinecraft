@@ -19,6 +19,14 @@ StartupEvents.registry('block', event => {
   event.create('rough_spinel_brick_stairs', 'stairs').material('stone').displayName('Rough Spinel Brick Stairs').soundType('stone').textureAll('kubejs:block/rough_spinel_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
   event.create('rough_spinel_brick_slab', 'slab').material('stone').displayName('Rough Spinel Brick Slab').soundType('stone').textureAll('kubejs:block/rough_spinel_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
 
+  event.create('rough_lazurite_bricks').material('stone').displayName('Rough Lazurite Bricks').soundType('stone').hardness(3).tagBlock('minecraft:mineable/pickaxe')
+  event.create('rough_lazurite_brick_stairs', 'stairs').material('stone').displayName('Rough Lazurite Brick Stairs').soundType('stone').textureAll('kubejs:block/rough_lazurite_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
+  event.create('rough_lazurite_brick_slab', 'slab').material('stone').displayName('Rough Lazurite Brick Slab').soundType('stone').textureAll('kubejs:block/rough_lazurite_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
+
+  event.create('rough_diamond_bricks').material('stone').displayName('Rough Diamond Bricks').soundType('stone').hardness(3).tagBlock('minecraft:mineable/pickaxe')
+  event.create('rough_diamond_brick_stairs', 'stairs').material('stone').displayName('Rough Diamond Brick Stairs').soundType('stone').textureAll('kubejs:block/rough_diamond_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
+  event.create('rough_diamond_brick_slab', 'slab').material('stone').displayName('Rough Diamond Brick Slab').soundType('stone').textureAll('kubejs:block/rough_diamond_bricks').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')
+
   event.create('grave_metal_plates').material('metal').displayName('Grave Metal Plates').soundType('metal').hardness(2.5).tagBlock('minecraft:mineable/pickaxe')
   event.create('grave_metal_plate_stairs', 'stairs').material('metal').displayName('Grave Metal Plate Stairs').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:stairs')
   event.create('grave_metal_plate_slab', 'slab').material('metal').displayName('Grave Metal Plate Slab').soundType('metal').textureAll('kubejs:block/grave_metal_plates').hardness(2.5).tagBlock('minecraft:mineable/pickaxe').tagBlock('minecraft:slabs')

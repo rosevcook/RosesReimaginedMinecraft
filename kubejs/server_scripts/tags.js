@@ -177,6 +177,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('spelunkery:has_sculk_noise')
   event.removeAll('spelunkery:has_stone_noise')
   event.removeAll('spelunkery:has_ocean_noise')
+  event.removeAll('caverns_and_chasms:has_animal/glare')
 
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
   event.add('environmental:has_feature/tasselflower', 'atmospheric:laurel_forest', 'atmospheric:spiny_thicket', 'atmospheric:scrubland', 'atmospheric:snowy_scrubland', 'minecraft:wooded_badlands')
@@ -199,7 +200,6 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('rrm:has_animal/cat', '#minecraft:is_forest')
   event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
   event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
-  event.add('environmental:has_structure/log_cabin', '#windswept:is_pine_barrens')
   event.add('bettermineshafts:has_structure/better_mineshaft_mushroom', 'quark:glimmering_weald')
   event.add('irons_spellbooks:has_structure/pyromancer_tower', '#windswept:is_pine_barrens')
   event.add('alexsmobs:spawns_red_gusters', 'atmospheric:spiny_thicket')
@@ -213,6 +213,8 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('betterdungeons:has_structure/spider_dungeon', '#atmospheric:is_dunes')
   event.add('spelunkery:has_desert_noise', '#atmospheric:is_dunes')
   event.add('spelunkery:has_dirt_noise', '#minecraft:is_taiga', '#minecraft:is_forest', 'autumnity:pumpkin_fields')
+  event.add('caverns_and_chasms:has_animal/glare', 'minecraft:lush_caves')
+
 })
 
 ServerEvents.tags('mob_effect', event => {

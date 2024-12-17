@@ -4,6 +4,7 @@ ItemEvents.tooltip(event => {
   event.add(['cataclysm:abyss_eye'], "§7Locates the Sunken City")
   event.add(['cataclysm:flame_eye'], "§7Locates the Burning Arena")
   event.add(['spelunkery:portal_fluid_bottle'], "§7Drink to return to your Spawnpoint")
+  event.add(['spelunkery:rough_lazurite', 'spelunkery:rough_diamond', 'sullysmod:rough_jade', 'kubejs:rough_spinel'], "§7Polishable with Sand Paper")
   event.add(['clash:greatblade'], " §9+1 Staggering Infliction")
   event.add(['queen_bee:stinger_sword'], " §9+1 Poison Infliction")
   event.add(['cataclysm:abyssal_sacrifice'], "§7Offer to the Altar of Abyss to summon the Leviathan")

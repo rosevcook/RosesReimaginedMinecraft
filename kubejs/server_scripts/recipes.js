@@ -602,6 +602,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'caverns_and_chasms:depth_gauge' }, 'kubejs:copper_wire', 'spelunkery:magnetite_chunk')
   event.replaceInput({ output: 'caverns_and_chasms:barometer' }, 'kubejs:copper_wire', 'spelunkery:magnetite_chunk')
   event.replaceInput({ output: 'create:ornate_iron_window' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
+  event.replaceInput({ output: 'caverns_and_chasms:large_arrow' }, 'caverns_and_chasms:silver_ingot', 'oreganized:lead_ingot')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

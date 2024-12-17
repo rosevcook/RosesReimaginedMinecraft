@@ -2,5 +2,6 @@
   "block.caverns_and_chasms.medium_weighted_pressure_plate": "Silver Pressure Plate",
   "block.caverns_and_chasms.azalea_hedge": "Azalea Leaf Hedge",
   "block.caverns_and_chasms.flowering_azalea_hedge": "Flowering Azalea Leaf Hedge",
-  "block.caverns_and_chasms.ender_brazier": "Crystalline Brazier"
+  "block.caverns_and_chasms.ender_brazier": "Crystalline Brazier",
+  "item.caverns_and_chasms.large_arrow": "Heavy Arrow"
 }

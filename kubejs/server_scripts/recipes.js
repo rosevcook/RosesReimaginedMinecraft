@@ -912,6 +912,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.sandpaper_polishing('caverns_and_chasms:spinel', 'kubejs:rough_spinel')
 
   event.smithing('clash:greatblade', 'savage_and_ravage:cleaver_of_beheading', 'cataclysm:ignitium_ingot')
+  event.smithing('cataclysm:coral_spear', 'clash:spear', 'cataclysm:coral_chunk')
+  event.smithing('cataclysm:coral_bardiche', 'cataclysm:coral_spear', 'upgrade_aquatic:thrasher_tooth')
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('kubejs:zinc_sheet', 'create:zinc_ingot')

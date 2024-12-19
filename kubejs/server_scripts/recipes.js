@@ -492,6 +492,12 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'oreganized:electrum_leggings' })
   event.remove({ id: 'oreganized:electrum_boots' })
   event.remove({ output: 'create:copper_bars' })
+  event.remove({ output: 'minecraft:wooden_hoe' })
+  event.remove({ output: 'metalworks:copper_hoe' })
+  event.remove({ output: 'minecraft:iron_hoe' })
+  event.remove({ output: 'minecraft:golden_hoe' })
+  event.remove({ output: 'caverns_and_chasms:silver_hoe' })
+  event.remove({ output: 'minecraft:diamond_hoe' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -765,6 +771,12 @@ ServerEvents.recipes(event => {
   event.shaped('oreganized:electrum_leggings', ['EEE', 'E E', 'E E'], { E: 'oreganized:electrum_ingot' })
   event.shaped('oreganized:electrum_boots', ['E E', 'E E'], { E: 'oreganized:electrum_ingot'  })
   event.shapeless(Item.of('alexsmobs:emu_egg', 9), ['vanillapluscompat:emu_egg_crate'])
+  event.shaped('minecraft:wooden_hoe', ['PPP', ' SP', ' S '], { P: '#minecraft:planks', S: 'minecraft:stick' })
+  event.shaped('metalworks:copper_hoe', ['III', ' SI', ' S '], { I: 'minecraft:copper_ingot', S: 'minecraft:stick' })
+  event.shaped('minecraft:iron_hoe', ['III', ' SI', ' S '], { I: 'minecraft:iron_ingot', S: 'minecraft:stick' })
+  event.shaped('minecraft:golden_hoe', ['III', ' SI', ' S '], { I: 'minecraft:gold_ingot', S: 'minecraft:stick' })
+  event.shaped('caverns_and_chasms:silver_hoe', ['III', ' SI', ' S '], { I: 'caverns_and_chasms:silver_ingot', S: 'minecraft:stick' })
+  event.shaped('minecraft:diamond_hoe', ['DDD', ' SD', ' S '], { D: 'minecraft:diamond', S: 'minecraft:stick' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "blacklist_item_id_regex": "pickaxe",
+  "blacklist_item_id_regex": "pickaxe|axe",
   "fallback_compatibility": [
     {
       "item_id_regex": "claymore|great_sword|greatsword",
@@ -15,7 +15,7 @@
       "weapon_attributes": "bettercombat:double_axe"
     },
     {
-      "item_id_regex": "scythe",
+      "item_id_regex": "scythe|hoe",
       "weapon_attributes": "bettercombat:scythe"
     },
     {

@@ -1,6 +1,6 @@
 {
   "parent": "rrm:item/scythe_handheld",
   "textures": {
-    "layer0": "mace_backport:item/mace_handheld"
+    "layer0": "caverns_and_chasms:item/silver_scythe_handheld"
   }
 }

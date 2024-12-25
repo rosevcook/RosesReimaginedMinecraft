@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "caverns_and_chasms:item/silver_scythe_gui"
+  },
+  "base": {
+    "parent": "caverns_and_chasms:item/silver_scythe_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "caverns_and_chasms:item/silver_scythe_gui"
+    },
+    "fixed": {
+      "parent": "caverns_and_chasms:item/silver_scythe_gui"
+    }
+  }
+}

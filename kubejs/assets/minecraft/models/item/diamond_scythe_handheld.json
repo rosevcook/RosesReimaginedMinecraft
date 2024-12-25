@@ -1,6 +1,6 @@
 {
   "parent": "rrm:item/scythe_handheld",
   "textures": {
-    "layer0": "mace_backport:item/mace_handheld"
+    "layer0": "minecraft:item/diamond_scythe_handheld"
   }
 }

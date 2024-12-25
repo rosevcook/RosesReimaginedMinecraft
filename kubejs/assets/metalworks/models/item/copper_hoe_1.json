@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "metalworks:item/copper_scythe_gui_1"
+  },
+  "base": {
+    "parent": "metalworks:item/copper_scythe_handheld_1"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "metalworks:item/copper_scythe_gui_1"
+    },
+    "fixed": {
+      "parent": "metalworks:item/copper_scythe_gui_1"
+    }
+  }
+}

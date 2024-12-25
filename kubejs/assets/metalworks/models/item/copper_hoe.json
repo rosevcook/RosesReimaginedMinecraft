@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "textures": {
+    "layer0": "metalworks:item/copper_scythe_gui"
+  },
+  "overrides": [
+    {
+      "model": "metalworks:item/copper_hoe_1",
+      "predicate": {
+        "metalworks:oxidation": 1.0
+      }
+    },
+    {
+      "model": "metalworks:item/copper_hoe_2",
+      "predicate": {
+        "metalworks:oxidation": 2.0
+      }
+    },
+    {
+      "model": "metalworks:item/copper_hoe_3",
+      "predicate": {
+        "metalworks:oxidation": 3.0
+      }
+    }
+  ],
+  "base": {
+    "parent": "metalworks:item/copper_scythe_handheld"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "metalworks:item/copper_scythe_gui"
+    },
+    "fixed": {
+      "parent": "metalworks:item/copper_scythe_gui"
+    }
+  }
+}

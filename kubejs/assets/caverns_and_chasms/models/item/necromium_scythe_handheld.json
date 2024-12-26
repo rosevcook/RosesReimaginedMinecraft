@@ -1,0 +1,6 @@
+{
+  "parent": "rrm:item/scythe_handheld",
+  "textures": {
+    "layer0": "caverns_and_chasms:item/necromium_scythe_handheld"
+  }
+}

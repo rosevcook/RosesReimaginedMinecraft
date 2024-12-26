@@ -498,6 +498,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:golden_hoe' })
   event.remove({ output: 'caverns_and_chasms:silver_hoe' })
   event.remove({ output: 'minecraft:diamond_hoe' })
+  event.remove({ output: 'undead_unleashed:reaping_scythe' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -777,6 +778,7 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:golden_hoe', ['III', ' SI', ' S '], { I: 'minecraft:gold_ingot', S: 'minecraft:stick' })
   event.shaped('caverns_and_chasms:silver_hoe', ['III', ' SI', ' S '], { I: 'caverns_and_chasms:silver_ingot', S: 'minecraft:stick' })
   event.shaped('minecraft:diamond_hoe', ['DDD', ' SD', ' S '], { D: 'minecraft:diamond', S: 'minecraft:stick' })
+  event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 

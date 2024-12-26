@@ -10,7 +10,8 @@
         "upswing": 0.5,
         "animation": "bettercombat:one_handed_slash_horizontal_right",
         "swing_sound": {
-          "id": "auditory:item.sword.swing"
+          "id": "auditory:item.sword.swing",
+          "volume": 0.5
         }
       },
       {
@@ -20,7 +21,8 @@
         "upswing": 0.5,
         "animation": "bettercombat:one_handed_slash_horizontal_left",
         "swing_sound": {
-          "id": "auditory:item.sword.swing"
+          "id": "auditory:item.sword.swing",
+          "volume": 0.5
         }
       },
       {
@@ -31,7 +33,8 @@
         "animation": "bettercombat:one_handed_stab",
         "swing_sound": {
           "id": "auditory:item.sword.swing",
-          "pitch": 1.2
+          "pitch": 1.2,
+          "volume": 0.5
         }
       }
     ]

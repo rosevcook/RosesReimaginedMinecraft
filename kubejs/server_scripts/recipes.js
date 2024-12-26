@@ -499,6 +499,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'caverns_and_chasms:silver_hoe' })
   event.remove({ output: 'minecraft:diamond_hoe' })
   event.remove({ output: 'undead_unleashed:reaping_scythe' })
+  event.remove({ output: 'minecraft:flint_and_steel' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -630,7 +631,6 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('create:copper_bars', 16), ['III', 'III'], { I: 'oreganized:lead_ingot' })
   event.shapeless('environmental:lumberer_banner_pattern', ['minecraft:paper', 'windswept:pinecone'])
   event.shapeless('caverns_and_chasms:abnormals_banner_pattern', ['minecraft:paper', 'caverns_and_chasms:bejeweled_apple'])
-  event.shapeless('minecraft:flint', ['minecraft:gravel'])
   event.shapeless(Item.of('farmersdelight:raw_pasta', 2), ['#forge:eggs', 'create:wheat_flour', 'create:wheat_flour'])
   event.shapeless('minecraft:pumpkin_pie', ['farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'create:wheat_flour', 'minecraft:sugar', '#forge:eggs'])
   event.shaped('minecraft:pumpkin', ['SSS', 'SSS', 'SSS'], { S: 'farmersdelight:pumpkin_slice' })
@@ -779,6 +779,7 @@ ServerEvents.recipes(event => {
   event.shaped('caverns_and_chasms:silver_hoe', ['III', ' SI', ' S '], { I: 'caverns_and_chasms:silver_ingot', S: 'minecraft:stick' })
   event.shaped('minecraft:diamond_hoe', ['DDD', ' SD', ' S '], { D: 'minecraft:diamond', S: 'minecraft:stick' })
   event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
+  event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
 
@@ -1062,12 +1063,12 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing([Item.of('caverns_and_chasms:necromium_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:necromium_nugget', 2).withChance(0.5)], 'caverns_and_chasms:necromium_horse_armor')
   event.recipes.create.crushing([Item.of('caverns_and_chasms:netherite_nugget', 2), Item.of('minecraft:leather', 2).withChance(0.5), Item.of('minecraft:string', 2).withChance(0.25), Item.of('caverns_and_chasms:netherite_nugget', 2).withChance(0.5)], 'caverns_and_chasms:netherite_horse_armor')
   event.recipes.create.crushing([Item.of('minecraft:leather', 2), Item.of('minecraft:leather').withChance(0.5), Item.of('minecraft:string', 2).withChance(0.5)], 'minecraft:saddle')
-  event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.1), Item.of('create:zinc_nugget').withChance(0.2), Item.of('oreganized:lead_nugget').withChance(0.2), Item.of('caverns_and_chasms:copper_nugget').withChance(0.2), Item.of('minecraft:iron_nugget').withChance(0.15), Item.of('minecraft:gold_nugget').withChance(0.1), Item.of('caverns_and_chasms:silver_nugget').withChance(0.1)], 'minecraft:tuff')
+  event.recipes.create.crushing([Item.of('create:zinc_nugget').withChance(0.2), Item.of('oreganized:lead_nugget').withChance(0.2), Item.of('caverns_and_chasms:copper_nugget').withChance(0.2), Item.of('minecraft:iron_nugget').withChance(0.15), Item.of('minecraft:gold_nugget').withChance(0.1), Item.of('caverns_and_chasms:silver_nugget').withChance(0.1)], 'minecraft:tuff')
   event.recipes.create.crushing([Item.of('minecraft:sand', 2), Item.of('minecraft:sand', 2).withChance(0.5)], 'minecraft:sandstone')
   event.recipes.create.crushing([Item.of('minecraft:red_sand', 2), Item.of('minecraft:red_sand', 2).withChance(0.5)], 'minecraft:red_sandstone')
   event.recipes.create.crushing([Item.of('atmospheric:red_arid_sand', 2), Item.of('atmospheric:red_arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:red_arid_sandstone')
   event.recipes.create.crushing([Item.of('atmospheric:arid_sand', 2), Item.of('atmospheric:arid_sand', 2).withChance(0.5), Item.of('minecraft:gold_nugget').withChance(0.05)], 'atmospheric:arid_sandstone')
-  event.recipes.create.crushing([Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:ice').withChance(0.33), Item.of('minecraft:packed_ice').withChance(0.33), Item.of('minecraft:blue_ice').withChance(0.33), Item.of('caverns_and_chasms:silver_nugget').withChance(0.05)], 'windswept:shale')
+  event.recipes.create.crushing([Item.of('minecraft:ice').withChance(0.33), Item.of('minecraft:packed_ice').withChance(0.33), Item.of('minecraft:blue_ice').withChance(0.33), Item.of('caverns_and_chasms:silver_nugget').withChance(0.05)], 'windswept:shale')
   event.recipes.create.crushing([Item.of('minecraft:gunpowder').withChance(0.1), Item.of('minecraft:glowstone_dust').withChance(0.1), Item.of('create:cinder_flour').withChance(0.1)], 'undead_unleashed:charstone_shard')
   event.recipes.create.crushing([Item.of('create:zinc_nugget', 2), Item.of('caverns_and_chasms:silver_nugget', 2).withChance(0.5)], 'undead_unleashed:grave_metal_scrap')
   event.recipes.create.crushing([Item.of('minecraft:iron_nugget', 9).withChance(0.5)], '#rrm:iron_equipment')

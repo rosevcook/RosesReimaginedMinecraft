@@ -384,21 +384,6 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 6.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:flint"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 12,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
                 "min": 12.0,
                 "max": 24.0,
                 "type": "minecraft:uniform"

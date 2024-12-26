@@ -1,0 +1,6 @@
+{
+  "parent": "rrm:item/scythe_handheld",
+  "textures": {
+    "layer0": "minecraft:item/netherite_scythe_handheld"
+  }
+}

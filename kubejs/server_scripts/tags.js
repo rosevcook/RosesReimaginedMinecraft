@@ -200,7 +200,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('rrm:has_animal/frog', 'atmospheric:rainforest_basin', 'atmospheric:sparse_rainforest_basin')
   event.add('rrm:has_animal/cat', '#minecraft:is_forest')
   event.add('rrm:has_structure/pine_windmill', 'windswept:pine_barrens')
-  event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
+  //event.add('sullysmod:jade_generates_in', 'minecraft:lush_caves')
   event.add('bettermineshafts:has_structure/better_mineshaft_mushroom', 'quark:glimmering_weald')
   event.add('irons_spellbooks:has_structure/pyromancer_tower', '#windswept:is_pine_barrens')
   event.add('alexsmobs:spawns_red_gusters', 'atmospheric:spiny_thicket')

@@ -62,7 +62,7 @@
 	piston_sliming = false
 	soil_shearing = false
 	grass_flinting = false
-	azalea_shearing = true
+	azalea_shearing = false
 	moss_shearing = false
 	moss_burning = false
 	charred_block_igniting = true

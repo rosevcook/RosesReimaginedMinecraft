@@ -500,6 +500,20 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:diamond_hoe' })
   event.remove({ output: 'undead_unleashed:reaping_scythe' })
   event.remove({ output: 'minecraft:flint_and_steel' })
+  event.remove({ input: 'immersive_weathering:oak_bark' })
+  event.remove({ input: 'immersive_weathering:spruce_bark' })
+  event.remove({ input: 'immersive_weathering:birch_bark' })
+  event.remove({ input: 'immersive_weathering:dark_oak_bark' })
+  event.remove({ input: 'immersive_weathering:crimson_scales' })
+  event.remove({ input: 'immersive_weathering:warped_scales' })
+  event.remove({ input: 'immersive_weathering:stone_brick' })
+  event.remove({ input: 'immersive_weathering:prismarine_brick' })
+  event.remove({ input: 'immersive_weathering:end_stone_brick' })
+  event.remove({ input: 'immersive_weathering:blackstone_brick' })
+  event.remove({ input: 'immersive_weathering:deepslate_brick' })
+  event.remove({ input: 'immersive_weathering:deepslate_tile' })
+  event.remove({ input: 'immersive_weathering:moss_clump' })
+  event.remove({ input: 'immersive_weathering:azalea_flowers' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -611,6 +625,7 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'caverns_and_chasms:barometer' }, 'kubejs:copper_wire', 'spelunkery:magnetite_chunk')
   event.replaceInput({ output: 'create:ornate_iron_window' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
   event.replaceInput({ output: 'caverns_and_chasms:large_arrow' }, 'caverns_and_chasms:silver_ingot', 'oreganized:lead_ingot')
+  event.replaceInput({ output: 'immersive_weathering:cracked_mud' }, 'minecraft:clay', 'minecraft:mud')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -782,6 +797,7 @@ ServerEvents.recipes(event => {
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
+  event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')
 
   application('minecraft:mud', 'minecraft:wheat', 'minecraft:packed_mud')
   application('minecraft:white_wool', 'minecraft:orange_dye', 'minecraft:orange_wool')

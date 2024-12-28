@@ -133,6 +133,15 @@
 		"autumnity:orange_maple_leaf_pile": "immersive_weathering:autumnity/orange_maple_leaf_pile",
 		"autumnity:red_maple_leaf_pile": "immersive_weathering:autumnity/red_maple_leaf_pile",
 		"immersive_weathering:humus": "minecraft:grass_block",
-		"immersive_weathering:ivy": "minecraft:air"
+		"immersive_weathering:rooted_grass_block": "minecraft:grass_block",
+		"immersive_weathering:ivy": "minecraft:air",
+		"immersive_weathering:sand_layer_block": "minecraft:air",
+		"immersive_weathering:red_sand_layer_block": "minecraft:air",
+		"immersive_weathering:vertisol": "immersive_weathering:cracked_mud",
+		"immersive_weathering:frosty_grass": "minecraft:grass",
+		"immersive_weathering:frosty_fern": "minecraft:fern",
+		"immersive_weathering:waxed_iron_door": "minecraft:iron_door",
+		"immersive_weathering:waxed_iron_trapdoor": "minecraft:iron_trapdoor",
+		"immersive_weathering:waxed_iron_bars": "minecraft:iron_bars"
 	}
 }

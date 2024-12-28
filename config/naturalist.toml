@@ -61,7 +61,7 @@
 	zebraSpawnWeight = 10
 	#Giraffe Spawn Weight
 	#Range: 0 ~ 1000
-	giraffeSpawnWeight = 10
+	giraffeSpawnWeight = 25
 	#Hippo Spawn Weight
 	#Range: 0 ~ 1000
 	hippoSpawnWeight = 28

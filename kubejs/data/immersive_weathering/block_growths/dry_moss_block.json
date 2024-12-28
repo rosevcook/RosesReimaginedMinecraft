@@ -1,0 +1,41 @@
+{
+  "area_condition": {
+    "radiusX": 2,
+    "radiusY": 2,
+    "radiusZ": 2,
+    "requiredAmount": 6,
+    "type": "generate_if_not_too_many"
+  },
+  "growth_chance": 0.005,
+  "growth_for_face": [
+    {
+      "direction": "up",
+      "growth": [
+        {
+          "data": {
+            "block": {
+              "Name": "windswept:dry_mossy_sprouts"
+            }
+          },
+          "weight": 100
+        },
+        {
+          "data": {
+            "block": {
+              "Name": "windswept:moss_campion"
+            }
+          },
+          "weight": 10
+        }
+      ]
+    }
+  ],
+  "owners": [
+    "windswept:dry_moss_block"
+  ],
+  "replacing_target": {
+    "block": "minecraft:air",
+    "predicate_type": "minecraft:random_block_match",
+    "probability": 0.8
+  }
+}

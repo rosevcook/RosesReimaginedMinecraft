@@ -124,6 +124,15 @@
 		"naturalist:cattail": "minecraft:air",
 		"minecraft:nether_quartz_ore": "minecraft:netherrack",
 		"oreganized:silver_ore": "caverns_and_chasms:silver_ore",
-		"oreganized:deepslate_silver_ore": "caverns_and_chasms:deepslate_silver_ore"
+		"oreganized:deepslate_silver_ore": "minecraft:deepslate",
+		"environmental:cherry_leaf_pile": "immersive_weathering:environmental/cherry_leaf_pile",
+		"environmental:cheerful_cherry_leaf_pile": "immersive_weathering:environmental/cheerful_cherry_leaf_pile",
+		"environmental:moody_cherry_leaf_pile": "immersive_weathering:environmental/moody_cherry_leaf_pile"
+		"autumnity:maple_leaf_pile": "immersive_weathering:autumnity/maple_leaf_pile",
+		"autumnity:yellow_maple_leaf_pile": "immersive_weathering:autumnity/yellow_maple_leaf_pile",
+		"autumnity:orange_maple_leaf_pile": "immersive_weathering:autumnity/orange_maple_leaf_pile",
+		"autumnity:red_maple_leaf_pile": "immersive_weathering:autumnity/red_maple_leaf_pile",
+		"immersive_weathering:humus": "minecraft:grass_block",
+		"immersive_weathering:ivy": "minecraft:air"
 	}
 }

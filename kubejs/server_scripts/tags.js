@@ -180,6 +180,10 @@ ServerEvents.tags('worldgen/biome', event => {
   event.removeAll('spelunkery:has_stone_noise')
   event.removeAll('spelunkery:has_ocean_noise')
   event.removeAll('caverns_and_chasms:has_animal/glare')
+  event.removeAll('immersive_weathering:has_fluvisol')
+  event.removeAll('immersive_weathering:has_humus')
+  event.removeAll('immersive_weathering:has_ivy')
+  event.removeAll('immersive_weathering:has_moss')
 
   event.add('minecraft:is_overworld', 'atmospheric:laurel_forest')
   event.add('upgrade_aquatic:has_monster/thrasher', '#minecraft:is_ocean')
@@ -218,6 +222,8 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('spelunkery:has_dirt_noise', '#minecraft:is_taiga', '#minecraft:is_forest', 'autumnity:pumpkin_fields')
   event.add('caverns_and_chasms:has_animal/glare', 'minecraft:lush_caves')
   event.add('caverns_and_chasms:has_feature/silver_ore', '#minecraft:is_overworld')
+  event.add('immersive_weathering:has_sandstorm', '#atmospheric:is_dunes', '#atmospheric:is_scrubland')
+
 })
 
 ServerEvents.tags('mob_effect', event => {

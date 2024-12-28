@@ -1,8 +1,5 @@
 {
-  "tick_sources": [
-    "clear_sky"
-  ],
-  "growth_chance": 0.025,
+  "growth_chance": 0.075,
   "area_condition": {
     "must_have": {
       "block_state": {

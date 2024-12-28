@@ -20,6 +20,7 @@
       "day": false
     }
   ],
+  "growth_chance": 0.05,
   "growth_for_face": [
     {
       "direction": "up",
@@ -40,7 +41,9 @@
     }
   ],
   "owners": [
-    "minecraft:grass_block"
+    "minecraft:grass_block",
+    "minecraft:podzol",
+    "minecraft:gelisol"
   ],
   "replacing_target": {
     "predicate_type": "immersive_weathering:block_set_match",

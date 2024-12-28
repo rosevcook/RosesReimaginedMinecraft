@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_snowy",
+  "features": [
+    "immersive_weathering:frost_patch"
+  ],
+  "step": "top_layer_modification"
+}

@@ -515,6 +515,8 @@ ServerEvents.recipes(event => {
   event.remove({ input: 'immersive_weathering:moss_clump' })
   event.remove({ input: 'immersive_weathering:azalea_flowers' })
   event.remove({ output: 'immersive_weathering:mossy_chiseled_stone_bricks' })
+  event.remove({ output: 'create:sturdy_sheet' })
+  event.remove({ output: 'create:railway_casing' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -796,9 +798,13 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:diamond_hoe', ['DDD', ' SD', ' S '], { D: 'minecraft:diamond', S: 'minecraft:stick' })
   event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
+  event.shapeless('create:sturdy_sheet', ['kubejs:lead_sheet', 'create:golden_sheet'])
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')
+
+  application('#forge:stripped_logs', 'create:sturdy_sheet', 'create:railway_casing')
+  application('#forge:stripped_wood', 'create:sturdy_sheet', 'create:railway_casing')
 
   application('minecraft:mud', 'minecraft:wheat', 'minecraft:packed_mud')
   application('minecraft:white_wool', 'minecraft:orange_dye', 'minecraft:orange_wool')

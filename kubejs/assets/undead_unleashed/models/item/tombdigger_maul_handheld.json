@@ -1,0 +1,6 @@
+{
+  "parent": "rrm:item/scythe_handheld",
+  "textures": {
+    "layer0": "undead_unleashed:items/tombdigger_handheld"
+  }
+}

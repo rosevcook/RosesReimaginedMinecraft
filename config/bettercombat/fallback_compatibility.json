@@ -83,10 +83,6 @@
       "weapon_attributes": "bettercombat:mace"
     },
     {
-      "item_id_regex": "axe",
-      "weapon_attributes": "bettercombat:axe"
-    },
-    {
       "item_id_regex": "coral_blade",
       "weapon_attributes": "bettercombat:coral_blade"
     },

@@ -93,7 +93,7 @@
 	mycelium_over_grass = false
 	generic_bark = "farmersdelight:tree_bark"
 	feather_falling_farmers = true
-	leggings_prevents_thorn_damage = true
+	leggings_prevents_thorn_damage = false
 
 [leaf_piles]
 	leaf_piles_slow = true
@@ -113,7 +113,7 @@
 	vitrified_lightning = true
 	#chance that a lightning strike on sand creates fulgurite
 	#Range: 0.0 ~ 1.0
-	fulgurite_chance = 0.4
+	fulgurite_chance = 0.5
 
 [rusting]
 	rusting = false

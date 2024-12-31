@@ -4,6 +4,7 @@
     "minecraft:area_effect_cloud",
     "minecraft:firework_rocket",
     "minecraft:item",
+    "atmospheric:orange_vapor_cloud",
     "create:super_glue"
   ],
   "version": 1

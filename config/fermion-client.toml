@@ -23,4 +23,6 @@
 	"Tool Mining Speed" = true
 	#If Items hidden with fermion should contain a tooltip displaying that the item is hidden.
 	"Hidden Item Tooltip" = true
+	#List of items to hide the Attack Damage & Attack Speed Tooltips for.
+	"Hide Damage & Speed" = ["minecraft:wooden_pickaxe", "minecraft:golden_pickaxe", "minecraft:iron_pickaxe", "minecraft:diamond_pickaxe", "minecraft:netherite_pickaxe", "metalworks:copper_pickaxe", "caverns_and_chasms:silver_pickaxe", "caverns_and_chasms:necromium_pickaxe", "minecraft:wooden_axe", "minecraft:golden_axe", "minecraft:iron_axe", "minecraft:diamond_axe", "minecraft:netherite_axe", "metalworks:copper_axe", "caverns_and_chasms:silver_axe", "caverns_and_chasms:necromium_axe", "undead_unleashed:grave_metal_axe", "minecraft:wooden_shovel", "minecraft:golden_shovel", "minecraft:iron_shovel", "minecraft:diamond_shovel", "minecraft:netherite_shovel", "metalworks:copper_shovel", "caverns_and_chasms:silver_shovel", "caverns_and_chasms:necromium_shovel"]
 

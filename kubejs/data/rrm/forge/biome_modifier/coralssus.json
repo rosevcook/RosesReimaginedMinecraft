@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#rrm:has_monster/coralssus",
+  "spawners": {
+    "type": "catactlysm:caralssus",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 40
+  }
+}

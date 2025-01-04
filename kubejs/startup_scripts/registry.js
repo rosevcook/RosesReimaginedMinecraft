@@ -11,6 +11,7 @@ StartupEvents.registry('item', event => {
   event.create('ice_rod').displayName('Ice Rod').parentModel('item/handheld').texture('kubejs:item/ice_rod').group('transportation')
   event.create('wadjet_tail').displayName('Wadjet Tail').texture('kubejs:item/wadjet_tail').rarity('uncommon').group('transportation')
   event.create('dry_moss').displayName('Dry Moss').texture('kubejs:item/dry_moss').group('transportation')
+  event.create('anchor', 'pickaxe').tier('iron').attackDamageBaseline(5.0).speedBaseline(-3.0).group('combat')
 })
 
 StartupEvents.registry('block', event => {

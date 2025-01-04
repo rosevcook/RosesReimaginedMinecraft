@@ -110,7 +110,7 @@
 	#"minecraft:diamond_.*" = 5000
 	[items.max_damage]
 		"minecraft:elytra" = 500
-		"queen_bee:stinger_sword" = 1225
+		"queen_bee:stinger_sword" = 1561
 		"minecraft:flint_and_steel" = 25
 		"caverns_and_chasms:silver_helmet" = 265
 		"caverns_and_chasms:silver_chestplate" = 340
@@ -141,6 +141,9 @@
 		"minecraft:iron_leggings" = 145
 		"minecraft:iron_boots" = 135
 		"clash:rod_of_gales" = 175
+		"minecraft:trident" = 1561
+		"mace_backport:mace" = 1561
+		"kubejs:anchor" = 1561
 
 	#Set the max stack size of an item. Only values between 2 and 64 are supported. Items that have durability cannot have this value altered. Example (without the leading #):
 	#"minecraft:ender_pearl" = 64

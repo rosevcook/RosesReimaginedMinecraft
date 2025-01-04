@@ -532,7 +532,7 @@
 		"Pike Range" = 5.0
 
 [tweaks]
-	"Gold Tools Have Fortune" = false
+	"Gold Tools Have Fortune" = true
 	"Automatic Recipe Unlock" = false
 	"Utility Recipes" = false
 	"Poison Potato Usage" = false
@@ -576,13 +576,13 @@
 
 	[tweaks.gold_tools_have_fortune]
 		#Allowed values: [0,)
-		"Fortune Level" = 2
+		"Fortune Level" = 0
 		#Allowed values: [0,4]
 		"Harvest Level" = 2
-		"Display Baked Enchantments In Tooltip" = true
-		"Italic Tooltip" = true
+		"Display Baked Enchantments In Tooltip" = false
+		"Italic Tooltip" = false
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = []
+		"Baked Enchantments" = ["mace_backport:mace+mace_backport:wind_burst@2", "minecraft:trident+minecraft:loyalty@3"]
 
 	[tweaks.automatic_recipe_unlock]
 		#A list of recipe names that should NOT be added in by default

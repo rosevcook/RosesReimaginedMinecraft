@@ -745,7 +745,6 @@ ServerEvents.recipes(event => {
   event.shapeless('undead_unleashed:tome_of_reflection', ['undead_unleashed:lost_soul', 'minecraft:book', 'undead_unleashed:necrotic_dust', 'minecraft:ink_sac', 'quark:glow_shroom' ])
   event.shaped('supplementaries:goblet', ['N N', 'N N', ' N '], { N: 'caverns_and_chasms:silver_nugget' })
   event.shaped('supplementaries:doormat', ['HH'], { H: 'environmental:yak_hair' })
-  event.shaped('mace_backport:mace', ['  S', ' R ', 'R  '], { R: 'kubejs:ice_rod', S: 'caverns_and_chasms:silver_block' })
   event.shaped('supplementaries:wind_vane', ['B', 'S'], { B: 'create:andesite_bars', S: 'kubejs:zinc_sheet' })
   event.shaped('irons_spellbooks:silver_ring', [' P ', 'PLP', ' P '], { L: 'minecraft:lapis_lazuli', P: 'undead_unleashed:grave_metal_ingot' })
   event.shaped('irons_spellbooks:cooldown_ring', ['JG ', 'G G', ' G '], { J: 'sullysmod:polished_jade_block', G: 'minecraft:gold_ingot' })
@@ -799,6 +798,7 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
   event.shapeless('create:sturdy_sheet', ['kubejs:lead_sheet', 'create:golden_sheet'])
+  event.shaped('kubejs:anchor', ['BBB', ' IB', 'I B'], { B: 'oregnized:lead_block', I: 'oregnized:lead_ingot' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')

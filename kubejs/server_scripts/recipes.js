@@ -2,7 +2,15 @@ ServerEvents.recipes(event => {
   function application(block, input, output) {
     event.custom({
       type: 'create:item_application',
-      ingredients: [ { item: block }, { item: input} ],
+      ingredients: [ { item: block }, { item: input } ],
+      results: [ { item: output } ]
+    })
+  }
+
+  function applicationTag(block, input, output) {
+    event.custom({
+      type: 'create:item_application',
+      ingredients: [ { tag: block }, { item: input } ],
       results: [ { item: output } ]
     })
   }
@@ -803,8 +811,8 @@ ServerEvents.recipes(event => {
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')
 
-  application('#forge:stripped_logs', 'create:sturdy_sheet', 'create:railway_casing')
-  application('#forge:stripped_wood', 'create:sturdy_sheet', 'create:railway_casing')
+  applicationTag('forge:stripped_logs', 'create:sturdy_sheet', 'create:railway_casing')
+  applicationTag('forge:stripped_wood', 'create:sturdy_sheet', 'create:railway_casing')
 
   application('minecraft:mud', 'minecraft:wheat', 'minecraft:packed_mud')
   application('minecraft:white_wool', 'minecraft:orange_dye', 'minecraft:orange_wool')

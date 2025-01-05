@@ -798,7 +798,7 @@ ServerEvents.recipes(event => {
   event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
   event.shapeless('create:sturdy_sheet', ['kubejs:lead_sheet', 'create:golden_sheet'])
-  event.shaped('kubejs:anchor', ['BBB', ' IB', 'I B'], { B: 'oregnized:lead_block', I: 'oregnized:lead_ingot' })
+  event.shaped('kubejs:anchor', ['BBB', ' RB', 'I B'], { B: 'oreganized:lead_block', I: 'oreganized:lead_ingot', R: 'upgrade_aquatic:prismarine_rod' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')

@@ -66,6 +66,7 @@ MoreJSEvents.registerPotionBrewing(event => {
   event.addPotionBrewing('atmospheric:yucca_branch', 'windswept:thorns')
   event.addPotionBrewing('undead_unleashed:lost_soul', 'minecraft:invisibility')
   event.addPotionBrewing('architects_palette:withered_bone', 'minecraft:weakness')
+  event.addPotionBrewing('unusualfishmod:raw_snowflake', 'windswept:frost_resistance')
 
   event.addPotionBrewing('minecraft:glowstone_dust', 'irons_spellbooks:instant_mana_one', 'irons_spellbooks:instant_mana_two')
 

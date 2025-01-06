@@ -36,7 +36,8 @@
 
 #Enchantment Tweaks
 [enchantment-tweaks]
-	#Removes any enchantment in this list from the Game.
+	#Removes any enchantment in this list from the Game. 
+	#(add just "*" to the list to remove all enchantments)
 	"Removed Enchantments" = ["*"]
 
 #Item Tweaks
@@ -56,4 +57,9 @@
 [entity-tweaks]
 	#Player base movement speed attribute; default: 0.1
 	"Player Base Speed" = 0.085
+
+#Anvil Tweaks
+[anvil-tweaks]
+	#Anvils will be free and require no experience; default: false
+	"Free Anvils" = true
 

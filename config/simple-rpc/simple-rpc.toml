@@ -19,7 +19,7 @@
 	#Enable/Disable the Game Loading Event
 	enabled = true
 	#The first line of text under the app name
-	description = "Minecraft is loading"
+	description = "RRM is loading"
 	#The second line of text under the app name
 	state = "Game Starting..."
 	#The Asset ID of the image to display as the large image
@@ -169,7 +169,7 @@
 #Fallback event for disabled events
 [generic]
 	#The first line of text under the app name
-	description = "Playing Minecraft"
+	description = "Playing Roses Reimagined Minecraft"
 	#The second line of text under the app name
 	state = ""
 	#The Asset ID of the image to display as the large image

@@ -10,7 +10,7 @@ Ponder.registry((event) => {
             .attachKeyFrame();
         scene.idle(20);
         scene
-	    .text(60, 'is GAY!!', [2.0, 1.5, 2.5])
+	    .text(60, '...doesnt know how to use rope', [2.0, 1.5, 2.5])
             .placeNearTarget()
             .attachKeyFrame();
     })

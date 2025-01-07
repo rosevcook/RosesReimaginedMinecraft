@@ -16,7 +16,6 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('minecraft:iron_pickaxe', (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Gold, Silver, Deepslate")))
   event.addAdvanced(['minecraft:golden_pickaxe', 'caverns_and_chasms:silver_pickaxe'], (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Diamond")))
   event.addAdvanced('minecraft:diamond_pickaxe', (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Obsidian, Ancient Debris")))
-  event.addAdvanced('minecraft:trident', (item, advanced, text) => text.add(1, Text.of("§7Trident will return to you after thrown")))
   event.addAdvanced('mace_backport:mace', (item, advanced, text) => text.add(1, Text.of("§7Emits a burst of wind upon hitting an enemy")))
-  event.addAdvanced('mace_backport:mace', (item, advanced, text) => text.add(1, Text.of("§7Hit enemies will be flung into the air")))
+  event.addAdvanced('kubejs:anchor', (item, advanced, text) => text.add(1, Text.of("§7Hit enemies will be flung into the air")))
 })

@@ -807,6 +807,9 @@ ServerEvents.recipes(event => {
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
   event.shapeless('create:sturdy_sheet', ['kubejs:lead_sheet', 'create:golden_sheet'])
   event.shaped('kubejs:anchor', ['BBB', ' RB', 'I B'], { B: 'oreganized:lead_block', I: 'oreganized:lead_ingot', R: 'upgrade_aquatic:prismarine_rod' })
+  event.shaped('kubejs:spinel_pickaxe', ['SSS', ' R ', ' R '], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
+  event.shaped('kubejs:spinel_axe', ['SS', 'SR', ' R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
+  event.shaped('kubejs:spinel_shovel', ['S', 'R', 'R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')

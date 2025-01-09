@@ -582,7 +582,7 @@
 		"Display Baked Enchantments In Tooltip" = true
 		"Italic Tooltip" = false
 		#Enchantments other than Gold's Fortune/Looting to bake into items. Format is "item+enchant@level", such as "minecraft:stick+sharpness@10".
-		"Baked Enchantments" = ["mace_backport:mace+mace_backport:wind_burst@2", "minecraft:trident+minecraft:loyalty@3", "kubejs:anchor+allurement:launch@2"]
+		"Baked Enchantments" = ["mace_backport:mace+mace_backport:wind_burst@2", "minecraft:trident+minecraft:loyalty@3", "kubejs:anchor+allurement:launch@2", "kubejs:spinel_pickaxe+minecraft:silk_touch@1", "kubejs:spinel_axe+minecraft:silk_touch@1", "kubejs:spinel_shovel+minecraft:silk_touch@1"]
 
 	[tweaks.automatic_recipe_unlock]
 		#A list of recipe names that should NOT be added in by default

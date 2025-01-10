@@ -525,6 +525,9 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'immersive_weathering:mossy_chiseled_stone_bricks' })
   event.remove({ output: 'create:sturdy_sheet' })
   event.remove({ output: 'create:railway_casing' })
+  event.remove({ type: 'minecraft:crafting_shaped', mod: 'shieldexp' })
+  event.remove({ output: 'minecraft:shield' })
+  event.remove({ output: 'oreganized:electrum_shield' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -626,7 +629,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'alexsmobs:shark_tooth_arrow' }, 'alexsmobs:shark_tooth', 'upgrade_aquatic:thrasher_tooth')
   event.replaceInput({ output: 'create:propeller' }, 'create:iron_sheet', 'create:brass_sheet')
   event.replaceInput({ output: 'windswept:snow_charge_banner_pattern' }, '#forge:buckets/powder_snow', 'minecraft:snowball')
-  event.replaceInput({ output: 'minecraft:shield' }, 'minecraft:iron_ingot', 'kubejs:zinc_sheet')
   event.replaceInput({ output: 'supplementaries:slingshot' }, 'minecraft:rabbit_hide', 'spelunkery:tangle_roots')
   event.replaceInput({ output: 'supplementaries:slingshot' }, 'minecraft:string', 'spelunkery:tangle_roots')
   event.replaceInput({ output: 'farmersdelight:rope' }, 'farmersdelight:straw', '#rrm:rope_ingredients')
@@ -704,7 +706,6 @@ ServerEvents.recipes(event => {
   event.shaped(Item.of('kubejs:grave_metal_plate_stairs', 4), ['P  ', 'PP ', 'PPP'], { P: 'kubejs:grave_metal_plates' })
   event.shaped(Item.of('kubejs:grave_metal_plate_slab', 6), ['PPP'], { P: 'kubejs:grave_metal_plates' })
   event.shaped('caverns_and_chasms:golden_lava_bucket', ['SSS', 'SBS', 'SSS'], { S: 'undead_unleashed:charstone_shard', B: 'caverns_and_chasms:golden_bucket' })
-  event.shaped('sullysmod:jade_shield', ['JJJ', 'JSJ', 'JJJ'], { S: 'minecraft:shield', J: 'sullysmod:polished_jade' })
   event.shaped('otherworldly_accessories:battle_horseshoe', ['B B', 'BJB', ' B '], { B: 'create:brass_ingot', J: 'sullysmod:polished_jade_block' })
   event.shaped('otherworldly_accessories:mount_effigy', ['JJJ', 'JBJ', 'JJJ'], { B: 'otherworldly_accessories:battle_horseshoe', J: 'sullysmod:polished_jade' })
   event.shaped('caverns_and_chasms:spinel_lamp', [' D ', 'DSD', ' D '], { D: 'minecraft:glowstone_dust', S: 'caverns_and_chasms:spinel' })
@@ -810,6 +811,14 @@ ServerEvents.recipes(event => {
   event.shaped('kubejs:spinel_pickaxe', ['SSS', ' R ', ' R '], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
   event.shaped('kubejs:spinel_axe', ['SS', 'SR', ' R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
   event.shaped('kubejs:spinel_shovel', ['S', 'R', 'R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
+
+  event.shaped('shieldexp:wooden_shield', [' P ', 'PSP', ' P '], { S: 'minecraft:stick', P: '#minecraft:planks' })
+  event.shaped('shieldexp:golden_shield', [' C ', 'CSC', ' C '], { S: 'minecraft:stick', C: 'create:copper_sheet' })
+  event.shaped('minecraft:shield', [' I ', 'ISI', ' I '], { S: 'minecraft:stick', I: 'create:iron_sheet' })
+  event.shaped('sullysmod:jade_shield', [' G ', 'GSG', ' G '], { S: 'minecraft:stick', G: 'create:golden_sheet' })
+  event.shaped('shieldexp:griefer_shield', [' P ', 'PSP', ' P '], { S: 'minecraft:stick', P: 'savage_and_ravage:blast_proof_plating' })
+  event.shaped('shieldexp:iron_shield', [' P ', 'PSP', ' P '], { S: 'minecraft:stick', P: 'kubejs:silver_sheet' })
+  event.shaped('shieldexp:diamond_shield', [' D ', 'DSD', ' D '], { S: 'minecraft:stick', D: 'minecraft:diamond' })
 
   event.smelting('quark:midori_block', 'minecraft:moss_block')
   event.smelting('immersive_weathering:cracked_mud', 'minecraft:mud')
@@ -1011,6 +1020,7 @@ ServerEvents.recipes(event => {
   event.smithing('clash:greatblade', 'savage_and_ravage:cleaver_of_beheading', 'cataclysm:ignitium_ingot')
   event.smithing('cataclysm:coral_spear', 'clash:spear', 'cataclysm:coral_chunk')
   event.smithing('cataclysm:coral_bardiche', 'cataclysm:coral_spear', 'upgrade_aquatic:thrasher_tooth')
+  event.smithing('oreganized:electrum_shield', 'shieldexp:diamond_shield', 'caverns_and_chasms:necromium_ingot')
 
   event.recipes.create.pressing('kubejs:silver_sheet', 'caverns_and_chasms:silver_ingot')
   event.recipes.create.pressing('kubejs:zinc_sheet', 'create:zinc_ingot')

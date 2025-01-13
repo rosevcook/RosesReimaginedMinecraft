@@ -783,6 +783,8 @@
     "create:display_board",
     "create:redstone_link",
     "create:linked_controller",
+    "create:mechanical_crafter",
+    "create:crafter_slot_cover",
     "clash:swept_axe",
     "clash:swept_axe_head",
     "architects_palette:nether_brass_ingot",

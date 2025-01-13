@@ -528,6 +528,7 @@ ServerEvents.recipes(event => {
   event.remove({ type: 'minecraft:crafting_shaped', mod: 'shieldexp' })
   event.remove({ output: 'minecraft:shield' })
   event.remove({ output: 'oreganized:electrum_shield' })
+  event.remove({ output: 'create:powdered_obsidian' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')

@@ -33,6 +33,8 @@
 		"spelunkery:tall_sporophyte": "minecraft:air",
 		"spelunkery:button_mushroom": "miners_delight:wild_cave_carrots",
 		"spelunkery:nephrite": "caverns_and_chasms:sugilite",
+		"spelunkery:rough_quartz_block": "minecraft:nether_gold_ore",
+		"supplementaries:ashen_basalt": "minecraft:basalt",
 		"minecraft:mycelium": "caverns_and_chasms:rocky_dirt",
 		"oreganized:glance": "caverns_and_chasms:rocky_dirt",
 		"oreganized:spotted_glance": "caverns_and_chasms:rocky_dirt",

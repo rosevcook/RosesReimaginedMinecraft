@@ -641,6 +641,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'create:ornate_iron_window' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
   event.replaceInput({ output: 'caverns_and_chasms:large_arrow' }, 'caverns_and_chasms:silver_ingot', 'oreganized:lead_ingot')
   event.replaceInput({ output: 'immersive_weathering:cracked_mud' }, 'minecraft:clay', 'minecraft:mud')
+  event.replaceInput({ output: 'endergetic:booflo_vest' }, 'endergetic:booflo_hide', 'quark:glow_shroom')
+  event.replaceInput({ output: 'endergetic:booflo_vest' }, 'endergetic:boof_block', 'caverns_and_chasms:silver_chestplate')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])

@@ -529,6 +529,7 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'minecraft:shield' })
   event.remove({ output: 'oreganized:electrum_shield' })
   event.remove({ output: 'create:powdered_obsidian' })
+  event.remove({ output: 'endergetic:bolloom_balloon' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')

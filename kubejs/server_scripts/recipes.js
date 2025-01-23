@@ -530,6 +530,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'oreganized:electrum_shield' })
   event.remove({ output: 'create:powdered_obsidian' })
   event.remove({ output: 'endergetic:bolloom_balloon' })
+  event.remove({ output: 'unusualfishmod:ripsaw' })
+  event.remove({ output: 'unusualfishmod:lobster_roll' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -1095,6 +1097,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['miners_delight:cave_soup'], ['miners_delight:baked_cave_carrot', 'spelunkery:salt', 'miners_delight:smoked_bat_wing', 'minecraft:bowl'])
   event.recipes.create.mixing(['farmersdelight:pumpkin_soup'], [Fluid.of('minecraft:milk'), 'farmersdelight:pumpkin_slice', 'farmersdelight:pumpkin_slice', 'farmersdelight:cabbage', 'minecraft:porkchop', 'minecraft:bowl']).heated()
   event.recipes.create.mixing(['farmersdelight:fish_stew'], ['#forge:raw_fishes', 'farmersdelight:tomato', 'farmersdelight:onion', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['unusualfishmod:lobster_roll'], ['alexsmobs:cooked_lobster_tail', 'minecraft:bread'])
   event.recipes.create.mixing([Item.of('atmospheric:currant_muffin', 2)], [Item.of('atmospheric:currant', 3), 'create:wheat_flour', '#forge:eggs', 'minecraft:sugar']).heated()
   event.recipes.create.mixing(['autumnity:pancake'], [Fluid.of('minecraft:milk', 250), 'autumnity:syrup_bottle', Item.of('create:wheat_flour', 2), '#forge:eggs', 'minecraft:sugar']).heated()
   event.recipes.create.mixing(['windswept:christmas_pudding'], [Fluid.of('minecraft:milk'), 'windswept:ginger_root', 'windswept:holly_berries', 'windswept:roasted_chestnuts', 'create:wheat_flour', '#forge:eggs', 'minecraft:sugar']).heated()

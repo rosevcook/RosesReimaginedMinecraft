@@ -2,7 +2,6 @@
   "type": "forge:add_features",
   "biomes": "#immersive_weathering:has_lakebed",
   "features": [
-    "immersive_weathering:dry_lakebed",
     "immersive_weathering:dry_lakebed_large",
     "immersive_weathering:vertisol_patch",
     "immersive_weathering:desert_fossil"

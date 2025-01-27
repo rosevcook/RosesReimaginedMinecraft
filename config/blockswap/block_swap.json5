@@ -144,6 +144,7 @@
 		"immersive_weathering:frosty_fern": "minecraft:fern",
 		"immersive_weathering:waxed_iron_door": "minecraft:iron_door",
 		"immersive_weathering:waxed_iron_trapdoor": "minecraft:iron_trapdoor",
-		"immersive_weathering:waxed_iron_bars": "minecraft:iron_bars"
+		"immersive_weathering:waxed_iron_bars": "minecraft:iron_bars",
+		"immersive_weathering:icicle": "minecraft:air"
 	}
 }

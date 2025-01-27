@@ -532,6 +532,8 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'endergetic:bolloom_balloon' })
   event.remove({ output: 'unusualfishmod:ripsaw' })
   event.remove({ output: 'unusualfishmod:lobster_roll' })
+  event.remove({ output: 'brewinandchewin:pizza' })
+  event.remove({ output: 'create:depot' })
 
   // edit recipes
   event.replaceOutput({ input: 'environmental:yellow_hibiscus' }, 'minecraft:yellow_dye', 'minecraft:white_dye')
@@ -645,6 +647,8 @@ ServerEvents.recipes(event => {
   event.replaceInput({ output: 'immersive_weathering:cracked_mud' }, 'minecraft:clay', 'minecraft:mud')
   event.replaceInput({ output: 'endergetic:booflo_vest' }, 'endergetic:booflo_hide', 'quark:glow_shroom')
   event.replaceInput({ output: 'endergetic:booflo_vest' }, 'endergetic:boof_block', 'caverns_and_chasms:silver_chestplate')
+  event.replaceInput({ output: 'brewinandchewin:tankard' }, 'minecraft:iron_nugget', 'create:zinc_nugget')
+  event.replaceInput({ output: 'brewinandchewin:keg' }, 'minecraft:iron_ingot', 'create:zinc_ingot')
 
   // add recipes
   event.shapeless('minecraft:bread', ['create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour'])
@@ -812,11 +816,12 @@ ServerEvents.recipes(event => {
   event.shaped('minecraft:diamond_hoe', ['DDD', ' SD', ' S '], { D: 'minecraft:diamond', S: 'minecraft:stick' })
   event.shaped('undead_unleashed:reaping_scythe', [' PP', 'PSP', 'PPD'], { P: 'undead_unleashed:grave_metal_ingot', D: 'undead_unleashed:necrotic_dust', S: 'minecraft:stick' })
   event.shapeless('minecraft:flint_and_steel', ['minecraft:gunpowder', '#create:sandpaper', 'minecraft:stick'])
-  event.shapeless('create:sturdy_sheet', ['kubejs:lead_sheet', 'create:golden_sheet'])
+  event.shapeless(Item.of('create:sturdy_sheet', 2), ['kubejs:lead_sheet', 'kubejs:lead_sheet', 'create:golden_sheet'])
   event.shaped('kubejs:anchor', ['BBB', ' RB', 'I B'], { B: 'oreganized:lead_block', I: 'oreganized:lead_ingot', R: 'upgrade_aquatic:prismarine_rod' })
   event.shaped('kubejs:spinel_pickaxe', ['SSS', ' R ', ' R '], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
   event.shaped('kubejs:spinel_axe', ['SS', 'SR', ' R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
   event.shaped('kubejs:spinel_shovel', ['S', 'R', 'R'], { S: 'caverns_and_chasms:spinel', R: 'minecraft:stick' })
+  event.shaped('create:depot', ['S', 'C'], { S: 'kubejs:zinc_sheet', C: 'create:andesite_casing' })
 
   event.shaped('shieldexp:wooden_shield', [' P ', 'PSP', ' P '], { S: 'minecraft:stick', P: '#minecraft:planks' })
   event.shaped('shieldexp:golden_shield', [' C ', 'CSC', ' C '], { S: 'minecraft:stick', C: 'create:copper_sheet' })
@@ -1081,6 +1086,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(['incubation:scrambled_eggs'], [Fluid.of('minecraft:milk', 250), '#forge:eggs', '#forge:eggs', 'minecraft:bowl'])
   event.recipes.create.mixing(['minecraft:mushroom_stew'], ['minecraft:red_mushroom', 'minecraft:brown_mushroom', 'minecraft:bowl'])
   event.recipes.create.mixing(['farmersdelight:cooked_rice'], ['farmersdelight:rice', 'farmersdelight:rice', 'minecraft:bowl']).heated()
+  event.recipes.create.mixing(['brewinandchewin:pizza'], ['farmersdelight:tomato', 'farmersdelight:tomato', 'create:wheat_flour', 'create:wheat_flour', 'create:wheat_flour', 'brewinandchewin:flaxen_cheese_wedge', 'brewinandchewin:flaxen_cheese_wedge', 'minecraft:brown_mushroom', 'minecraft:cooked_beef']).heated()
   event.recipes.create.mixing(['windswept:chestnut_soup'], [Item.of('windswept:chestnuts', 2), 'farmersdelight:onion', 'minecraft:bowl']).heated()
   event.recipes.create.mixing(['windswept:chestnut_risotto'], [Item.of('windswept:chestnuts', 3), 'farmersdelight:onion', 'spelunkery:salt', 'farmersdelight:rice', 'minecraft:chicken', 'minecraft:bowl']).heated()
   event.recipes.create.mixing(['farmersdelight:squid_ink_pasta'], ['#forge:raw_fishes', 'farmersdelight:raw_pasta', 'farmersdelight:tomato', 'miners_delight:tentacles', 'minecraft:bowl']).heated()

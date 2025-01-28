@@ -1,0 +1,6 @@
+{
+  "parent": "rrm:item/scythe_handheld",
+  "textures": {
+    "layer0": "kubejs:item/electrum_lance_handheld"
+  }
+}

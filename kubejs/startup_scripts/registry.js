@@ -12,6 +12,7 @@ StartupEvents.registry('item', event => {
   event.create('wadjet_tail').rarity('uncommon').group('transportation')
   event.create('dry_moss').group('transportation')
   event.create('anchor', 'pickaxe').tier('stone').attackDamageBaseline(6.5).speedBaseline(-3.0).group('combat')
+  event.create('electrum_lance', 'sword').tier('diamond').attackDamageBaseline(2.5).speedBaseline(-2.0).group('combat')
   event.create('spinel_pickaxe', 'pickaxe').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')
   event.create('spinel_axe', 'axe').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')
   event.create('spinel_shovel', 'shovel').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')

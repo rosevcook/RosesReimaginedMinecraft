@@ -5,5 +5,7 @@
   "block.caverns_and_chasms.ender_brazier": "Crystalline Brazier",
   "item.caverns_and_chasms.large_arrow": "Heavy Arrow",
   "item.caverns_and_chasms.silver_hoe": "Silver Scythe",
-  "item.caverns_and_chasms.necromium_hoe": "Necromium Scythe"
+  "item.caverns_and_chasms.silver_axe": "Silver Hatchet",
+  "item.caverns_and_chasms.necromium_hoe": "Necromium Scythe",
+  "item.caverns_and_chasms.necromium_axe": "Necromium Hatchet"
 }

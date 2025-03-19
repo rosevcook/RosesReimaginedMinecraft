@@ -16,6 +16,9 @@ StartupEvents.registry('item', event => {
   event.create('spinel_pickaxe', 'pickaxe').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')
   event.create('spinel_axe', 'axe').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')
   event.create('spinel_shovel', 'shovel').tier('stone').attackDamageBaseline(-2).speedBaseline(-2.5).group('tools')
+
+  event.create('starfall_staff', 'irons_spells_js:magic_sword').addDefaultSpell('irons_spellbooks:starfall', 1)
+  event.create('netherite_sceptor', 'irons_spells_js:magic_sword').addDefaultSpell('irons_spellbooks:flaming_strike', 2)
 })
 
 StartupEvents.registry('block', event => {

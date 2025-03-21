@@ -1,0 +1,16 @@
+{
+  "type": "sootychimneys:soot_scraping",
+  "chimney": {
+    "item": "sootychimneys:dirty_cobblestone_chimney"
+  },
+  "results": [
+    {
+      "chance": 1,
+      "item": "immersive_weathering:soot"
+    }
+  ],
+  "tool": {
+    "type": "sootychimneys:tool_action",
+    "action": "axe_scrape"
+  }
+}

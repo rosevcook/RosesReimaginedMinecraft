@@ -18,7 +18,7 @@ WindStrengthMultiplier = 0.05
 [JEI]
 	#Soot Covering category will be added to JEI.
 	#If 'DirtyChance' is set to 0 - it will not be added regardless of this setting
-	JEISootCovering = false
+	JEISootCovering = true
 	#Soot Scraping category will be added to JEI.
 	JEISootScraping = true
 	#Enables/disables 'May produce a byproduct' info in JEI Soot Scraping recipes.

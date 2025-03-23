@@ -18,4 +18,7 @@ ItemEvents.tooltip(event => {
   event.addAdvanced('minecraft:diamond_pickaxe', (item, advanced, text) => text.add(1, Text.of("§7Can Mine: Obsidian, Ancient Debris")))
   event.addAdvanced('mace_backport:mace', (item, advanced, text) => text.add(1, Text.of("§7Emits a burst of wind upon hitting an enemy")))
   event.addAdvanced('kubejs:anchor', (item, advanced, text) => text.add(1, Text.of("§7Hit enemies will be flung into the air")))
+  event.addAdvanced(['minecraft:brick', 'minecraft:nether_brick', 'minecraft:ender_pearl', 'minecraft:snowball', 'caverns_and_chasms:bejeweled_pearl', 'endermanoverhaul:bubble_pearl', 'endermanoverhaul:summoner_pearl', 'endermanoverhaul:icy_pearl', 'endermanoverhaul:soul_pearl', 'minecraft:trident', 'cataclysm:coral_spear', 'cataclysm:coral_bardiche', 'caverns_and_chasms:kunai', 'supplementaries:bomb', 'supplementaries:bomb_blue', 'supplementaries:bomb_spiky'], (item, advanced, text) => text.add(1, Text.of("§7Throwable")))
+  event.addAdvanced(['minecraft:book', 'minecraft:writable_book', 'spelunkery:salt', 'minecraft:gunpowder', 'autumnity:snail_goo'], (item, advanced, text) => text.add(1, Text.of("§7Placeable")))
+
 })

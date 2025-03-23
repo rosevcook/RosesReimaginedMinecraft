@@ -217,7 +217,7 @@ ServerEvents.tags('worldgen/biome', event => {
   event.add('naturalist:has_butterfly', 'environmental:blossom_woods', 'windswept:lavender_meadow', 'environmental:blossom_valleys')
   event.add('naturalist:has_rattlesnake', '#atmospheric:is_dunes', '#atmospheric:is_scrubland')
   event.add('naturalist:has_rhino', '#atmospheric:is_dunes', '#atmospheric:is_scrubland')
-  event.add('naturalist:has_hippo', '#atmospheric:is_rainforest', 'environmental:marsh')
+  event.add('naturalist:has_hippo', '#atmospheric:is_rainforest', 'environmental:marsh', 'minecraft:swamp')
   event.add('naturalist:has_coral_snake', '#atmospheric:is_rainforest')
   event.add('betterdungeons:has_structure/spider_dungeon', '#atmospheric:is_dunes', '#atmospheric:is_scrubland')
   event.add('spelunkery:has_desert_noise', '#atmospheric:is_dunes')

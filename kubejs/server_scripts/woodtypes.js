@@ -90,6 +90,7 @@ ServerEvents.recipes(event => {
   sawingTag('minecraft:logs', 'supplementaries:timber_frame', 4)
   sawingTag('minecraft:logs', 'supplementaries:timber_brace', 4)
   sawingTag('minecraft:logs', 'supplementaries:timber_cross_brace', 4)
+  sawing('neapolitan:banana_stalk', 'neapolitan:carved_banana_stalk', 1)
 
   sawing('quark:bamboo_planks', 'quark:bamboo_planks_stairs', 1)
   sawing('quark:bamboo_planks', 'quark:bamboo_planks_slab', 2)
